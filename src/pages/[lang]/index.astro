@@ -1,0 +1,138 @@
+---
+import Base from "../../layouts/Base.astro";
+import StatusBadge from "../../components/StatusBadge.astro";
+import { LANGS, isLang, type Lang } from "../../lib/config";
+import { t, langPath } from "../../lib/i18n";
+import { formatNpt, formatNptDate } from "../../lib/status";
+import { localized, localizedName, localizedNote, sourceById } from "../../lib/lookup";
+import snapshot from "../../data/snapshot.json";
+import { getCollection } from "astro:content";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const remaining = snapshot.districts.reduce((n, d) => n + d.remaining, 0);
+const bulletins = (await getCollection("bulletins"))
+  .filter((b) => b.data.lang === lang)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+---
+
+<Base lang={lang} title={messages.home.title} path="">
+  <p class="kicker">{messages.home.kicker}</p>
+  <h1>{messages.home.title}</h1>
+  <p class="lead">{messages.home.lead}</p>
+  <p class="meta-line">
+    {messages.home.humanUpdate}:{" "}
+    <time datetime={snapshot.updated}>{formatNpt(snapshot.updated, lang)}</time>
+    {" "}· NPT
+  </p>
+
+  <div class="callout" style="margin: 1.1rem 0;">
+    <strong>{messages.home.incident}</strong>
+    <p style="margin: 0.35rem 0 0;">
+      {lang === "ne" ? snapshot.incident.title_ne : snapshot.incident.title_en}
+    </p>
+    <p class="note">
+      {lang === "ne" ? snapshot.incident.summary_ne : snapshot.incident.summary_en}
+    </p>
+  </div>
+
+  <h2>{messages.home.chipsTitle}</h2>
+  <div class="grid chips">
+    {
+      snapshot.links.map((link) => {
+        const src = sourceById(link.source);
+        return (
+          <article class:list={["card", link.status]}>
+            <StatusBadge status={link.status} messages={messages} />
+            <h3>{localized(link, lang)}</h3>
+            <p class="note">{localizedNote(link, lang)}</p>
+            <p class="asof">
+              {messages.corridor.asOf} {formatNptDate(link.as_of, lang)}
+              {
+                src && (
+                  <>
+                    {" · "}
+                    <a href={src.url}>{src.name}</a>
+                  </>
+                )
+              }
+            </p>
+          </article>
+        );
+      })
+    }
+  </div>
+  <p class="note">{messages.home.starlinkNote}</p>
+
+  <div class="cta-row">
+    <a class="btn" href={langPath(lang, "routing", base)}>{messages.home.routingCta}</a>
+    <a class="btn secondary" href={langPath(lang, "corridor", base)}>{messages.home.mapCta}</a>
+  </div>
+  <p class="note">{messages.home.routingCtaNote}</p>
+
+  <h2>{messages.home.districtsTitle}</h2>
+  <p class="note">
+    {lang === "ne" ? snapshot.peak_note_ne : snapshot.peak_note_en}
+    {messages.home.districtsNote && ` ${messages.home.districtsNote}`}
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{messages.corridor.district}</th>
+          <th>{messages.home.sitesAffected}</th>
+          <th>{messages.home.sitesRemaining}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          snapshot.districts.map((d) => (
+            <tr>
+              <td>{localizedName(d, lang)}</td>
+              <td>{d.affected}</td>
+              <td>
+                <strong>{d.remaining}</strong> / {d.affected}
+              </td>
+            </tr>
+          ))
+        }
+        <tr>
+          <td><strong>NTC</strong></td>
+          <td>{snapshot.peak_sites_affected}</td>
+          <td>
+            <strong>{remaining}</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>{messages.home.latestBulletins}</h2>
+  <div class="grid">
+    {
+      bulletins.map((post) => (
+        <article class="card">
+          <p class="asof">
+            <time datetime={post.data.date.toISOString()}>{formatNptDate(post.data.date.toISOString(), lang)}</time>
+          </p>
+          <h3>
+            <a href={langPath(lang, `bulletin/${post.data.pair}`, base)}>{post.data.title}</a>
+          </h3>
+        </article>
+      ))
+    }
+  </div>
+  <p><a href={langPath(lang, "bulletin", base)}>{messages.home.allBulletins}</a></p>
+
+  <h2>{messages.home.howToRead}</h2>
+  <p>{messages.home.howToReadBody}</p>
+</Base>

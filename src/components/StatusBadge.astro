@@ -1,0 +1,14 @@
+---
+import type { Status } from "../lib/status";
+import { statusLabel } from "../lib/status";
+import type { Messages } from "../lib/i18n";
+
+interface Props {
+  status: Status;
+  messages: Messages;
+}
+
+const { status, messages } = Astro.props;
+---
+
+<span class:list={["badge", status]}>{statusLabel(status, messages)}</span>

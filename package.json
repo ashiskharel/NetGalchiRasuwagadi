@@ -1,0 +1,23 @@
+{
+  "name": "netgalchirasuwagadi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Public bilingual bulletin board for Nepal northern internet and telephony routing (Galchhi–Rasuwagadhi).",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [
+    "nepal",
+    "bgp",
+    "ntc",
+    "rasuwagadhi",
+    "network-restoration"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^5.13.2"
+  }
+}

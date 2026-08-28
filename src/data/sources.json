@@ -1,0 +1,84 @@
+{
+  "sources": [
+    {
+      "id": "ratopati-76383",
+      "name": "Ratopati",
+      "title_en": "Nepal Telecom services disrupted by flood damage in Rasuwa and Nuwakot",
+      "title_ne": "रसुवा र नुवाकोट बाढीले नेपाल टेलिकम सेवा प्रभावित",
+      "url": "https://english.ratopati.com/story/76383",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "ratopati-76715",
+      "name": "Ratopati",
+      "title_en": "Nepal Telecom works to restore services after flood damage (60 of 152 sites still down)",
+      "title_ne": "बाढीपछि नेपाल टेलिकम पुनर्स्थापना (१५२ मध्ये ६० अझै बन्द)",
+      "url": "https://english.ratopati.com/story/76715/60-of-nepal-telecoms-152-sites-in-flood-affected-areas-are-still-not-operational",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "onlinekhabar-towers",
+      "name": "OnlineKhabar",
+      "title_en": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood",
+      "title_ne": "बाढीपछि रसुवा, नुवाकोट र धादिङमा ८७ टेलिकम टावर प्रभावित",
+      "url": "https://english.onlinekhabar.com/ntc-ncell-telecom-flood-disrupt.html",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "rising-nepal-free",
+      "name": "The Rising Nepal",
+      "title_en": "NTC, Ncell provide free service in flood-affected areas",
+      "title_ne": "बाढी प्रभावित क्षेत्रमा नेपाल टेलिकम र एनसेलको निःशुल्क सेवा",
+      "url": "https://risingnepaldaily.com/news/85575",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "ripe-ris",
+      "name": "RIPE NCC / RIS",
+      "title_en": "RIPEstat looking glass and ASN neighbours for AS23752",
+      "title_ne": "AS23752 का लागि RIPEstat लुकिङ ग्लास र ASN छिमेकी",
+      "url": "https://stat.ripe.net/lg",
+      "date": "2026-08-28"
+    },
+    {
+      "id": "he-23752",
+      "name": "Hurricane Electric",
+      "title_en": "AS23752 Nepal Telecom — peers and prefixes",
+      "title_ne": "AS23752 नेपाल टेलिकम — पियर र प्रिफिक्स",
+      "url": "https://bgp.he.net/AS23752",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "nta-north-south",
+      "name": "Nepal Telecommunications Authority",
+      "title_en": "North–South connectivity (Rasuwagadhi–Kerung, Tatopani–Khasa, India gateways)",
+      "title_ne": "उत्तर–दक्षिण कनेक्टिभिटी (रसुवागढी–केरुङ, तातोपानी–खासा, भारत गेटवे)",
+      "url": "https://nta.gov.np/uploads/contents/North-South-Connectivity-to-develop-Nepal-as-International-Transit.docx",
+      "date": "2018-01-01"
+    },
+    {
+      "id": "oracle-madory-2018",
+      "name": "Doug Madory / Oracle Internet Intelligence",
+      "title_en": "China activates historic Himalayan link to Nepal (10 Jan 2018)",
+      "title_ne": "चीनले नेपालसँग हिमाली लिङ्क सक्रिय (१० जनवरी २०१८)",
+      "url": "https://blogs.oracle.com/internetintelligence/china-activates-historic-himalayan-link-to-nepal",
+      "date": "2018-01-16"
+    },
+    {
+      "id": "nepalviews-starlink",
+      "name": "Nepal Views",
+      "title_en": "Starlink awaiting government approval to launch services in Nepal",
+      "title_ne": "नेपालमा सेवा सुरु गर्न स्टारलिंक सरकारी स्वीकृति पर्खँदै",
+      "url": "https://english.nepalviews.com/2026/06/03/starlink-awaiting-government-s-approval-to-launch-services-in-nepal",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "peeringdb-23752",
+      "name": "PeeringDB",
+      "title_en": "AS23752 Nepal Telecom",
+      "title_ne": "AS23752 नेपाल टेलिकम",
+      "url": "https://www.peeringdb.com/asn/23752",
+      "date": "2026-08-11"
+    }
+  ]
+}

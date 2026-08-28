@@ -1,0 +1,103 @@
+{
+  "originAsn": 23752,
+  "samplePrefixes": ["202.70.64.0/19", "113.199.128.0/17", "49.244.0.0/16", "2407:1400::/32"],
+  "northAsns": [23764, 4134, 4809],
+  "southAsns": [9498, 6453, 4755],
+  "asns": [
+    {
+      "asn": 23752,
+      "name_en": "Nepal Telecom",
+      "name_ne": "नेपाल टेलिकम",
+      "aka": "NPTELECOM-NP-AS",
+      "role_en": "Nepal origin; looking glass and route server",
+      "role_ne": "नेपालको ओरिजिन; लुकिङ ग्लास र रूट सर्भर",
+      "he": "https://bgp.he.net/AS23752",
+      "peeringdb": "https://www.peeringdb.com/asn/23752",
+      "lg": "http://lg.ntc.net.np",
+      "rs": "http://route-server.ntc.net.np",
+      "radar": "https://radar.cloudflare.com/routing/as23752",
+      "group": "origin"
+    },
+    {
+      "asn": 23764,
+      "name_en": "CTGNet (China Telecom Global)",
+      "name_ne": "CTGNet (चाइना टेलिकम ग्लोबल)",
+      "aka": "CTGNet",
+      "role_en": "Northern upstream at Rasuwagadhi–Kerung (Gyirong), in service since Jan 2018",
+      "role_ne": "रसुवागढी–केरुङ (ग्यिरोङ) को उत्तरी अपस्ट्रिम, २०१८ जनवरीदेखि",
+      "he": "https://bgp.he.net/AS23764",
+      "peeringdb": "https://www.peeringdb.com/asn/23764",
+      "group": "north"
+    },
+    {
+      "asn": 4134,
+      "name_en": "China Telecom Backbone",
+      "name_ne": "चाइना टेलिकम ब्याकबोन",
+      "aka": "CHINANET",
+      "role_en": "May appear further up China-side AS paths",
+      "role_ne": "चीनतर्फको AS बाटोमा माथि देखिन सक्छ",
+      "he": "https://bgp.he.net/AS4134",
+      "group": "north"
+    },
+    {
+      "asn": 4809,
+      "name_en": "China Telecom CN2",
+      "name_ne": "चाइना टेलिकम CN2",
+      "aka": "CN2",
+      "role_en": "China Telecom next-generation carrier; sometimes on international paths",
+      "role_ne": "चाइना टेलिकमको अर्को पुस्ता वाहक; अन्तर्राष्ट्रिय बाटोमा कहिलेकाहीं",
+      "he": "https://bgp.he.net/AS4809",
+      "group": "north"
+    },
+    {
+      "asn": 9498,
+      "name_en": "Bharti Airtel",
+      "name_ne": "भारती एयरटेल",
+      "aka": "Airtel",
+      "role_en": "Southern (India) transit — usually the most-visible NTC upstream globally",
+      "role_ne": "दक्षिणी (भारत) ट्रान्जिट — विश्वभर सबैभन्दा देखिने नेपाल टेलिकम अपस्ट्रिम",
+      "he": "https://bgp.he.net/AS9498",
+      "group": "south"
+    },
+    {
+      "asn": 6453,
+      "name_en": "Tata Communications",
+      "name_ne": "टाटा कम्युनिकेसन्स",
+      "aka": "Tata",
+      "role_en": "Southern transit",
+      "role_ne": "दक्षिणी ट्रान्जिट",
+      "he": "https://bgp.he.net/AS6453",
+      "group": "south"
+    },
+    {
+      "asn": 4755,
+      "name_en": "Tata Communications (VSNL)",
+      "name_ne": "टाटा कम्युनिकेसन्स (VSNL)",
+      "aka": "VSNL",
+      "role_en": "Southern transit (India)",
+      "role_ne": "दक्षिणी ट्रान्जिट (भारत)",
+      "he": "https://bgp.he.net/AS4755",
+      "group": "south"
+    },
+    {
+      "asn": 45845,
+      "name_en": "Nepal International Internet Gateway",
+      "name_ne": "नेपाल अन्तर्राष्ट्रिय इन्टरनेट गेटवे",
+      "aka": "NIIG",
+      "role_en": "Domestic international gateway context",
+      "role_ne": "स्वदेशी अन्तर्राष्ट्रिय गेटवे सन्दर्भ",
+      "he": "https://bgp.he.net/AS45845",
+      "group": "domestic"
+    },
+    {
+      "asn": 38565,
+      "name_en": "Ncell",
+      "name_ne": "एनसेल",
+      "aka": "NCELL-AS-NP",
+      "role_en": "Not the China terrestrial operator; towers in the flood zone were also hit",
+      "role_ne": "चीन स्थलीय सञ्चालक होइन; बाढी क्षेत्रका टावर पनि प्रभावित",
+      "he": "https://bgp.he.net/AS38565",
+      "group": "domestic"
+    }
+  ]
+}

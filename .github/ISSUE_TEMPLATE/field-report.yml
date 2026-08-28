@@ -1,0 +1,75 @@
+name: Field report
+description: Unofficial public note on connectivity in the Galchhi–Rasuwagadhi corridor
+title: "[field] "
+labels: ["field-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is **not** an NTC / Ncell / NTA ticket. Do not post personal phone numbers or photos of people without consent. Maintainers may copy verified facts into `src/data/` later — they are not merged automatically.
+  - type: dropdown
+    id: district
+    attributes:
+      label: District
+      options:
+        - Rasuwa (रसुवा)
+        - Nuwakot (नुवाकोट)
+        - Dhading (धादिङ)
+        - Chitwan (चितवन)
+        - Other / unknown
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: Place
+      description: Village, bazaar, repeater, or tower name if you know it.
+    validations:
+      required: true
+  - type: dropdown
+    id: tech
+    attributes:
+      label: What you observed
+      options:
+        - Mobile voice / SMS
+        - Mobile data
+        - Fiber / FTTH
+        - Microwave radio
+        - Satellite (including Starlink)
+        - Landline / PSTN
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Down
+        - Degraded / intermittent
+        - Restored / up
+        - Unknown
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When (NPT)
+      description: Date and approximate time in Nepal Time.
+      placeholder: 2026-08-28 14:00 NPT
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What you saw. No how-to for unlicensed satellite terminals.
+    validations:
+      required: true
+  - type: checkboxes
+    id: unofficial
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this is unofficial and is not NTC status.
+          required: true

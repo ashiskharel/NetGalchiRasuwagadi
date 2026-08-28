@@ -1,0 +1,62 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, SITE, isLang, type Lang } from "../../lib/config";
+import { t } from "../../lib/i18n";
+import asnsFile from "../../data/asns.json";
+import sourcesFile from "../../data/sources.json";
+import type { AsnRecord, SourceRecord } from "../../lib/types";
+import { formatNptDate } from "../../lib/status";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const asns = asnsFile.asns as AsnRecord[];
+const sources = sourcesFile.sources as SourceRecord[];
+---
+
+<Base lang={lang} title={messages.about.title} path="about">
+  <h1>{messages.about.title}</h1>
+  <p class="lead">{messages.about.lead}</p>
+
+  <h2>{messages.about.what}</h2>
+  <p>{messages.about.whatBody}</p>
+  <h2>{messages.about.whatNot}</h2>
+  <p>{messages.about.whatNotBody}</p>
+  <h2>{messages.about.method}</h2>
+  <p>{messages.about.methodBody}</p>
+  <h2>{messages.about.update}</h2>
+  <p>{messages.about.updateBody}</p>
+  <p>
+    <a href={`https://github.com/${SITE.repo}`}>{messages.footer.source}</a>
+  </p>
+
+  <h2>{messages.about.asns}</h2>
+  <ul class="list-plain">
+    {
+      asns.map((a) => (
+        <li>
+          <code>AS{a.asn}</code> {lang === "ne" ? a.name_ne : a.name_en} — {lang === "ne" ? a.role_ne : a.role_en}
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>{messages.about.sources}</h2>
+  <ul class="list-plain">
+    {
+      sources.map((s) => (
+        <li>
+          <a href={s.url}>{s.name}</a>: {lang === "ne" ? s.title_ne : s.title_en}
+          {" · "}
+          {formatNptDate(s.date, lang)}
+        </li>
+      ))
+    }
+  </ul>
+  <p class="note">{messages.about.credit}</p>
+</Base>

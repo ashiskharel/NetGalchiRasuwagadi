@@ -1,0 +1,31 @@
+---
+import { langPath } from "../lib/i18n";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Not found · Net Galchi–Rasuwagadhi</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #f4efe6;
+        max-width: 36rem;
+        margin: 4rem auto;
+        padding: 0 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Not found / भेटिएन</h1>
+    <p>
+      <a href={langPath("en", "", base)}>English status</a>
+      ·
+      <a href={langPath("ne", "", base)}>नेपाली अवस्था</a>
+    </p>
+  </body>
+</html>

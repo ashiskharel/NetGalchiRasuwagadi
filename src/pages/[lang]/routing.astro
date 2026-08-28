@@ -1,0 +1,113 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, SITE, isLang, type Lang } from "../../lib/config";
+import { t } from "../../lib/i18n";
+import asnsFile from "../../data/asns.json";
+import type { AsnRecord } from "../../lib/types";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const asns = asnsFile.asns as AsnRecord[];
+const ui = {
+  loading: messages.routing.loading,
+  error: messages.routing.error,
+  neighbours: messages.routing.neighbours,
+  upstream: messages.routing.upstream,
+  downstream: messages.routing.downstream,
+  pathsTitle: messages.routing.pathsTitle,
+  viaChina: messages.routing.viaChina,
+  viaIndia: messages.routing.viaIndia,
+  viaOther: messages.routing.viaOther,
+  peersSeeing: messages.routing.peersSeeing,
+  uniquePaths: messages.routing.uniquePaths,
+  updated: messages.routing.updated,
+  pathChipNote: messages.routing.pathChipNote,
+};
+---
+
+<Base lang={lang} title={messages.routing.title} path="routing">
+  <h1>{messages.routing.title}</h1>
+  <p class="lead">{messages.routing.lead}</p>
+
+  <div class="callout">
+    <strong>{messages.routing.caveatTitle}</strong>
+    <p style="margin: 0.35rem 0 0;">{messages.routing.caveat}</p>
+  </div>
+
+  <div
+    id="routing-panel"
+    data-sourceapp={SITE.sourceapp}
+    data-prefix={SITE.ripePrefix}
+    data-origin={SITE.ntcAsn}
+    data-north={asnsFile.northAsns.join(",")}
+    data-south={asnsFile.southAsns.join(",")}
+    data-ui={JSON.stringify(ui)}
+  >
+    <p class="note" data-role="status">{messages.routing.loading}</p>
+    <div data-role="neighbours"></div>
+    <div data-role="paths"></div>
+  </div>
+
+  <h2>{messages.routing.tools}</h2>
+  <ul class="list-plain">
+    <li><a href="https://bgp.he.net/AS23752">{messages.routing.heNtc}</a></li>
+    <li><a href="https://bgp.he.net/AS23764">{messages.routing.heCtg}</a></li>
+    <li><a href="https://lg.he.net/">{messages.routing.heLg}</a></li>
+    <li><a href={`https://stat.ripe.net/widget/looking-glass#w.resource=${SITE.ripePrefix}`}>{messages.routing.ripeLg}</a></li>
+    <li><a href="https://radar.cloudflare.com/routing/as23752">{messages.routing.radar}</a></li>
+    <li><a href="http://lg.ntc.net.np">{messages.routing.ntcLg}</a></li>
+    <li><a href="http://route-server.ntc.net.np">{messages.routing.ntcRs}</a></li>
+  </ul>
+
+  <h2>{messages.routing.asnTable}</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{messages.routing.asn}</th>
+          <th></th>
+          <th>{messages.routing.role}</th>
+          <th>{messages.routing.links}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          asns.map((a) => (
+            <tr>
+              <td>
+                <code>AS{a.asn}</code>
+              </td>
+              <td>{lang === "ne" ? a.name_ne : a.name_en}</td>
+              <td>{lang === "ne" ? a.role_ne : a.role_en}</td>
+              <td>
+                <a href={a.he}>HE.net</a>
+                {a.peeringdb && (
+                  <>
+                    {" · "}
+                    <a href={a.peeringdb}>PeeringDB</a>
+                  </>
+                )}
+                {a.radar && (
+                  <>
+                    {" · "}
+                    <a href={a.radar}>Radar</a>
+                  </>
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>
+
+<script>
+  import "../../scripts/routing.ts";
+</script>

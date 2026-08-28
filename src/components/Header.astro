@@ -1,0 +1,60 @@
+---
+import { t, langPath, switchLangPath } from "../lib/i18n";
+import type { Lang } from "../lib/config";
+
+interface Props {
+  lang: Lang;
+  path: string;
+}
+
+const { lang, path } = Astro.props;
+const messages = t(lang);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const here = Astro.url.pathname.replace(/\/$/, "") || "/";
+const other: Lang = lang === "en" ? "ne" : "en";
+const otherHref = switchLangPath(Astro.url.pathname, other, base);
+
+const links = [
+  { slug: "", label: messages.nav.status },
+  { slug: "corridor", label: messages.nav.corridor },
+  { slug: "routing", label: messages.nav.routing },
+  { slug: "bulletin", label: messages.nav.bulletin },
+  { slug: "reports", label: messages.nav.reports },
+  { slug: "about", label: messages.nav.about },
+];
+
+function isCurrent(slug: string): boolean {
+  const href = langPath(lang, slug, base);
+  if (slug === "") return here === href;
+  return here === href || here.startsWith(`${href}/`);
+}
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-row">
+      <a class="brand" href={langPath(lang, "", base)}>
+        {messages.meta.siteName}
+        <small>{messages.meta.tagline}</small>
+      </a>
+      <nav class="lang" aria-label={messages.nav.language}>
+        <a href={lang === "en" ? here : otherHref} lang="en" aria-current={lang === "en" ? "true" : undefined}>
+          {messages.nav.en}
+        </a>
+        <a href={lang === "ne" ? here : otherHref} lang="ne" aria-current={lang === "ne" ? "true" : undefined}>
+          {messages.nav.ne}
+        </a>
+      </nav>
+    </div>
+    <p class="disclaimer">{messages.meta.notOfficial}</p>
+    <nav class="nav" aria-label="primary">
+      {
+        links.map((link) => (
+          <a href={langPath(lang, link.slug, base)} aria-current={isCurrent(link.slug) ? "page" : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

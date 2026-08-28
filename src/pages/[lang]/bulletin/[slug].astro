@@ -1,0 +1,57 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { LANGS, isLang, type Lang } from "../../../lib/config";
+import { t, langPath } from "../../../lib/i18n";
+import { formatNptDate } from "../../../lib/status";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const all = await getCollection("bulletins");
+  return LANGS.flatMap((lang) =>
+    all
+      .filter((b) => b.data.lang === lang)
+      .map((b) => ({
+        params: { lang, slug: b.data.pair },
+        props: { id: b.id },
+      })),
+  );
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const all = await getCollection("bulletins");
+const { id } = Astro.props as { id: string };
+const post = all.find((b) => b.id === id);
+if (!post) throw new Error("missing bulletin");
+const { Content } = await render(post);
+---
+
+<Base lang={lang} title={post.data.title} path={`bulletin/${post.data.pair}`}>
+  <p>
+    <a href={langPath(lang, "bulletin", base)}>{messages.bulletin.back}</a>
+  </p>
+  <p class="kicker">
+    <time datetime={post.data.date.toISOString()}>{formatNptDate(post.data.date.toISOString(), lang)}</time>
+  </p>
+  <h1>{post.data.title}</h1>
+  <article class="card">
+    <Content />
+  </article>
+  {
+    post.data.sources.length > 0 && (
+      <section>
+        <h2>{messages.bulletin.sources}</h2>
+        <ul class="list-plain">
+          {post.data.sources.map((s) => (
+            <li>
+              <a href={s.url}>{s.name}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</Base>

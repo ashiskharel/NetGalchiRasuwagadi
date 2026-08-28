@@ -1,0 +1,124 @@
+{
+  "updated": "2026-08-27T18:00:00+05:45",
+  "incident": {
+    "id": "bhotekoshi-2026-08",
+    "started": "2026-08-26",
+    "title_en": "Bhotekoshi flood — Galchhi–Rasuwagadhi fiber cut, towers down in Rasuwa / Nuwakot / Dhading",
+    "title_ne": "भोटेकोशी बाढी — गल्छी–रसुवागढी फाइबर कट, रसुवा / नुवाकोट / धादिङमा टावर डाउन",
+    "summary_en": "A severe flood on 26 August 2026 damaged NTC towers and the Galchhi–Rasuwagadhi optical fiber. Fiber remains in service as far as Trishuli; microwave radio is carrying sites north of that. BGP still shows CTGNet (AS23764) as an NTC upstream — that is not the same as the domestic fiber being whole.",
+    "summary_ne": "२०८३ भदौ १० (२६ अगस्ट २०२६) को बाढीले नेपाल टेलिकमका टावर र गल्छी–रसुवागढी अप्टिकल फाइबर क्षतिग्रस्त पार्यो। फाइबर त्रिशूलीसम्म चालु छ; त्योभन्दा उत्तर माइक्रोवेभ रेडियो प्रयोग भइरहेको छ। BGP मा अझै CTGNet (AS23764) नेपाल टेलिकमको अपस्ट्रिम देखिन्छ — यो घरेलु फाइबर ठिकै छ भन्ने अर्थ होइन।"
+  },
+  "links": [
+    {
+      "id": "northern-transit-ctgnet",
+      "status": "degraded",
+      "title_en": "Northern China transit (CTGNet AS23764, Rasuwagadhi–Kerung)",
+      "title_ne": "उत्तरी चीन ट्रान्जिट (CTGNet AS23764, रसुवागढी–केरुङ)",
+      "note_en": "RIS still observes AS23764 as an NTC upstream and China-side AS paths for NTC prefixes (as of 28 Aug). Physical access along the Nepal fiber to the border is not intact. Treat BGP visibility and the fiber cut as two facts.",
+      "note_ne": "२८ अगस्टसम्म RIS ले AS23764 लाई नेपाल टेलिकमको अपस्ट्रिम र चीनतर्फका बाटो देखिरहेको छ। सीमासम्मको नेपाली फाइबर भने ठिक छैन। BGP देखिनु र फाइबर कट फरक तथ्य हुन्।",
+      "as_of": "2026-08-28",
+      "source": "ripe-ris"
+    },
+    {
+      "id": "galchhi-trishuli-fiber",
+      "status": "up",
+      "title_en": "Fiber Galchhi → Trishuli",
+      "title_ne": "फाइबर गल्छी → त्रिशूली",
+      "note_en": "NTC: fiber service operational up to Trishuli.",
+      "note_ne": "नेपाल टेलिकम: फाइबर सेवा त्रिशूलीसम्म चालु।",
+      "as_of": "2026-08-26",
+      "source": "ratopati-76383"
+    },
+    {
+      "id": "trishuli-rasuwagadhi-fiber",
+      "status": "down",
+      "title_en": "Fiber Trishuli → Rasuwagadhi (Galchhi corridor north of Trishuli)",
+      "title_ne": "फाइबर त्रिशूली → रसुवागढी (त्रिशूली उत्तरको गल्छी करिडोर)",
+      "note_en": "NTC spokesperson: problem on the fiber from Galchhi toward Rasuwagadhi; microwave radio used above Trishuli.",
+      "note_ne": "नेपाल टेलिकम प्रवक्ता: गल्छीबाट रसुवागढीतर्फको फाइबरमा समस्या; त्रिशूलीमाथि माइक्रोवेभ रेडियो।",
+      "as_of": "2026-08-26",
+      "source": "ratopati-76383"
+    },
+    {
+      "id": "microwave-north-trishuli",
+      "status": "degraded",
+      "title_en": "Microwave radio north of Trishuli",
+      "title_ne": "त्रिशूली उत्तरको माइक्रोवेभ रेडियो",
+      "note_en": "Documented restoration path while fiber is cut. Capacity and site power remain limited; helicopter lift of generators to Nyaupanechaur and Ramche.",
+      "note_ne": "फाइबर कटिएको बेलाको दस्तावेज गरिएको पुनर्स्थापना बाटो। क्षमता र साइट विद्युत् सीमित; न्यौपानेचौर र राम्चेमा जेनेरेटर हेलिकप्टरबाट।",
+      "as_of": "2026-08-27",
+      "source": "ratopati-76715"
+    },
+    {
+      "id": "tatopani-khasa",
+      "status": "unknown",
+      "title_en": "Secondary north: Tatopani–Khasa",
+      "title_ne": "दोस्रो उत्तर: तातोपानी–खासा",
+      "note_en": "Standing China terrestrial alternative. No flood-specific public status found for this incident.",
+      "note_ne": "स्थायी वैकल्पिक चीन स्थलीय नाका। यस घटनाका लागि सार्वजनिक अवस्था भेटिएन।",
+      "as_of": "2026-08-28",
+      "source": "nta-north-south"
+    },
+    {
+      "id": "southern-india-transits",
+      "status": "up",
+      "title_en": "Southern India transits (Airtel AS9498, Tata AS6453 / AS4755)",
+      "title_ne": "दक्षिणी भारत ट्रान्जिट (एयरटेल AS9498, टाटा AS6453 / AS4755)",
+      "note_en": "No public report that India gateways failed in this flood. National internet largely depends on these paths.",
+      "note_ne": "यो बाढीमा भारत गेटवे बिग्रिएको सार्वजनिक रिपोर्ट छैन। राष्ट्रिय इन्टरनेट मुख्यतः यिनै बाटोमा निर्भर छ।",
+      "as_of": "2026-08-28",
+      "source": "ripe-ris"
+    },
+    {
+      "id": "starlink-backup",
+      "status": "unlicensed",
+      "title_en": "Starlink / satellite backup",
+      "title_ne": "स्टारलिंक / उपग्रह ब्याकअप",
+      "note_en": "Starlink is not licensed in Nepal (company still seeking approval as of June 2026; NTA has warned against unauthorised terminals). Not an official restoration path.",
+      "note_ne": "नेपालमा स्टारलिंक अनुमतिप्राप्त छैन (२०२६ जुनसम्म कम्पनी स्वीकृति खोज्दै; एनटीएले अनधिकृत टर्मिनलबारे चेतावनी दिएको छ)। आधिकारिक पुनर्स्थापना बाटो होइन।",
+      "as_of": "2026-06-03",
+      "source": "nepalviews-starlink"
+    }
+  ],
+  "districts": [
+    {
+      "id": "rasuwa",
+      "name_en": "Rasuwa",
+      "name_ne": "रसुवा",
+      "affected": 32,
+      "remaining": 13,
+      "as_of": "2026-08-27",
+      "source": "ratopati-76715"
+    },
+    {
+      "id": "nuwakot",
+      "name_en": "Nuwakot",
+      "name_ne": "नुवाकोट",
+      "affected": 79,
+      "remaining": 31,
+      "as_of": "2026-08-27",
+      "source": "ratopati-76715"
+    },
+    {
+      "id": "dhading",
+      "name_en": "Dhading",
+      "name_ne": "धादिङ",
+      "affected": 36,
+      "remaining": 13,
+      "as_of": "2026-08-27",
+      "source": "ratopati-76715"
+    },
+    {
+      "id": "chitwan",
+      "name_en": "Chitwan",
+      "name_ne": "चितवन",
+      "affected": 5,
+      "remaining": 3,
+      "as_of": "2026-08-27",
+      "source": "ratopati-76715"
+    }
+  ],
+  "peak_sites_affected": 152,
+  "peak_note_en": "NTC: 152 sites affected at peak; 60 still down on 27 Aug.",
+  "peak_note_ne": "नेपाल टेलिकम: चरममा १५२ साइट प्रभावित; २७ अगस्टमा ६० अझै बन्द।"
+}

@@ -1,0 +1,43 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, SITE, isLang, type Lang } from "../../lib/config";
+import { t } from "../../lib/i18n";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const newIssue = `https://github.com/${SITE.repo}/issues/new?template=field-report.yml`;
+const issuesUrl = `https://github.com/${SITE.repo}/issues?q=is%3Aissue+label%3A${SITE.githubIssuesLabel}`;
+---
+
+<Base lang={lang} title={messages.reports.title} path="reports">
+  <h1>{messages.reports.title}</h1>
+  <p class="lead">{messages.reports.lead}</p>
+  <div class="callout">
+    <p style="margin: 0;">{messages.reports.disclaimer}</p>
+  </div>
+  <div class="cta-row">
+    <a class="btn" href={newIssue}>{messages.reports.submit}</a>
+    <a class="btn secondary" href={issuesUrl}>{messages.reports.openRepo}</a>
+  </div>
+  <div
+    id="field-reports"
+    data-repo={SITE.repo}
+    data-label={SITE.githubIssuesLabel}
+    data-empty={messages.reports.empty}
+    data-error={messages.reports.error}
+    data-loading={messages.reports.loading}
+    data-updated={messages.reports.updated}
+  >
+    <p class="note">{messages.reports.loading}</p>
+  </div>
+</Base>
+
+<script>
+  import "../../scripts/reports.ts";
+</script>

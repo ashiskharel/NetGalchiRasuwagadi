@@ -1,0 +1,127 @@
+---
+import Base from "../../layouts/Base.astro";
+import StatusBadge from "../../components/StatusBadge.astro";
+import { LANGS, isLang, type Lang } from "../../lib/config";
+import { t } from "../../lib/i18n";
+import { formatNptDate } from "../../lib/status";
+import { localized, localizedName, localizedNote, sourceById } from "../../lib/lookup";
+import corridor from "../../data/corridor.json";
+import sitesFile from "../../data/sites.json";
+import snapshot from "../../data/snapshot.json";
+import type { Tech } from "../../lib/types";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const sites = [...sitesFile.sites].sort((a, b) => a.name_en.localeCompare(b.name_en));
+const districtName = Object.fromEntries(snapshot.districts.map((d) => [d.id, localizedName(d, lang)]));
+
+function techLabel(tech: string): string {
+  const key = tech as Tech;
+  return messages.corridor.technology[key] ?? tech;
+}
+---
+
+<Base lang={lang} title={messages.corridor.title} path="corridor">
+  <h1>{messages.corridor.title}</h1>
+  <p class="lead">{messages.corridor.lead}</p>
+
+  <h2>{messages.corridor.mapTitle}</h2>
+  <p class="note">{messages.corridor.mapHint}</p>
+  <div id="corridor-map" class="map" data-lang={lang}></div>
+  <p class="note">
+    <span class="badge up">{messages.corridor.legendFiber}</span>
+    <span class="badge degraded">{messages.corridor.legendMicrowave}</span>
+    <span class="badge unknown">{messages.corridor.legendBorder}</span>
+    <span class="badge unknown">{messages.corridor.legendSouth}</span>
+  </p>
+
+  <h2>{messages.corridor.segments}</h2>
+  <div class="grid chips">
+    {
+      corridor.segments.map((seg) => {
+        const src = sourceById(seg.source);
+        return (
+          <article class:list={["card", seg.status]}>
+            <StatusBadge status={seg.status} messages={messages} />
+            <p class="asof">{techLabel(seg.tech)}</p>
+            <h3>{localized(seg, lang)}</h3>
+            <p class="note">{localizedNote(seg, lang)}</p>
+            <p class="asof">
+              {messages.corridor.asOf} {formatNptDate(seg.as_of, lang)}
+              {src && (
+                <>
+                  {" · "}
+                  <a href={src.url}>{src.name}</a>
+                </>
+              )}
+            </p>
+          </article>
+        );
+      })
+    }
+  </div>
+
+  <h2>{messages.corridor.sites}</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>{messages.corridor.sites}</th>
+          <th>{messages.corridor.district}</th>
+          <th>{messages.corridor.operator}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          sites.map((site) => {
+            const src = sourceById(site.source);
+            const note = localizedNote(site, lang);
+            return (
+              <tr>
+                <td>
+                  <StatusBadge status={site.status} messages={messages} />
+                </td>
+                <td>
+                  <strong>{localizedName(site, lang)}</strong>
+                  <div class="asof">{techLabel(site.tech)}</div>
+                  {note && <div class="note">{note}</div>}
+                  {site.lat == null && <div class="asof">{messages.corridor.noCoord}</div>}
+                </td>
+                <td>{districtName[site.district] ?? site.district}</td>
+                <td>{site.operator}</td>
+                <td class="asof">
+                  {formatNptDate(site.as_of, lang)}
+                  {src && (
+                    <>
+                      <br />
+                      <a href={src.url}>{src.name}</a>
+                    </>
+                  )}
+                </td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  import "../../scripts/corridor-map.ts";
+</script>
