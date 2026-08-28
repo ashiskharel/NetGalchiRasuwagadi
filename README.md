@@ -27,7 +27,10 @@ Field reports arrive as GitHub Issues with the `field-report` label (create that
 ```bash
 npm install
 npm run dev
+npm run draft    # RIPEstat + news RSS → drafts/ (does not change chips)
 ```
+
+The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT. Apply chips yourself from a named source — the script will not edit `snapshot.json`. See `drafts/README.md`.
 
 Production URL uses the GitHub Pages base path `/NetGalchiRasuwagadi`. Enable **Pages → GitHub Actions** on the repo after the first push to `main`.
 
