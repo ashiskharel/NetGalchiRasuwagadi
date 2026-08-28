@@ -1,4 +1,4 @@
-# Restoration draft — 2026-08-28T15:34 NPT
+# Restoration draft — 2026-08-28T15:59 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -12,7 +12,7 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS139022, AS142008, AS14789, AS45353, AS58456
 - Path observations: north 134 · south 232 · other 0
-- Latest path confirm: 2026-08-28T09:49:50.740000 UTC
+- Latest path confirm: 2026-08-28T10:14:07.870000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -43,11 +43,11 @@ Distinct AS paths (prepending stripped, top 16):
 - [Connected but Not Equal: Nepal’s Internet Boom Still Leaves Millions Behind - NepalNews](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSktkRmhSWkxMbGxNMWhGdFNYV3ZaNWQ0R29YYUNwNng3MzZ3dHFVQk05OE5LdDltdURDaWZYNFVLSnBkSk9iY0lPR2V6bWw2ZGo1MUZPendFc255Nnh6bHkzdGs2S0tudFpOVDRmdGlQT1NqNzBqb0M3TUlxS2N1dUVqR3E3Ni1yNGFic3Z1cTJneV93c1dqU3AwM2xmWFpDUTVESVNVUFdIUVlBSTJLZzN5cUIyNFdtYnNoOWxFYzFibTA?oc=5) — Tue, 16 Jun 2026 07:00:00 GMT
 - [Nepal opens internet link to China after years of depending on India - South China Morning Post](https://news.google.com/rss/articles/CBMivgFBVV95cUxON0p4bGpIWlk0N0F1eTctZXIxTlJfa2UySC1CTnpuUDJXd2xHVDNkaVR4RW1nanF2V212eE9sUDNmdW9yT0gxanFEbkh5cXFlZ1R2UHVVek54cEF1cjJrbzlzQzNoaVB0NUIzYU1JbnFGNjRMd2xFN2ZSaTRrbEJXZ3FCZzJibGtzZWloV2pWdUVYU1VLeVdnRjhwaWQtT2JMc2ZQckFFMzQ2Ykd4MkpyRDdCdV9aVXZfSlZhUjlB0gG-AUFVX3lxTFBKUTZsRVBNYU9takJXcEhaM1BHczhPaUliTy03VnNnelJRTVo2dnMwWHItSjZVU2tzZFc5ZzJURG5EblZ6MFludU1lZ3lmSkR1LTdESGg3bEVXbHFZQzdUUDVkaW9OWkhzUFk3eXo3Wm5wbWIybnpkdEZRSXVnMzBpZ2NpX1dLSkEwcXN0THFCUDF4dXZUTUlYQzdtVHUwSDdFY3dqNTZWTU9hZExFQ2JNOHFQbFNrM3ZfY2dTUHc?oc=5) — Fri, 12 Jan 2018 08:00:00 GMT
 - [Nepal Telecom, China Telecom Global sign deal for Internet bandwidth - MediaNama](https://news.google.com/rss/articles/CBMicEFVX3lxTFBDQkVzbVBSa3BfQjloLUoyTWl1REN5dU1jZzYwWk85NjUxMFo3ekRFY1h1emM4NUJTOGdZVk9XNzhlOFNkazFuUE5kNWpyUENiY29VYThndUlzbTNjaHVTRUszOVJ1YldOZnZtNlZzWGo?oc=5) — Fri, 09 Dec 2016 08:00:00 GMT
-- [NTC, Ncell provide free service - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE9UNFMwSTBxb3FjM3RfX21HMXVBbjRVWmxCNnpYaXpPaDNLVWVKaWJoTEZKbm9KOFZSTFFHTl9fREhCbS01c3hfX3prTElpcjBx?oc=5) — Thu, 27 Aug 2026 02:13:23 GMT
 - [Nepal ends India’s internet monopoly with Chinese link - The Kathmandu Post](https://news.google.com/rss/articles/CBMinAFBVV95cUxQbEFMY0VqSU1nM3JuT1BtODFkZjk2SkFxemxoSUcxZ1djOExraF94X19Xb1FHb0g0MW5zU2lzMVl2ZWFzNko3ZHZNeGVKUGlGSU53MnZzM2QxUEV6UFF1UXc0dXE5al9vZkxpakc4T3hHdU9SQzdmcFRzOVBGZjJ3bU90R0VmRE5XS2FCem56dWR1amx3RWtZSjJhTmw?oc=5) — Sat, 13 Jan 2018 08:00:00 GMT
-- [NTA, NTC agree to extend optical fiber installation - myRepublica](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc3NsbzN1UGNfeVd4YTJpQVFtV3lYRWRpckZqY01EeWtkWnBHNDc0X0dua0NMdDNVTUktYkt0UjhmUUtoQ3dtZXZoRnBQWnRpVjlXTHVuTUdYMy1GZDMxMFowTzYwMzhJZGFKS2wzTl9pclRDNmZDS3BQNWlMTWs0QTRXN1pZeXpDeU1fbmVtYmY4eldRMWJRdHBhM0Eya1JjRzRDZHhqejU?oc=5) — Fri, 15 Aug 2025 07:00:00 GMT
+- [NTC, Ncell provide free service - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE9UNFMwSTBxb3FjM3RfX21HMXVBbjRVWmxCNnpYaXpPaDNLVWVKaWJoTEZKbm9KOFZSTFFHTl9fREhCbS01c3hfX3prTElpcjBx?oc=5) — Thu, 27 Aug 2026 02:13:23 GMT
 - [Economic Digest: Nepal’s Business News in a Snap - Khabarhub](https://news.google.com/rss/articles/CBMiWEFVX3lxTFB0c1NvTXdIY3c4YnA1bGFpbldjeER6TnRNTUliMkZTS21HUFZ6RUdzRFVrWVlLa04yRnhvdXFiVFV6UGR6UXRadUduaGhCQjhvYjlmTU9SLTU?oc=5) — Fri, 11 Jul 2025 07:00:00 GMT
 - [China breaks India’s internet monopoly in Nepal - The Hindu](https://news.google.com/rss/articles/CBMirwFBVV95cUxNVFNRU1BWZ2pCVElTQXFKQkRCd0Z5WTNjV2JkQWdWSmhPSFFNQUF2SW80SmtzV0p2azVpS05tUDViZF9XOFJsZFA3Tnl3MWtveGNra3FCaUozRjhWeFFHTm9tUENxSFoxYmctcE5kRktSc3dpLXJpUjgyUXRZaUFkT0xGUmZaeHhWSXB5TEtubC00MVJnZkx6TjNDRGlhaTRONVF3RUJSbXQ1bm04ZmxZ0gG2AUFVX3lxTE13OUJMbGJOY004NmhKTlJEWDdiU25yRlhuLXg3VjRtU29ibFFPbnQ2YUZaSWtKYUM2RFVYbE5IVEVfYlByQk5sSW1BSmt6akxYaTBYWndWeU9VNk5qeEc0RzEzcEx2UVpPY2NnOFNidnJ5cjVhMi1XcngyMDhzb0NLY2V0eV8xNjdVZTZUUzlNM1hHUnVaNDFQcHhneVVYUmIyMVFuWFRDVkdXWGRLOUJIREJzR0dB?oc=5) — Fri, 12 Jan 2018 08:00:00 GMT
+- [Optical fiber backbone project: fiber laid around 1,600 kilometers across country - NepalNews](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPazFhNlJnTlNWNS1oYUx3SFRhZGpCQ3JhRXd5MVpjTGVOeTYyLV9KYjh6cTk0QVFTUHdBd0Iya0hFaTBpNmNqWTBYajJLOWRmQUFtZXpxYWJBNU5YcUQ3VUF3SGlRN3llSk1FVGtLYzBhQmY4SS1NZUdSZTVGbmVwU2hsWm9PdWdjY3RzdGF1QVJSSmJTcWE2SEFhVzhSR0lRYmJlMll2UlVKSk5FZTFPRG14d2RzSHlsbjEw?oc=5) — Tue, 03 Aug 2021 07:00:00 GMT
 
 ### gnews-ne (ne)
 No items.
