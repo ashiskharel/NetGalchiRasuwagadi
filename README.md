@@ -1,6 +1,6 @@
 # Net Galchi–Rasuwagadhi
 
-Public bilingual (English / Nepali) bulletin board for **Nepal’s northern internet and telephony routing**: the Galchhi → Rasuwagadhi fiber, China Telecom Global (CTGNet AS23764) at Rasuwagadhi–Kerung, microwave radio restoration, satellite notes, and live BGP paths.
+Nepal network disaster recovery — public bilingual (English / Nepali) bulletin board for **Nepal’s northern internet and telephony routing**: the Galchhi → Rasuwagadhi fiber, China Telecom Global (CTGNet AS23764) at Rasuwagadhi–Kerung, microwave radio restoration, satellite notes, and live BGP paths.
 
 Live: **https://ashiskharel.github.io/NetGalchiRasuwagadi/**
 
