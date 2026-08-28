@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-08-28T14:45",
-  "fetched_utc": "2026-08-28T09:00:10.763Z",
+  "fetched_npt": "2026-08-28T15:34",
+  "fetched_utc": "2026-08-28T09:49:53.749Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -210,7 +210,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-08-28T09:00:06.600000"
+    "latestPathTime": "2026-08-28T09:49:50.740000"
   },
   "news": [
     {

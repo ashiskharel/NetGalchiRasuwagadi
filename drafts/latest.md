@@ -1,4 +1,4 @@
-# Restoration draft — 2026-08-28T14:45 NPT
+# Restoration draft — 2026-08-28T15:34 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -12,7 +12,7 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS139022, AS142008, AS14789, AS45353, AS58456
 - Path observations: north 134 · south 232 · other 0
-- Latest path confirm: 2026-08-28T09:00:06.600000 UTC
+- Latest path confirm: 2026-08-28T09:49:50.740000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
