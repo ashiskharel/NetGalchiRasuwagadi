@@ -165,6 +165,10 @@ async function loadTles(base: string): Promise<{ tle: Tle; orbit: string; slotEa
       orbit: sat.orbit,
       slotEast: sat.slotEast,
       name: sat.name,
+      nation: sat.nation,
+      group: sat.group,
+      feed: sat.feed,
+      feedLabel: sat.feedLabel,
     });
   }
   if (packed.some((p) => p.tle.TLE_LINE1)) return packed;
@@ -373,6 +377,7 @@ async function initLive() {
     az: string;
     leo: string;
     geo: string;
+    openFeed: string;
   };
   const base = mapEl?.dataset.base || "";
   const catalog = await loadTles(base);
@@ -394,6 +399,10 @@ async function initLive() {
       elevation: number;
       azimuth: number;
       orbit: string;
+      nation: string;
+      group: string;
+      feed?: string;
+      feedLabel?: string;
     }[] = [];
     for (const item of catalog) {
       let pos = item.tle.TLE_LINE1 ? propagate(item.tle, now, item.orbit) : null;
@@ -402,7 +411,13 @@ async function initLive() {
         pos = { name: item.name, ...g };
       }
       if (!pos || pos.elevation < MIN_EL) continue;
-      rows.push(pos);
+      rows.push({
+        ...pos,
+        nation: item.nation,
+        group: item.group,
+        feed: item.feed,
+        feedLabel: item.feedLabel,
+      });
     }
     rows.sort((a, b) => b.elevation - a.elevation);
     if (!rows.length) {
@@ -411,10 +426,23 @@ async function initLive() {
     }
     const leo = rows.filter((r) => r.orbit !== "geo");
     const geo = rows.filter((r) => r.orbit === "geo");
-    const card = (r: (typeof rows)[0]) =>
-      `<article class="card ${r.orbit === "geo" ? "unknown" : "up"}"><h3>${r.name}</h3>
+    const esc = (s: string) =>
+      String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/"/g, "&quot;");
+    const card = (r: (typeof rows)[0]) => {
+      const cls = r.orbit === "geo" ? "unknown" : "up";
+      const inner = `<h3>${esc(r.name)}</h3>
+        <p class="note">${esc(r.nation)}${r.group ? ` · ${esc(r.group)}` : ""}</p>
         <p class="note">${ui.elev} ${r.elevation.toFixed(0)}° · ${ui.az} ${r.azimuth.toFixed(0)}° · ${ui.altKm} ${r.alt.toFixed(0)}
-        <br />nadir ${r.lat.toFixed(1)}°, ${r.lng.toFixed(1)}°</p></article>`;
+        <br />nadir ${r.lat.toFixed(1)}°, ${r.lng.toFixed(1)}°</p>
+        ${r.feed ? `<p class="note"><strong>${esc(ui.openFeed)}</strong>${r.feedLabel ? ` — ${esc(r.feedLabel)}` : ""}</p>` : ""}`;
+      if (r.feed) {
+        return `<a class="card sat-card ${cls}" href="${esc(r.feed)}" target="_blank" rel="noopener noreferrer">${inner}</a>`;
+      }
+      return `<article class="card ${cls}">${inner}</article>`;
+    };
     list.innerHTML = `${leo.length ? `<h3>${ui.leo}</h3><div class="grid chips">${leo.map(card).join("")}</div>` : ""}
       ${geo.length ? `<h3>${ui.geo}</h3><div class="grid chips">${geo.map(card).join("")}</div>` : ""}`;
   };

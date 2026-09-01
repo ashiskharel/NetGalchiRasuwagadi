@@ -385,6 +385,17 @@ th {
   border-color: var(--crimson);
 }
 
+a.sat-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a.sat-card:hover,
+a.sat-card:focus-visible {
+  border-color: var(--crimson);
+}
+
 .sat-controls input[type="date"] {
   min-height: 44px;
   padding: 0.35rem 0.5rem;

@@ -9,19 +9,137 @@
   "minElevationDeg": 8,
   "imageryStart": "2026-08-25",
   "satellites": [
-    { "norad": 25544, "name": "ISS (ZARYA)", "orbit": "leo" },
-    { "norad": 39084, "name": "LANDSAT 8", "orbit": "leo" },
-    { "norad": 49260, "name": "LANDSAT 9", "orbit": "leo" },
-    { "norad": 25994, "name": "TERRA", "orbit": "leo" },
-    { "norad": 27424, "name": "AQUA", "orbit": "leo" },
-    { "norad": 37849, "name": "SUOMI NPP", "orbit": "leo" },
-    { "norad": 43013, "name": "NOAA 20", "orbit": "leo" },
-    { "norad": 54234, "name": "NOAA 21", "orbit": "leo" },
-    { "norad": 41105, "name": "ELEKTRO-L 2", "orbit": "geo", "slotEast": 77.8 },
-    { "norad": 43107, "name": "FY-4A", "orbit": "geo", "slotEast": 104.7 },
-    { "norad": 49017, "name": "FY-4B", "orbit": "geo", "slotEast": 133.0 },
-    { "norad": 41787, "name": "INSAT-3DR", "orbit": "geo", "slotEast": 74.0 },
-    { "norad": 41836, "name": "HIMAWARI-9", "orbit": "geo", "slotEast": 140.7 },
-    { "norad": 43268, "name": "GEO-KOMPSAT-2A", "orbit": "geo", "slotEast": 128.2 }
+    {
+      "norad": 25544,
+      "name": "ISS (ZARYA)",
+      "orbit": "leo",
+      "nation": "International",
+      "group": "NASA / Roscosmos / ESA / JAXA / CSA",
+      "feed": "https://www.youtube.com/watch?v=H999s0P1Er0",
+      "feedLabel": "ISS Earth viewing (NASA YouTube; dark on night side)"
+    },
+    {
+      "norad": 39084,
+      "name": "LANDSAT 8",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NASA / USGS",
+      "feed": "https://landsatlook.usgs.gov/explore?lat=28.11&lng=85.32&zoom=10",
+      "feedLabel": "USGS LandsatLook"
+    },
+    {
+      "norad": 49260,
+      "name": "LANDSAT 9",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NASA / USGS",
+      "feed": "https://landsatlook.usgs.gov/explore?lat=28.11&lng=85.32&zoom=10",
+      "feedLabel": "USGS LandsatLook"
+    },
+    {
+      "norad": 25994,
+      "name": "TERRA",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NASA",
+      "feed": "https://worldview.earthdata.nasa.gov/?v=84.85,27.72,85.72,28.52&l=MODIS_Terra_CorrectedReflectance_TrueColor,Coastlines_15m",
+      "feedLabel": "NASA Worldview (MODIS Terra)"
+    },
+    {
+      "norad": 27424,
+      "name": "AQUA",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NASA",
+      "feed": "https://worldview.earthdata.nasa.gov/?v=84.85,27.72,85.72,28.52&l=MODIS_Aqua_CorrectedReflectance_TrueColor,Coastlines_15m",
+      "feedLabel": "NASA Worldview (MODIS Aqua)"
+    },
+    {
+      "norad": 37849,
+      "name": "SUOMI NPP",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NASA / NOAA",
+      "feed": "https://worldview.earthdata.nasa.gov/?v=84.85,27.72,85.72,28.52&l=VIIRS_SNPP_CorrectedReflectance_TrueColor,Coastlines_15m",
+      "feedLabel": "NASA Worldview (VIIRS SNPP)"
+    },
+    {
+      "norad": 43013,
+      "name": "NOAA 20",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NOAA / NASA",
+      "feed": "https://worldview.earthdata.nasa.gov/?v=84.85,27.72,85.72,28.52&l=VIIRS_NOAA20_CorrectedReflectance_TrueColor,Coastlines_15m",
+      "feedLabel": "NASA Worldview (VIIRS NOAA-20)"
+    },
+    {
+      "norad": 54234,
+      "name": "NOAA 21",
+      "orbit": "leo",
+      "nation": "United States",
+      "group": "NOAA / NASA",
+      "feed": "https://worldview.earthdata.nasa.gov/?v=84.85,27.72,85.72,28.52&l=VIIRS_NOAA21_CorrectedReflectance_TrueColor,Coastlines_15m",
+      "feedLabel": "NASA Worldview (VIIRS NOAA-21)"
+    },
+    {
+      "norad": 41105,
+      "name": "ELEKTRO-L 2",
+      "orbit": "geo",
+      "slotEast": 77.8,
+      "nation": "Russia",
+      "group": "Roscosmos / SRC Planeta",
+      "feed": "https://planet.iitp.ru/english/index.htm",
+      "feedLabel": "SRC Planeta (Elektro-L)"
+    },
+    {
+      "norad": 43107,
+      "name": "FY-4A",
+      "orbit": "geo",
+      "slotEast": 104.7,
+      "nation": "China",
+      "group": "CMA / NSMC",
+      "feed": "https://www.nsmc.org.cn/nsmc/en/satellite/FY4A.html",
+      "feedLabel": "NSMC FY-4A"
+    },
+    {
+      "norad": 49017,
+      "name": "FY-4B",
+      "orbit": "geo",
+      "slotEast": 133.0,
+      "nation": "China",
+      "group": "CMA / NSMC",
+      "feed": "https://www.nsmc.org.cn/nsmc/en/satellite/FY4B.html",
+      "feedLabel": "NSMC FY-4B"
+    },
+    {
+      "norad": 41787,
+      "name": "INSAT-3DR",
+      "orbit": "geo",
+      "slotEast": 74.0,
+      "nation": "India",
+      "group": "ISRO / IMD",
+      "feed": "https://satellite.imd.gov.in/insat.htm",
+      "feedLabel": "IMD satellite"
+    },
+    {
+      "norad": 41836,
+      "name": "HIMAWARI-9",
+      "orbit": "geo",
+      "slotEast": 140.7,
+      "nation": "Japan",
+      "group": "JMA",
+      "feed": "https://rammb-slider.cira.colostate.edu/?sat=himawari&sec=full_disk",
+      "feedLabel": "RAMMB SLIDER (Himawari)"
+    },
+    {
+      "norad": 43268,
+      "name": "GEO-KOMPSAT-2A",
+      "orbit": "geo",
+      "slotEast": 128.2,
+      "nation": "South Korea",
+      "group": "KMA / NMSC",
+      "feed": "https://rammb-slider.cira.colostate.edu/?sat=geo-kompsat-2a&sec=full_disk",
+      "feedLabel": "RAMMB SLIDER (GK-2A)"
+    }
   ]
 }
