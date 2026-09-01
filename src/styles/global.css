@@ -327,6 +327,31 @@ th {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
+.sat-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: end;
+  margin: 0.6rem 0 0.85rem;
+}
+
+.sat-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.sat-controls input[type="date"] {
+  min-height: 44px;
+  padding: 0.35rem 0.5rem;
+  font: inherit;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--card);
+}
+
 .map {
   height: min(32rem, 70vh);
   min-height: 18rem;

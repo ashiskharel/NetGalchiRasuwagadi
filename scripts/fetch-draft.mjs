@@ -330,6 +330,26 @@ function toMarkdown(payload) {
   return lines.join("\n");
 }
 
+async function fetchTles() {
+  const craft = JSON.parse(await readFile(join(ROOT, "src/data/spacecraft.json"), "utf8"));
+  const out = [];
+  for (const sat of craft.satellites) {
+    try {
+      const rows = await getJson(`https://db.satnogs.org/api/tle/?norad_cat_id=${sat.norad}`, 15000);
+      const row = Array.isArray(rows) ? rows[0] : rows;
+      if (!row?.tle1 || !row?.tle2) continue;
+      out.push({
+        OBJECT_NAME: String(row.tle0 || sat.name).replace(/^0 /, ""),
+        TLE_LINE1: row.tle1,
+        TLE_LINE2: row.tle2,
+      });
+    } catch {
+      /* optional */
+    }
+  }
+  return out;
+}
+
 async function currentChips() {
   try {
     const raw = await readFile(join(ROOT, "src/data/snapshot.json"), "utf8");
@@ -343,11 +363,12 @@ async function currentChips() {
 async function main() {
   const fetched_npt = nptStamp();
   const day = nptDate();
-  const [ris, news, issues, chips] = await Promise.all([
+  const [ris, news, issues, chips, tles] = await Promise.all([
     fetchRis(),
     fetchNews(),
     fetchIssues(),
     currentChips(),
+    fetchTles(),
   ]);
   const payload = {
     fetched_npt,
@@ -367,7 +388,13 @@ async function main() {
   await writeFile(join(dir, "latest.md"), md);
   await writeFile(join(dir, `${day}.md`), md);
   await writeFile(join(dir, `${day}.json`), json);
-  console.log(`Wrote drafts/latest.md and drafts/${day}.md (${fetched_npt} NPT)`);
+  const tleDir = join(ROOT, "public/data");
+  await mkdir(tleDir, { recursive: true });
+  await writeFile(
+    join(tleDir, "tles.json"),
+    `${JSON.stringify({ fetched_utc: new Date().toISOString(), records: tles }, null, 2)}\n`,
+  );
+  console.log(`Wrote drafts/latest.md and drafts/${day}.md (${fetched_npt} NPT); ${tles.length} TLEs`);
 }
 
 main().catch((err) => {

@@ -32,6 +32,8 @@ npm run draft    # RIPEstat + news RSS → drafts/ (does not change chips)
 
 The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT. Apply chips yourself from a named source — the script will not edit `snapshot.json`. See `drafts/README.md`.
 
+**Satellites** (`/en/satellites`): NASA GIBS daily true-color of the valley from 25 Aug 2026, plus live ISS / Landsat / Terra / Aqua / NOAA positions. Not people or phones. Starlink overhead is not shown as a service.
+
 Production URL uses the GitHub Pages base path `/NetGalchiRasuwagadi`. Enable **Pages → GitHub Actions** on the repo after the first push to `main`.
 
 ## Routing data

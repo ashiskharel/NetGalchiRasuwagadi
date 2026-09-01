@@ -8,6 +8,7 @@
   "nav": {
     "status": "Status",
     "corridor": "Corridor",
+    "satellites": "Satellites",
     "routing": "Routing",
     "bulletin": "Bulletin",
     "reports": "Field reports",
@@ -70,6 +71,29 @@
       "repeater": "Repeater",
       "satellite": "Satellite"
     }
+  },
+  "satellites": {
+    "title": "Satellites over the flood corridor",
+    "lead": "Public NASA daily true-color of the Galchhi–Rasuwagadhi valley from the day before the flood, plus live positions of Earth-observing satellites. This is geography and spacecraft, not people.",
+    "caveatTitle": "What this is not",
+    "caveat": "VIIRS true-color is hundreds of metres per pixel and the monsoon is often cloudy — you will not see a fiber cut. We do not locate phones, vehicles, or people. Starlink overhead is not a licensed internet service in Nepal.",
+    "imageryTitle": "Daily NASA imagery (GIBS / VIIRS)",
+    "imageryHint": "Date starts at 25 August 2026 (day before the flood). Cloud is weather, not “no data.”",
+    "date": "Image date",
+    "prev": "Previous day",
+    "next": "Next day",
+    "play": "Play from flood",
+    "stop": "Stop",
+    "liveTitle": "Spacecraft now near the valley",
+    "liveHint": "ISS, Sentinel, Landsat, Terra/Aqua, NOAA-20/21. Positions from public TLEs (CelesTrak). Updated every few seconds.",
+    "loading": "Loading satellite catalog…",
+    "error": "Live catalog unavailable. Imagery still works. Try Worldview below.",
+    "noneNear": "None of the tracked Earth-observing satellites are over the box right now.",
+    "altKm": "alt. km",
+    "tools": "Full-resolution browsers",
+    "worldview": "NASA Worldview (time slider, this valley)",
+    "copernicus": "Copernicus Browser (Sentinel-2, 10 m)",
+    "credit": "Imagery: NASA EOSDIS GIBS. Orbits: CelesTrak TLEs. Map: OpenStreetMap."
   },
   "routing": {
     "title": "How traffic is being routed",

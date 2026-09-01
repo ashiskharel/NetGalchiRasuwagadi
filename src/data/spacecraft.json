@@ -1,0 +1,27 @@
+{
+  "aoi": {
+    "south": 27.78,
+    "west": 84.98,
+    "north": 28.45,
+    "east": 85.65
+  },
+  "imageryStart": "2026-08-25",
+  "catalogs": {
+    "satnogsTle": "https://db.satnogs.org/api/tle/?norad_cat_id=",
+    "celestrakGroups": [
+      "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json",
+      "https://celestrak.org/NORAD/elements/gp.php?GROUP=resource&FORMAT=json",
+      "https://celestrak.org/NORAD/elements/gp.php?GROUP=weather&FORMAT=json"
+    ]
+  },
+  "satellites": [
+    { "norad": 25544, "name": "ISS (ZARYA)" },
+    { "norad": 39084, "name": "LANDSAT 8" },
+    { "norad": 49260, "name": "LANDSAT 9" },
+    { "norad": 25994, "name": "TERRA" },
+    { "norad": 27424, "name": "AQUA" },
+    { "norad": 37849, "name": "SUOMI NPP" },
+    { "norad": 43013, "name": "NOAA 20" },
+    { "norad": 54234, "name": "NOAA 21" }
+  ]
+}
