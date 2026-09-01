@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-09-01T10:44",
-  "fetched_utc": "2026-09-01T04:59:08.647Z",
+  "fetched_npt": "2026-09-01T11:59",
+  "fetched_utc": "2026-09-01T06:14:49.317Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -211,7 +211,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-09-01T04:58:59.620000"
+    "latestPathTime": "2026-09-01T06:14:43.930000"
   },
   "news": [
     {
@@ -221,6 +221,21 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "Rasuwa flood: Death toll reaches 987, 3,916 still unaccounted for",
+          "link": "https://english.onlinekhabar.com/rasuwa-flood-death-toll-7.html",
+          "pubDate": "Tue, 01 Sep 2026 05:52:24 +0000"
+        },
+        {
+          "title": "Rasuwa customs point’s future uncertain after floods wipe out key infrastructure",
+          "link": "https://english.onlinekhabar.com/rasuwa-customs-points-future.html",
+          "pubDate": "Tue, 01 Sep 2026 05:37:58 +0000"
+        },
+        {
+          "title": "Rasuwa all-party meeting prioritises ward-level relief, infrastructure repair",
+          "link": "https://english.onlinekhabar.com/rasuwa-all-party-meeting-prioritises-ward-level-relief-infrastructure-repair.html",
+          "pubDate": "Tue, 01 Sep 2026 05:22:17 +0000"
+        },
         {
           "title": "Hydropower worker escapes flood, spends night alone in cave",
           "link": "https://english.onlinekhabar.com/hydropower-worker-flood.html",
@@ -250,36 +265,6 @@
           "title": "Nepal asks Loss and Damage Fund for emergency financing after Bhotekoshi floods",
           "link": "https://english.onlinekhabar.com/nepal-loss-and-damage-fund-flood.html",
           "pubDate": "Mon, 31 Aug 2026 14:56:05 +0000"
-        },
-        {
-          "title": "Nepal Police warns against eating fish, drinking water from Bhotekoshi and Trishuli",
-          "link": "https://english.onlinekhabar.com/dont-eat-fish-trishuli-river.html",
-          "pubDate": "Mon, 31 Aug 2026 14:33:12 +0000"
-        },
-        {
-          "title": "Bhotekoshi flood death toll reaches 939",
-          "link": "https://english.onlinekhabar.com/bhotekoshi-flood-death-toll-3.html",
-          "pubDate": "Mon, 31 Aug 2026 14:18:42 +0000"
-        },
-        {
-          "title": "Six days after Bhotekoshi flood, some victims still waiting for relief",
-          "link": "https://english.onlinekhabar.com/bhotekoshi-flood-relief-wait.html",
-          "pubDate": "Mon, 31 Aug 2026 14:15:55 +0000"
-        },
-        {
-          "title": "NEA plans to operate Sanjen hydropower plant in isolated mode to restore power in Rasuwa",
-          "link": "https://english.onlinekhabar.com/sanjen-hydropower-restore-power.html",
-          "pubDate": "Mon, 31 Aug 2026 13:31:26 +0000"
-        },
-        {
-          "title": "Bhotekoshi floods cause Rs 600 million in direct damage to bank branches",
-          "link": "https://english.onlinekhabar.com/bhotekoshi-floods-bank-damage.html",
-          "pubDate": "Mon, 31 Aug 2026 13:19:54 +0000"
-        },
-        {
-          "title": "Alternative road opens to flood-hit areas across Trishuli",
-          "link": "https://english.onlinekhabar.com/alternative-road-trishuli.html",
-          "pubDate": "Mon, 31 Aug 2026 13:13:10 +0000"
         }
       ]
     },
@@ -290,6 +275,16 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "भोटेकोशी बाढीपीडितका लागि कर्णाली सरकारले दुई करोड दिने",
+          "link": "https://www.onlinekhabar.com/2026/09/2008331/karnali-government-to-provide-rs-20-million-for-bhotekoshi-flood-victims",
+          "pubDate": "Tue, 01 Sep 2026 05:56:59 +0000"
+        },
+        {
+          "title": "रसुवा बाढी : मृत्यु हुनेको संख्या ९८७ पुग्यो, ३ हजार ९१६ अझै सम्पर्कविहीन",
+          "link": "https://www.onlinekhabar.com/2026/09/2008324/rasuwa-flood-death-toll-reaches-987-3916-still-unaccounted-for",
+          "pubDate": "Tue, 01 Sep 2026 05:43:46 +0000"
+        },
         {
           "title": "रसुवा बाढी : सास भेटिने आस मारेपछि कुशको शव बनाएर अन्त्येष्टि",
           "link": "https://www.onlinekhabar.com/2026/09/2008276/rasuwa-flood-kushs-body-being-cremated-after-losing-hope-of-finding-his-soul",
@@ -339,16 +334,6 @@
           "title": "रसुवागढी सुरुङभित्र कोही नभेटिएको सरकारकाे दाबी, ड्युटी गरिरहेका ३ जना खोइ ?",
           "link": "https://www.onlinekhabar.com/2026/08/2007767/the-government-claims-that-no-one-was-found-inside-the-rasuwagadhi-tunnel-but-where-are-the-3-people-on-duty",
           "pubDate": "Mon, 31 Aug 2026 16:55:27 +0000"
-        },
-        {
-          "title": "स्याफ्रुबेसी र टिमुरेका ३०० बाढीपीडितलाई काठमाडौंको येलो गुम्बामा राखियो",
-          "link": "https://www.onlinekhabar.com/2026/08/2007980/300-flood-victims-brought-from-syafrubeshi-and-timure-were-housed-at-the-yellow-monastery-in-kathmandu",
-          "pubDate": "Mon, 31 Aug 2026 16:53:57 +0000"
-        },
-        {
-          "title": "बाढीले तहसनहस बनाएको स्याफ्रुबेसी (फोटो/भिडियो)",
-          "link": "https://www.onlinekhabar.com/2026/08/2007850/floods-ravage-syafrubesi-photo-video",
-          "pubDate": "Mon, 31 Aug 2026 16:49:27 +0000"
         }
       ]
     },
@@ -360,6 +345,16 @@
       "ok": true,
       "items": [
         {
+          "title": "Nepal demands urgent climate funds after Bhotekoshi flood",
+          "link": "https://risingnepaldaily.com/news/85910",
+          "pubDate": "Tue, 01 Sep 2026 11:44:41 +0545"
+        },
+        {
+          "title": "Water level in Bhotekoshi and Trishuli rivers below alert mark, but precaution advised",
+          "link": "https://risingnepaldaily.com/news/85909",
+          "pubDate": "Tue, 01 Sep 2026 11:17:49 +0545"
+        },
+        {
           "title": "Dhanauji Rural Municipality pledges Rs 2.2 million aid to Bhotekoshi flood survivors",
           "link": "https://risingnepaldaily.com/news/85906",
           "pubDate": "Tue, 01 Sep 2026 10:28:05 +0545"
@@ -368,11 +363,6 @@
           "title": "All-party meeting at 2:00pm to discuss Bhotekoshi flood",
           "link": "https://risingnepaldaily.com/news/85904",
           "pubDate": "Tue, 01 Sep 2026 10:06:54 +0545"
-        },
-        {
-          "title": "Power supply restored in most parts of Rasuwa",
-          "link": "https://risingnepaldaily.com/news/85897",
-          "pubDate": "Tue, 01 Sep 2026 08:23:06 +0545"
         }
       ]
     },
@@ -383,6 +373,11 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "Nepal flood death toll rises to 987, nearly 4,000 still missing",
+          "link": "https://kathmandupost.com/national/2026/09/01/nepal-flood-death-toll-rises-to-987-nearly-4-000-still-missing",
+          "pubDate": ""
+        },
         {
           "title": "Nepal seeks urgent climate finance after Bhotekoshi flood",
           "link": "https://kathmandupost.com/national/2026/09/01/nepal-seeks-urgent-climate-finance-after-bhotekoshi-flood",
@@ -437,11 +432,6 @@
           "title": "More countries join Nepal flood rescue efforts",
           "link": "https://kathmandupost.com/national/2026/08/31/more-countries-join-nepal-flood-rescue-efforts",
           "pubDate": ""
-        },
-        {
-          "title": "Bhotekoshi flood survivors face new battle against illness",
-          "link": "https://kathmandupost.com/national/2026/08/31/bhotekoshi-flood-survivors-face-new-battle-against-illness",
-          "pubDate": ""
         }
       ]
     },
@@ -452,6 +442,41 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "बाढीपीडितका लागि मधेस सरकारले आज दोस्रो चरणको राहत पुर्‍याउँदै",
+          "link": "https://www.ratopati.com/story/589008/madhesh-government-delivering-second-phase-of-relief-to-flood-victims-today",
+          "pubDate": "Tue, 01 Sep 2026 06:12:56 +0000"
+        },
+        {
+          "title": "त्रिशूलीमा ३५ पुल बग्दा गल्छीको पुल कसरी जोगियो ?",
+          "link": "https://www.ratopati.com/story/589005/how-was-the-galchhi-bridge-saved-when-35-bridges-were-washed-away-in-trishuli",
+          "pubDate": "Tue, 01 Sep 2026 05:58:48 +0000"
+        },
+        {
+          "title": "रसुवा बाढी : आवश्यक सामग्री नहुँदा कोरियन टोली धुन्चे फर्कियो (तस्बिरहरू)",
+          "link": "https://www.ratopati.com/story/589003/rasuwa-flood-korean-team-returns-to-dhunche-due-to-lack-of-necessary-materials-photos",
+          "pubDate": "Tue, 01 Sep 2026 05:55:51 +0000"
+        },
+        {
+          "title": "रसुवाको जलविद्युत् आयोजनामा कार्यरत भारतीय नागरिक घर फर्किए, तीन जनाको खोजी जारी",
+          "link": "https://www.ratopati.com/story/589002/indian-nationals-working-at-rasuwa-hydropower-project-return-home-search-continues-for-three",
+          "pubDate": "Tue, 01 Sep 2026 05:53:58 +0000"
+        },
+        {
+          "title": "LIVE UPDATES : विनाशकारी बाढीको सातौँ दिन, कसरी हुँदैछ राहत र उद्धारको काम ?",
+          "link": "https://www.ratopati.com/story/588936/live-updates-details-of-the-missing-could-not-be-made-public-the-government-was-only-visible-in-the-sky-in-some-places",
+          "pubDate": "Tue, 01 Sep 2026 05:45:00 +0000"
+        },
+        {
+          "title": "मङ्सिरमा एकता महाधिवेशन हुनेमा झलनाथको शङ्का, विनाशकारी भोटेकोशी बाढीले बढायो अन्योल",
+          "link": "https://www.ratopati.com/story/588997/jhalanath-doubts-about-holding-unity-convention-in-mangsir-devastating-bhotekoshi-flood-adds-to-confusion",
+          "pubDate": "Tue, 01 Sep 2026 05:40:00 +0000"
+        },
+        {
+          "title": "रोजगारीले रसुवा पुर्‍यायो, भोटेकोशीले घर फर्कन दिएन",
+          "link": "https://www.ratopati.com/story/588993/employment-took-me-to-rasuwa-but-bhotekoshi-did-not-allow-me-to-return-home",
+          "pubDate": "Tue, 01 Sep 2026 05:15:00 +0000"
+        },
         {
           "title": "एयर इन्डिया विमान दुर्घटनामा खटिएको भारतीय फरेन्सिक टोली नै बाढीपीडितको पहिचानका लागि नेपालमा",
           "link": "https://www.ratopati.com/story/588988/indian-forensic-team-deployed-in-air-india-crash-arrives-in-nepal-to-identify-flood-victims",
@@ -476,41 +501,6 @@
           "title": "नुवाकोट र रसुवाका साना नदीमा आकस्मिक बाढीको उच्च जोखिम, त्रिशूलीमा सतर्कता अपनाउन आग्रह",
           "link": "https://www.ratopati.com/story/588979/high-risk-of-flash-floods-in-small-rivers-of-nuwakot-and-rasuwa-urges-vigilance-in-trishuli",
           "pubDate": "Tue, 01 Sep 2026 03:55:11 +0000"
-        },
-        {
-          "title": "५२ हजार बाढीपीडितलाई लक्षित गर्दै कतारद्वारा मानवीय सहायता हस्तान्तरण",
-          "link": "https://www.ratopati.com/story/588977/qatar-transfers-humanitarian-aid-targeting-52000-flood-victims",
-          "pubDate": "Tue, 01 Sep 2026 03:47:25 +0000"
-        },
-        {
-          "title": "नेपाल खानेपानी संस्थानका १९८ पदको विज्ञापन रद्द",
-          "link": "https://www.ratopati.com/story/588976/advertisement-for-198-posts-of-nepal-water-supply-corporation-cancelled",
-          "pubDate": "Tue, 01 Sep 2026 03:38:27 +0000"
-        },
-        {
-          "title": "भोटेकोशी बाढीबारे छलफल गर्न आज सर्वदलीय बैठक बस्दै",
-          "link": "https://www.ratopati.com/story/588975/all-party-meeting-to-be-held-today-to-discuss-bhotekoshi-floods",
-          "pubDate": "Tue, 01 Sep 2026 03:30:19 +0000"
-        },
-        {
-          "title": "बाढीप्रभावित महिला तथा किशोरीलाई ‘डिग्निटी कीट’ वितरण",
-          "link": "https://www.ratopati.com/story/588973/dignity-kit-distributed-to-flood-affected-women-and-girls",
-          "pubDate": "Tue, 01 Sep 2026 03:08:23 +0000"
-        },
-        {
-          "title": "बाढीपीडितको लागि शिवम् सिमेन्टद्वारा ११ हजार बोरा सिमेन्ट र शिवम् होल्डिङस्द्वारा २१ लाख सहयोग घोषणा",
-          "link": "https://www.ratopati.com/story/588970/shivam-cement-announces-11000-bags-of-cement-and-shivam-holdings-announces-21-million-rupees-assistance-for-flood-victims",
-          "pubDate": "Tue, 01 Sep 2026 02:44:25 +0000"
-        },
-        {
-          "title": "बाढी र पहिरोले अवरुद्ध छन् यी राजमार्ग",
-          "link": "https://www.ratopati.com/story/588965/these-highways-are-blocked-by-floods-and-landslides",
-          "pubDate": "Tue, 01 Sep 2026 01:56:59 +0000"
-        },
-        {
-          "title": "भोटेकोशी बाढीपीडितलाई धनौजी गाउँपालिकाद्वारा २२ लाख सहयोग",
-          "link": "https://www.ratopati.com/story/588964/dhanauji-rural-municipality-provides-rs-22-million-assistance-to-bhotekoshi-flood-victims",
-          "pubDate": "Tue, 01 Sep 2026 01:46:09 +0000"
         }
       ]
     },

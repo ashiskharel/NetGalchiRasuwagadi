@@ -1,4 +1,4 @@
-# Restoration draft — 2026-09-01T10:44 NPT
+# Restoration draft — 2026-09-01T11:59 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -12,7 +12,7 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS139022, AS142008, AS14789, AS45353, AS58456
 - Path observations: north 0 · south 353 · other 0
-- Latest path confirm: 2026-09-01T04:58:59.620000 UTC
+- Latest path confirm: 2026-09-01T06:14:43.930000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -36,20 +36,19 @@ Distinct AS paths (prepending stripped, top 16):
 ## News headlines (publisher RSS; Google News is optional and often blocked from Actions)
 
 ### onlinekhabar-en (en)
+- [Rasuwa flood: Death toll reaches 987, 3,916 still unaccounted for](https://english.onlinekhabar.com/rasuwa-flood-death-toll-7.html) — Tue, 01 Sep 2026 05:52:24 +0000
+- [Rasuwa customs point’s future uncertain after floods wipe out key infrastructure](https://english.onlinekhabar.com/rasuwa-customs-points-future.html) — Tue, 01 Sep 2026 05:37:58 +0000
+- [Rasuwa all-party meeting prioritises ward-level relief, infrastructure repair](https://english.onlinekhabar.com/rasuwa-all-party-meeting-prioritises-ward-level-relief-infrastructure-repair.html) — Tue, 01 Sep 2026 05:22:17 +0000
 - [Hydropower worker escapes flood, spends night alone in cave](https://english.onlinekhabar.com/hydropower-worker-flood.html) — Tue, 01 Sep 2026 04:56:50 +0000
 - [All-party meeting to discuss Bhotekoshi flood damage, rescue and rehabilitation](https://english.onlinekhabar.com/all-party-bhotekoshi-flood.html) — Tue, 01 Sep 2026 04:21:53 +0000
 - [Bodies continue to be found in India, toll reaches 13 as Bhotekoshi flood link suspected](https://english.onlinekhabar.com/bodies-india-bhotekoshi.html) — Tue, 01 Sep 2026 02:28:29 +0000
 - [198 still missing from Upper Trishuli-3B hydropower project after Bhotekoshi flood](https://english.onlinekhabar.com/upper-trishuli-3b-flood-missing.html) — Mon, 31 Aug 2026 15:16:20 +0000
 - [Nepal Army leads rescue efforts in flood-hit areas (Photos)](https://english.onlinekhabar.com/nepal-army-rescue-flood.html) — Mon, 31 Aug 2026 15:05:23 +0000
 - [Nepal asks Loss and Damage Fund for emergency financing after Bhotekoshi floods](https://english.onlinekhabar.com/nepal-loss-and-damage-fund-flood.html) — Mon, 31 Aug 2026 14:56:05 +0000
-- [Nepal Police warns against eating fish, drinking water from Bhotekoshi and Trishuli](https://english.onlinekhabar.com/dont-eat-fish-trishuli-river.html) — Mon, 31 Aug 2026 14:33:12 +0000
-- [Bhotekoshi flood death toll reaches 939](https://english.onlinekhabar.com/bhotekoshi-flood-death-toll-3.html) — Mon, 31 Aug 2026 14:18:42 +0000
-- [Six days after Bhotekoshi flood, some victims still waiting for relief](https://english.onlinekhabar.com/bhotekoshi-flood-relief-wait.html) — Mon, 31 Aug 2026 14:15:55 +0000
-- [NEA plans to operate Sanjen hydropower plant in isolated mode to restore power in Rasuwa](https://english.onlinekhabar.com/sanjen-hydropower-restore-power.html) — Mon, 31 Aug 2026 13:31:26 +0000
-- [Bhotekoshi floods cause Rs 600 million in direct damage to bank branches](https://english.onlinekhabar.com/bhotekoshi-floods-bank-damage.html) — Mon, 31 Aug 2026 13:19:54 +0000
-- [Alternative road opens to flood-hit areas across Trishuli](https://english.onlinekhabar.com/alternative-road-trishuli.html) — Mon, 31 Aug 2026 13:13:10 +0000
 
 ### onlinekhabar-ne (ne)
+- [भोटेकोशी बाढीपीडितका लागि कर्णाली सरकारले दुई करोड दिने](https://www.onlinekhabar.com/2026/09/2008331/karnali-government-to-provide-rs-20-million-for-bhotekoshi-flood-victims) — Tue, 01 Sep 2026 05:56:59 +0000
+- [रसुवा बाढी : मृत्यु हुनेको संख्या ९८७ पुग्यो, ३ हजार ९१६ अझै सम्पर्कविहीन](https://www.onlinekhabar.com/2026/09/2008324/rasuwa-flood-death-toll-reaches-987-3916-still-unaccounted-for) — Tue, 01 Sep 2026 05:43:46 +0000
 - [रसुवा बाढी : सास भेटिने आस मारेपछि कुशको शव बनाएर अन्त्येष्टि](https://www.onlinekhabar.com/2026/09/2008276/rasuwa-flood-kushs-body-being-cremated-after-losing-hope-of-finding-his-soul) — Tue, 01 Sep 2026 04:34:38 +0000
 - [त्रिशूली वारिपारि बिरानो भए बस्ती, चीन सिमानादेखि गल्छीसम्म जोड्ने सेतु छैन](https://www.onlinekhabar.com/2026/09/2008261/the-settlement-beyond-the-trishuli-border-is-deserted-there-is-no-bridge-connecting-the-chinese-border-to-galchhi) — Tue, 01 Sep 2026 04:22:27 +0000
 - [रसुवामा सर्वपक्षीय बैठक : वडास्तरबाटै राहत वितरण गर्ने, पूर्वाधार मर्मत र यातायात सञ्चालन गरिने](https://www.onlinekhabar.com/2026/09/2008273/all-party-meeting-in-rasuwa-relief-will-be-distributed-from-ward-level-infrastructure-will-be-repaired-and-transportation-will-be-operated) — Tue, 01 Sep 2026 04:11:18 +0000
@@ -60,15 +59,15 @@ Distinct AS paths (prepending stripped, top 16):
 - [रसुवा बाढी : सोमबार राति ८ बजेसम्म ९७४ शव फेला](https://www.onlinekhabar.com/2026/08/2008204/rasuwa-flood-974-bodies-found-as-of-8-pm-on-monday) — Mon, 31 Aug 2026 16:59:03 +0000
 - [जेनजी आन्दोलनमा जस्तै रसुवा बाढीमा पनि बीमा कम्पनीले अग्रिम भुक्तानी देलान् ?](https://www.onlinekhabar.com/2026/08/2007276/will-the-insurance-company-pay-in-advance-for-the-rasuwa-floods-as-it-did-in-the-genji-movement) — Mon, 31 Aug 2026 16:55:29 +0000
 - [रसुवागढी सुरुङभित्र कोही नभेटिएको सरकारकाे दाबी, ड्युटी गरिरहेका ३ जना खोइ ?](https://www.onlinekhabar.com/2026/08/2007767/the-government-claims-that-no-one-was-found-inside-the-rasuwagadhi-tunnel-but-where-are-the-3-people-on-duty) — Mon, 31 Aug 2026 16:55:27 +0000
-- [स्याफ्रुबेसी र टिमुरेका ३०० बाढीपीडितलाई काठमाडौंको येलो गुम्बामा राखियो](https://www.onlinekhabar.com/2026/08/2007980/300-flood-victims-brought-from-syafrubeshi-and-timure-were-housed-at-the-yellow-monastery-in-kathmandu) — Mon, 31 Aug 2026 16:53:57 +0000
-- [बाढीले तहसनहस बनाएको स्याफ्रुबेसी (फोटो/भिडियो)](https://www.onlinekhabar.com/2026/08/2007850/floods-ravage-syafrubesi-photo-video) — Mon, 31 Aug 2026 16:49:27 +0000
 
 ### rising-nepal (en)
+- [Nepal demands urgent climate funds after Bhotekoshi flood](https://risingnepaldaily.com/news/85910) — Tue, 01 Sep 2026 11:44:41 +0545
+- [Water level in Bhotekoshi and Trishuli rivers below alert mark, but precaution advised](https://risingnepaldaily.com/news/85909) — Tue, 01 Sep 2026 11:17:49 +0545
 - [Dhanauji Rural Municipality pledges Rs 2.2 million aid to Bhotekoshi flood survivors](https://risingnepaldaily.com/news/85906) — Tue, 01 Sep 2026 10:28:05 +0545
 - [All-party meeting at 2:00pm to discuss Bhotekoshi flood](https://risingnepaldaily.com/news/85904) — Tue, 01 Sep 2026 10:06:54 +0545
-- [Power supply restored in most parts of Rasuwa](https://risingnepaldaily.com/news/85897) — Tue, 01 Sep 2026 08:23:06 +0545
 
 ### kathmandu-post (en)
+- [Nepal flood death toll rises to 987, nearly 4,000 still missing](https://kathmandupost.com/national/2026/09/01/nepal-flood-death-toll-rises-to-987-nearly-4-000-still-missing) — 
 - [Nepal seeks urgent climate finance after Bhotekoshi flood](https://kathmandupost.com/national/2026/09/01/nepal-seeks-urgent-climate-finance-after-bhotekoshi-flood) — 
 - [Hundreds missing, billions in goods feared lost in Bhotekoshi flood](https://kathmandupost.com/national/2026/09/01/hundreds-missing-billions-in-goods-feared-lost-in-bhotekoshi-flood) — 
 - [This is not standard flooding; it is a Himalayan Tsunami: Nepal’s Foreign Minister Shisir Khanal](https://kathmandupost.com/interviews/2026/09/01/this-is-not-standard-flooding-it-is-a-himalayan-tsunami-nepal-s-foreign-minister-shishir-khanal) — 
@@ -80,21 +79,20 @@ Distinct AS paths (prepending stripped, top 16):
 - [Families seek answers in the final phone signals of relatives missing in floods](https://kathmandupost.com/national/2026/08/31/families-seek-answers-in-the-final-phone-signals-of-relatives-missing-in-floods) — 
 - [RSP chair Lamichhane briefs President Paudel on Bhotekoshi flood response](https://kathmandupost.com/national/2026/08/31/rsp-chair-lamichhane-briefs-president-paudel-on-bhotekoshi-flood-response) — 
 - [More countries join Nepal flood rescue efforts](https://kathmandupost.com/national/2026/08/31/more-countries-join-nepal-flood-rescue-efforts) — 
-- [Bhotekoshi flood survivors face new battle against illness](https://kathmandupost.com/national/2026/08/31/bhotekoshi-flood-survivors-face-new-battle-against-illness) — 
 
 ### ratopati (ne)
+- [बाढीपीडितका लागि मधेस सरकारले आज दोस्रो चरणको राहत पुर्‍याउँदै](https://www.ratopati.com/story/589008/madhesh-government-delivering-second-phase-of-relief-to-flood-victims-today) — Tue, 01 Sep 2026 06:12:56 +0000
+- [त्रिशूलीमा ३५ पुल बग्दा गल्छीको पुल कसरी जोगियो ?](https://www.ratopati.com/story/589005/how-was-the-galchhi-bridge-saved-when-35-bridges-were-washed-away-in-trishuli) — Tue, 01 Sep 2026 05:58:48 +0000
+- [रसुवा बाढी : आवश्यक सामग्री नहुँदा कोरियन टोली धुन्चे फर्कियो (तस्बिरहरू)](https://www.ratopati.com/story/589003/rasuwa-flood-korean-team-returns-to-dhunche-due-to-lack-of-necessary-materials-photos) — Tue, 01 Sep 2026 05:55:51 +0000
+- [रसुवाको जलविद्युत् आयोजनामा कार्यरत भारतीय नागरिक घर फर्किए, तीन जनाको खोजी जारी](https://www.ratopati.com/story/589002/indian-nationals-working-at-rasuwa-hydropower-project-return-home-search-continues-for-three) — Tue, 01 Sep 2026 05:53:58 +0000
+- [LIVE UPDATES : विनाशकारी बाढीको सातौँ दिन, कसरी हुँदैछ राहत र उद्धारको काम ?](https://www.ratopati.com/story/588936/live-updates-details-of-the-missing-could-not-be-made-public-the-government-was-only-visible-in-the-sky-in-some-places) — Tue, 01 Sep 2026 05:45:00 +0000
+- [मङ्सिरमा एकता महाधिवेशन हुनेमा झलनाथको शङ्का, विनाशकारी भोटेकोशी बाढीले बढायो अन्योल](https://www.ratopati.com/story/588997/jhalanath-doubts-about-holding-unity-convention-in-mangsir-devastating-bhotekoshi-flood-adds-to-confusion) — Tue, 01 Sep 2026 05:40:00 +0000
+- [रोजगारीले रसुवा पुर्‍यायो, भोटेकोशीले घर फर्कन दिएन](https://www.ratopati.com/story/588993/employment-took-me-to-rasuwa-but-bhotekoshi-did-not-allow-me-to-return-home) — Tue, 01 Sep 2026 05:15:00 +0000
 - [एयर इन्डिया विमान दुर्घटनामा खटिएको भारतीय फरेन्सिक टोली नै बाढीपीडितको पहिचानका लागि नेपालमा](https://www.ratopati.com/story/588988/indian-forensic-team-deployed-in-air-india-crash-arrives-in-nepal-to-identify-flood-victims) — Tue, 01 Sep 2026 04:40:21 +0000
 - [रसुवा बाढीका पीडित श्रीनाथ गणबाहिर उद्धारको प्रतीक्षामा (तस्बिरहरू)](https://www.ratopati.com/story/588984/rasuwa-flood-victims-await-rescue-outside-srinath-ganabahir-photos) — Tue, 01 Sep 2026 04:31:02 +0000
 - [रसुवाका बाढीपीडितलाई मधेस प्रदेश नेकपाका सांसद र कर्मचारीको १५ दिनको तलब सहयोग](https://www.ratopati.com/story/588983/madhes-province-ncp-mps-and-employees-donate-15-days-salary-to-flood-victims-in-rasuwa) — Tue, 01 Sep 2026 04:30:17 +0000
 - [बाढीप्रभावित बालबालिकाको फोटो-भिडियो सामाजिक सञ्जालमा पोस्ट नगर्न अपिल](https://www.ratopati.com/story/588982/appeal-not-to-post-photos-and-videos-of-flood-affected-children-on-social-media) — Tue, 01 Sep 2026 04:13:37 +0000
 - [नुवाकोट र रसुवाका साना नदीमा आकस्मिक बाढीको उच्च जोखिम, त्रिशूलीमा सतर्कता अपनाउन आग्रह](https://www.ratopati.com/story/588979/high-risk-of-flash-floods-in-small-rivers-of-nuwakot-and-rasuwa-urges-vigilance-in-trishuli) — Tue, 01 Sep 2026 03:55:11 +0000
-- [५२ हजार बाढीपीडितलाई लक्षित गर्दै कतारद्वारा मानवीय सहायता हस्तान्तरण](https://www.ratopati.com/story/588977/qatar-transfers-humanitarian-aid-targeting-52000-flood-victims) — Tue, 01 Sep 2026 03:47:25 +0000
-- [नेपाल खानेपानी संस्थानका १९८ पदको विज्ञापन रद्द](https://www.ratopati.com/story/588976/advertisement-for-198-posts-of-nepal-water-supply-corporation-cancelled) — Tue, 01 Sep 2026 03:38:27 +0000
-- [भोटेकोशी बाढीबारे छलफल गर्न आज सर्वदलीय बैठक बस्दै](https://www.ratopati.com/story/588975/all-party-meeting-to-be-held-today-to-discuss-bhotekoshi-floods) — Tue, 01 Sep 2026 03:30:19 +0000
-- [बाढीप्रभावित महिला तथा किशोरीलाई ‘डिग्निटी कीट’ वितरण](https://www.ratopati.com/story/588973/dignity-kit-distributed-to-flood-affected-women-and-girls) — Tue, 01 Sep 2026 03:08:23 +0000
-- [बाढीपीडितको लागि शिवम् सिमेन्टद्वारा ११ हजार बोरा सिमेन्ट र शिवम् होल्डिङस्द्वारा २१ लाख सहयोग घोषणा](https://www.ratopati.com/story/588970/shivam-cement-announces-11000-bags-of-cement-and-shivam-holdings-announces-21-million-rupees-assistance-for-flood-victims) — Tue, 01 Sep 2026 02:44:25 +0000
-- [बाढी र पहिरोले अवरुद्ध छन् यी राजमार्ग](https://www.ratopati.com/story/588965/these-highways-are-blocked-by-floods-and-landslides) — Tue, 01 Sep 2026 01:56:59 +0000
-- [भोटेकोशी बाढीपीडितलाई धनौजी गाउँपालिकाद्वारा २२ लाख सहयोग](https://www.ratopati.com/story/588964/dhanauji-rural-municipality-provides-rs-22-million-assistance-to-bhotekoshi-flood-victims) — Tue, 01 Sep 2026 01:46:09 +0000
 
 ### gnews-en (en)
 - [NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE56LUplMEYyaVNVNWxIZnR3RVc2a282WGZDcEpQejRhS1o2V0h2S0x5d0FGVVp5REl0Mzd1cmVzNFNCekt2ektsdGktb0xrZ1B3?oc=5) — Tue, 01 Sep 2026 01:17:41 GMT
