@@ -1,11 +1,6 @@
 {
-<<<<<<< Updated upstream
-  "fetched_npt": "2026-08-31T12:46",
-  "fetched_utc": "2026-08-31T07:02:17.558Z",
-=======
   "fetched_npt": "2026-09-01T10:44",
   "fetched_utc": "2026-09-01T04:59:08.647Z",
->>>>>>> Stashed changes
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -45,22 +40,26 @@
     }
   ],
   "ris": {
-    "ok": false,
-    "error": "neighbours: fetch failed",
+    "ok": true,
+    "error": null,
     "neighbours": {
-      "left": [],
-      "right": []
+      "left": [
+        23764,
+        4755,
+        6453,
+        9498
+      ],
+      "right": [
+        131341,
+        139022,
+        142008,
+        14789,
+        45353,
+        58456
+      ]
     },
     "paths": {
       "north": 0,
-<<<<<<< Updated upstream
-      "south": 0,
-      "other": 0,
-      "unique": []
-    },
-    "prefix": "202.70.64.0/19",
-    "latestPathTime": null
-=======
       "south": 353,
       "other": 0,
       "unique": [
@@ -213,26 +212,11 @@
     },
     "prefix": "202.70.64.0/19",
     "latestPathTime": "2026-09-01T04:58:59.620000"
->>>>>>> Stashed changes
   },
   "news": [
     {
       "id": "onlinekhabar-en",
       "lang": "en",
-<<<<<<< Updated upstream
-      "url": "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi+fiber&hl=en-NP&gl=NP&ceid=NP:en",
-      "ok": false,
-      "error": "503 https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi+fiber&hl=en-NP&gl=NP&ceid=NP:en",
-      "items": []
-    },
-    {
-      "id": "gnews-ne",
-      "lang": "ne",
-      "url": "https://news.google.com/rss/search?q=%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2+%E0%A4%9F%E0%A5%87%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%AE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%97%E0%A4%A2%E0%A5%80&hl=ne&gl=NP&ceid=NP:ne",
-      "ok": false,
-      "error": "503 https://news.google.com/rss/search?q=%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2+%E0%A4%9F%E0%A5%87%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%AE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%97%E0%A4%A2%E0%A5%80&hl=ne&gl=NP&ceid=NP:ne",
-      "items": []
-=======
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
@@ -598,12 +582,12 @@
           "pubDate": "Sun, 30 Aug 2026 15:04:09 GMT"
         }
       ]
->>>>>>> Stashed changes
     }
   ],
   "issues": [],
   "suggestions": [
-    "RIS fetch failed. Leave routing chips as they are.",
+    "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
+    "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
     "Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`."
   ]
 }
