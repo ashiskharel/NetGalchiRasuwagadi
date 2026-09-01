@@ -30,7 +30,7 @@ npm run dev
 npm run draft    # RIPEstat + news RSS → drafts/ (does not change chips)
 ```
 
-The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT. Apply chips yourself from a named source — the script will not edit `snapshot.json`. See `drafts/README.md`.
+The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT and upserts a paired **daily digest** under `src/content/bulletins/{en,ne}/YYYY-MM-DD-digest.md` (headlines on telecom/towers/fiber/internet plus RIPEstat). It does not edit `snapshot.json` chips. See `drafts/README.md`.
 
 **Satellites** (`/en/satellites`): NASA GIBS daily true-color of the valley from 25 Aug 2026, plus live ISS / Landsat / Terra / Aqua / NOAA positions. Not people or phones. Starlink overhead is not shown as a service.
 

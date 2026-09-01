@@ -31,6 +31,7 @@ const posts = (await getCollection("bulletins"))
           <article class="card">
             <p class="asof">
               <time datetime={post.data.date.toISOString()}>{formatNptDate(post.data.date.toISOString(), lang)}</time>
+              {post.data.generated ? ` · ${messages.bulletin.digest}` : ""}
             </p>
             <h2>
               <a href={langPath(lang, `bulletin/${post.data.pair}`, base)}>{post.data.title}</a>

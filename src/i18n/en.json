@@ -141,7 +141,8 @@
     "lead": "Curated, cited updates. These are not press releases from this site — they summarise public NTC, news, and routing observations.",
     "sources": "Sources",
     "back": "All bulletins",
-    "empty": "No bulletins yet."
+    "empty": "No bulletins yet.",
+    "digest": "Daily digest"
   },
   "reports": {
     "title": "Field reports",

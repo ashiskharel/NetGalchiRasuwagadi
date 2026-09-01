@@ -8,6 +8,7 @@ const bulletins = defineCollection({
     date: z.coerce.date(),
     lang: z.enum(["en", "ne"]),
     pair: z.string(),
+    generated: z.boolean().optional(),
     sources: z
       .array(
         z.object({

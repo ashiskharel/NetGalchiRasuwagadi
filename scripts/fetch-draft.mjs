@@ -37,6 +37,18 @@ const NEWS_FEEDS = [
 const TOPIC =
   /rasuwa|rasuwagadhi|galchh|bhotekoshi|bhote kosi|telecom|ntc|ncell|fiber|fibre|microwave|flood|बाढी|टेलिकम|रसुवा|रसुवागढी|गल्छी|फाइबर|माइक्रोवेभ/i;
 
+const COMMS =
+  /telecom|ntc\b|ncell|fiber|fibre|microwave|tower|bts|internet|network|routing|optical|outage|restore|connectivity|communication|starlink|satellite|bgp|bandwidth|doorsanchar|टेलिकम|फाइबर|माइक्रोवेभ|टावर|इन्टरनेट|सञ्जाल|संचार|पुनर्स्थापना|नेटवर्क/i;
+
+const FEED_LABEL = {
+  "onlinekhabar-en": "OnlineKhabar",
+  "onlinekhabar-ne": "OnlineKhabar",
+  "rising-nepal": "The Rising Nepal",
+  "kathmandu-post": "The Kathmandu Post",
+  ratopati: "Ratopati",
+  "gnews-en": "Google News",
+};
+
 function nptStamp(d = new Date()) {
   return new Intl.DateTimeFormat("en-GB", {
     timeZone: "Asia/Kathmandu",
@@ -389,6 +401,127 @@ async function fetchTles() {
   return out;
 }
 
+function yamlStr(s) {
+  return `"${String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\n/g, " ")}"`;
+}
+
+function isHttpUrl(s) {
+  try {
+    const u = new URL(s);
+    return u.protocol === "http:" || u.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function commsItems(news) {
+  const seen = new Set();
+  const items = [];
+  for (const feed of news) {
+    for (const it of feed.items || []) {
+      const title = (it.title || "").trim();
+      const link = (it.link || "").trim();
+      if (!title || !isHttpUrl(link)) continue;
+      if (!COMMS.test(`${title} ${link}`)) continue;
+      const key = title.toLowerCase().replace(/\s+/g, " ");
+      if (seen.has(key) || seen.has(link)) continue;
+      seen.add(key);
+      seen.add(link);
+      items.push({
+        title,
+        link,
+        pubDate: it.pubDate || "",
+        lang: feed.lang,
+        source: FEED_LABEL[feed.id] || feed.id,
+      });
+    }
+  }
+  return items.slice(0, 12);
+}
+
+function writeDigestMarkdown({ day, lang, items, ris }) {
+  const pair = `${day}-digest`;
+  const left = ris.neighbours?.left || [];
+  const north = left.includes(23764) || (ris.paths?.north || 0) > 0;
+  const south = (ris.paths?.south || 0) > 0;
+  const sources = items.map((it) => `  - name: ${yamlStr(it.source)}\n    url: ${yamlStr(it.link)}`).join("\n");
+  const risLineEn = ris.ok
+    ? north
+      ? `RIPEstat still lists **CTGNet AS23764** as an NTC upstream (${ris.paths.north} China-side path observations, ${ris.paths.south} India-side). That is not a fiber repair.`
+      : south
+        ? `RIPEstat shows NTC prefixes mainly **via India** (${ris.paths.south} observations). CTGNet was not in this dump — that does not prove the Kerung session is down.`
+        : "RIPEstat returned neighbours but no classified paths in this dump."
+    : "RIPEstat fetch failed this run; see the Routing page.";
+  const risLineNe = ris.ok
+    ? north
+      ? `RIPEstat ले **CTGNet AS23764** लाई नेपाल टेलिकमको अपस्ट्रिम देखाइरहेको छ (चीनतर्फ ${ris.paths.north}, भारततर्फ ${ris.paths.south} अवलोकन)। यो फाइबर मर्मत होइन।`
+      : south
+        ? `RIPEstat मा नेपाल टेलिकम प्रिफिक्स मुख्यतः **भारत हुँदै** देखिए (${ris.paths.south} अवलोकन)। CTGNet यो डम्पमा छैन — केरुङ सेसन डाउन भएको प्रमाण होइन।`
+        : "RIPEstat ले छिमेकी दियो तर वर्गीकृत बाटो आएन।"
+    : "यो रनमा RIPEstat आएन; रुटिङ पृष्ठ हेर्नुहोस्।";
+
+  if (lang === "en") {
+    const bullets = items.map((it) => `- [${it.title.replace(/]/g, "\\]")}](${it.link}) — ${it.source}`).join("\n");
+    return `---
+title: ${yamlStr(`Network digest ${day}`)}
+date: ${day}
+lang: en
+pair: ${pair}
+generated: true
+sources:
+${sources || '  - name: "RIPEstat"\n    url: "https://stat.ripe.net/lg"'}
+---
+
+Machine digest of public headlines on **telecom, towers, fiber, internet and routing** (plus RIPEstat). Not an NTC statement. Numbers in linked articles are theirs — this page does not invent site counts.
+
+${items.length ? `## Headlines\n\n${bullets}` : "No matching comms headlines in today’s feeds."}
+
+## Routing (observed)
+
+${risLineEn}
+
+Status chips on the home page stay human-edited.
+`;
+  }
+  const bullets = items.map((it) => `- [${it.title.replace(/]/g, "\\]")}](${it.link}) — ${it.source}`).join("\n");
+  return `---
+title: ${yamlStr(`सञ्जाल सार ${day}`)}
+date: ${day}
+lang: ne
+pair: ${pair}
+generated: true
+sources:
+${sources || '  - name: "RIPEstat"\n    url: "https://stat.ripe.net/lg"'}
+---
+
+टेलिकम, टावर, फाइबर, इन्टरनेट र रुटिङका सार्वजनिक शीर्षकको मेसिन सार (RIPEstat सहित)। नेपाल टेलिकमको बयान होइन। लिङ्क गरिएका अंक स्रोतका हुन् — यो पृष्ठले साइट गणना बनाउँदैन।
+
+${items.length ? `## शीर्षक\n\n${bullets}` : "आजका फिडमा मिलेका सञ्चार शीर्षक छैनन्।"}
+
+## रुटिङ (अवलोकन)
+
+${risLineNe}
+
+गृह पृष्ठका अवस्था चिप मानव-सम्पादित रहन्छन्।
+`;
+}
+
+async function writeDailyBulletin(day, news, ris) {
+  const items = commsItems(news);
+  if (!items.length && !ris.ok) {
+    console.log("No comms headlines and no RIS; skipped bulletin");
+    return 0;
+  }
+  const pair = `${day}-digest`;
+  for (const lang of ["en", "ne"]) {
+    const dir = join(ROOT, "src/content/bulletins", lang);
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, `${pair}.md`), writeDigestMarkdown({ day, lang, items, ris }));
+  }
+  console.log(`Wrote bulletin pair ${pair} (${items.length} headlines)`);
+  return items.length;
+}
+
 async function currentChips() {
   try {
     const raw = await readFile(join(ROOT, "src/data/snapshot.json"), "utf8");
@@ -438,6 +571,7 @@ async function main() {
     join(tleDir, "sentinel1.json"),
     `${JSON.stringify({ fetched_utc: new Date().toISOString(), stills: s1 }, null, 2)}\n`,
   );
+  await writeDailyBulletin(day, news, ris);
   console.log(
     `Wrote drafts/latest.md and drafts/${day}.md (${fetched_npt} NPT); ${tles.length} TLEs; ${s1.length} S1 stills`,
   );
