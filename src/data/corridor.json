@@ -1,4 +1,5 @@
 {
+  "flowLine": ["kerung", "rasuwagadhi", "syabrubesi", "mailung", "trishuli", "galchhi"],
   "places": [
     { "id": "galchhi", "name_en": "Galchhi", "name_ne": "गल्छी", "lat": 27.808, "lng": 85.056 },
     { "id": "trishuli", "name_en": "Trishuli", "name_ne": "त्रिशूली", "lat": 27.895, "lng": 85.146 },

@@ -343,6 +343,66 @@ th {
   color: var(--muted);
 }
 
+.flow-swatch {
+  display: inline-block;
+  width: 1.4rem;
+  height: 0.28rem;
+  background: #1a6fbf;
+  border-radius: 99px;
+  vertical-align: middle;
+  margin-right: 0.35rem;
+}
+
+.s1-stage {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: #111;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.s1-stage img {
+  display: block;
+  width: 100%;
+  max-height: min(70vh, 36rem);
+  object-fit: contain;
+  background: #111;
+}
+
+.s1-stage-cap {
+  display: block;
+  padding: 0.45rem 0.7rem;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #eee;
+  background: #1a1a18;
+}
+
+.s1-lightbox {
+  max-width: min(96vw, 72rem);
+  max-height: 96vh;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #111;
+  color: #eee;
+}
+
+.s1-lightbox::backdrop {
+  background: rgb(0 0 0 / 0.72);
+}
+
+.s1-lightbox img {
+  display: block;
+  max-width: 94vw;
+  max-height: 82vh;
+  object-fit: contain;
+  margin: 0 auto 0.6rem;
+}
+
 .s1-strip {
   display: flex;
   gap: 0.55rem;

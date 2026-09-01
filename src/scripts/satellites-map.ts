@@ -5,22 +5,18 @@ import spacecraft from "../data/spacecraft.json";
 declare const L: {
   map: (el: HTMLElement, opts: object) => MapHandle;
   tileLayer: (url: string, opts: object) => TileHandle;
-  imageOverlay: (url: string, b: [[number, number], [number, number]], opts: object) => OverlayHandle;
   circleMarker: (ll: [number, number], opts: object) => Layer;
+  polyline: (ll: [number, number][], opts: object) => Layer;
   rectangle: (b: [[number, number], [number, number]], opts: object) => Layer;
 };
 
 interface MapHandle {
   setView: (ll: [number, number], z: number) => MapHandle;
-  removeLayer: (l: Layer | OverlayHandle) => void;
 }
 interface TileHandle {
   addTo: (m: MapHandle) => TileHandle;
   setUrl?: (u: string) => void;
   options: { time?: string };
-}
-interface OverlayHandle {
-  addTo: (m: MapHandle) => OverlayHandle;
 }
 interface Layer {
   addTo: (m: MapHandle) => Layer;
@@ -285,19 +281,47 @@ async function initMap() {
     maxZoom: 13,
   }).addTo(map);
 
-  const stills = await loadS1(base);
-  let radar: OverlayHandle | null = null;
+  const flowIds = corridor.flowLine ?? [];
+  const flow = flowIds
+    .map((id) => corridor.places.find((p) => p.id === id))
+    .filter((p): p is (typeof corridor.places)[number] => p?.lat != null && p.lng != null)
+    .map((p) => [p.lat as number, p.lng as number] as [number, number]);
+  if (flow.length >= 2) {
+    L.polyline(flow, {
+      color: "#1a6fbf",
+      weight: 4,
+      opacity: 0.9,
+    })
+      .addTo(map)
+      .bindPopup("Bhotekoshi–Trishuli · Kerung → Galchhi");
+  }
 
-  function showRadar(still: S1Still | null) {
-    if (radar) {
-      map.removeLayer(radar);
-      radar = null;
+  const stills = await loadS1(base);
+  let slide = Math.max(
+    0,
+    stills.findIndex((s) => s.date === start),
+  );
+  if (slide < 0) slide = stills.length ? stills.length - 1 : 0;
+
+  const stageImg = document.getElementById("s1-stage-img") as HTMLImageElement | null;
+  const stageCap = document.getElementById("s1-stage-cap");
+  const lightImg = document.getElementById("s1-lightbox-img") as HTMLImageElement | null;
+  const light = document.getElementById("s1-lightbox") as HTMLDialogElement | null;
+
+  function showSlide(i: number) {
+    if (!stills.length) return;
+    slide = (i + stills.length) % stills.length;
+    const s = stills[slide];
+    if (stageImg) {
+      stageImg.src = s.browse;
+      stageImg.alt = `${s.platform} ${s.date}`;
     }
-    if (!still) return;
-    radar = L.imageOverlay(still.browse, [
-      [still.south, still.west],
-      [still.north, still.east],
-    ], { opacity: 0.72, attribution: "ASF / Sentinel-1" }).addTo(map);
+    if (stageCap) stageCap.textContent = `${s.date} · ${s.platform} · ${s.direction}`;
+    if (lightImg) {
+      lightImg.src = s.browse;
+      lightImg.alt = stageImg?.alt || "";
+    }
+    paintThumbs(s.date);
   }
 
   function paintThumbs(active: string) {
@@ -308,29 +332,33 @@ async function initMap() {
       return;
     }
     strip.innerHTML = stills
-      .map((s) => {
-        const on = s.date === active || s.date === nearestStill(stills, active)?.date;
-        return `<button type="button" class="s1-thumb${on ? " is-on" : ""}" data-date="${s.date}" title="${s.platform} ${s.date}">
-          <img src="${s.browse}" alt="Sentinel-1 ${s.date}" width="120" height="80" />
+      .map((s, idx) => {
+        const on = s.date === active;
+        return `<button type="button" class="s1-thumb${on ? " is-on" : ""}" data-i="${idx}" title="${s.platform} ${s.date}">
+          <img src="${s.browse}" alt="" width="120" height="80" />
           <span>${s.date}<br />${s.platform.replace("Sentinel-", "S-")}</span>
         </button>`;
       })
       .join("");
     strip.querySelectorAll<HTMLButtonElement>(".s1-thumb").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const d = btn.dataset.date;
-        if (d) applyDate(d);
+        const i = Number(btn.dataset.i);
+        showSlide(i);
+        const d = stills[i]?.date;
+        if (d) applyDate(d, false);
       });
     });
   }
 
-  function applyDate(next: string) {
+  function applyDate(next: string, syncSlide = true) {
     time = next;
     if (dateInput) dateInput.value = next;
     if (typeof gibs.setUrl === "function") gibs.setUrl(gibsUrl(next));
     gibs.options.time = next;
-    showRadar(nearestStill(stills, next));
-    paintThumbs(next);
+    if (syncSlide) {
+      const near = nearestStill(stills, next);
+      if (near) showSlide(stills.indexOf(near));
+    }
   }
 
   document.getElementById("sat-prev")?.addEventListener("click", () => applyDate(shiftDay(time, -1, pre, max)));
@@ -361,7 +389,43 @@ async function initMap() {
     }, 900);
   });
 
+  document.getElementById("s1-prev")?.addEventListener("click", () => {
+    showSlide(slide - 1);
+    const d = stills[slide]?.date;
+    if (d) applyDate(d, false);
+  });
+  document.getElementById("s1-next")?.addEventListener("click", () => {
+    showSlide(slide + 1);
+    const d = stills[slide]?.date;
+    if (d) applyDate(d, false);
+  });
+  const s1Play = document.getElementById("s1-play") as HTMLButtonElement | null;
+  let s1Timer: number | null = null;
+  s1Play?.addEventListener("click", () => {
+    if (!stills.length) return;
+    if (s1Timer != null) {
+      window.clearInterval(s1Timer);
+      s1Timer = null;
+      s1Play.textContent = s1Play.dataset.play || "Play slides";
+      return;
+    }
+    s1Play.textContent = s1Play.dataset.stop || "Stop";
+    s1Timer = window.setInterval(() => {
+      showSlide(slide + 1);
+      const d = stills[slide]?.date;
+      if (d) applyDate(d, false);
+    }, 1400);
+  });
+  document.getElementById("s1-stage")?.addEventListener("click", () => {
+    if (!stills.length) return;
+    light?.showModal();
+  });
+
   applyDate(time);
+  if (!stills.length) {
+    const stage = document.getElementById("s1-stage");
+    if (stage) stage.hidden = true;
+  }
 }
 
 async function initLive() {

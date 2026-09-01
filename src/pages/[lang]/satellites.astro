@@ -53,6 +53,7 @@ const copernicusS1 = `https://browser.dataspace.copernicus.eu/?zoom=11&lat=28.11
       {messages.satellites.play}
     </button>
   </div>
+  <p class="note"><span class="flow-swatch"></span> {messages.satellites.flowLine}</p>
   <div
     id="sat-map"
     class="map"
@@ -64,7 +65,26 @@ const copernicusS1 = `https://browser.dataspace.copernicus.eu/?zoom=11&lat=28.11
 
   <h2>{messages.satellites.s1Title}</h2>
   <p class="note">{messages.satellites.s1Hint}</p>
-  <div id="s1-stills" class="s1-strip" data-empty={messages.satellites.s1None}></div>
+  <div class="s1-viewer">
+    <button type="button" id="s1-stage" class="s1-stage" aria-label={messages.satellites.s1Open}>
+      <img id="s1-stage-img" alt="" />
+      <span id="s1-stage-cap" class="s1-stage-cap"></span>
+    </button>
+    <div class="sat-controls">
+      <button type="button" class="btn secondary" id="s1-prev">{messages.satellites.prev}</button>
+      <button type="button" class="btn secondary" id="s1-next">{messages.satellites.next}</button>
+      <button type="button" class="btn" id="s1-play" data-play={messages.satellites.s1Play} data-stop={messages.satellites.stop}>
+        {messages.satellites.s1Play}
+      </button>
+    </div>
+    <div id="s1-stills" class="s1-strip" data-empty={messages.satellites.s1None}></div>
+  </div>
+  <dialog id="s1-lightbox" class="s1-lightbox">
+    <img id="s1-lightbox-img" alt="" />
+    <form method="dialog">
+      <button type="submit" class="btn">{messages.satellites.s1Close}</button>
+    </form>
+  </dialog>
 
   <h2>{messages.satellites.liveTitle}</h2>
   <p class="note">{messages.satellites.liveHint}</p>
