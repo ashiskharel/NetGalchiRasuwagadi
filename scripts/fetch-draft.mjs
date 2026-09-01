@@ -15,18 +15,27 @@ const NORTH = [23764, 4134, 4809];
 const SOUTH = [9498, 6453, 4755];
 const REPO = "ashiskharel/NetGalchiRasuwagadi";
 
+const BROWSER_UA =
+  "Mozilla/5.0 (compatible; NetGalchiDraft/1.1; +https://github.com/ashiskharel/NetGalchiRasuwagadi)";
+
+// Publisher RSS first. Google News search RSS is often HTTP 503 from GitHub-hosted
+// runner IPs even when the same URL works in a browser (datacenter block, not a dead feed).
 const NEWS_FEEDS = [
+  { id: "onlinekhabar-en", lang: "en", url: "https://english.onlinekhabar.com/feed", filter: true },
+  { id: "onlinekhabar-ne", lang: "ne", url: "https://www.onlinekhabar.com/feed", filter: true },
+  { id: "rising-nepal", lang: "en", url: "https://risingnepaldaily.com/rss", filter: true },
+  { id: "kathmandu-post", lang: "en", url: "https://kathmandupost.com/rss", filter: true },
+  { id: "ratopati", lang: "ne", url: "https://www.ratopati.com/feed", filter: true },
   {
     id: "gnews-en",
     lang: "en",
-    url: "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi+fiber&hl=en-NP&gl=NP&ceid=NP:en",
-  },
-  {
-    id: "gnews-ne",
-    lang: "ne",
-    url: "https://news.google.com/rss/search?q=%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2+%E0%A4%9F%E0%A5%87%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%AE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%97%E0%A4%A2%E0%A5%80&hl=ne&gl=NP&ceid=NP:ne",
+    optional: true,
+    url: "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
   },
 ];
+
+const TOPIC =
+  /rasuwa|rasuwagadhi|galchh|bhotekoshi|bhote kosi|telecom|ntc|ncell|fiber|fibre|microwave|flood|बाढी|टेलिकम|रसुवा|रसुवागढी|गल्छी|फाइबर|माइक्रोवेभ/i;
 
 function nptStamp(d = new Date()) {
   return new Intl.DateTimeFormat("en-GB", {
@@ -47,34 +56,60 @@ function nptDate(d = new Date()) {
   return nptStamp(d).slice(0, 10);
 }
 
-async function getJson(url, ms) {
+function errDetail(e) {
+  const cause = e?.cause ? ` (${e.cause.code || e.cause.message || e.cause})` : "";
+  return `${e.message || e}${cause}`;
+}
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+async function fetchOnce(url, ms, accept) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), ms);
   try {
     const res = await fetch(url, {
       signal: ctrl.signal,
-      headers: { "User-Agent": "netgalchi-rasuwagadhi-draft/1.0" },
+      redirect: "follow",
+      headers: {
+        "User-Agent": BROWSER_UA,
+        Accept: accept,
+        "Accept-Language": "en-US,en;q=0.8,ne;q=0.5",
+      },
     });
     if (!res.ok) throw new Error(`${res.status} ${url}`);
-    return await res.json();
+    return res;
   } finally {
     clearTimeout(t);
   }
 }
 
-async function getText(url, ms) {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), ms);
-  try {
-    const res = await fetch(url, {
-      signal: ctrl.signal,
-      headers: { "User-Agent": "netgalchi-rasuwagadhi-draft/1.0" },
-    });
-    if (!res.ok) throw new Error(`${res.status} ${url}`);
-    return await res.text();
-  } finally {
-    clearTimeout(t);
+async function withRetry(fn, tries = 3) {
+  let last;
+  for (let i = 0; i < tries; i++) {
+    try {
+      return await fn();
+    } catch (e) {
+      last = e;
+      const status = Number(String(e.message || "").slice(0, 3));
+      if (status === 404 || status === 401 || status === 403) throw e;
+      if (i < tries - 1) await sleep(1500 * (i + 1));
+    }
   }
+  throw last;
+}
+
+async function getJson(url, ms) {
+  const res = await withRetry(() => fetchOnce(url, ms, "application/json"));
+  return await res.json();
+}
+
+async function getText(url, ms) {
+  const res = await withRetry(() =>
+    fetchOnce(url, ms, "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"),
+  );
+  return await res.text();
 }
 
 function decodeXml(s) {
@@ -88,14 +123,21 @@ function decodeXml(s) {
     .replace(/&apos;/g, "'");
 }
 
-function parseRss(xml) {
+function parseRss(xml, filter) {
   const items = [];
-  for (const block of xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)) {
+  const blocks = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi), ...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/gi)];
+  for (const block of blocks) {
     const chunk = block[1];
-    const title = decodeXml((chunk.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || "").trim();
-    const link = decodeXml((chunk.match(/<link>([\s\S]*?)<\/link>/i) || [])[1] || "").trim();
-    const pub = decodeXml((chunk.match(/<pubDate>([\s\S]*?)<\/pubDate>/i) || [])[1] || "").trim();
-    if (title) items.push({ title, link, pubDate: pub });
+    const title = decodeXml((chunk.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || "").trim();
+    const linkHref = (chunk.match(/<link[^>]*href="([^"]+)"/i) || [])[1];
+    const link = decodeXml(linkHref || (chunk.match(/<link>([\s\S]*?)<\/link>/i) || [])[1] || "").trim();
+    const pub = decodeXml(
+      (chunk.match(/<pubDate>([\s\S]*?)<\/pubDate>/i) || chunk.match(/<updated>([\s\S]*?)<\/updated>/i) || [])[1] ||
+        "",
+    ).trim();
+    if (!title) continue;
+    if (filter && !TOPIC.test(`${title} ${link}`)) continue;
+    items.push({ title, link, pubDate: pub });
   }
   return items.slice(0, 12);
 }
@@ -136,7 +178,7 @@ async function fetchRis() {
     out.neighbours.left = list.filter((n) => n.type === "left").map((n) => n.asn);
     out.neighbours.right = list.filter((n) => n.type === "right").map((n) => n.asn);
   } catch (e) {
-    out.error = `neighbours: ${e.message || e}`;
+    out.error = `neighbours: ${errDetail(e)}`;
     return out;
   }
   try {
@@ -167,7 +209,7 @@ async function fetchRis() {
     out.latestPathTime = latest || null;
     out.ok = true;
   } catch (e) {
-    out.error = (out.error ? `${out.error}; ` : "") + `looking-glass: ${e.message || e}`;
+    out.error = (out.error ? `${out.error}; ` : "") + `looking-glass: ${errDetail(e)}`;
     out.ok = out.neighbours.left.length > 0;
   }
   return out;
@@ -177,10 +219,10 @@ async function fetchNews() {
   const feeds = [];
   for (const feed of NEWS_FEEDS) {
     try {
-      const xml = await getText(feed.url, 15000);
-      feeds.push({ ...feed, ok: true, items: parseRss(xml) });
+      const xml = await getText(feed.url, 20000);
+      feeds.push({ ...feed, ok: true, items: parseRss(xml, feed.filter) });
     } catch (e) {
-      feeds.push({ ...feed, ok: false, error: String(e.message || e), items: [] });
+      feeds.push({ ...feed, ok: false, error: errDetail(e), items: [] });
     }
   }
   return feeds;
@@ -251,7 +293,7 @@ function toMarkdown(payload) {
   }
   if (!ris.paths.unique.length) lines.push("- (none)");
   lines.push("");
-  lines.push("## News headlines (Google News RSS)");
+  lines.push("## News headlines (publisher RSS; Google News is optional and often blocked from Actions)");
   for (const feed of news) {
     lines.push("");
     lines.push(`### ${feed.id} (${feed.lang})`);

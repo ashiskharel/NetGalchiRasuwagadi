@@ -5,6 +5,8 @@ Machine-written snapshots of **RIPEstat** and **Google News RSS**. They are not 
 - `latest.md` / `latest.json` — last fetch
 - `YYYY-MM-DD.md` / `.json` — that day’s copy (Nepal date)
 
+Google News search RSS often returns **HTTP 503 from GitHub-hosted runners** (shared datacenter IPs). The same URL can work in your browser. That is not a broken link and does not need a scraping proxy. The fetcher prefers **publisher RSS** (OnlineKhabar, Rising Nepal, Kathmandu Post, Ratopati) and retries RIPEstat.
+
 ## Run locally
 
 ```bash

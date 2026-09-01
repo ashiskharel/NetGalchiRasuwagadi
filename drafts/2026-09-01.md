@@ -1,27 +1,14 @@
-<<<<<<< Updated upstream
-# Restoration draft — 2026-08-31T12:46 NPT
-=======
 # Restoration draft — 2026-09-01T10:44 NPT
->>>>>>> Stashed changes
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
 ## Suggested human actions
-- RIS fetch failed. Leave routing chips as they are.
+- Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.
+- Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.
 - Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`.
 
 ## RIPEstat (AS23752)
-- Error: neighbours: fetch failed
 - Prefix: `202.70.64.0/19`
-<<<<<<< Updated upstream
-- Upstreams (left): —
-- Customers (right): —
-- Path observations: north 0 · south 0 · other 0
-
-Distinct AS paths (prepending stripped, top 16):
-
-- (none)
-=======
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS139022, AS142008, AS14789, AS45353, AS58456
 - Path observations: north 0 · south 353 · other 0
@@ -45,7 +32,6 @@ Distinct AS paths (prepending stripped, top 16):
 - `AS48185 → AS9498 → AS23752` ×3 (south)
 - `AS34927 → AS57463 → AS9498 → AS23752` ×3 (south)
 - `AS271253 → AS9498 → AS23752` ×3 (south)
->>>>>>> Stashed changes
 
 ## News headlines (publisher RSS; Google News is optional and often blocked from Actions)
 
@@ -111,12 +97,6 @@ Distinct AS paths (prepending stripped, top 16):
 - [भोटेकोशी बाढीपीडितलाई धनौजी गाउँपालिकाद्वारा २२ लाख सहयोग](https://www.ratopati.com/story/588964/dhanauji-rural-municipality-provides-rs-22-million-assistance-to-bhotekoshi-flood-victims) — Tue, 01 Sep 2026 01:46:09 +0000
 
 ### gnews-en (en)
-<<<<<<< Updated upstream
-Fetch failed: 503 https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi+fiber&hl=en-NP&gl=NP&ceid=NP:en
-
-### gnews-ne (ne)
-Fetch failed: 503 https://news.google.com/rss/search?q=%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2+%E0%A4%9F%E0%A5%87%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%AE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE+%E0%A4%B0%E0%A4%B8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%97%E0%A4%A2%E0%A5%80&hl=ne&gl=NP&ceid=NP:ne
-=======
 - [NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE56LUplMEYyaVNVNWxIZnR3RVc2a282WGZDcEpQejRhS1o2V0h2S0x5d0FGVVp5REl0Mzd1cmVzNFNCekt2ektsdGktb0xrZ1B3?oc=5) — Tue, 01 Sep 2026 01:17:41 GMT
 - [Nepal Telecom restores service at 7 flood-hit sites in Rasuwa, Nuwakot - NepalNews](https://news.google.com/rss/articles/CBMivgFBVV95cUxOZDhMOGJJWnZ4U0laQnN3LWdMRHEwS0YtQnhfVWJWSGE2U0Q5QTA2WndXWlJ1eDRDTEt4cXVqMU82dFA5b2xtUFc1WDJxQ2ZkX2hwY3BfY2UyV0F5eTVxaU9SeDAtcGtaeV90Q09UaFlpSm5lbzd2NldlSklVRFprZWZINndtR2VrakJ5WGdicGdYZ2J1T2J5aF92X19FOU1FdGlOZU9UYU5uaTQ0aFFNTGZtWFlxWHotSVBqd21n?oc=5) — Sun, 30 Aug 2026 12:20:46 GMT
 - [Nepal Telecom restores mobile connectivity in flood-hit areas - Communications Today](https://news.google.com/rss/articles/CBMiogFBVV95cUxPUGYyU21ZSktwaUh6UWZqLXFyN1VhejhwdkM5Y2ZNeUN2cmdqZHRFQXlKZl9GUGRMVHRIemVxZGthdVJyVi1RYkJmWHdyaTQ4WF9SaTFOOHI4bkhoOGhMVXg2bmVxSXlnb2ZJNndRY0ZncWZOTFRmZDRtWkhtLTM3XzdWYzdNLTdzbEo1eXdIR1B0NGhqZnJ5TXNVNjhNZU95ZXc?oc=5) — Mon, 31 Aug 2026 10:35:52 GMT
@@ -129,7 +109,6 @@ Fetch failed: 503 https://news.google.com/rss/search?q=%E0%A4%A8%E0%A5%87%E0%A4%
 - [NT works to restore services in flood-hit areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5) — Mon, 31 Aug 2026 11:57:47 GMT
 - [Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5) — Wed, 26 Aug 2026 06:27:42 GMT
 - [Nepal News Evening Briefing | Sunday, August 30, 2026 - NepalNews](https://news.google.com/rss/articles/CBMilwFBVV95cUxOYlM3YXY3Y1luSkxsR1pUd3BoMU85ZWRodkRNekFtemdWd3NZbWRsclZ4T0ZEcXA4bWd0OUg4cWZjUnFqUzlwRlpyU00tRVYtN3B6SFB6NFRtSTh0VktZdzhsWG14RU1WaE1INzFwYUh3cnc1Ml90aWtKdUFWWWNtd3libkQ1c21YRV9naVotWlJTdFhFWmVB?oc=5) — Sun, 30 Aug 2026 15:04:09 GMT
->>>>>>> Stashed changes
 
 ## Open field reports
 None open.
