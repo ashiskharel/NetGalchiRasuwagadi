@@ -343,6 +343,48 @@ th {
   color: var(--muted);
 }
 
+.s1-strip {
+  display: flex;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding: 0.35rem 0 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.s1-thumb {
+  flex: 0 0 auto;
+  width: 8.2rem;
+  padding: 0;
+  border: 2px solid var(--line);
+  border-radius: 0.4rem;
+  background: var(--card);
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.s1-thumb img {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 0.28rem 0.28rem 0 0;
+  background: #111;
+}
+
+.s1-thumb span {
+  display: block;
+  padding: 0.3rem 0.4rem 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.s1-thumb.is-on {
+  border-color: var(--crimson);
+}
+
 .sat-controls input[type="date"] {
   min-height: 44px;
   padding: 0.35rem 0.5rem;

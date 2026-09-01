@@ -330,6 +330,45 @@ function toMarkdown(payload) {
   return lines.join("\n");
 }
 
+async function fetchSentinel1() {
+  const wkt = "POLYGON((84.98 27.78,85.65 27.78,85.65 28.45,84.98 28.45,84.98 27.78))";
+  const url = `https://api.daac.asf.alaska.edu/services/search/param?platform=SENTINEL-1&processingLevel=GRD_HD&beamMode=IW&intersectsWith=${encodeURIComponent(wkt)}&start=2026-08-25T00:00:00Z&maxResults=80&output=geojson`;
+  const stills = [];
+  const seen = new Set();
+  try {
+    const data = await getJson(url, 25000);
+    for (const f of data.features || []) {
+      const p = f.properties || {};
+      const start = String(p.startTime || "");
+      const date = start.slice(0, 10);
+      if (!date || seen.has(date)) continue;
+      const browse = Array.isArray(p.browse) ? p.browse[0] : p.browse;
+      if (!browse) continue;
+      const ring = f.geometry?.coordinates?.[0] || [];
+      const lons = ring.map((c) => c[0]);
+      const lats = ring.map((c) => c[1]);
+      if (!lons.length) continue;
+      seen.add(date);
+      stills.push({
+        date,
+        startTime: start,
+        platform: p.platform || "Sentinel-1",
+        direction: p.flightDirection || "",
+        browse,
+        south: Math.min(...lats),
+        west: Math.min(...lons),
+        north: Math.max(...lats),
+        east: Math.max(...lons),
+        scene: p.sceneName || "",
+      });
+    }
+  } catch {
+    /* optional */
+  }
+  stills.sort((a, b) => a.date.localeCompare(b.date));
+  return stills;
+}
+
 async function fetchTles() {
   const craft = JSON.parse(await readFile(join(ROOT, "src/data/spacecraft.json"), "utf8"));
   const out = [];
@@ -363,12 +402,13 @@ async function currentChips() {
 async function main() {
   const fetched_npt = nptStamp();
   const day = nptDate();
-  const [ris, news, issues, chips, tles] = await Promise.all([
+  const [ris, news, issues, chips, tles, s1] = await Promise.all([
     fetchRis(),
     fetchNews(),
     fetchIssues(),
     currentChips(),
     fetchTles(),
+    fetchSentinel1(),
   ]);
   const payload = {
     fetched_npt,
@@ -394,7 +434,13 @@ async function main() {
     join(tleDir, "tles.json"),
     `${JSON.stringify({ fetched_utc: new Date().toISOString(), records: tles }, null, 2)}\n`,
   );
-  console.log(`Wrote drafts/latest.md and drafts/${day}.md (${fetched_npt} NPT); ${tles.length} TLEs`);
+  await writeFile(
+    join(tleDir, "sentinel1.json"),
+    `${JSON.stringify({ fetched_utc: new Date().toISOString(), stills: s1 }, null, 2)}\n`,
+  );
+  console.log(
+    `Wrote drafts/latest.md and drafts/${day}.md (${fetched_npt} NPT); ${tles.length} TLEs; ${s1.length} S1 stills`,
+  );
 }
 
 main().catch((err) => {

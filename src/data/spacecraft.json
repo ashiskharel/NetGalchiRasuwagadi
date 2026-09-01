@@ -1,27 +1,27 @@
 {
+  "observer": { "lat": 28.11, "lng": 85.32, "heightKm": 1.6 },
   "aoi": {
     "south": 27.78,
     "west": 84.98,
     "north": 28.45,
     "east": 85.65
   },
+  "minElevationDeg": 8,
   "imageryStart": "2026-08-25",
-  "catalogs": {
-    "satnogsTle": "https://db.satnogs.org/api/tle/?norad_cat_id=",
-    "celestrakGroups": [
-      "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json",
-      "https://celestrak.org/NORAD/elements/gp.php?GROUP=resource&FORMAT=json",
-      "https://celestrak.org/NORAD/elements/gp.php?GROUP=weather&FORMAT=json"
-    ]
-  },
   "satellites": [
-    { "norad": 25544, "name": "ISS (ZARYA)" },
-    { "norad": 39084, "name": "LANDSAT 8" },
-    { "norad": 49260, "name": "LANDSAT 9" },
-    { "norad": 25994, "name": "TERRA" },
-    { "norad": 27424, "name": "AQUA" },
-    { "norad": 37849, "name": "SUOMI NPP" },
-    { "norad": 43013, "name": "NOAA 20" },
-    { "norad": 54234, "name": "NOAA 21" }
+    { "norad": 25544, "name": "ISS (ZARYA)", "orbit": "leo" },
+    { "norad": 39084, "name": "LANDSAT 8", "orbit": "leo" },
+    { "norad": 49260, "name": "LANDSAT 9", "orbit": "leo" },
+    { "norad": 25994, "name": "TERRA", "orbit": "leo" },
+    { "norad": 27424, "name": "AQUA", "orbit": "leo" },
+    { "norad": 37849, "name": "SUOMI NPP", "orbit": "leo" },
+    { "norad": 43013, "name": "NOAA 20", "orbit": "leo" },
+    { "norad": 54234, "name": "NOAA 21", "orbit": "leo" },
+    { "norad": 41105, "name": "ELEKTRO-L 2", "orbit": "geo", "slotEast": 77.8 },
+    { "norad": 43107, "name": "FY-4A", "orbit": "geo", "slotEast": 104.7 },
+    { "norad": 49017, "name": "FY-4B", "orbit": "geo", "slotEast": 133.0 },
+    { "norad": 41787, "name": "INSAT-3DR", "orbit": "geo", "slotEast": 74.0 },
+    { "norad": 41836, "name": "HIMAWARI-9", "orbit": "geo", "slotEast": 140.7 },
+    { "norad": 43268, "name": "GEO-KOMPSAT-2A", "orbit": "geo", "slotEast": 128.2 }
   ]
 }

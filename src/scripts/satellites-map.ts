@@ -5,34 +5,57 @@ import spacecraft from "../data/spacecraft.json";
 declare const L: {
   map: (el: HTMLElement, opts: object) => MapHandle;
   tileLayer: (url: string, opts: object) => TileHandle;
+  imageOverlay: (url: string, b: [[number, number], [number, number]], opts: object) => OverlayHandle;
   circleMarker: (ll: [number, number], opts: object) => Layer;
   rectangle: (b: [[number, number], [number, number]], opts: object) => Layer;
-  latLngBounds: (a: [number, number], b: [number, number]) => unknown;
 };
 
 interface MapHandle {
   setView: (ll: [number, number], z: number) => MapHandle;
-  fitBounds: (b: unknown, opts?: object) => void;
-  removeLayer: (l: Layer) => void;
+  removeLayer: (l: Layer | OverlayHandle) => void;
 }
 interface TileHandle {
   addTo: (m: MapHandle) => TileHandle;
   setUrl?: (u: string) => void;
   options: { time?: string };
 }
+interface OverlayHandle {
+  addTo: (m: MapHandle) => OverlayHandle;
+}
 interface Layer {
   addTo: (m: MapHandle) => Layer;
   bindPopup: (html: string) => Layer;
-  setLatLng?: (ll: [number, number]) => void;
 }
 
-type Tle = { OBJECT_NAME?: string; object_name?: string; TLE_LINE1?: string; TLE_LINE2?: string; tle_line1?: string; tle_line2?: string };
+type Tle = { OBJECT_NAME?: string; TLE_LINE1?: string; TLE_LINE2?: string };
+type S1Still = {
+  date: string;
+  startTime: string;
+  platform: string;
+  direction: string;
+  browse: string;
+  south: number;
+  west: number;
+  north: number;
+  east: number;
+  scene: string;
+};
 
 const AOI: [[number, number], [number, number]] = [
-  [27.78, 84.98],
-  [28.45, 85.65],
+  [spacecraft.aoi.south, spacecraft.aoi.west],
+  [spacecraft.aoi.north, spacecraft.aoi.east],
 ];
-const NEAR_DEG = 6;
+const OBS = spacecraft.observer;
+const MIN_EL = spacecraft.minElevationDeg;
+const RE = 6378.137;
+const GEO_H = 35786;
+
+function rad(d: number) {
+  return (d * Math.PI) / 180;
+}
+function deg(r: number) {
+  return (r * 180) / Math.PI;
+}
 
 function waitForLeaflet(): Promise<void> {
   if (typeof L !== "undefined") return Promise.resolve();
@@ -63,57 +86,38 @@ function gibsUrl(time: string): string {
   return `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/${time}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg`;
 }
 
-function nameOf(row: Tle): string {
-  return (row.OBJECT_NAME || row.object_name || "").trim();
+function geoLookFromSlot(slotEast: number) {
+  const lat = rad(OBS.lat);
+  const dlon = rad(slotEast - OBS.lng);
+  const gamma = Math.acos(Math.max(-1, Math.min(1, Math.cos(lat) * Math.cos(dlon))));
+  const el = Math.atan2(Math.cos(gamma) - RE / (RE + GEO_H), Math.sin(gamma));
+  const az = Math.atan2(Math.sin(dlon), Math.cos(lat) * Math.tan(0) - Math.sin(lat) * Math.cos(dlon));
+  return {
+    lat: 0,
+    lng: ((slotEast + 540) % 360) - 180,
+    alt: GEO_H,
+    elevation: deg(el),
+    azimuth: (deg(az) + 360) % 360,
+    orbit: "geo" as const,
+  };
 }
 
-function linesOf(row: Tle): [string, string] | null {
-  const a = row.TLE_LINE1 || row.tle_line1;
-  const b = row.TLE_LINE2 || row.tle_line2;
-  if (a && b) return [a, b];
-  return null;
+function lookFromEci(position: { x: number; y: number; z: number }, gmst: number) {
+  const observerGd = {
+    longitude: rad(OBS.lng),
+    latitude: rad(OBS.lat),
+    height: OBS.heightKm,
+  };
+  const positionEcf = satellite.eciToEcf(position, gmst);
+  const look = satellite.ecfToLookAngles(observerGd, positionEcf);
+  return { elevation: deg(look.elevation), azimuth: (deg(look.azimuth) + 360) % 360 };
 }
 
-function inNear(lat: number, lng: number): boolean {
-  const [[minLat, minLng], [maxLat, maxLng]] = AOI;
-  return lat >= minLat - NEAR_DEG && lat <= maxLat + NEAR_DEG && lng >= minLng - NEAR_DEG && lng <= maxLng + NEAR_DEG;
-}
-
-async function loadTles(base: string): Promise<Tle[]> {
-  const out: Tle[] = [];
-  for (const sat of spacecraft.satellites) {
-    try {
-      const res = await fetch(`https://db.satnogs.org/api/tle/?norad_cat_id=${sat.norad}`, {
-        headers: { Accept: "application/json" },
-      });
-      if (!res.ok) continue;
-      const data = (await res.json()) as { tle0?: string; tle1?: string; tle2?: string }[];
-      const row = Array.isArray(data) ? data[0] : data;
-      if (!row?.tle1 || !row?.tle2) continue;
-      out.push({
-        OBJECT_NAME: String(row.tle0 || sat.name).replace(/^0 /, ""),
-        TLE_LINE1: row.tle1,
-        TLE_LINE2: row.tle2,
-      });
-    } catch {
-      /* next */
-    }
-  }
-  if (out.length) return out;
-  try {
-    const res = await fetch(`${base}/data/tles.json`);
-    if (!res.ok) return [];
-    const data = (await res.json()) as { records?: Tle[] };
-    return data.records || [];
-  } catch {
-    return [];
-  }
-}
-
-function propagate(row: Tle, when: Date) {
-  const lines = linesOf(row);
-  if (!lines) return null;
-  const satrec = satellite.twoline2satrec(lines[0], lines[1]);
+function propagate(row: Tle, when: Date, orbit: string) {
+  const a = row.TLE_LINE1;
+  const b = row.TLE_LINE2;
+  if (!a || !b) return null;
+  const satrec = satellite.twoline2satrec(a, b);
   const pv = satellite.propagate(satrec, when);
   if (!pv.position) return null;
   const gmst = satellite.gstime(when);
@@ -122,7 +126,120 @@ function propagate(row: Tle, when: Date) {
   const lng = satellite.degreesLong(geo.longitude);
   const alt = geo.height;
   if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
-  return { name: nameOf(row), lat, lng, alt };
+  const look = lookFromEci(pv.position, gmst);
+  return {
+    name: (row.OBJECT_NAME || "").trim(),
+    lat,
+    lng,
+    alt,
+    elevation: look.elevation,
+    azimuth: look.azimuth,
+    orbit,
+  };
+}
+
+async function loadTles(base: string): Promise<{ tle: Tle; orbit: string; slotEast?: number; name: string }[]> {
+  const packed: { tle: Tle; orbit: string; slotEast?: number; name: string }[] = [];
+  for (const sat of spacecraft.satellites) {
+    let tle: Tle | null = null;
+    try {
+      const res = await fetch(`https://db.satnogs.org/api/tle/?norad_cat_id=${sat.norad}`, {
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        const data = (await res.json()) as { tle0?: string; tle1?: string; tle2?: string }[];
+        const row = Array.isArray(data) ? data[0] : data;
+        if (row?.tle1 && row?.tle2) {
+          tle = {
+            OBJECT_NAME: String(row.tle0 || sat.name).replace(/^0 /, ""),
+            TLE_LINE1: row.tle1,
+            TLE_LINE2: row.tle2,
+          };
+        }
+      }
+    } catch {
+      /* fallback below */
+    }
+    packed.push({
+      tle: tle || { OBJECT_NAME: sat.name },
+      orbit: sat.orbit,
+      slotEast: sat.slotEast,
+      name: sat.name,
+    });
+  }
+  if (packed.some((p) => p.tle.TLE_LINE1)) return packed;
+  try {
+    const res = await fetch(`${base}/data/tles.json`);
+    if (!res.ok) return packed;
+    const data = (await res.json()) as { records?: Tle[] };
+    const byName = new Map((data.records || []).map((r) => [r.OBJECT_NAME, r]));
+    return packed.map((p) => ({ ...p, tle: byName.get(p.name) || p.tle }));
+  } catch {
+    return packed;
+  }
+}
+
+type S1Catalog = { stills: S1Still[] };
+
+async function loadS1(base: string): Promise<S1Still[]> {
+  const wkt = `POLYGON((${spacecraft.aoi.west} ${spacecraft.aoi.south},${spacecraft.aoi.east} ${spacecraft.aoi.south},${spacecraft.aoi.east} ${spacecraft.aoi.north},${spacecraft.aoi.west} ${spacecraft.aoi.north},${spacecraft.aoi.west} ${spacecraft.aoi.south}))`;
+  const live = `https://api.daac.asf.alaska.edu/services/search/param?platform=SENTINEL-1&processingLevel=GRD_HD&beamMode=IW&intersectsWith=${encodeURIComponent(wkt)}&start=${spacecraft.imageryStart}T00:00:00Z&maxResults=80&output=geojson`;
+  const urls = [live, `${base}/data/sentinel1.json`];
+  for (const url of urls) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const data = (await res.json()) as S1Catalog | { features?: { properties: Record<string, unknown>; geometry?: { coordinates?: number[][][] } }[] };
+      if ("stills" in data && Array.isArray(data.stills)) return data.stills;
+      const feats = "features" in data ? data.features || [] : [];
+      return normalizeS1(feats);
+    } catch {
+      /* next */
+    }
+  }
+  return [];
+}
+
+function normalizeS1(
+  feats: { properties: Record<string, unknown>; geometry?: { coordinates?: number[][][] } }[],
+): S1Still[] {
+  const stills: S1Still[] = [];
+  const seen = new Set<string>();
+  for (const f of feats) {
+    const p = f.properties || {};
+    const start = String(p.startTime || p.starttime || "");
+    const date = start.slice(0, 10);
+    if (!date || seen.has(date)) continue;
+    const browse = Array.isArray(p.browse) ? String(p.browse[0] || "") : String(p.browse || "");
+    if (!browse) continue;
+    const ring = f.geometry?.coordinates?.[0] || [];
+    const lons = ring.map((c) => c[0]);
+    const lats = ring.map((c) => c[1]);
+    if (!lons.length) continue;
+    seen.add(date);
+    stills.push({
+      date,
+      startTime: start,
+      platform: String(p.platform || "Sentinel-1"),
+      direction: String(p.flightDirection || ""),
+      browse,
+      south: Math.min(...lats),
+      west: Math.min(...lons),
+      north: Math.max(...lats),
+      east: Math.max(...lons),
+      scene: String(p.sceneName || ""),
+    });
+  }
+  stills.sort((a, b) => a.date.localeCompare(b.date));
+  return stills;
+}
+
+function nearestStill(stills: S1Still[], date: string): S1Still | null {
+  if (!stills.length) return null;
+  const exact = stills.find((s) => s.date === date);
+  if (exact) return exact;
+  const before = [...stills].reverse().find((s) => s.date <= date);
+  return before || stills[0];
 }
 
 async function initMap() {
@@ -133,6 +250,7 @@ async function initMap() {
   const pre = el.dataset.pre || "2026-08-25";
   const start = el.dataset.start || "2026-08-26";
   const max = dateInput?.max || new Date().toISOString().slice(0, 10);
+  const base = el.dataset.base || "";
 
   const map = L.map(el, { scrollWheelZoom: false }).setView([28.12, 85.32], 9);
   L.rectangle(AOI, { color: "#b42318", weight: 2, fill: false }).addTo(map);
@@ -163,11 +281,52 @@ async function initMap() {
     maxZoom: 13,
   }).addTo(map);
 
+  const stills = await loadS1(base);
+  let radar: OverlayHandle | null = null;
+
+  function showRadar(still: S1Still | null) {
+    if (radar) {
+      map.removeLayer(radar);
+      radar = null;
+    }
+    if (!still) return;
+    radar = L.imageOverlay(still.browse, [
+      [still.south, still.west],
+      [still.north, still.east],
+    ], { opacity: 0.72, attribution: "ASF / Sentinel-1" }).addTo(map);
+  }
+
+  function paintThumbs(active: string) {
+    const strip = document.getElementById("s1-stills");
+    if (!strip) return;
+    if (!stills.length) {
+      strip.innerHTML = `<p class="note">${strip.dataset.empty || ""}</p>`;
+      return;
+    }
+    strip.innerHTML = stills
+      .map((s) => {
+        const on = s.date === active || s.date === nearestStill(stills, active)?.date;
+        return `<button type="button" class="s1-thumb${on ? " is-on" : ""}" data-date="${s.date}" title="${s.platform} ${s.date}">
+          <img src="${s.browse}" alt="Sentinel-1 ${s.date}" width="120" height="80" />
+          <span>${s.date}<br />${s.platform.replace("Sentinel-", "S-")}</span>
+        </button>`;
+      })
+      .join("");
+    strip.querySelectorAll<HTMLButtonElement>(".s1-thumb").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const d = btn.dataset.date;
+        if (d) applyDate(d);
+      });
+    });
+  }
+
   function applyDate(next: string) {
     time = next;
     if (dateInput) dateInput.value = next;
     if (typeof gibs.setUrl === "function") gibs.setUrl(gibsUrl(next));
     gibs.options.time = next;
+    showRadar(nearestStill(stills, next));
+    paintThumbs(next);
   }
 
   document.getElementById("sat-prev")?.addEventListener("click", () => applyDate(shiftDay(time, -1, pre, max)));
@@ -197,6 +356,8 @@ async function initMap() {
       }
     }, 900);
   });
+
+  applyDate(time);
 }
 
 async function initLive() {
@@ -208,43 +369,54 @@ async function initLive() {
     error: string;
     noneNear: string;
     altKm: string;
+    elev: string;
+    az: string;
+    leo: string;
+    geo: string;
   };
   const base = mapEl?.dataset.base || "";
-  let catalog: Tle[] = [];
-  try {
-    catalog = await loadTles(base);
-  } catch {
-    box.textContent = ui.error;
-    return;
-  }
+  const catalog = await loadTles(base);
   if (!catalog.length) {
     box.textContent = ui.error;
     return;
   }
 
   const list = document.createElement("div");
-  list.className = "grid chips";
   box.replaceChildren(list);
 
   const tick = () => {
     const now = new Date();
-    const rows: { name: string; lat: number; lng: number; alt: number }[] = [];
-    for (const tle of catalog) {
-      const pos = propagate(tle, now);
-      if (!pos || !inNear(pos.lat, pos.lng)) continue;
+    const rows: {
+      name: string;
+      lat: number;
+      lng: number;
+      alt: number;
+      elevation: number;
+      azimuth: number;
+      orbit: string;
+    }[] = [];
+    for (const item of catalog) {
+      let pos = item.tle.TLE_LINE1 ? propagate(item.tle, now, item.orbit) : null;
+      if (!pos && item.orbit === "geo" && item.slotEast != null) {
+        const g = geoLookFromSlot(item.slotEast);
+        pos = { name: item.name, ...g };
+      }
+      if (!pos || pos.elevation < MIN_EL) continue;
       rows.push(pos);
     }
-    rows.sort((a, b) => a.name.localeCompare(b.name));
+    rows.sort((a, b) => b.elevation - a.elevation);
     if (!rows.length) {
       list.innerHTML = `<p class="note">${ui.noneNear}</p>`;
       return;
     }
-    list.innerHTML = rows
-      .map(
-        (r) =>
-          `<article class="card"><h3>${r.name}</h3><p class="note">${r.lat.toFixed(2)}°, ${r.lng.toFixed(2)}° · ${ui.altKm} ${r.alt.toFixed(0)}</p></article>`,
-      )
-      .join("");
+    const leo = rows.filter((r) => r.orbit !== "geo");
+    const geo = rows.filter((r) => r.orbit === "geo");
+    const card = (r: (typeof rows)[0]) =>
+      `<article class="card ${r.orbit === "geo" ? "unknown" : "up"}"><h3>${r.name}</h3>
+        <p class="note">${ui.elev} ${r.elevation.toFixed(0)}° · ${ui.az} ${r.azimuth.toFixed(0)}° · ${ui.altKm} ${r.alt.toFixed(0)}
+        <br />nadir ${r.lat.toFixed(1)}°, ${r.lng.toFixed(1)}°</p></article>`;
+    list.innerHTML = `${leo.length ? `<h3>${ui.leo}</h3><div class="grid chips">${leo.map(card).join("")}</div>` : ""}
+      ${geo.length ? `<h3>${ui.geo}</h3><div class="grid chips">${geo.map(card).join("")}</div>` : ""}`;
   };
 
   tick();

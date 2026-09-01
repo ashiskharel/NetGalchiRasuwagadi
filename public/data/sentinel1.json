@@ -1,0 +1,29 @@
+{
+  "fetched_utc": "2026-09-01T05:59:18.237Z",
+  "stills": [
+    {
+      "date": "2026-08-28",
+      "startTime": "2026-08-28T12:21:41Z",
+      "platform": "Sentinel-1D",
+      "direction": "ASCENDING",
+      "browse": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260828T122141_20260828T122206_004326_007FA4_01B4.jpg",
+      "south": 27.591553,
+      "west": 83.924644,
+      "north": 29.524954,
+      "east": 86.749588,
+      "scene": "S1D_IW_GRDH_1SDV_20260828T122141_20260828T122206_004326_007FA4_01B4"
+    },
+    {
+      "date": "2026-08-31",
+      "startTime": "2026-08-31T00:10:37Z",
+      "platform": "Sentinel-1D",
+      "direction": "DESCENDING",
+      "browse": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260831T001037_20260831T001102_004362_0080EC_2C5B.jpg",
+      "south": 27.070356,
+      "west": 85.231094,
+      "north": 28.997856,
+      "east": 88.039307,
+      "scene": "S1D_IW_GRDH_1SDV_20260831T001037_20260831T001102_004362_0080EC_2C5B"
+    }
+  ]
+}
