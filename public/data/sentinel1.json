@@ -1,5 +1,5 @@
 {
-  "fetched_utc": "2026-09-23T05:58:17.955Z",
+  "fetched_utc": "2026-09-24T06:11:19.578Z",
   "stills": [
     {
       "date": "2026-08-28",
@@ -84,6 +84,18 @@
       "north": 29.52507,
       "east": 86.748611,
       "scene": "S1D_IW_GRDH_1SDV_20260921T122142_20260921T122207_004676_008BC6_12B7"
+    },
+    {
+      "date": "2026-09-24",
+      "startTime": "2026-09-24T00:10:38Z",
+      "platform": "Sentinel-1D",
+      "direction": "DESCENDING",
+      "browse": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260924T001038_20260924T001103_004712_008D08_3F58.jpg",
+      "south": 27.070343,
+      "west": 85.231033,
+      "north": 28.997946,
+      "east": 88.039276,
+      "scene": "S1D_IW_GRDH_1SDV_20260924T001038_20260924T001103_004712_008D08_3F58"
     }
   ]
 }
