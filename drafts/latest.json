@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-11T12:56",
-  "fetched_utc": "2026-10-11T07:11:26.879Z",
+  "fetched_npt": "2026-10-12T13:05",
+  "fetched_utc": "2026-10-12T07:20:43.448Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,8 +60,8 @@
       ]
     },
     "paths": {
-      "north": 131,
-      "south": 236,
+      "north": 130,
+      "south": 231,
       "other": 0,
       "unique": [
         {
@@ -212,7 +212,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-11T07:11:22.430000"
+    "latestPathTime": "2026-10-12T07:20:38.050000"
   },
   "news": [
     {
@@ -223,54 +223,14 @@
       "ok": true,
       "items": [
         {
-          "title": "Kathmandu-Dammam flight cancelled amid tensions in Saudi Arabia",
-          "link": "https://english.onlinekhabar.com/kathmandu-dammam-flight-cancelled.html",
-          "pubDate": "Sun, 11 Oct 2026 07:03:47 +0000"
+          "title": "7 things we know about the Budhi Gandaki flood",
+          "link": "https://english.onlinekhabar.com/things-know-about-budhi-gandaki-flood.html",
+          "pubDate": "Mon, 12 Oct 2026 05:11:08 +0000"
         },
         {
-          "title": "Army says dry landslide blocked Budhigandaki’s flow before flood",
-          "link": "https://english.onlinekhabar.com/army-budhigandakis-before-flood.html",
-          "pubDate": "Sun, 11 Oct 2026 06:59:38 +0000"
-        },
-        {
-          "title": "Australian PM extends Dashain greetings to Nepali community, expresses solidarity with flood victims",
-          "link": "https://english.onlinekhabar.com/australian-pm-extends-dashain-greetings-to-nepali-community-expresses-solidarity-with-flood-victims.html",
-          "pubDate": "Sun, 11 Oct 2026 06:42:37 +0000"
-        },
-        {
-          "title": "Dahal urges people to help Budhigandaki flood victims",
-          "link": "https://english.onlinekhabar.com/dahal-budhigandaki-flood.html",
-          "pubDate": "Sun, 11 Oct 2026 06:33:17 +0000"
-        },
-        {
-          "title": "Budhigandaki flood: 10 people go missing; six bridges swept away",
-          "link": "https://english.onlinekhabar.com/budhigandaki-flood-10-people-go-missing-six-bridges-swept-away.html",
-          "pubDate": "Sun, 11 Oct 2026 06:31:56 +0000"
-        },
-        {
-          "title": "Scenes from the Budhi Gandaki flood-affected areas (Photos)",
-          "link": "https://english.onlinekhabar.com/budhi-gandaki-flood-photos.html",
-          "pubDate": "Sun, 11 Oct 2026 05:43:08 +0000"
-        },
-        {
-          "title": "Gandaki provincial health ministry releases preliminary details of Budhigandaki flood damage",
-          "link": "https://english.onlinekhabar.com/details-budhigandaki-flood.html",
-          "pubDate": "Sun, 11 Oct 2026 05:40:12 +0000"
-        },
-        {
-          "title": "Budhigandaki flood washes away Times Energy buildings, 18 employees flee to safety",
-          "link": "https://english.onlinekhabar.com/budhigandaki-flood-times-energy.html",
-          "pubDate": "Sun, 11 Oct 2026 05:26:57 +0000"
-        },
-        {
-          "title": "Deuba expresses grief over impact of Budhigandaki flood",
-          "link": "https://english.onlinekhabar.com/deuba-grief-budhigandaki-flood.html",
-          "pubDate": "Sun, 11 Oct 2026 05:20:24 +0000"
-        },
-        {
-          "title": "Gagan Thapa expresses grief over Budhigandaki flood damage, urges help with rescue",
-          "link": "https://english.onlinekhabar.com/gagan-thapa-budhigandaki-flood.html",
-          "pubDate": "Sun, 11 Oct 2026 05:06:06 +0000"
+          "title": "Following the trail of a flood that tore through northern Gorkha",
+          "link": "https://english.onlinekhabar.com/budhi-gandaki-flood-landslide-danger.html",
+          "pubDate": "Mon, 12 Oct 2026 03:46:54 +0000"
         }
       ]
     },
@@ -282,64 +242,14 @@
       "ok": true,
       "items": [
         {
-          "title": "बूढीगण्डकी बाढी प्रभावितको सहयोगमा जुट्न प्रचण्डको आग्रह",
-          "link": "https://www.onlinekhabar.com/2026/10/2036775/prachanda-urges-people-to-come-together-to-help-those-affected-by-the-budhigandaki-flood",
-          "pubDate": "Sun, 11 Oct 2026 06:25:48 +0000"
+          "title": "सारङ्गीमा नेपाली समाज, कर्खामा बाढीका पीडा",
+          "link": "https://www.onlinekhabar.com/2026/10/2037332/nepali-society-in-sarangi-suffering-from-floods-in-karkha",
+          "pubDate": "Mon, 12 Oct 2026 05:20:20 +0000"
         },
         {
-          "title": "बुढीगण्डकी बाढीबारे सेनाको रिपोर्टिङ : ‘सुक्खा पहिरोले बहाव थुनियो अनि बाढी आयो’",
-          "link": "https://www.onlinekhabar.com/2026/10/2036748/army-reporting-on-floods-in-budhi-gandaki-dry-landslide-blocked-the-flow-and-caused-flooding",
-          "pubDate": "Sun, 11 Oct 2026 06:13:00 +0000"
-        },
-        {
-          "title": "यस्तो देखिन्छ बूढीगण्डकी बाढी प्रभावित क्षेत्र (तस्वीरहरू)",
-          "link": "https://www.onlinekhabar.com/2026/10/2036711/this-is-what-the-budhigandaki-flood-affected-area-looks-like-photos",
-          "pubDate": "Sun, 11 Oct 2026 05:38:08 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढी : टाइम्स इनर्जीका भवन बगे, १८ कर्मचारीले भागेर ज्यान जोगाए",
-          "link": "https://www.onlinekhabar.com/2026/10/2036720/budhigandaki-flood-times-energy-building-washed-away-18-employees-escape-for-their-lives",
-          "pubDate": "Sun, 11 Oct 2026 05:17:07 +0000"
-        },
-        {
-          "title": "बूढीगण्डकीमा बाढी : प्रदेश स्वास्थ्य मन्त्रालयले सार्वजनिक गर्‍यो क्षतिको प्रारम्भिक विवरण",
-          "link": "https://www.onlinekhabar.com/2026/10/2036707/floods-in-budhigandaki-provincial-health-ministry-releases-preliminary-details-of-damage",
-          "pubDate": "Sun, 11 Oct 2026 05:15:51 +0000"
-        },
-        {
-          "title": "बूढीगण्डकीमा कसरी आयो विनाशकारी बाढी ?",
-          "link": "https://www.onlinekhabar.com/2026/10/2036626/how-did-the-devastating-flood-in-budhigandaki-occur",
-          "pubDate": "Sun, 11 Oct 2026 05:13:56 +0000"
-        },
-        {
-          "title": "देउवाद्वारा बूढीगण्डकी बाढीले पारेको असरप्रति दुःख व्यक्त",
-          "link": "https://www.onlinekhabar.com/2026/10/2036714/deuba-expresses-grief-over-the-impact-of-budhigandaki-floods",
-          "pubDate": "Sun, 11 Oct 2026 05:12:10 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढीका कारण जोखिममा परेका ६ जनाको हवाई उद्धार",
-          "link": "https://www.onlinekhabar.com/2026/10/2036709/air-rescue-of-6-people-at-risk-due-to-budhigandaki-floods",
-          "pubDate": "Sun, 11 Oct 2026 04:56:24 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढीले पुर्‍याएको क्षतिप्रति गगन थापाद्वारा दुःख व्यक्त, उद्धारमा जुट्न आग्रह",
-          "link": "https://www.onlinekhabar.com/2026/10/2036704/gagan-thapa-expresses-grief-over-the-damage-caused-by-the-budhigandaki-floods-urges-people-to-join-in-the-rescue-efforts",
-          "pubDate": "Sun, 11 Oct 2026 04:30:26 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढीले आरुघाट-धादिङ जोड्ने पुल पनि बगायो",
-          "link": "https://www.onlinekhabar.com/2026/10/2036686/the-budhigandaki-flood-also-washed-away-the-bridge-connecting-arughat-dhading",
-          "pubDate": "Sun, 11 Oct 2026 03:53:05 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढी : चार जनाको अवस्था अज्ञात",
-          "link": "https://www.onlinekhabar.com/2026/10/2036675/budhigandaki-flood-condition-of-four-people-unknown",
-          "pubDate": "Sun, 11 Oct 2026 03:33:54 +0000"
-        },
-        {
-          "title": "उत्तरी गोरखावासी भन्छन् – पहिले यस्तो बाढी देखेका थिएनौं",
-          "link": "https://www.onlinekhabar.com/2026/10/2036674/residents-of-north-gorkha-say-we-have-not-seen-such-floods-since-our-birth",
-          "pubDate": "Sun, 11 Oct 2026 03:29:43 +0000"
+          "title": "बूढीगण्डकीमा बाढी : इसिमोडको प्रारम्भिक आकलन के छ ?",
+          "link": "https://www.onlinekhabar.com/2026/10/2037287/floods-in-budhigandaki-what-is-icimods-initial-assessment",
+          "pubDate": "Mon, 12 Oct 2026 01:35:26 +0000"
         }
       ]
     },
@@ -351,14 +261,9 @@
       "ok": true,
       "items": [
         {
-          "title": "Budhi Gandaki flood: Aarughat bazar being evacuated",
-          "link": "https://risingnepaldaily.com/news/87662",
-          "pubDate": "Sun, 11 Oct 2026 09:29:06 +0545"
-        },
-        {
-          "title": "Budhi Gandaki flash flood: Salleri bazar, hydro power camp washed away",
-          "link": "https://risingnepaldaily.com/news/87657",
-          "pubDate": "Sun, 11 Oct 2026 08:58:09 +0545"
+          "title": "Flood victims face a bleak Dashain",
+          "link": "https://risingnepaldaily.com/news/87700",
+          "pubDate": "Mon, 12 Oct 2026 09:46:54 +0545"
         }
       ]
     },
@@ -369,6 +274,36 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "Flood cuts off two villages along Budhigandaki in Gorkha",
+          "link": "https://kathmandupost.com/gandaki-province/2026/10/12/flood-cuts-off-two-villages-along-budhigandaki-in-gorkha",
+          "pubDate": ""
+        },
+        {
+          "title": "Mud and debris mark the trail of a flash flood in Budhigandaki",
+          "link": "https://kathmandupost.com/visual-stories/2026/10/12/mud-and-debris-mark-the-trail-of-a-flash-flood-in-budhigandaki",
+          "pubDate": ""
+        },
+        {
+          "title": "Flood damage makes journeys longer and costlier in Rasuwa",
+          "link": "https://kathmandupost.com/national/2026/10/12/flood-damage-makes-journeys-longer-and-costlier-in-rasuwa",
+          "pubDate": ""
+        },
+        {
+          "title": "Locals alerted each other of Budhigandaki flood an hour before official warning",
+          "link": "https://kathmandupost.com/national/2026/10/12/locals-alerted-each-other-of-budhigandaki-flood-an-hour-before-official-warning",
+          "pubDate": ""
+        },
+        {
+          "title": "Bhotekoshi flood wasn’t a freak event. It’s the Himalaya doing what it does",
+          "link": "https://kathmandupost.com/columns/2026/10/11/bhotekoshi-flood-wasn-t-a-freak-event-it-s-the-himalaya-doing-what-it-does",
+          "pubDate": ""
+        },
+        {
+          "title": "SMS alerts helped avert loss of life in Budhi Gandaki floods, says disaster management chief",
+          "link": "https://kathmandupost.com/interviews/2026/10/11/sms-alerts-helped-avert-loss-of-life-in-budhi-gandaki-floods-says-disaster-management-chief",
+          "pubDate": ""
+        },
         {
           "title": "‘It reminded me of the Bhotekoshi floods’: Gorkha residents recount escape",
           "link": "https://kathmandupost.com/national/2026/10/11/it-reminded-me-of-the-bhotekoshi-floods-gorkha-residents-recount-escape",
@@ -398,21 +333,6 @@
           "title": "What we know so far about the damage caused by Budhi Gandaki floods",
           "link": "https://kathmandupost.com/gandaki-province/2026/10/11/what-we-know-so-far-about-the-damage-caused-by-budhi-gandaki-floods",
           "pubDate": ""
-        },
-        {
-          "title": "Budhi Gandaki flood washes away three bridges in Gorkha",
-          "link": "https://kathmandupost.com/national/2026/10/11/budhi-gandaki-flood-washes-away-three-bridges-in-gorkha",
-          "pubDate": ""
-        },
-        {
-          "title": "Flood sweeps away houses, bridges in Gorkha",
-          "link": "https://kathmandupost.com/national/2026/10/11/flood-sweeps-away-seven-houses-in-gorkha",
-          "pubDate": ""
-        },
-        {
-          "title": "Smuggling networks exploit Nepal’s open border to flood markets with untaxed goods",
-          "link": "https://kathmandupost.com/national/2026/10/11/smuggling-networks-exploit-nepal-s-open-border-to-flood-markets-with-untaxed-goods",
-          "pubDate": ""
         }
       ]
     },
@@ -424,49 +344,9 @@
       "ok": true,
       "items": [
         {
-          "title": "बुढीगण्डकीको बाढीले शान्ति बजारका घर डुबानमा (तस्बिरहरू)",
-          "link": "https://www.ratopati.com/story/598801/houses-in-shanti-bazaar-submerged-by-budhi-gandaki-floods-photos",
-          "pubDate": "Sun, 11 Oct 2026 07:06:48 +0000"
-        },
-        {
-          "title": "पहिरोले बुढीगण्डकी थुनिँदा बाढीको वितण्डा",
-          "link": "https://www.ratopati.com/story/598744/floods-erupt-as-landslide-blocks-budhi-gandaki",
-          "pubDate": "Sun, 11 Oct 2026 07:00:00 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढी अपडेट : ६ वटा पुल बगे, १० जना सम्पर्कविहीन",
-          "link": "https://www.ratopati.com/story/598799/budhigandaki-flood-update-6-bridges-washed-away-10-people-missing",
-          "pubDate": "Sun, 11 Oct 2026 06:57:35 +0000"
-        },
-        {
-          "title": "बुढीगण्डकी बाढीले आरुघाट र सोती खोलाका पुलमा ठूलो क्षति, सडक विभागद्वारा प्राविधिक अध्ययन सुरु",
-          "link": "https://www.ratopati.com/story/598797/budhi-gandaki-flood-causes-major-damage-to-bridges-over-arughat-and-soti-rivers-road-department-begins-technical-study",
-          "pubDate": "Sun, 11 Oct 2026 06:49:42 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढी : त्रिशूली र नारायणी किनारमा सतर्कता",
-          "link": "https://www.ratopati.com/story/598795/budhigandaki-flood-vigilance-on-the-banks-of-trishuli-and-narayani",
-          "pubDate": "Sun, 11 Oct 2026 06:44:48 +0000"
-        },
-        {
-          "title": "बुढीगण्डकीमा कसरी आयो बाढी ? के भन्छ बाढी पूर्वानुमान महाशाखा ?",
-          "link": "https://www.ratopati.com/story/598794/how-did-the-flood-occur-in-budhi-gandaki-what-does-the-flood-forecasting-division-say",
-          "pubDate": "Sun, 11 Oct 2026 06:41:03 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढीले पारेको असरको खबरले अत्यन्त दुःखी बनाएको छ :  डा.शशांक",
-          "link": "https://www.ratopati.com/story/598791/news-of-the-impact-of-the-budhigandaki-floods-has-made-me-extremely-sad-dr-shashank",
-          "pubDate": "Sun, 11 Oct 2026 06:21:08 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढी प्रभावित नागरिकको उद्धार र सुरक्षामा जुट्न प्रचण्डको आग्रह",
-          "link": "https://www.ratopati.com/story/598787/prachanda-urges-people-to-join-hands-in-rescuing-and-protecting-citizens-affected-by-budhigandaki-floods",
-          "pubDate": "Sun, 11 Oct 2026 06:05:34 +0000"
-        },
-        {
-          "title": "गोरखाको बाढी क्षेत्रमा सेनाको खोज तथा उद्धार टोली परिचालन, ६ जनाको हवाई उद्धार",
-          "link": "https://www.ratopati.com/story/598778/army-search-and-rescue-team-mobilized-in-flood-hit-gorkha-6-people-airlifted",
-          "pubDate": "Sun, 11 Oct 2026 05:35:17 +0000"
+          "title": "भोटेकोशी र बूढीगण्डकीको बाढीबाट उजागर भएको नेपालको हिमाली नदीको जोखिम",
+          "link": "https://www.ratopati.com/story/599029/the-vulnerability-of-nepals-mountainous-rivers-exposed-by-the-floods-of-the-bhotekoshi-and-budhigandaki",
+          "pubDate": "Mon, 12 Oct 2026 06:45:00 +0000"
         }
       ]
     },
@@ -484,7 +364,7 @@
         },
         {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVJfOTVQZFp6Z195aW9WZmtZcGdDc3ZwcGh2cUFvVTZwTWIxVTlvRFJsSmJIbzJzdVVfMmhCc0gwazYxby1ocXlyaDhxeXo4UUdXQk1sTFB4RnNnUks1LXdSMFY1S3MtcXU3VDlKcmk3UEVWdDZxeXZwRXdJYWUwdTlHeVFmak9iWThkLVpVVHRtLWsyYVpGd05yeVpiX0Ricm1Bc0NOQmR6ZEJFTVFHR2NHVEg5dUFtak9kMFJTaDUtZw?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFMwdzJHQnFMVTd0Mi11YWJ6UmlpMV8wVWRxU0kzNkZvVFZWVGZMZmFaR1g3ejBPdlp2TlNsck5LWE5BZGVqX0Z3Wi1PUFBqdkluTnYzTmtVZ2dCTENPZVBJOWE5Zmx6am1uMEczUk9FMDdma2RDOUtrNy0wcHBabGpuUHVUV0g5V0kzZF90a29TNUZIcGcwalZWaUNSbnB6eEU4cWJxcFE1VlJIVk5CNDZoRzVPV1dnaEx1STlFWHA1TXFyZW1N?oc=5",
           "pubDate": "Wed, 30 Sep 2026 15:17:00 GMT"
         },
         {
@@ -498,24 +378,19 @@
           "pubDate": "Thu, 01 Oct 2026 22:55:27 GMT"
         },
         {
-          "title": "Nepal Telecom installs solar system at Timure tower to end fuel dependency - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOG8xZmNERVlqYkNWd2JaWWl3ejRwcWJOVG9aaFVTdHI0SWZqdGx0Y1RzTWJWdl80WTFQWnZJQ1RJRzc1eC13dnRsN2VuZjdWci0wTGVQdFFGT0QxQlNUMXREUGp6ZU5NUmQyTFdrZmhwYzBxYWFkY3ZIMkxRa2o5anFYbXA4MkFic29sT3BGbFowTDNLc0FZSzBwdU1oeWRSSUZHS1pJVGNHOUR2RWFnRWRNU0d0ZTV3bjUteW92SWVfbG9s?oc=5",
-          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Solar system installed at Timure telephone tower, ending need to transport diesel - Khabarhub",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyLWZEbjZmdlU4RFV3dG5NV0FUbDRySEtUNXRwS29ZX0daS28yck5NLUtxODB5cjNxSTN0TGREQkM4d1JhWGt0X3ozeXQ1bmltMERNa1Ewc3k?oc=5",
-          "pubDate": "Mon, 28 Sep 2026 14:52:57 GMT"
-        },
-        {
-          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
-          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
           "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
           "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
         },
         {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
@@ -528,9 +403,14 @@
           "pubDate": "Wed, 09 Sep 2026 00:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores mobile services up to Nepal-China border - Khabarhub",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nX1BCWFIzbDJsSXVaNzlqNlpHbTA1UWVUaUp1b1pIVHRFM3FxVWhIcl9FQzNwYW8ybHN2SzJ2R2FwdVBQMjRpcUFZeXZvVHFUeXd0MDRLblE?oc=5",
+          "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica",
