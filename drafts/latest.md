@@ -1,4 +1,4 @@
-# Restoration draft — 2026-10-12T13:05 NPT
+# Restoration draft — 2026-10-13T13:26 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -10,9 +10,9 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 ## RIPEstat (AS23752)
 - Prefix: `202.70.64.0/19`
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
-- Customers (right): AS131341, AS136794, AS139022, AS14789, AS150138, AS45353, AS58456
-- Path observations: north 130 · south 231 · other 0
-- Latest path confirm: 2026-10-12T07:20:38.050000 UTC
+- Customers (right): AS131341, AS136794, AS139022, AS142008, AS14789, AS150138, AS45353, AS58456
+- Path observations: north 128 · south 233 · other 0
+- Latest path confirm: 2026-10-13T07:41:55.180000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -36,32 +36,29 @@ Distinct AS paths (prepending stripped, top 16):
 ## News headlines (publisher RSS; Google News is optional and often blocked from Actions)
 
 ### onlinekhabar-en (en)
-- [7 things we know about the Budhi Gandaki flood](https://english.onlinekhabar.com/things-know-about-budhi-gandaki-flood.html) — Mon, 12 Oct 2026 05:11:08 +0000
-- [Following the trail of a flood that tore through northern Gorkha](https://english.onlinekhabar.com/budhi-gandaki-flood-landslide-danger.html) — Mon, 12 Oct 2026 03:46:54 +0000
+No items.
 
 ### onlinekhabar-ne (ne)
-- [सारङ्गीमा नेपाली समाज, कर्खामा बाढीका पीडा](https://www.onlinekhabar.com/2026/10/2037332/nepali-society-in-sarangi-suffering-from-floods-in-karkha) — Mon, 12 Oct 2026 05:20:20 +0000
-- [बूढीगण्डकीमा बाढी : इसिमोडको प्रारम्भिक आकलन के छ ?](https://www.onlinekhabar.com/2026/10/2037287/floods-in-budhigandaki-what-is-icimods-initial-assessment) — Mon, 12 Oct 2026 01:35:26 +0000
+- [सशस्त्र प्रहरी परिवार महिला संघद्वारा भोटेकोशी बाढी प्रभावितलाई राहत रकम हस्तान्तरण](https://www.onlinekhabar.com/2026/10/2038366/armed-police-family-womens-association-hands-over-relief-funds-to-bhotekoshi-flood-victims) — Tue, 13 Oct 2026 07:27:08 +0000
+- [बूढीगण्डकी बाढी : धार्चेबाहेक सबै ठाउँमा विद्युत् आपूर्ति पुनः सञ्चालन](https://www.onlinekhabar.com/2026/10/2038291/budhi-gandaki-flood-power-supply-restored-to-all-areas-except-dharche) — Tue, 13 Oct 2026 06:36:49 +0000
+- [बूढीगण्डकीको बाढीले उठाएका थप प्रश्नहरू](https://www.onlinekhabar.com/2026/10/2037786/more-questions-raised-by-the-budhigandaki-floods) — Tue, 13 Oct 2026 04:03:49 +0000
 
 ### rising-nepal (en)
-- [Flood victims face a bleak Dashain](https://risingnepaldaily.com/news/87700) — Mon, 12 Oct 2026 09:46:54 +0545
+- [NCP Coordinator Prachanda hands over houses built by YCL for victims of Bhotekoshi flood](https://risingnepaldaily.com/news/87747) — Tue, 13 Oct 2026 12:54:49 +0545
 
 ### kathmandu-post (en)
+- [Budhigandaki flood victims struggle to find shelter](https://kathmandupost.com/national/2026/10/13/budhigandaki-flood-victims-struggle-to-find-shelter) — 
+- [Their flood videos went viral. They are still haunted by what they saw](https://kathmandupost.com/national/2026/10/13/their-flood-videos-went-viral-they-are-still-haunted-by-what-they-saw) — 
+- [Can Himalayan floods bridge the India-China divide?](https://kathmandupost.com/columns/2026/10/12/can-himalayan-floods-bridge-the-india-china-divide) — 
+- [Budhigandaki flood: What the report says about the gap between local warnings and official records](https://kathmandupost.com/national/2026/10/12/budhigandaki-flood-what-the-report-says-about-the-gap-between-local-warnings-and-official-records) — 
+- [Court ruling leads to cancellation of ‘Perfect Center Fillz’ trademark](https://kathmandupost.com/money/2026/10/12/court-ruling-leads-to-cancellation-of-perfect-center-fillz-trademark) — 
 - [Flood cuts off two villages along Budhigandaki in Gorkha](https://kathmandupost.com/gandaki-province/2026/10/12/flood-cuts-off-two-villages-along-budhigandaki-in-gorkha) — 
 - [Mud and debris mark the trail of a flash flood in Budhigandaki](https://kathmandupost.com/visual-stories/2026/10/12/mud-and-debris-mark-the-trail-of-a-flash-flood-in-budhigandaki) — 
 - [Flood damage makes journeys longer and costlier in Rasuwa](https://kathmandupost.com/national/2026/10/12/flood-damage-makes-journeys-longer-and-costlier-in-rasuwa) — 
 - [Locals alerted each other of Budhigandaki flood an hour before official warning](https://kathmandupost.com/national/2026/10/12/locals-alerted-each-other-of-budhigandaki-flood-an-hour-before-official-warning) — 
-- [Bhotekoshi flood wasn’t a freak event. It’s the Himalaya doing what it does](https://kathmandupost.com/columns/2026/10/11/bhotekoshi-flood-wasn-t-a-freak-event-it-s-the-himalaya-doing-what-it-does) — 
-- [SMS alerts helped avert loss of life in Budhi Gandaki floods, says disaster management chief](https://kathmandupost.com/interviews/2026/10/11/sms-alerts-helped-avert-loss-of-life-in-budhi-gandaki-floods-says-disaster-management-chief) — 
-- [‘It reminded me of the Bhotekoshi floods’: Gorkha residents recount escape](https://kathmandupost.com/national/2026/10/11/it-reminded-me-of-the-bhotekoshi-floods-gorkha-residents-recount-escape) — 
-- [Five things to know about the Budhi Gandaki flash flood](https://kathmandupost.com/gandaki-province/2026/10/11/five-things-to-know-about-the-budhi-gandaki-flash-flood) — 
-- [Bailey bridge restores road link between Rasuwa and Nuwakot after six weeks](https://kathmandupost.com/national/2026/10/11/bailey-bridge-restores-road-link-between-rasuwa-and-nuwakot-after-six-weeks) — 
-- [Landslide may have triggered flash flooding in Budhi Gandaki, officials say](https://kathmandupost.com/gandaki-province/2026/10/11/landslide-may-have-triggered-flash-flooding-in-budhi-gandaki) — 
-- [Four people unaccounted for after Budhi Gandaki floods](https://kathmandupost.com/gandaki-province/2026/10/11/four-people-unaccounted-for-after-budhi-gandaki-floods) — 
-- [What we know so far about the damage caused by Budhi Gandaki floods](https://kathmandupost.com/gandaki-province/2026/10/11/what-we-know-so-far-about-the-damage-caused-by-budhi-gandaki-floods) — 
 
 ### ratopati (ne)
-- [भोटेकोशी र बूढीगण्डकीको बाढीबाट उजागर भएको नेपालको हिमाली नदीको जोखिम](https://www.ratopati.com/story/599029/the-vulnerability-of-nepals-mountainous-rivers-exposed-by-the-floods-of-the-bhotekoshi-and-budhigandaki) — Mon, 12 Oct 2026 06:45:00 +0000
+- [नेपाल टेलिकमको ‘अटम अफर २०८३’ सार्वजनिक, भ्वाइस र डाटामा नयाँ प्याकेज](https://www.ratopati.com/story/599294/nepal-telecoms-autumn-offer-2083-announced-new-packages-in-voice-and-data) — Tue, 13 Oct 2026 07:24:42 +0000
 
 ### gnews-en (en)
 - [Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper](https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5) — Thu, 01 Oct 2026 12:01:52 GMT
@@ -70,11 +67,11 @@ Distinct AS paths (prepending stripped, top 16):
 - [Nepal Telecom suffers over NPR 88 million in infrastructure damage in Bhotekoshi floods - Daily Excelsior](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYU9lOEdobU9TWHVHRVEtUFZSVFdBLV9aRUlKXzZfSUEtY2ZOZ1BlM0ZHT1VHd2hnU0tkcVhKdzZ4Zm5peHEwWmtMNjJIOGFlT2FYNEE5ZnRGTm8tWXhPbl9aUmxSWm5VVWNjY0dybUdrTm10dWZZU1UyNXNnOGRlenBUV2pVN3lUVVI5WC1USTBfNUpuZzFDLUZldVlScWFXd2JodUFNLS1uN2ZVZm55R2ZvMWpfLS1aRmlZ0gG_AUFVX3lxTFAyNmQyQmZvc0FDc0xVMFpnUXRRRkpLcWNfMlA2TXd5ZlI3SnA4MW9DbWM1a2dvZkFkdUFMNmtZNG1uelIzYktDOVlnWjMxQWVjT3AyOXhlYVo1U09UdlRTNkwyQTJNeElQMGR0aFRieHVJSTh3ZGotWjlhNzF4YTVab1VQb3IzUzloV3dIT3BZbFJhaV9jNFB2bUNpWjg0QkVEcDBkYTZ1SVpoMzhnUkZLaGwtLU9DbDRzaTZyWi00?oc=5) — Thu, 01 Oct 2026 22:55:27 GMT
 - [Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5) — Fri, 28 Aug 2026 07:00:00 GMT
 - [Mobile services restored in flood-affected areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5) — Sat, 29 Aug 2026 07:00:00 GMT
-- [Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati](https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5) — Mon, 28 Sep 2026 10:59:06 GMT
 - [Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post](https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5) — Thu, 03 Sep 2026 07:00:00 GMT
+- [Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati](https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5) — Mon, 28 Sep 2026 10:59:06 GMT
 - [Nepal Telecom contributes Rs 100 million to PM Disaster Relief Fund - Nepal Khabar](https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lcGxaNEZrVkpqdml5MHcyRHFRVU1Db0VEXzZxMzNQdEp3OFZSaHYta0F2VnI2bmI3UWV6TElULVJBOUNpQnZnWnk3dFFuSzluakI2Ri1rU1M?oc=5) — Wed, 09 Sep 2026 00:00:00 GMT
+- [87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News](https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5) — Thu, 27 Aug 2026 07:00:00 GMT
 - [Nepal Telecom restores mobile services up to Nepal-China border - Khabarhub](https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nX1BCWFIzbDJsSXVaNzlqNlpHbTA1UWVUaUp1b1pIVHRFM3FxVWhIcl9FQzNwYW8ybHN2SzJ2R2FwdVBQMjRpcUFZeXZvVHFUeXd0MDRLblE?oc=5) — Sun, 30 Aug 2026 07:00:00 GMT
-- [Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5) — Wed, 09 Sep 2026 07:00:00 GMT
 - [Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica](https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5) — Tue, 08 Sep 2026 07:00:00 GMT
 
 ## Open field reports
