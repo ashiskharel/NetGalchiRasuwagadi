@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-15T11:39",
-  "fetched_utc": "2026-10-15T05:54:11.929Z",
+  "fetched_npt": "2026-10-16T11:36",
+  "fetched_utc": "2026-10-16T05:51:50.176Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -61,8 +61,8 @@
       ]
     },
     "paths": {
-      "north": 130,
-      "south": 239,
+      "north": 135,
+      "south": 236,
       "other": 0,
       "unique": [
         {
@@ -213,7 +213,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-15T05:54:02.970000"
+    "latestPathTime": "2026-10-16T05:51:44.730000"
   },
   "news": [
     {
@@ -224,19 +224,9 @@
       "ok": true,
       "items": [
         {
-          "title": "More than 1,000 rescued by helicopter from Budhigandaki flood area",
-          "link": "https://english.onlinekhabar.com/more-than-1000-rescued.html",
-          "pubDate": "Thu, 15 Oct 2026 05:52:52 +0000"
-        },
-        {
-          "title": "Measles-rubella vaccination campaign delayed in flood-hit districts as displaced children remain untraced",
-          "link": "https://english.onlinekhabar.com/measles-rubella-vaccination-flood.html",
-          "pubDate": "Thu, 15 Oct 2026 03:52:11 +0000"
-        },
-        {
-          "title": "Malaysia gives Nepal over Rs 150 million for post-flood reconstruction",
-          "link": "https://english.onlinekhabar.com/malaysia-gives-nepal-150-million.html",
-          "pubDate": "Wed, 14 Oct 2026 13:29:50 +0000"
+          "title": "Nepal Red Cross to build 1,000 temporary shelters and 1,000 permanent homes for flood victims",
+          "link": "https://english.onlinekhabar.com/nepal-red-cross-build-home-for-flood.html",
+          "pubDate": "Thu, 15 Oct 2026 11:44:02 +0000"
         }
       ]
     },
@@ -248,19 +238,29 @@
       "ok": true,
       "items": [
         {
-          "title": "बूढीगण्डकी बाढी : प्रभावित क्षेत्रबाट एक हजार बढीको हवाई उद्धार",
-          "link": "https://www.onlinekhabar.com/2026/10/2039595/budhi-gandaki-flood-over-1000-people-airlifted-from-affected-areas",
-          "pubDate": "Thu, 15 Oct 2026 05:43:46 +0000"
+          "title": "कालीगण्डकी बाढी : रातोपानीको तातोपानी कुण्ड बगरमा परिणत",
+          "link": "https://www.onlinekhabar.com/2026/10/2040127/kaligandaki-flood-hot-water-tank-of-ratopani-turns-into-a-swamp",
+          "pubDate": "Fri, 16 Oct 2026 04:12:55 +0000"
         },
         {
-          "title": "रसुवा बाढीले ३५ हजार बालबालिका तितरबितर, दादुरा खोप प्रभावित",
-          "link": "https://www.onlinekhabar.com/2026/10/2039369/rasuwa-floods-disperse-35000-children-measles-vaccination-affected",
-          "pubDate": "Wed, 14 Oct 2026 15:41:58 +0000"
+          "title": "४ हजार ९९९ रुपैयाँमै नेपाल टेलिकमको वार्षिक इन्टरनेट प्याकेज, जडान नि:शुल्क",
+          "link": "https://www.onlinekhabar.com/2026/10/2040113/nepal-telecoms-annual-internet-package-for-rs-4999",
+          "pubDate": "Fri, 16 Oct 2026 03:55:00 +0000"
         },
         {
-          "title": "बाढीले गहिरो घाउ लगायो, भविष्यको चिन्ताले चहर्‍याउँदैछ",
-          "link": "https://www.onlinekhabar.com/2026/10/2039255/the-flood-caused-deep-wounds-and-worries-about-the-future-are-looming",
-          "pubDate": "Wed, 14 Oct 2026 15:38:29 +0000"
+          "title": "भोटेकोशी–त्रिशूली बाढीमा क्षतिग्रस्त १८ झोलुङ्गे पुल मर्मतपछि सञ्चालनमा",
+          "link": "https://www.onlinekhabar.com/2026/10/2040011/18-suspension-bridges-damaged-in-bhotekoshi-trishuli-floods-are-operational-after-repair",
+          "pubDate": "Thu, 15 Oct 2026 23:39:48 +0000"
+        },
+        {
+          "title": "भोटेकोशी बाढीमा बेपत्ता काभ्रेका ३७ जनालाई मृत घोषणाको प्रक्रिया थालियो",
+          "link": "https://www.onlinekhabar.com/2026/10/2040005/process-to-declare-37-people-from-kavre-missing-in-bhotekoshi-flood-as-dead-begins",
+          "pubDate": "Thu, 15 Oct 2026 23:31:02 +0000"
+        },
+        {
+          "title": "यल्लो गुम्बामा आश्रित बाढीपीडितको आक्रोश- १५ मिनेटको दूरीमा रहेको सरकारले किन देख्दैन ?",
+          "link": "https://www.onlinekhabar.com/2026/10/2039936/anger-of-flood-victims-sheltering-in-yellow-monastery-why-doesnt-the-government-which-is-15-minutes-away-see",
+          "pubDate": "Thu, 15 Oct 2026 15:29:59 +0000"
         }
       ]
     },
@@ -270,7 +270,13 @@
       "url": "https://risingnepaldaily.com/rss",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "Kaligandaki flood turns Tatopani hot spring into barren riverbed",
+          "link": "https://risingnepaldaily.com/news/87864",
+          "pubDate": "Fri, 16 Oct 2026 09:37:16 +0545"
+        }
+      ]
     },
     {
       "id": "kathmandu-post",
@@ -279,6 +285,16 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "How will Nepal verify those missing after the Bhotekoshi floods?",
+          "link": "https://kathmandupost.com/national/2026/10/15/how-will-nepal-verify-those-missing-after-the-bhotekoshi-floods",
+          "pubDate": ""
+        },
+        {
+          "title": "More than 1,200 farm animals lost in Budhigandaki floods",
+          "link": "https://kathmandupost.com/gandaki-province/2026/10/15/more-than-1-200-farm-animals-lost-in-budhigandaki-floods",
+          "pubDate": ""
+        },
         {
           "title": "Contractor builds 268-metre suspension bridge in a month after floods cut off communities",
           "link": "https://kathmandupost.com/national/2026/10/15/contractor-builds-268-metre-suspension-bridge-in-a-month-after-floods-cut-off-communities",
@@ -293,16 +309,6 @@
           "title": "Relief helicopter gives Rasuwa farmers a route to market",
           "link": "https://kathmandupost.com/money/2026/10/14/relief-helicopter-gives-rasuwa-farmers-a-route-to-market",
           "pubDate": ""
-        },
-        {
-          "title": "Flood cuts off northern Gorkha’s lifeline, disrupts Manaslu trekking season",
-          "link": "https://kathmandupost.com/national/2026/10/14/flood-cuts-off-northern-gorkha-s-lifeline-disrupts-manaslu-trekking-season",
-          "pubDate": ""
-        },
-        {
-          "title": "Flood-displaced Rasuwa students resume classes in Lalitpur",
-          "link": "https://kathmandupost.com/national/2026/10/13/flood-displaced-rasuwa-students-resume-classes-in-lalitpur",
-          "pubDate": ""
         }
       ]
     },
@@ -314,24 +320,19 @@
       "ok": true,
       "items": [
         {
-          "title": "बूढीगण्डकी बाढी : प्रभावित क्षेत्रबाट एक हजार बढीको हेलिकप्टरबाट उद्धार",
-          "link": "https://www.ratopati.com/story/599767/budhigandaki-flood-over-1000-rescued-by-helicopter-from-affected-areas",
-          "pubDate": "Thu, 15 Oct 2026 05:21:06 +0000"
+          "title": "चार हजार ९९९ मै टेलिकमको फाइबर इन्टरनेट",
+          "link": "https://www.ratopati.com/story/599987/telecoms-fiber-internet-for-4999",
+          "pubDate": "Fri, 16 Oct 2026 03:45:44 +0000"
         },
         {
-          "title": "भोटेकोशी र त्रिशूली बाढी पीडितको पीडा समेटिएको गीत ’लाङटाङको काखबाट’ सार्वजनिक",
-          "link": "https://www.ratopati.com/story/599752/song-from-the-arms-of-langtang-which-captures-the-pain-of-bhotekoshi-and-trishuli-flood-victims-released",
-          "pubDate": "Thu, 15 Oct 2026 03:40:31 +0000"
+          "title": "तहसनहस स्याफ्रुबेँसी–रसुवागढी सडक : फेरि चिनियाँ अनुदानकै आस",
+          "link": "https://www.ratopati.com/story/599985/dilapidated-syafrubesi-rasuwagadhi-road-hope-for-chinese-grants-again",
+          "pubDate": "Fri, 16 Oct 2026 03:12:53 +0000"
         },
         {
-          "title": "बुढीगण्डकी बाढीले क्षतिग्रस्त सोतीलाई पुरानै लयमा फर्काउने प्रयास (तस्बिरहरू)",
-          "link": "https://www.ratopati.com/story/599750/efforts-to-restore-soti-damaged-by-the-budhigandaki-flood-to-its-former-glory-photos",
-          "pubDate": "Thu, 15 Oct 2026 03:25:56 +0000"
-        },
-        {
-          "title": "बाढीले थपियो चुनौती, विकास खर्च १४ वर्षकै न्यून",
-          "link": "https://www.ratopati.com/story/599747/floods-add-to-challenges-development-spending-hits-14-year-low",
-          "pubDate": "Thu, 15 Oct 2026 02:42:18 +0000"
+          "title": "कालीगण्डकी बाढी : रातोपानीको तातोपानी कुण्ड बगरमा परिणत",
+          "link": "https://www.ratopati.com/story/599983/kaligandaki-flood-hot-water-tank-of-ratopani-turned-into-a-swamp",
+          "pubDate": "Fri, 16 Oct 2026 02:58:55 +0000"
         }
       ]
     },
@@ -368,16 +369,6 @@
           "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
-          "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
-          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
           "title": "Solar system installed at Timure telephone tower, ending need to transport diesel - Khabarhub",
           "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyLWZEbjZmdlU4RFV3dG5NV0FUbDRySEtUNXRwS29ZX0daS28yck5NLUtxODB5cjNxSTN0TGREQkM4d1JhWGt0X3ozeXQ1bmltMERNa1Ewc3k?oc=5",
           "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
@@ -388,19 +379,29 @@
           "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
         },
         {
+          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
+          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
+          "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT"
+        },
+        {
           "title": "Nepal Telecom contributes Rs 100 million to PM Disaster Relief Fund - Nepal Khabar",
           "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lcGxaNEZrVkpqdml5MHcyRHFRVU1Db0VEXzZxMzNQdEp3OFZSaHYta0F2VnI2bmI3UWV6TElULVJBOUNpQnZnWnk3dFFuSzluakI2Ri1rU1M?oc=5",
           "pubDate": "Wed, 09 Sep 2026 00:00:00 GMT"
         },
         {
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
           "title": "Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica",
           "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5",
           "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NT works to restore services in flood-hit areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
         }
       ]
     }
