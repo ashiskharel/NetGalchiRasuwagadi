@@ -1,4 +1,4 @@
-# Restoration draft — 2026-10-16T11:36 NPT
+# Restoration draft — 2026-10-17T11:20 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -11,8 +11,8 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Prefix: `202.70.64.0/19`
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS136794, AS139022, AS142008, AS14789, AS150138, AS45353, AS58456
-- Path observations: north 135 · south 236 · other 0
-- Latest path confirm: 2026-10-16T05:51:44.730000 UTC
+- Path observations: north 135 · south 234 · other 0
+- Latest path confirm: 2026-10-17T05:35:39.840000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -36,29 +36,23 @@ Distinct AS paths (prepending stripped, top 16):
 ## News headlines (publisher RSS; Google News is optional and often blocked from Actions)
 
 ### onlinekhabar-en (en)
-- [Nepal Red Cross to build 1,000 temporary shelters and 1,000 permanent homes for flood victims](https://english.onlinekhabar.com/nepal-red-cross-build-home-for-flood.html) — Thu, 15 Oct 2026 11:44:02 +0000
+- [Nepal cannot leave children’s safety to chance when floods strike](https://english.onlinekhabar.com/cant-leave-child-safety-chance-floods.html) — Sat, 17 Oct 2026 03:15:00 +0000
+- [Nepali community in Alabama donates $50,000 to flood victims](https://english.onlinekhabar.com/alabama-50000-flood-victims.html) — Fri, 16 Oct 2026 10:55:03 +0000
 
 ### onlinekhabar-ne (ne)
-- [कालीगण्डकी बाढी : रातोपानीको तातोपानी कुण्ड बगरमा परिणत](https://www.onlinekhabar.com/2026/10/2040127/kaligandaki-flood-hot-water-tank-of-ratopani-turns-into-a-swamp) — Fri, 16 Oct 2026 04:12:55 +0000
-- [४ हजार ९९९ रुपैयाँमै नेपाल टेलिकमको वार्षिक इन्टरनेट प्याकेज, जडान नि:शुल्क](https://www.onlinekhabar.com/2026/10/2040113/nepal-telecoms-annual-internet-package-for-rs-4999) — Fri, 16 Oct 2026 03:55:00 +0000
-- [भोटेकोशी–त्रिशूली बाढीमा क्षतिग्रस्त १८ झोलुङ्गे पुल मर्मतपछि सञ्चालनमा](https://www.onlinekhabar.com/2026/10/2040011/18-suspension-bridges-damaged-in-bhotekoshi-trishuli-floods-are-operational-after-repair) — Thu, 15 Oct 2026 23:39:48 +0000
-- [भोटेकोशी बाढीमा बेपत्ता काभ्रेका ३७ जनालाई मृत घोषणाको प्रक्रिया थालियो](https://www.onlinekhabar.com/2026/10/2040005/process-to-declare-37-people-from-kavre-missing-in-bhotekoshi-flood-as-dead-begins) — Thu, 15 Oct 2026 23:31:02 +0000
-- [यल्लो गुम्बामा आश्रित बाढीपीडितको आक्रोश- १५ मिनेटको दूरीमा रहेको सरकारले किन देख्दैन ?](https://www.onlinekhabar.com/2026/10/2039936/anger-of-flood-victims-sheltering-in-yellow-monastery-why-doesnt-the-government-which-is-15-minutes-away-see) — Thu, 15 Oct 2026 15:29:59 +0000
+No items.
 
 ### rising-nepal (en)
-- [Kaligandaki flood turns Tatopani hot spring into barren riverbed](https://risingnepaldaily.com/news/87864) — Fri, 16 Oct 2026 09:37:16 +0545
+No items.
 
 ### kathmandu-post (en)
+- [Bhotekoshi flood displaced 777 students. Nepal plans five-year school recovery](https://kathmandupost.com/national/2026/10/17/bhotekoshi-flood-displaced-777-students-nepal-plans-five-year-school-recovery) — 
+- [Over 1,500 flood-hit children suffer acute malnutrition](https://kathmandupost.com/health/2026/10/17/over-1-500-flood-hit-children-suffer-acute-malnutrition-1792201083) — 
+- [Government declares flood- and landslide-hit areas in three districts disaster zones](https://kathmandupost.com/national/2026/10/16/nepal-declares-flood-and-landslide-hit-areas-in-three-districts-disaster-zones) — 
 - [How will Nepal verify those missing after the Bhotekoshi floods?](https://kathmandupost.com/national/2026/10/15/how-will-nepal-verify-those-missing-after-the-bhotekoshi-floods) — 
-- [More than 1,200 farm animals lost in Budhigandaki floods](https://kathmandupost.com/gandaki-province/2026/10/15/more-than-1-200-farm-animals-lost-in-budhigandaki-floods) — 
-- [Contractor builds 268-metre suspension bridge in a month after floods cut off communities](https://kathmandupost.com/national/2026/10/15/contractor-builds-268-metre-suspension-bridge-in-a-month-after-floods-cut-off-communities) — 
-- [Father cannot afford last rites for son missing in Bhotekoshi floods](https://kathmandupost.com/national/2026/10/14/father-cannot-afford-last-rites-for-son-missing-in-bhotekoshi-floods) — 
-- [Relief helicopter gives Rasuwa farmers a route to market](https://kathmandupost.com/money/2026/10/14/relief-helicopter-gives-rasuwa-farmers-a-route-to-market) — 
 
 ### ratopati (ne)
-- [चार हजार ९९९ मै टेलिकमको फाइबर इन्टरनेट](https://www.ratopati.com/story/599987/telecoms-fiber-internet-for-4999) — Fri, 16 Oct 2026 03:45:44 +0000
-- [तहसनहस स्याफ्रुबेँसी–रसुवागढी सडक : फेरि चिनियाँ अनुदानकै आस](https://www.ratopati.com/story/599985/dilapidated-syafrubesi-rasuwagadhi-road-hope-for-chinese-grants-again) — Fri, 16 Oct 2026 03:12:53 +0000
-- [कालीगण्डकी बाढी : रातोपानीको तातोपानी कुण्ड बगरमा परिणत](https://www.ratopati.com/story/599983/kaligandaki-flood-hot-water-tank-of-ratopani-turned-into-a-swamp) — Fri, 16 Oct 2026 02:58:55 +0000
+No items.
 
 ### gnews-en (en)
 - [Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper](https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5) — Thu, 01 Oct 2026 12:01:12 GMT
