@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-18T11:37",
-  "fetched_utc": "2026-10-18T05:53:03.745Z",
+  "fetched_npt": "2026-10-19T11:57",
+  "fetched_utc": "2026-10-19T06:12:27.267Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -61,31 +61,30 @@
       ]
     },
     "paths": {
-      "north": 0,
-      "south": 359,
+      "north": 131,
+      "south": 239,
       "other": 0,
       "unique": [
         {
           "hops": [
-            24482,
-            9498,
-            23752
-          ],
-          "n": 10,
-          "klass": "south"
-        },
-        {
-          "hops": [
             8218,
-            9498,
+            23764,
             23752
           ],
           "n": 7,
-          "klass": "south"
+          "klass": "north"
         },
         {
           "hops": [
-            199524,
+            23764,
+            23752
+          ],
+          "n": 7,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            24482,
             9498,
             23752
           ],
@@ -103,11 +102,20 @@
         },
         {
           "hops": [
-            13030,
+            24482,
+            23764,
+            23752
+          ],
+          "n": 5,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            199524,
             9498,
             23752
           ],
-          "n": 4,
+          "n": 5,
           "klass": "south"
         },
         {
@@ -121,24 +129,7 @@
         },
         {
           "hops": [
-            12779,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
             14840,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
             9498,
             23752
           ],
@@ -158,11 +149,11 @@
         {
           "hops": [
             2914,
-            9498,
+            23764,
             23752
           ],
           "n": 3,
-          "klass": "south"
+          "klass": "north"
         },
         {
           "hops": [
@@ -175,18 +166,17 @@
         },
         {
           "hops": [
-            48185,
-            6461,
-            9498,
+            12779,
+            23764,
             23752
           ],
           "n": 3,
-          "klass": "south"
+          "klass": "north"
         },
         {
           "hops": [
-            34927,
-            57463,
+            48185,
+            6461,
             9498,
             23752
           ],
@@ -204,7 +194,16 @@
         },
         {
           "hops": [
-            271253,
+            35280,
+            6453,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            13030,
             9498,
             23752
           ],
@@ -214,7 +213,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-18T05:52:59.170000"
+    "latestPathTime": "2026-10-19T06:12:23.140000"
   },
   "news": [
     {
@@ -224,6 +223,11 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "Flood-displaced settlements at risk from “toxic liquor”",
+          "link": "https://english.onlinekhabar.com/flood-risk-from-toxic-liquor.html",
+          "pubDate": "Sun, 18 Oct 2026 06:15:54 +0000"
+        },
         {
           "title": "Nepal cannot leave children’s safety to chance when floods strike",
           "link": "https://english.onlinekhabar.com/cant-leave-child-safety-chance-floods.html",
@@ -239,19 +243,9 @@
       "ok": true,
       "items": [
         {
-          "title": "बाढीबाट विस्थापित बस्ती &#8216;विषाक्त मदिरा&#8217;को जोखिममा",
-          "link": "https://www.onlinekhabar.com/2026/10/2041059/flood-displaced-settlements-at-risk-of-toxic-alcohol",
-          "pubDate": "Sun, 18 Oct 2026 05:06:38 +0000"
-        },
-        {
-          "title": "बाढीका डरलाग्दा भिडियोले बालबालिकामा बढाउँदै छ मानसिक तनाव",
-          "link": "https://www.onlinekhabar.com/2026/10/2040910/horrifying-flood-videos-are-increasing-mental-stress-among-children",
-          "pubDate": "Sat, 17 Oct 2026 14:32:41 +0000"
-        },
-        {
-          "title": "बूढीगण्डकी बाढी : पुल बगाएपछि खाद्यान्न ओसार्न तार र घिर्नीको सहारा",
-          "link": "https://www.onlinekhabar.com/2026/10/2040738/budhigandaki-flood-after-bridge-washed-away-food-grains-are-being-stored-on-wire-and-pulleys",
-          "pubDate": "Sat, 17 Oct 2026 07:36:29 +0000"
+          "title": "चाडपर्वमा पनि बाढी प्रभावितको साथमा रेडक्रस",
+          "link": "https://www.onlinekhabar.com/2026/10/2041217/red-cross-with-flood-victims-even-during-the-festival",
+          "pubDate": "Sun, 18 Oct 2026 10:56:26 +0000"
         }
       ]
     },
@@ -263,9 +257,9 @@
       "ok": true,
       "items": [
         {
-          "title": "Half of flood-affected families want  govt to provide land or house",
-          "link": "https://risingnepaldaily.com/news/87928",
-          "pubDate": "Sun, 18 Oct 2026 08:38:12 +0545"
+          "title": "Nepal Telecom is official partner of NPL-3",
+          "link": "https://risingnepaldaily.com/news/87938",
+          "pubDate": "Sun, 18 Oct 2026 18:53:41 +0545"
         }
       ]
     },
@@ -275,18 +269,7 @@
       "url": "https://kathmandupost.com/rss",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "Bhotekoshi flood displaced 777 students. Nepal plans five-year school recovery",
-          "link": "https://kathmandupost.com/national/2026/10/17/bhotekoshi-flood-displaced-777-students-nepal-plans-five-year-school-recovery",
-          "pubDate": ""
-        },
-        {
-          "title": "Over 1,500 flood-hit children suffer acute malnutrition",
-          "link": "https://kathmandupost.com/health/2026/10/17/over-1-500-flood-hit-children-suffer-acute-malnutrition-1792201083",
-          "pubDate": ""
-        }
-      ]
+      "items": []
     },
     {
       "id": "ratopati",
@@ -296,19 +279,9 @@
       "ok": true,
       "items": [
         {
-          "title": "बाढीले बगाउन नसकेको आस्था, तस्बिरहरू",
-          "link": "https://www.ratopati.com/story/600362/faith-that-the-flood-could-not-wash-away-photos",
-          "pubDate": "Sun, 18 Oct 2026 05:32:10 +0000"
-        },
-        {
-          "title": "बाढीपहिरो प्रभावित जलजला गाउँपालिकालाई अस्ट्रेलियामा रहेका नेपालीबाट करिब ८ लाख सहयोग",
-          "link": "https://www.ratopati.com/story/600351/nepalis-in-australia-provide-around-800000-rupees-in-assistance-to-flood-affected-jaljala-rural-municipality",
-          "pubDate": "Sun, 18 Oct 2026 04:04:28 +0000"
-        },
-        {
-          "title": "भोटेकोशी बाढीले पक्की पुल बगाएपछि त्रिशूलीमा झोलुङ्गे पुल सञ्चालन, स्थानीयको आवतजावत सहज",
-          "link": "https://www.ratopati.com/story/600341/suspension-bridge-in-trishuli-operational-after-bhotekoshi-flood-washes-away-concrete-bridge-eases-movement-of-locals",
-          "pubDate": "Sun, 18 Oct 2026 02:55:31 +0000"
+          "title": "बाढीपहिरोबाट जलजलाका तीन सय घरपरिवार प्रभावित",
+          "link": "https://www.ratopati.com/story/600494/three-hundred-households-in-jaljala-affected-by-floods-and-landslides",
+          "pubDate": "Mon, 19 Oct 2026 05:54:35 +0000"
         }
       ]
     },

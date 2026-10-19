@@ -1,4 +1,4 @@
-# Restoration draft — 2026-10-18T11:37 NPT
+# Restoration draft — 2026-10-19T11:57 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -11,49 +11,45 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Prefix: `202.70.64.0/19`
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS136794, AS139022, AS142008, AS14789, AS150138, AS45353, AS58456
-- Path observations: north 0 · south 359 · other 0
-- Latest path confirm: 2026-10-18T05:52:59.170000 UTC
+- Path observations: north 131 · south 239 · other 0
+- Latest path confirm: 2026-10-19T06:12:23.140000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
-- `AS24482 → AS9498 → AS23752` ×10 (south)
-- `AS8218 → AS9498 → AS23752` ×7 (south)
-- `AS199524 → AS9498 → AS23752` ×6 (south)
+- `AS8218 → AS23764 → AS23752` ×7 (north)
+- `AS23764 → AS23752` ×7 (north)
+- `AS24482 → AS9498 → AS23752` ×6 (south)
 - `AS6461 → AS9498 → AS23752` ×5 (south)
-- `AS13030 → AS9498 → AS23752` ×4 (south)
+- `AS24482 → AS23764 → AS23752` ×5 (north)
+- `AS199524 → AS9498 → AS23752` ×5 (south)
 - `AS9002 → AS6453 → AS23752` ×4 (south)
-- `AS12779 → AS9498 → AS23752` ×4 (south)
 - `AS14840 → AS9498 → AS23752` ×4 (south)
-- `AS9498 → AS23752` ×4 (south)
 - `AS47147 → AS3320 → AS6453 → AS23752` ×4 (south)
-- `AS2914 → AS9498 → AS23752` ×3 (south)
+- `AS2914 → AS23764 → AS23752` ×3 (north)
 - `AS3491 → AS9498 → AS23752` ×3 (south)
+- `AS12779 → AS23764 → AS23752` ×3 (north)
 - `AS48185 → AS6461 → AS9498 → AS23752` ×3 (south)
-- `AS34927 → AS57463 → AS9498 → AS23752` ×3 (south)
 - `AS3214 → AS9498 → AS23752` ×3 (south)
-- `AS271253 → AS9498 → AS23752` ×3 (south)
+- `AS35280 → AS6453 → AS23752` ×3 (south)
+- `AS13030 → AS9498 → AS23752` ×3 (south)
 
 ## News headlines (publisher RSS; Google News is optional and often blocked from Actions)
 
 ### onlinekhabar-en (en)
+- [Flood-displaced settlements at risk from “toxic liquor”](https://english.onlinekhabar.com/flood-risk-from-toxic-liquor.html) — Sun, 18 Oct 2026 06:15:54 +0000
 - [Nepal cannot leave children’s safety to chance when floods strike](https://english.onlinekhabar.com/cant-leave-child-safety-chance-floods.html) — Sat, 17 Oct 2026 03:15:00 +0000
 
 ### onlinekhabar-ne (ne)
-- [बाढीबाट विस्थापित बस्ती &#8216;विषाक्त मदिरा&#8217;को जोखिममा](https://www.onlinekhabar.com/2026/10/2041059/flood-displaced-settlements-at-risk-of-toxic-alcohol) — Sun, 18 Oct 2026 05:06:38 +0000
-- [बाढीका डरलाग्दा भिडियोले बालबालिकामा बढाउँदै छ मानसिक तनाव](https://www.onlinekhabar.com/2026/10/2040910/horrifying-flood-videos-are-increasing-mental-stress-among-children) — Sat, 17 Oct 2026 14:32:41 +0000
-- [बूढीगण्डकी बाढी : पुल बगाएपछि खाद्यान्न ओसार्न तार र घिर्नीको सहारा](https://www.onlinekhabar.com/2026/10/2040738/budhigandaki-flood-after-bridge-washed-away-food-grains-are-being-stored-on-wire-and-pulleys) — Sat, 17 Oct 2026 07:36:29 +0000
+- [चाडपर्वमा पनि बाढी प्रभावितको साथमा रेडक्रस](https://www.onlinekhabar.com/2026/10/2041217/red-cross-with-flood-victims-even-during-the-festival) — Sun, 18 Oct 2026 10:56:26 +0000
 
 ### rising-nepal (en)
-- [Half of flood-affected families want  govt to provide land or house](https://risingnepaldaily.com/news/87928) — Sun, 18 Oct 2026 08:38:12 +0545
+- [Nepal Telecom is official partner of NPL-3](https://risingnepaldaily.com/news/87938) — Sun, 18 Oct 2026 18:53:41 +0545
 
 ### kathmandu-post (en)
-- [Bhotekoshi flood displaced 777 students. Nepal plans five-year school recovery](https://kathmandupost.com/national/2026/10/17/bhotekoshi-flood-displaced-777-students-nepal-plans-five-year-school-recovery) — 
-- [Over 1,500 flood-hit children suffer acute malnutrition](https://kathmandupost.com/health/2026/10/17/over-1-500-flood-hit-children-suffer-acute-malnutrition-1792201083) — 
+No items.
 
 ### ratopati (ne)
-- [बाढीले बगाउन नसकेको आस्था, तस्बिरहरू](https://www.ratopati.com/story/600362/faith-that-the-flood-could-not-wash-away-photos) — Sun, 18 Oct 2026 05:32:10 +0000
-- [बाढीपहिरो प्रभावित जलजला गाउँपालिकालाई अस्ट्रेलियामा रहेका नेपालीबाट करिब ८ लाख सहयोग](https://www.ratopati.com/story/600351/nepalis-in-australia-provide-around-800000-rupees-in-assistance-to-flood-affected-jaljala-rural-municipality) — Sun, 18 Oct 2026 04:04:28 +0000
-- [भोटेकोशी बाढीले पक्की पुल बगाएपछि त्रिशूलीमा झोलुङ्गे पुल सञ्चालन, स्थानीयको आवतजावत सहज](https://www.ratopati.com/story/600341/suspension-bridge-in-trishuli-operational-after-bhotekoshi-flood-washes-away-concrete-bridge-eases-movement-of-locals) — Sun, 18 Oct 2026 02:55:31 +0000
+- [बाढीपहिरोबाट जलजलाका तीन सय घरपरिवार प्रभावित](https://www.ratopati.com/story/600494/three-hundred-households-in-jaljala-affected-by-floods-and-landslides) — Mon, 19 Oct 2026 05:54:35 +0000
 
 ### gnews-en (en)
 - [Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper](https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5) — Thu, 01 Oct 2026 12:01:12 GMT
