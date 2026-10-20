@@ -1,4 +1,4 @@
-# Restoration draft — 2026-10-19T11:57 NPT
+# Restoration draft — 2026-10-20T11:45 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -11,8 +11,8 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Prefix: `202.70.64.0/19`
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS136794, AS139022, AS142008, AS14789, AS150138, AS45353, AS58456
-- Path observations: north 131 · south 239 · other 0
-- Latest path confirm: 2026-10-19T06:12:23.140000 UTC
+- Path observations: north 131 · south 233 · other 0
+- Latest path confirm: 2026-10-20T06:00:02.160000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -28,7 +28,7 @@ Distinct AS paths (prepending stripped, top 16):
 - `AS2914 → AS23764 → AS23752` ×3 (north)
 - `AS3491 → AS9498 → AS23752` ×3 (south)
 - `AS12779 → AS23764 → AS23752` ×3 (north)
-- `AS48185 → AS6461 → AS9498 → AS23752` ×3 (south)
+- `AS48185 → AS9498 → AS23752` ×3 (south)
 - `AS3214 → AS9498 → AS23752` ×3 (south)
 - `AS35280 → AS6453 → AS23752` ×3 (south)
 - `AS13030 → AS9498 → AS23752` ×3 (south)
@@ -37,19 +37,18 @@ Distinct AS paths (prepending stripped, top 16):
 
 ### onlinekhabar-en (en)
 - [Flood-displaced settlements at risk from “toxic liquor”](https://english.onlinekhabar.com/flood-risk-from-toxic-liquor.html) — Sun, 18 Oct 2026 06:15:54 +0000
-- [Nepal cannot leave children’s safety to chance when floods strike](https://english.onlinekhabar.com/cant-leave-child-safety-chance-floods.html) — Sat, 17 Oct 2026 03:15:00 +0000
 
 ### onlinekhabar-ne (ne)
-- [चाडपर्वमा पनि बाढी प्रभावितको साथमा रेडक्रस](https://www.onlinekhabar.com/2026/10/2041217/red-cross-with-flood-victims-even-during-the-festival) — Sun, 18 Oct 2026 10:56:26 +0000
-
-### rising-nepal (en)
-- [Nepal Telecom is official partner of NPL-3](https://risingnepaldaily.com/news/87938) — Sun, 18 Oct 2026 18:53:41 +0545
-
-### kathmandu-post (en)
 No items.
 
+### rising-nepal (en)
+No items.
+
+### kathmandu-post (en)
+- [Baglung flood survivors face Dashain without homes as rebuilding stalls](https://kathmandupost.com/national/2026/10/20/baglung-flood-survivors-face-dashain-without-homes-as-rebuilding-stalls) — 
+
 ### ratopati (ne)
-- [बाढीपहिरोबाट जलजलाका तीन सय घरपरिवार प्रभावित](https://www.ratopati.com/story/600494/three-hundred-households-in-jaljala-affected-by-floods-and-landslides) — Mon, 19 Oct 2026 05:54:35 +0000
+No items.
 
 ### gnews-en (en)
 - [Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper](https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5) — Thu, 01 Oct 2026 12:01:12 GMT

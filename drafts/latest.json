@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-19T11:57",
-  "fetched_utc": "2026-10-19T06:12:27.267Z",
+  "fetched_npt": "2026-10-20T11:45",
+  "fetched_utc": "2026-10-20T06:00:06.659Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -62,7 +62,7 @@
     },
     "paths": {
       "north": 131,
-      "south": 239,
+      "south": 233,
       "other": 0,
       "unique": [
         {
@@ -176,7 +176,6 @@
         {
           "hops": [
             48185,
-            6461,
             9498,
             23752
           ],
@@ -213,7 +212,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-19T06:12:23.140000"
+    "latestPathTime": "2026-10-20T06:00:02.160000"
   },
   "news": [
     {
@@ -227,11 +226,6 @@
           "title": "Flood-displaced settlements at risk from “toxic liquor”",
           "link": "https://english.onlinekhabar.com/flood-risk-from-toxic-liquor.html",
           "pubDate": "Sun, 18 Oct 2026 06:15:54 +0000"
-        },
-        {
-          "title": "Nepal cannot leave children’s safety to chance when floods strike",
-          "link": "https://english.onlinekhabar.com/cant-leave-child-safety-chance-floods.html",
-          "pubDate": "Sat, 17 Oct 2026 03:15:00 +0000"
         }
       ]
     },
@@ -241,13 +235,7 @@
       "url": "https://www.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "चाडपर्वमा पनि बाढी प्रभावितको साथमा रेडक्रस",
-          "link": "https://www.onlinekhabar.com/2026/10/2041217/red-cross-with-flood-victims-even-during-the-festival",
-          "pubDate": "Sun, 18 Oct 2026 10:56:26 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "rising-nepal",
@@ -255,13 +243,7 @@
       "url": "https://risingnepaldaily.com/rss",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "Nepal Telecom is official partner of NPL-3",
-          "link": "https://risingnepaldaily.com/news/87938",
-          "pubDate": "Sun, 18 Oct 2026 18:53:41 +0545"
-        }
-      ]
+      "items": []
     },
     {
       "id": "kathmandu-post",
@@ -269,7 +251,13 @@
       "url": "https://kathmandupost.com/rss",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "Baglung flood survivors face Dashain without homes as rebuilding stalls",
+          "link": "https://kathmandupost.com/national/2026/10/20/baglung-flood-survivors-face-dashain-without-homes-as-rebuilding-stalls",
+          "pubDate": ""
+        }
+      ]
     },
     {
       "id": "ratopati",
@@ -277,13 +265,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "बाढीपहिरोबाट जलजलाका तीन सय घरपरिवार प्रभावित",
-          "link": "https://www.ratopati.com/story/600494/three-hundred-households-in-jaljala-affected-by-floods-and-landslides",
-          "pubDate": "Mon, 19 Oct 2026 05:54:35 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
