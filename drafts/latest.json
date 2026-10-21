@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-20T11:45",
-  "fetched_utc": "2026-10-20T06:00:06.659Z",
+  "fetched_npt": "2026-10-21T11:46",
+  "fetched_utc": "2026-10-21T06:01:09.188Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -61,8 +61,8 @@
       ]
     },
     "paths": {
-      "north": 131,
-      "south": 233,
+      "north": 125,
+      "south": 230,
       "other": 0,
       "unique": [
         {
@@ -79,17 +79,8 @@
             23764,
             23752
           ],
-          "n": 7,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            24482,
-            9498,
-            23752
-          ],
           "n": 6,
-          "klass": "south"
+          "klass": "north"
         },
         {
           "hops": [
@@ -103,11 +94,11 @@
         {
           "hops": [
             24482,
-            23764,
+            9498,
             23752
           ],
           "n": 5,
-          "klass": "north"
+          "klass": "south"
         },
         {
           "hops": [
@@ -126,6 +117,15 @@
           ],
           "n": 4,
           "klass": "south"
+        },
+        {
+          "hops": [
+            24482,
+            23764,
+            23752
+          ],
+          "n": 4,
+          "klass": "north"
         },
         {
           "hops": [
@@ -212,7 +212,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-20T06:00:02.160000"
+    "latestPathTime": "2026-10-21T06:01:05.120000"
   },
   "news": [
     {
@@ -252,6 +252,16 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "For Timure’s flood survivors, Dashain brings memories of the lives they lost",
+          "link": "https://kathmandupost.com/national/2026/10/20/for-timure-s-flood-survivors-dashain-brings-memories-of-the-lives-they-lost",
+          "pubDate": ""
+        },
+        {
+          "title": "In Gorkha’s flood-hit villages, even cooking a meal is a struggle",
+          "link": "https://kathmandupost.com/national/2026/10/20/in-gorkha-s-flood-hit-villages-even-cooking-a-meal-is-a-struggle",
+          "pubDate": ""
+        },
         {
           "title": "Baglung flood survivors face Dashain without homes as rebuilding stalls",
           "link": "https://kathmandupost.com/national/2026/10/20/baglung-flood-survivors-face-dashain-without-homes-as-rebuilding-stalls",
@@ -315,13 +325,13 @@
           "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
-          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
+          "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
         },
         {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Disaster Relief Fund - Nepal Khabar",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lcGxaNEZrVkpqdml5MHcyRHFRVU1Db0VEXzZxMzNQdEp3OFZSaHYta0F2VnI2bmI3UWV6TElULVJBOUNpQnZnWnk3dFFuSzluakI2Ri1rU1M?oc=5",
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
           "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
@@ -330,9 +340,9 @@
           "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
         },
         {
-          "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
+          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
         }
       ]
     }
