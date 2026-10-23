@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-22T11:51",
-  "fetched_utc": "2026-10-22T06:07:30.378Z",
+  "fetched_npt": "2026-10-23T11:47",
+  "fetched_utc": "2026-10-23T06:02:18.096Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -53,15 +53,14 @@
         131341,
         136794,
         139022,
-        142008,
         14789,
         150138,
         45353
       ]
     },
     "paths": {
-      "north": 130,
-      "south": 228,
+      "north": 133,
+      "south": 230,
       "other": 0,
       "unique": [
         {
@@ -93,6 +92,15 @@
         {
           "hops": [
             24482,
+            23764,
+            23752
+          ],
+          "n": 5,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            24482,
             9498,
             23752
           ],
@@ -116,15 +124,6 @@
           ],
           "n": 4,
           "klass": "south"
-        },
-        {
-          "hops": [
-            24482,
-            23764,
-            23752
-          ],
-          "n": 4,
-          "klass": "north"
         },
         {
           "hops": [
@@ -211,7 +210,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-22T06:06:49.500000"
+    "latestPathTime": "2026-10-23T06:02:13.190000"
   },
   "news": [
     {
@@ -220,7 +219,18 @@
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "Loss and Damage Fund approves $20 million grant for Nepal’s flood recovery",
+          "link": "https://english.onlinekhabar.com/loss-and-damage-fund-20-mil.html",
+          "pubDate": "Fri, 23 Oct 2026 02:51:21 +0000"
+        },
+        {
+          "title": "This is how the flood-hit Chum Valley trail is being fixed",
+          "link": "https://english.onlinekhabar.com/chum-valley-trail-is-being-fixed.html",
+          "pubDate": "Thu, 22 Oct 2026 09:49:28 +0000"
+        }
+      ]
     },
     {
       "id": "onlinekhabar-ne",
@@ -230,19 +240,9 @@
       "ok": true,
       "items": [
         {
-          "title": "भोटेकोशीले बगायो थातथलो, शोकले खोस्यो दशैं खुसी (तस्विरहरू)",
-          "link": "https://www.onlinekhabar.com/2026/10/2042336/bhotekoshi-floods-flood-the-village-grief-takes-away-the-joy-of-dashain-photos",
-          "pubDate": "Wed, 21 Oct 2026 14:37:47 +0000"
-        },
-        {
-          "title": "बाढी प्रभावितको त्रिपालभित्रको दशैं : यसरी लगाए टीका (तस्वीरहरू)",
-          "link": "https://www.onlinekhabar.com/2026/10/2042309/dashain-inside-the-tent-of-flood-victims-this-is-how-they-applied-tika-photos",
-          "pubDate": "Wed, 21 Oct 2026 13:02:27 +0000"
-        },
-        {
-          "title": "बाढीले खोस्यो दशैंको टीका, बेपत्ता आफन्तको पर्खाइमा खाली निधार",
-          "link": "https://www.onlinekhabar.com/2026/10/2042290/floods-wash-away-dashain-tika-empty-foreheads-waiting-for-missing-relatives",
-          "pubDate": "Wed, 21 Oct 2026 12:45:11 +0000"
+          "title": "लुम्बिनी विकास कोषमा आनीको नियुक्ति बदर गर्न माग गर्दै आन्दोलन जारी",
+          "link": "https://www.onlinekhabar.com/2026/10/2042823/protest-continues-demanding-cancellation-of-anis-appointment-to-lumbini-development-fund",
+          "pubDate": "Fri, 23 Oct 2026 04:25:42 +0000"
         }
       ]
     },
@@ -251,8 +251,7 @@
       "lang": "en",
       "url": "https://risingnepaldaily.com/rss",
       "filter": true,
-      "ok": false,
-      "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT)",
+      "ok": true,
       "items": []
     },
     {
@@ -261,23 +260,7 @@
       "url": "https://kathmandupost.com/rss",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "For Timure’s flood survivors, Dashain brings memories of the lives they lost",
-          "link": "https://kathmandupost.com/national/2026/10/20/for-timure-s-flood-survivors-dashain-brings-memories-of-the-lives-they-lost",
-          "pubDate": ""
-        },
-        {
-          "title": "In Gorkha’s flood-hit villages, even cooking a meal is a struggle",
-          "link": "https://kathmandupost.com/national/2026/10/20/in-gorkha-s-flood-hit-villages-even-cooking-a-meal-is-a-struggle",
-          "pubDate": ""
-        },
-        {
-          "title": "Baglung flood survivors face Dashain without homes as rebuilding stalls",
-          "link": "https://kathmandupost.com/national/2026/10/20/baglung-flood-survivors-face-dashain-without-homes-as-rebuilding-stalls",
-          "pubDate": ""
-        }
-      ]
+      "items": []
     },
     {
       "id": "ratopati",
@@ -285,13 +268,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "बाढीको छायामा स्थिरता खोजिरहेका खाल्टेका विस्थापित, तस्बिरहरू",
-          "link": "https://www.ratopati.com/story/600802/displaced-people-from-khalte-seek-stability-in-the-shadow-of-floods-photos",
-          "pubDate": "Thu, 22 Oct 2026 04:54:47 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
@@ -306,11 +283,6 @@
           "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
         },
         {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - radionepalonline.com",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04aGJGMXJfZ0k2M0pVTVRlVzg2ZzBoUGxGcUVtbE5zS2p4RmdJbENCdEVnT1lEUm9KU3JQak5aQVUxdzJZckZkLVJGb0hsbmN0UWFYZEhrcGNvc25iaWE3NV9GWXI?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 16:19:13 GMT"
-        },
-        {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
           "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFMwdzJHQnFMVTd0Mi11YWJ6UmlpMV8wVWRxU0kzNkZvVFZWVGZMZmFaR1g3ejBPdlp2TlNsck5LWE5BZGVqX0Z3Wi1PUFBqdkluTnYzTmtVZ2dCTENPZVBJOWE5Zmx6am1uMEczUk9FMDdma2RDOUtrNy0wcHBabGpuUHVUV0g5V0kzZF90a29TNUZIcGcwalZWaUNSbnB6eEU4cWJxcFE1VlJIVk5CNDZoRzVPV1dnaEx1STlFWHA1TXFyZW1N?oc=5",
           "pubDate": "Wed, 30 Sep 2026 15:17:00 GMT"
@@ -321,9 +293,19 @@
           "pubDate": "Thu, 01 Oct 2026 22:55:27 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom installs solar system at Timure tower to end fuel dependency - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOG8xZmNERVlqYkNWd2JaWWl3ejRwcWJOVG9aaFVTdHI0SWZqdGx0Y1RzTWJWdl80WTFQWnZJQ1RJRzc1eC13dnRsN2VuZjdWci0wTGVQdFFGT0QxQlNUMXREUGp6ZU5NUmQyTFdrZmhwYzBxYWFkY3ZIMkxRa2o5anFYbXA4MkFic29sT3BGbFowTDNLc0FZSzBwdU1oeWRSSUZHS1pJVGNHOUR2RWFnRWRNU0d0ZTV3bjUteW92SWVfbG9s?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Solar system installed at Timure telephone tower, ending need to transport diesel - Khabarhub",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyLWZEbjZmdlU4RFV3dG5NV0FUbDRySEtUNXRwS29ZX0daS28yck5NLUtxODB5cjNxSTN0TGREQkM4d1JhWGt0X3ozeXQ1bmltMERNa1Ewc3k?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
         },
         {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
@@ -331,34 +313,29 @@
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
+          "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
+          "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - Onlinekhabar English",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NT works to restore services in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
+        },
+        {
           "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
           "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5",
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
-        },
-        {
-          "title": "Nepal Telecom, Ncell restoring services in flood-hit areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1keTl2RkhJcERRcFNsbjBjRTBSeU54QnZPQVZEX3d1ZnRWMWFVcHBPb0sxSGVORjM0TF96bEpjRXhoTUxGVzdGaDc3ejhnX05s?oc=5",
-          "pubDate": "Thu, 10 Sep 2026 00:46:10 GMT"
-        },
-        {
-          "title": "Nepal Telecom restores 113 sites affected by Bhotekoshi flood - Khabarhub",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nZFdwTWdjZFRXWVZodzluRlRoblBaOGZXaUpKNVBQdXRTU2ZMVjFSYkhvLXB6YS0xS004elhveTUxeXdhanFlSVNLaDU1V3R0NEppVGJKeWw?oc=5",
-          "pubDate": "Tue, 01 Sep 2026 14:22:29 GMT"
-        },
-        {
-          "title": "Nepal Telecom Extends Free Service by Three Days in the Bhotekoshi Flood-Affected Area - Ekantipur",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTWtuZkdrdFdwOHRmYk9TNWJjSzYxMHZveVBDakZyQmROSFd5azJaZlJjUHZ1RVFVWUxUMXN1QzFfaW9nenVWTm9zZ29qVUtSS3FTYmQ5a0U5dVhBVE52OWg2ak4wUEZkOVRQM0hyTWZyYVpjWGFrUzRxLXhLU1NkMVNkU1N1OWhCT1lMRXIyNFN6TWZoLTdLZkxaaUNVTnlubmNyZXBfM2VJS2REUk1Vc0QtenQ4dTZDMXdsYUxsd0xjWGxGMXlaRndDR0dTajZnYjZ6S0N4a08?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Technical report details Bhotekoshi flood’s journey from Tibet to Devghat - Onlinekhabar English",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1McldQQXlGN1dJRzhwRlVWd0pMSWNBNFRrblM5TWxFczRvTnJMdDdxcjlETVRsUk16U25HY3diSDQ5YzMyd2FpdDBoSFduXzZUTHZwRjVjbTJRWVRrMkdGVGxEN25tU1BlN3NlWjN4MXRldjl1cWc?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         }
       ]
     }
