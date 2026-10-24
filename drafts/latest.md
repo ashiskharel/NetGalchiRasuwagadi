@@ -1,4 +1,4 @@
-# Restoration draft — 2026-10-23T11:47 NPT
+# Restoration draft — 2026-10-24T11:37 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -11,8 +11,8 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Prefix: `202.70.64.0/19`
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS136794, AS139022, AS14789, AS150138, AS45353
-- Path observations: north 133 · south 230 · other 0
-- Latest path confirm: 2026-10-23T06:02:13.190000 UTC
+- Path observations: north 134 · south 232 · other 0
+- Latest path confirm: 2026-10-24T05:52:52.320000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -36,11 +36,13 @@ Distinct AS paths (prepending stripped, top 16):
 ## News headlines (publisher RSS; Google News is optional and often blocked from Actions)
 
 ### onlinekhabar-en (en)
+- [Nearly Rs 90 million needed to rebuild flood-damaged road in Myagdi](https://english.onlinekhabar.com/nearly-rs-90-million-needed-to-rebuild-flood-damaged-road-in-myagdi.html) — Sat, 24 Oct 2026 02:29:09 +0000
 - [Loss and Damage Fund approves $20 million grant for Nepal’s flood recovery](https://english.onlinekhabar.com/loss-and-damage-fund-20-mil.html) — Fri, 23 Oct 2026 02:51:21 +0000
 - [This is how the flood-hit Chum Valley trail is being fixed](https://english.onlinekhabar.com/chum-valley-trail-is-being-fixed.html) — Thu, 22 Oct 2026 09:49:28 +0000
 
 ### onlinekhabar-ne (ne)
-- [लुम्बिनी विकास कोषमा आनीको नियुक्ति बदर गर्न माग गर्दै आन्दोलन जारी](https://www.onlinekhabar.com/2026/10/2042823/protest-continues-demanding-cancellation-of-anis-appointment-to-lumbini-development-fund) — Fri, 23 Oct 2026 04:25:42 +0000
+- [बाढीपहिरोले क्षतिग्रस्त बेनी–दरवाङ–मुना सडक पुनर्निर्माण गर्न ९ करोड लाग्ने अनुमान](https://www.onlinekhabar.com/2026/10/2043059/it-is-estimated-that-it-will-cost-90-million-to-reconstruct-the-beni-darwang-muna-road-damaged-by-floods-and-landslides) — Sat, 24 Oct 2026 01:02:22 +0000
+- [बाढी प्रभावितलाई होल्डिङ सेन्टरबाटै नागरिकताको प्रतिलिपि वितरण सुरु](https://www.onlinekhabar.com/2026/10/2043052/distribution-of-copies-of-citizenship-certificates-to-flood-victims-begins-from-holding-centers) — Fri, 23 Oct 2026 14:52:07 +0000
 
 ### rising-nepal (en)
 No items.
@@ -60,10 +62,10 @@ No items.
 - [Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati](https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5) — Mon, 28 Sep 2026 10:59:06 GMT
 - [Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post](https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5) — Thu, 03 Sep 2026 07:00:00 GMT
 - [Mobile services restored in flood-affected areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5) — Sat, 29 Aug 2026 07:00:00 GMT
-- [87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - Onlinekhabar English](https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5) — Thu, 27 Aug 2026 07:00:00 GMT
 - [Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5) — Fri, 28 Aug 2026 07:00:00 GMT
 - [NT works to restore services in flood-hit areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5) — Fri, 28 Aug 2026 01:22:39 GMT
 - [Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5) — Wed, 26 Aug 2026 06:16:07 GMT
+- [Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica](https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5) — Tue, 08 Sep 2026 07:00:00 GMT
 
 ## Open field reports
 None open.

@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-23T11:47",
-  "fetched_utc": "2026-10-23T06:02:18.096Z",
+  "fetched_npt": "2026-10-24T11:37",
+  "fetched_utc": "2026-10-24T05:52:56.748Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -59,8 +59,8 @@
       ]
     },
     "paths": {
-      "north": 133,
-      "south": 230,
+      "north": 134,
+      "south": 232,
       "other": 0,
       "unique": [
         {
@@ -210,7 +210,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-23T06:02:13.190000"
+    "latestPathTime": "2026-10-24T05:52:52.320000"
   },
   "news": [
     {
@@ -220,6 +220,11 @@
       "filter": true,
       "ok": true,
       "items": [
+        {
+          "title": "Nearly Rs 90 million needed to rebuild flood-damaged road in Myagdi",
+          "link": "https://english.onlinekhabar.com/nearly-rs-90-million-needed-to-rebuild-flood-damaged-road-in-myagdi.html",
+          "pubDate": "Sat, 24 Oct 2026 02:29:09 +0000"
+        },
         {
           "title": "Loss and Damage Fund approves $20 million grant for Nepal’s flood recovery",
           "link": "https://english.onlinekhabar.com/loss-and-damage-fund-20-mil.html",
@@ -240,9 +245,14 @@
       "ok": true,
       "items": [
         {
-          "title": "लुम्बिनी विकास कोषमा आनीको नियुक्ति बदर गर्न माग गर्दै आन्दोलन जारी",
-          "link": "https://www.onlinekhabar.com/2026/10/2042823/protest-continues-demanding-cancellation-of-anis-appointment-to-lumbini-development-fund",
-          "pubDate": "Fri, 23 Oct 2026 04:25:42 +0000"
+          "title": "बाढीपहिरोले क्षतिग्रस्त बेनी–दरवाङ–मुना सडक पुनर्निर्माण गर्न ९ करोड लाग्ने अनुमान",
+          "link": "https://www.onlinekhabar.com/2026/10/2043059/it-is-estimated-that-it-will-cost-90-million-to-reconstruct-the-beni-darwang-muna-road-damaged-by-floods-and-landslides",
+          "pubDate": "Sat, 24 Oct 2026 01:02:22 +0000"
+        },
+        {
+          "title": "बाढी प्रभावितलाई होल्डिङ सेन्टरबाटै नागरिकताको प्रतिलिपि वितरण सुरु",
+          "link": "https://www.onlinekhabar.com/2026/10/2043052/distribution-of-copies-of-citizenship-certificates-to-flood-victims-begins-from-holding-centers",
+          "pubDate": "Fri, 23 Oct 2026 14:52:07 +0000"
         }
       ]
     },
@@ -318,11 +328,6 @@
           "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - Onlinekhabar English",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
           "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
           "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
@@ -336,6 +341,11 @@
           "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
           "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5",
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
+        },
+        {
+          "title": "Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5",
+          "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
         }
       ]
     }
