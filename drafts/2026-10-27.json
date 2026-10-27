@@ -1,0 +1,376 @@
+{
+  "fetched_npt": "2026-10-27T12:01",
+  "fetched_utc": "2026-10-27T06:16:16.311Z",
+  "notice": "Draft only. Never auto-applied to status chips.",
+  "published_chips": [
+    {
+      "id": "northern-transit-ctgnet",
+      "status": "degraded",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "galchhi-trishuli-fiber",
+      "status": "up",
+      "as_of": "2026-08-26"
+    },
+    {
+      "id": "trishuli-rasuwagadhi-fiber",
+      "status": "down",
+      "as_of": "2026-08-26"
+    },
+    {
+      "id": "microwave-north-trishuli",
+      "status": "degraded",
+      "as_of": "2026-08-27"
+    },
+    {
+      "id": "tatopani-khasa",
+      "status": "unknown",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "southern-india-transits",
+      "status": "up",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "starlink-backup",
+      "status": "unlicensed",
+      "as_of": "2026-06-03"
+    }
+  ],
+  "ris": {
+    "ok": true,
+    "error": null,
+    "neighbours": {
+      "left": [
+        23764,
+        4755,
+        6453,
+        9498
+      ],
+      "right": [
+        131341,
+        136794,
+        139022,
+        142008,
+        14789,
+        45353,
+        58456
+      ]
+    },
+    "paths": {
+      "north": 129,
+      "south": 225,
+      "other": 0,
+      "unique": [
+        {
+          "hops": [
+            23764,
+            23752
+          ],
+          "n": 7,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            8218,
+            23764,
+            23752
+          ],
+          "n": 6,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            6461,
+            9498,
+            23752
+          ],
+          "n": 5,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            24482,
+            23764,
+            23752
+          ],
+          "n": 5,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            24482,
+            9498,
+            23752
+          ],
+          "n": 5,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            199524,
+            9498,
+            23752
+          ],
+          "n": 5,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            9002,
+            6453,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            14840,
+            9498,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            47147,
+            3320,
+            6453,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            2914,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            3491,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            12779,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            48185,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            3214,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            49544,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            35280,
+            6453,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        }
+      ]
+    },
+    "prefix": "202.70.64.0/19",
+    "latestPathTime": "2026-10-27T06:16:14.380000"
+  },
+  "news": [
+    {
+      "id": "onlinekhabar-en",
+      "lang": "en",
+      "url": "https://english.onlinekhabar.com/feed",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "Australian filmmaker donates A$3,000 for Nepal flood victims",
+          "link": "https://english.onlinekhabar.com/australian-filmmaker-donates.html",
+          "pubDate": "Tue, 27 Oct 2026 05:51:05 +0000"
+        }
+      ]
+    },
+    {
+      "id": "onlinekhabar-ne",
+      "lang": "ne",
+      "url": "https://www.onlinekhabar.com/feed",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "भोटेकोशी बाढीपीडितलाई पशुपति फाउन्डेसन अमेरिकाको डेढ करोड सहयोग",
+          "link": "https://www.onlinekhabar.com/2026/10/2044687/pashupati-foundation-of-america-provides-rs-15-million-to-bhotekoshi-flood-victims",
+          "pubDate": "Tue, 27 Oct 2026 05:52:23 +0000"
+        },
+        {
+          "title": "नेपालका बाढीपीडितका लागि अस्ट्रेलियाली फिल्म निर्माताद्वारा ३ हजार डलर सहयोग",
+          "link": "https://www.onlinekhabar.com/2026/10/2044676/australian-filmmaker-donates-3000-to-nepal-flood-victims",
+          "pubDate": "Tue, 27 Oct 2026 05:42:35 +0000"
+        },
+        {
+          "title": "आनीको नियुक्ति बदरको माग गर्ने लुम्बिनी बचाउ महाअभियानका संयोजकसहित दुई जना पक्राउ",
+          "link": "https://www.onlinekhabar.com/2026/10/2044623/two-people-including-the-coordinator-of-the-lumbini-save-campaign-who-demanded-the-cancellation-of-anis-appointment-were-arrested",
+          "pubDate": "Tue, 27 Oct 2026 03:55:49 +0000"
+        },
+        {
+          "title": "बाढीपहिरोले पाइपलाइन क्षतिग्रस्त हुँदा बेनीमा खानेपानीको चरम अभाव",
+          "link": "https://www.onlinekhabar.com/2026/10/2044553/severe-water-shortage-in-beni-as-pipeline-damaged-by-floods-and-landslides",
+          "pubDate": "Tue, 27 Oct 2026 01:09:53 +0000"
+        }
+      ]
+    },
+    {
+      "id": "rising-nepal",
+      "lang": "en",
+      "url": "https://risingnepaldaily.com/rss",
+      "filter": true,
+      "ok": true,
+      "items": []
+    },
+    {
+      "id": "kathmandu-post",
+      "lang": "en",
+      "url": "https://kathmandupost.com/rss",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "Restore hope for Bhotekoshi flood victims",
+          "link": "https://kathmandupost.com/editorial/2026/10/27/restore-hope-for-bhotekoshi-flood-victims",
+          "pubDate": ""
+        },
+        {
+          "title": "Devoid of options, flood survivors return to damaged homes",
+          "link": "https://kathmandupost.com/national/2026/10/27/devoid-of-options-flood-survivors-return-to-damaged-homes",
+          "pubDate": ""
+        },
+        {
+          "title": "Nepal to expand flood warning systems across six river basins",
+          "link": "https://kathmandupost.com/national/2026/10/26/nepal-to-expand-flood-warning-systems-across-six-river-basins",
+          "pubDate": ""
+        }
+      ]
+    },
+    {
+      "id": "ratopati",
+      "lang": "ne",
+      "url": "https://www.ratopati.com/feed",
+      "filter": true,
+      "ok": true,
+      "items": []
+    },
+    {
+      "id": "gnews-en",
+      "lang": "en",
+      "optional": true,
+      "url": "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
+      "ok": true,
+      "items": [
+        {
+          "title": "Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5",
+          "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
+        },
+        {
+          "title": "Nepal Telecom suffers over NPR 88 million in infrastructure damage in Bhotekoshi floods - ET Telecom",
+          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTUNIYUV2RGFPSEVnSWJSQVZZNmxyWHluaDhsSVZRZmY4SllfbWJ2Uy1WVlpKbjhFTXRuVlFYY1RjeldnMmFWc0NfQ0xTQ0k4THlZRjZ2b29iajlKTmNnVTVuN29ta2czWkNqSFpHUzVBN1JsVWtnR1RiWFBTN3RlbVcyaS1MY1EtRDUzNWt2RUxqNmt4RnpSeDlIeFdXYnhBSjEyWFZoSlBTWEt5VmFWMHFEbHA2T1NjU1BGcVlyV3A0QnREelg2aXkybWQ1eWdIOHNESE1neWxaa0xCYTlKZGhNYldNcHowY2NIeg?oc=5",
+          "pubDate": "Thu, 01 Oct 2026 07:56:43 GMT"
+        },
+        {
+          "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFMwdzJHQnFMVTd0Mi11YWJ6UmlpMV8wVWRxU0kzNkZvVFZWVGZMZmFaR1g3ejBPdlp2TlNsck5LWE5BZGVqX0Z3Wi1PUFBqdkluTnYzTmtVZ2dCTENPZVBJOWE5Zmx6am1uMEczUk9FMDdma2RDOUtrNy0wcHBabGpuUHVUV0g5V0kzZF90a29TNUZIcGcwalZWaUNSbnB6eEU4cWJxcFE1VlJIVk5CNDZoRzVPV1dnaEx1STlFWHA1TXFyZW1N?oc=5",
+          "pubDate": "Wed, 30 Sep 2026 15:17:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom installs solar system at Timure tower to end fuel dependency - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOG8xZmNERVlqYkNWd2JaWWl3ejRwcWJOVG9aaFVTdHI0SWZqdGx0Y1RzTWJWdl80WTFQWnZJQ1RJRzc1eC13dnRsN2VuZjdWci0wTGVQdFFGT0QxQlNUMXREUGp6ZU5NUmQyTFdrZmhwYzBxYWFkY3ZIMkxRa2o5anFYbXA4MkFic29sT3BGbFowTDNLc0FZSzBwdU1oeWRSSUZHS1pJVGNHOUR2RWFnRWRNU0d0ZTV3bjUteW92SWVfbG9s?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
+          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
+          "pubDate": "Sat, 29 Aug 2026 00:40:00 GMT"
+        },
+        {
+          "title": "Solar system installed at Timure telephone tower, ending need to transport diesel - Khabarhub",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyLWZEbjZmdlU4RFV3dG5NV0FUbDRySEtUNXRwS29ZX0daS28yck5NLUtxODB5cjNxSTN0TGREQkM4d1JhWGt0X3ozeXQ1bmltMERNa1Ewc3k?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
+        },
+        {
+          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5",
+          "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NT works to restore services in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "suggestions": [
+    "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
+    "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
+    "Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`."
+  ]
+}

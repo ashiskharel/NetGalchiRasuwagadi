@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-26T11:57",
-  "fetched_utc": "2026-10-26T06:12:37.903Z",
+  "fetched_npt": "2026-10-27T12:01",
+  "fetched_utc": "2026-10-27T06:16:16.311Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -53,15 +53,15 @@
         131341,
         136794,
         139022,
+        142008,
         14789,
-        150138,
         45353,
         58456
       ]
     },
     "paths": {
-      "north": 133,
-      "south": 231,
+      "north": 129,
+      "south": 225,
       "other": 0,
       "unique": [
         {
@@ -69,7 +69,7 @@
             23764,
             23752
           ],
-          "n": 8,
+          "n": 7,
           "klass": "north"
         },
         {
@@ -78,7 +78,7 @@
             23764,
             23752
           ],
-          "n": 7,
+          "n": 6,
           "klass": "north"
         },
         {
@@ -115,6 +115,15 @@
             23752
           ],
           "n": 5,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            9002,
+            6453,
+            23752
+          ],
+          "n": 4,
           "klass": "south"
         },
         {
@@ -156,12 +165,12 @@
         },
         {
           "hops": [
-            9002,
-            6453,
+            12779,
+            23764,
             23752
           ],
           "n": 3,
-          "klass": "south"
+          "klass": "north"
         },
         {
           "hops": [
@@ -198,20 +207,11 @@
           ],
           "n": 3,
           "klass": "south"
-        },
-        {
-          "hops": [
-            13030,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
         }
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-26T06:12:32.880000"
+    "latestPathTime": "2026-10-27T06:16:14.380000"
   },
   "news": [
     {
@@ -222,9 +222,9 @@
       "ok": true,
       "items": [
         {
-          "title": "Bhotekoshi floods caused Rs 79.17 billion in damage to private property, preliminary assessment shows",
-          "link": "https://english.onlinekhabar.com/bhotekoshi-floods-damage-2.html",
-          "pubDate": "Mon, 26 Oct 2026 03:52:12 +0000"
+          "title": "Australian filmmaker donates A$3,000 for Nepal flood victims",
+          "link": "https://english.onlinekhabar.com/australian-filmmaker-donates.html",
+          "pubDate": "Tue, 27 Oct 2026 05:51:05 +0000"
         }
       ]
     },
@@ -236,9 +236,24 @@
       "ok": true,
       "items": [
         {
-          "title": "पीडीएनए प्रारम्भिक नतिजा : रसुवा बाढीले निजी सम्पत्ति र व्यवसायमा ७९ अर्बको क्षति",
-          "link": "https://www.onlinekhabar.com/2026/10/2043759/pdna-preliminary-results-rasuwa-floods-cause-rs-79-billion-in-damage-to-private-property-and-businesses",
-          "pubDate": "Sun, 25 Oct 2026 15:23:47 +0000"
+          "title": "भोटेकोशी बाढीपीडितलाई पशुपति फाउन्डेसन अमेरिकाको डेढ करोड सहयोग",
+          "link": "https://www.onlinekhabar.com/2026/10/2044687/pashupati-foundation-of-america-provides-rs-15-million-to-bhotekoshi-flood-victims",
+          "pubDate": "Tue, 27 Oct 2026 05:52:23 +0000"
+        },
+        {
+          "title": "नेपालका बाढीपीडितका लागि अस्ट्रेलियाली फिल्म निर्माताद्वारा ३ हजार डलर सहयोग",
+          "link": "https://www.onlinekhabar.com/2026/10/2044676/australian-filmmaker-donates-3000-to-nepal-flood-victims",
+          "pubDate": "Tue, 27 Oct 2026 05:42:35 +0000"
+        },
+        {
+          "title": "आनीको नियुक्ति बदरको माग गर्ने लुम्बिनी बचाउ महाअभियानका संयोजकसहित दुई जना पक्राउ",
+          "link": "https://www.onlinekhabar.com/2026/10/2044623/two-people-including-the-coordinator-of-the-lumbini-save-campaign-who-demanded-the-cancellation-of-anis-appointment-were-arrested",
+          "pubDate": "Tue, 27 Oct 2026 03:55:49 +0000"
+        },
+        {
+          "title": "बाढीपहिरोले पाइपलाइन क्षतिग्रस्त हुँदा बेनीमा खानेपानीको चरम अभाव",
+          "link": "https://www.onlinekhabar.com/2026/10/2044553/severe-water-shortage-in-beni-as-pipeline-damaged-by-floods-and-landslides",
+          "pubDate": "Tue, 27 Oct 2026 01:09:53 +0000"
         }
       ]
     },
@@ -258,18 +273,18 @@
       "ok": true,
       "items": [
         {
+          "title": "Restore hope for Bhotekoshi flood victims",
+          "link": "https://kathmandupost.com/editorial/2026/10/27/restore-hope-for-bhotekoshi-flood-victims",
+          "pubDate": ""
+        },
+        {
+          "title": "Devoid of options, flood survivors return to damaged homes",
+          "link": "https://kathmandupost.com/national/2026/10/27/devoid-of-options-flood-survivors-return-to-damaged-homes",
+          "pubDate": ""
+        },
+        {
           "title": "Nepal to expand flood warning systems across six river basins",
           "link": "https://kathmandupost.com/national/2026/10/26/nepal-to-expand-flood-warning-systems-across-six-river-basins",
-          "pubDate": ""
-        },
-        {
-          "title": "Tourism resumes in Manaslu after Budhi Gandaki floods",
-          "link": "https://kathmandupost.com/national/2026/10/25/tourism-resumes-in-manaslu-after-budhi-gandaki-floods",
-          "pubDate": ""
-        },
-        {
-          "title": "Nepal resumes power exports to Bangladesh after flood disruption",
-          "link": "https://kathmandupost.com/money/2026/10/25/nepal-resumes-power-exports-to-bangladesh-after-flood-disruption",
           "pubDate": ""
         }
       ]
@@ -280,18 +295,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "उत्तरगयाका बाढी प्रभावितलाई होल्डिङ सेन्टरमै पुगेर नागरिकताको प्रतिलिपि दिने प्रक्रिया सुरु",
-          "link": "https://www.ratopati.com/story/601305/the-process-of-providing-copies-of-citizenship-certificates-to-flood-victims-in-uttar-gaya-has-begun-at-the-holding-center",
-          "pubDate": "Mon, 26 Oct 2026 05:39:10 +0000"
-        },
-        {
-          "title": "रसुवा–भोटेकोशी बाढी : ७९ अर्बभन्दा बढीको क्षति, नुवाकोट सबैभन्दा बढी प्रभावित",
-          "link": "https://www.ratopati.com/story/601285/rasuwa-bhotekoshi-flood-damage-of-over-rs-79-billion-nuwakot-most-affected",
-          "pubDate": "Mon, 26 Oct 2026 04:26:07 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
@@ -316,9 +320,9 @@
           "pubDate": "Wed, 30 Sep 2026 15:17:00 GMT"
         },
         {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - radionepalonline.com",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04aGJGMXJfZ0k2M0pVTVRlVzg2ZzBoUGxGcUVtbE5zS2p4RmdJbENCdEVnT1lEUm9KU3JQak5aQVUxdzJZckZkLVJGb0hsbmN0UWFYZEhrcGNvc25iaWE3NV9GWXI?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 16:19:13 GMT"
+          "title": "Nepal Telecom installs solar system at Timure tower to end fuel dependency - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOG8xZmNERVlqYkNWd2JaWWl3ejRwcWJOVG9aaFVTdHI0SWZqdGx0Y1RzTWJWdl80WTFQWnZJQ1RJRzc1eC13dnRsN2VuZjdWci0wTGVQdFFGT0QxQlNUMXREUGp6ZU5NUmQyTFdrZmhwYzBxYWFkY3ZIMkxRa2o5anFYbXA4MkFic29sT3BGbFowTDNLc0FZSzBwdU1oeWRSSUZHS1pJVGNHOUR2RWFnRWRNU0d0ZTV3bjUteW92SWVfbG9s?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
@@ -326,28 +330,23 @@
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+          "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
+          "pubDate": "Sat, 29 Aug 2026 00:40:00 GMT"
         },
         {
-          "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
+          "title": "Solar system installed at Timure telephone tower, ending need to transport diesel - Khabarhub",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyLWZEbjZmdlU4RFV3dG5NV0FUbDRySEtUNXRwS29ZX0daS28yck5NLUtxODB5cjNxSTN0TGREQkM4d1JhWGt0X3ozeXQ1bmltMERNa1Ewc3k?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom, Ncell restoring services in flood-hit areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1keTl2RkhJcERRcFNsbjBjRTBSeU54QnZPQVZEX3d1ZnRWMWFVcHBPb0sxSGVORjM0TF96bEpjRXhoTUxGVzdGaDc3ejhnX05s?oc=5",
-          "pubDate": "Thu, 10 Sep 2026 00:46:10 GMT"
+          "title": "Nepal Telecom Installs Solar System for Timure Telephone Tower - Ratopati",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNk1xWDExLUVyeU9kQTVKNFNsSGpqSFd6SW9wUl9yOGhTYUlndDFqVXpjSVIzWlhRUExtcDlWOTNxM1N5NVl3cEZxU0dNam5nd2J1bTRxb3IzdVZUUjJOaXRQZFYzVkJHbU5lY3AxeW94UXZmLUtFTjN6M1RsclBESGpFbnY1ZzVtQmg1OFpZT2hySy1O?oc=5",
+          "pubDate": "Mon, 28 Sep 2026 10:59:06 GMT"
         },
         {
-          "title": "Nepal Telecom restores 113 sites affected by Bhotekoshi flood - Khabarhub",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nZFdwTWdjZFRXWVZodzluRlRoblBaOGZXaUpKNVBQdXRTU2ZMVjFSYkhvLXB6YS0xS004elhveTUxeXdhanFlSVNLaDU1V3R0NEppVGJKeWw?oc=5",
-          "pubDate": "Tue, 01 Sep 2026 14:22:29 GMT"
-        },
-        {
-          "title": "Nepal Telecom Extends Free Service by Three Days in the Bhotekoshi Flood-Affected Area - Ekantipur",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTWtuZkdrdFdwOHRmYk9TNWJjSzYxMHZveVBDakZyQmROSFd5azJaZlJjUHZ1RVFVWUxUMXN1QzFfaW9nenVWTm9zZ29qVUtSS3FTYmQ5a0U5dVhBVE52OWg2ak4wUEZkOVRQM0hyTWZyYVpjWGFrUzRxLXhLU1NkMVNkU1N1OWhCT1lMRXIyNFN6TWZoLTdLZkxaaUNVTnlubmNyZXBfM2VJS2REUk1Vc0QtenQ4dTZDMXdsYUxsd0xjWGxGMXlaRndDR0dTajZnYjZ6S0N4a08?oc=5",
+          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
@@ -356,9 +355,14 @@
           "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NT works to restore services in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
         }
       ]
     }
