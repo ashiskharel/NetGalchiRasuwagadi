@@ -79,6 +79,94 @@
       "title_ne": "AS23752 नेपाल टेलिकम",
       "url": "https://www.peeringdb.com/asn/23752",
       "date": "2026-08-11"
+    },
+    {
+      "id": "dhm-terms",
+      "name": "Pardafas, quoting DHM",
+      "title_en": "DHM 24-hour rainfall bands: light under 10 mm, moderate 10–50, heavy 50–100, very heavy 100–200, extremely heavy over 200",
+      "title_ne": "विभागको २४ घण्टे वर्षा: १० मुनि हल्का, १०–५० मध्यम, ५०–१०० भारी, १००–२०० धेरै भारी, २०० माथि अत्यन्त भारी",
+      "url": "https://english.pardafas.com/measurement-criteria-for-light-moderate-heavy-very-heavy-and-extreme-rainfall/",
+      "date": "2025-10-05"
+    },
+    {
+      "id": "onlinekhabar-arnab",
+      "name": "OnlineKhabar",
+      "title_en": "DHM forecast for 29–31 October 2026 as Cyclone Arnab weakens over India",
+      "title_ne": "भारतमा कमजोर हुँदै गरेको चक्रवात अर्नबबारे २९–३१ अक्टोबर २०२६ को विभागको पूर्वानुमान",
+      "url": "https://english.onlinekhabar.com/rain-and-snowfall-likely-nepal-today.html",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "nepalviews-200mm",
+      "name": "Nepal Views",
+      "title_en": "A meteorologist’s note that some places might see over 200 mm cumulative from 28 Oct to 1 Nov, not all in one day, and DHM could not yet fix the amount",
+      "title_ne": "एक मौसमविद्को नोट: २८ अक्टोबरदेखि १ नोभेम्बरसम्म केही ठाउँमा २०० मिमीभन्दा बढी जम्मा हुन सक्छ, एकै दिन होइन, र विभागले मात्रा अझ टुङ्गो लगाएको थिएन",
+      "url": "https://english.nepalviews.com/2026/10/24/dhm-nepal-could-receive-up-to-200-mm-of-rainfall-from-october-28-to-november-1",
+      "date": "2026-10-24"
+    },
+    {
+      "id": "adb-melamchi",
+      "name": "Asian Development Bank",
+      "title_en": "Mapping hazards in Nepal’s Melamchi River — 17 minutes and about 18 m/s to Timbu",
+      "title_ne": "मेलाम्ची नदीको जोखिम नक्सा — टिम्बुसम्म १७ मिनेट र करिब १८ मि/से",
+      "url": "https://www.adb.org/sites/default/files/publication/927371/mapping-hazards-nepal-melamchi-river.pdf",
+      "date": "2023-11-01"
+    },
+    {
+      "id": "seti-issmge",
+      "name": "ISSMGE Bulletin",
+      "title_en": "Seti debris flood, 5 May 2012: about 20 km to Kharapani in about 35–40 minutes",
+      "title_ne": "सेती गेग्रान बाढी, ५ मे २०१२: खरापानीसम्म करिब २० किमी, करिब ३५–४० मिनेट",
+      "url": "https://www.issmge.org/filemanager/article/126/ISSMGE_Bulletin_August_2012_Vol_6_Issue_4.pdf",
+      "date": "2012-08-01"
+    },
+    {
+      "id": "nasa-seti",
+      "name": "NASA Earth Observatory",
+      "title_en": "Aftermath of the Seti River landslide, 5 May 2012",
+      "title_ne": "सेती नदी पहिरो पछिको अवस्था, ५ मे २०१२",
+      "url": "https://science.nasa.gov/earth/earth-observatory/aftermath-of-the-seti-river-landslide-78117/",
+      "date": "2012-05-29"
+    },
+    {
+      "id": "babai-thresholds",
+      "name": "Discover Geoscience",
+      "title_en": "Babai rainfall thresholds: about 135 mm warning and 200 mm danger in one day at Chepang",
+      "title_ne": "बबई वर्षा रेखा: चेपाङमा एक दिनमा करिब १३५ मिमी सतर्कता र २०० मिमी खतरा",
+      "url": "https://link.springer.com/article/10.1007/s44288-026-00631-1",
+      "date": "2026-07-09"
+    },
+    {
+      "id": "nature-melamchi",
+      "name": "Nature Geoscience",
+      "title_en": "Erosional cascade during the 2021 Melamchi flood",
+      "title_ne": "२०२१ मेलाम्ची बाढीको कटान शृङ्खला",
+      "url": "https://www.nature.com/articles/s41561-024-01596-x",
+      "date": "2024-12-04"
+    },
+    {
+      "id": "open-meteo",
+      "name": "Open-Meteo",
+      "title_en": "ECMWF IFS, GFS, ICON, ERA5 archive, and GloFAS flood API",
+      "title_ne": "ECMWF IFS, GFS, ICON, ERA5 अभिलेख, र GloFAS बाढी API",
+      "url": "https://open-meteo.com/en/docs",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "geoboundaries",
+      "name": "geoBoundaries",
+      "title_en": "Nepal ADM1 boundaries, 2020, CC BY 3.0 IGO, simplified geometry",
+      "title_ne": "नेपाल ADM1 सीमा, २०२०, CC BY 3.0 IGO, सरलीकृत ज्यामिति",
+      "url": "https://www.geoboundaries.org",
+      "date": "2023-12-12"
+    },
+    {
+      "id": "nasa-gibs",
+      "name": "NASA GIBS",
+      "title_en": "VIIRS true-color WMS used on the river map",
+      "title_ne": "नदी नक्सामा प्रयोग भएको VIIRS सत्य-रङ WMS",
+      "url": "https://gibs.earthdata.nasa.gov/",
+      "date": "2026-10-29"
     }
   ]
 }

@@ -34,6 +34,8 @@ The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT 
 
 **Satellites** (`/en/satellites`): NASA GIBS daily true-color of the valley from 25 Aug 2026, plus live ISS / Landsat / Terra / Aqua / NOAA positions. Not people or phones. Starlink overhead is not shown as a service.
 
+**Rivers** (`/en/flood`): Cyclone Arnab desk. How fast a rise leaves a narrow gorge or an embanked bend, 24-hour rain lines for those reaches, ECMWF IFS against GFS and ICON, a 2006–2025 ERA5 October comparison, and GloFAS only as a rise/fall signal. Not a DHM warning. Refresh with `npm run flood` (add `--era5` to refetch the 20-year archive). The committed `src/data/flood-watch.json` is the snapshot the site builds.
+
 Production URL uses the GitHub Pages base path `/NetGalchiRasuwagadi`. Enable **Pages → GitHub Actions** on the repo after the first push to `main`.
 
 ## Routing data

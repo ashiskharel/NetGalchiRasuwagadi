@@ -240,6 +240,35 @@ h1 {
   color: var(--unlicensed);
   background: var(--unlicensed-bg);
 }
+.badge.quiet {
+  color: var(--up);
+  background: var(--up-bg);
+}
+.badge.watch {
+  color: var(--degraded);
+  background: var(--degraded-bg);
+}
+.badge.danger {
+  color: var(--down);
+  background: var(--down-bg);
+}
+
+.flood-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: end;
+  margin: 0.6rem 0;
+}
+
+.flood-controls input[type="date"] {
+  min-height: 44px;
+  padding: 0.35rem 0.5rem;
+  font: inherit;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--card);
+}
 
 .card.up {
   border-left: 5px solid var(--up);

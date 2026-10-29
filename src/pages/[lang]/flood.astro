@@ -1,0 +1,447 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, isLang, type Lang } from "../../lib/config";
+import { t, langPath } from "../../lib/i18n";
+import { assess, formatMinutes, worst, type Level } from "../../lib/flood";
+import reachesFile from "../../data/reaches.json";
+import watchFile from "../../data/flood-watch.json";
+import snapshot from "../../data/snapshot.json";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const messages = t(lang);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const ne = lang === "ne";
+
+const provinces = reachesFile.provinces;
+const hydro = watchFile.reaches as Record<string, (typeof watchFile.reaches)[string]>;
+
+const rows = reachesFile.reaches
+  .map((reach) => {
+    const h = hydro[reach.id];
+    const a = assess(reach, h);
+    return { reach, h, a };
+  })
+  .sort((x, y) => (x.a.exit_min ?? 9999) - (y.a.exit_min ?? 9999));
+
+const rescue = rows.filter((row) => row.a.level !== "quiet" && (row.a.exit_min ?? 999) <= 180);
+
+function provName(id: string): string {
+  const p = provinces.find((item) => item.id === id);
+  if (!p) return id;
+  return ne ? p.name_ne : p.name_en;
+}
+
+function levelLabel(level: Level): string {
+  if (ne) return level === "danger" ? "खतरा" : level === "watch" ? "सतर्क" : "शान्त";
+  return level === "danger" ? "Danger" : level === "watch" ? "Watch" : "Quiet";
+}
+
+function kindLabel(kind: string): string {
+  const en: Record<string, string> = {
+    "old-terrace": "Older, on a terrace",
+    "new-floodplain": "Newer, on the floodplain or fan",
+    "in-gorge": "Inside the gorge",
+    both: "Old community, still in the braid",
+  };
+  const np: Record<string, string> = {
+    "old-terrace": "पुरानो, टारमा",
+    "new-floodplain": "नयाँ, बगर वा फ्यानमा",
+    "in-gorge": "खोंचभित्र",
+    both: "पुरानो बस्ती, अझै बगरमै",
+  };
+  return (ne ? np : en)[kind] ?? kind;
+}
+
+function day(row: (typeof rows)[number], date: string) {
+  return row.h.daily.find((item) => item.date === date);
+}
+
+const dates = ["2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01"];
+const bgp = watchFile.bgp;
+const upstreams = "upstreams" in bgp ? bgp.upstreams : [];
+
+const provinceLevels = provinces.map((p) => {
+  const levels = rows
+    .filter((row) => row.reach.province === p.id || row.reach.also.includes(p.id))
+    .map((row) => row.a.level);
+  return { ...p, level: worst(levels) };
+});
+---
+
+<Base lang={lang} title={ne ? "नदी, वर्षा र निकासको समय" : "Rivers, rain, and exit time"} path="flood" description={ne ? "चक्रवात अर्नबको साता नेपालका नदी, साँघुरो खोंचबाट पानी निस्किने समय, र बस्ती।" : "Nepal river reaches, how fast a rise leaves the narrow section, and where Cyclone Arnab’s rain sits."}>
+  <p class="kicker">{ne ? "चक्रवात अर्नब · २९–३१ अक्टोबर २०२६" : "Cyclone Arnab · 29–31 October 2026"}</p>
+  <h1>{ne ? "कति वर्षा खतरनाक हो, र पानी कति छिटो निस्कन्छ" : "How much rain is dangerous, and how fast the water leaves"}</h1>
+  <p class="lead">
+    {
+      ne
+        ? "एउटा राष्ट्रिय २४ घण्टे अंक छैन। साँघुरो खोंच मिनेटमा खाली हुन्छ। बाँधिएको मोडलाई घण्टा लाग्छ। यो जल तथा मौसम विभागको चेतावनी होइन।"
+        : "There is no single national 24-hour number. A narrow gorge empties in minutes. An embanked bend takes hours. This is not a Department of Hydrology and Meteorology warning."
+    }
+  </p>
+  <p class="note">
+    {
+      ne
+        ? "२९ अक्टोबरको सार्वजनिक अपडेट (अनलाइनखबरले विभागलाई उद्धृत): कोशी, मधेस, बागमती, गण्डकी र लुम्बिनीका धेरै ठाउँमा मध्यम वर्षा, थोरै ठाउँमा भारी। कर्णाली र सुदूरपश्चिममा मध्यम, एक-दुई ठाउँमा भारी। उच्च हिमालमा हिउँ र हिमपहिरो। शनिबार ३१ अक्टोबरसम्म।"
+        : "Public update of 29 October, OnlineKhabar quoting the Department: moderate rain at most places in Koshi, Madhesh, Bagmati, Gandaki and Lumbini, heavy at a few, through Saturday 31 October. Karnali and Sudurpashchim mostly moderate, heavy at one or two hill or mountain spots. Snow and avalanche risk up high."
+    }
+  </p>
+
+  <div class="callout">
+    <strong>{ne ? "यो मोडेलले अहिले के भन्छ" : "What this model run says"}</strong>
+    <p>
+      {
+        ne
+          ? "ECMWF IFS ले शुक्रबार र शनिबार बागमतीको चुरे/मकवानपुर कोष्ठमा ७१ र ११८ मिमी देखाउँछ (दुई दिन जोड्दा करिब १८९ मिमी)। ICON शनिबार ५३ मिमी मात्र हो, GFS लगभग सुक्खा। त्यही असहमति मेलाम्ची (शुक्रबार ECMWF ५७ मिमी, अरू मोडेल निकै कम) र रसुवा खोंच (५० मिमी) मा पनि छ। कोशी, नारायणी र कर्णालीको GloFAS बहाव शनिबारसम्म झर्दै छ। कोशीमा आइतबार करिब १,५०० घनमिटर/सेकेन्डको सानो उकालो छ, मनसुनको बाढी होइन। खतरा तह कोहीले पनि काटेको छैन। सतर्कमा परेका खोंच छोटा छन्।"
+          : "ECMWF IFS puts 71 mm on Friday and 118 mm on Saturday on the Bagmati Chure / Makwanpur cell, about 189 mm over those two days. ICON has 53 mm on Saturday and GFS is almost dry, so the models do not agree. The same split shows at Melamchi (ECMWF 57 mm Friday, the other models much lower) and in the Rasuwa gorge (50 mm). GloFAS discharge on the Koshi, Narayani and Karnali is falling through Saturday. The Koshi bumps to about 1,500 m³/s on Sunday, which is not a monsoon flood. No reach crosses its danger line. The reaches that do reach Watch empty quickly."
+      }
+    </p>
+  </div>
+
+  <h2>{ne ? "तीन घडी" : "Three clocks"}</h2>
+  <div class="grid chips">
+    <article class="card down">
+      <h3>{ne ? "साँघुरो खोंच" : "Steep gorge"}</h3>
+      <p>
+        {
+          ne
+            ? "मेलाम्ची, सेती, कोदारी, रसुवा, तिनाउको मुख। उकालो खोंच छोड्न मिनेटदेखि करिब डेढ घण्टा। २४ घण्टामा ५०–१०० मिमी (विभागको “भारी”) वा ३ घण्टामा २५–४० मिमीको झड्का काफी हुन सक्छ। मेलाम्चीको मापन १७ मिनेट, करिब १८ मि/से। सेती २०१२ मा खरापानीसम्म करिब ३८ मिनेट।"
+            : "Melamchi, Seti, Kodari, Rasuwa, the Tinau mouth. The rise leaves the gorge in minutes to about an hour and a half. DHM “heavy” rain, 50–100 mm in a day, or 25–40 mm in 3 hours, can be enough. Melamchi was measured at 17 minutes, about 18 m/s. The 2012 Seti flood reached Kharapani in about 38 minutes."
+        }
+      </p>
+    </article>
+    <article class="card degraded">
+      <h3>{ne ? "अड्चन" : "Bottleneck"}</h3>
+      <p>
+        {
+          ne
+            ? "चोभार। पानीको एक भाग मिनेटमै छिचोल्छ (यस रेखामा डेस्क छाल करिब १९ मिनेट)। उपत्यका पछाडि थुनिन्छ र धेरै घण्टा रहन्छ। नयाँ बगरका घर पहिले डुब्छन्। दैनिक ५० मिमी नै सतर्क हो। २०० मिमी पहिलो सङ्केत होइन।"
+            : "Chobhar. A parcel shoots the slot in minutes (desk wave about 19 minutes on this line). The valley behind it stays full for many hours. New houses on the bed go first. 50 mm in a day is already a watch. 200 mm is not the first alarm."
+        }
+      </p>
+    </article>
+    <article class="card unknown">
+      <h3>{ne ? "बाँधिएको मोड" : "Embanked bend"}</h3>
+      <p>
+        {
+          ne
+            ? "कुसाहाको कोशी, नारायणी, तराईको बागमती, चिसापानीमुनि। खोंचमा छाल करिब १–३.५ घण्टा। मार्ने निकास छेउतिर हो। किनार फुटेपछि नजिकको गाउँ १–४ घण्टामा डुब्न सक्छ। १८ अगस्ट २००८ को कुसाहा यस्तै हो। बबईको प्रकाशित खतरा रेखा चेपाङमा एक दिनमा करिब २०० मिमी हो। बैंकफुल करिब १०५ मिमीमै हो।"
+            : "Koshi at Kushaha, the Narayani, the Terai Bagmati, below Chisapani. The wave takes about 1–3.5 hours along the reach. The killing exit is sideways. After a bank fails, the nearest village can be in water in 1–4 hours. Kushaha on 18 August 2008 was this clock. Babai’s published danger line is about 200 mm in a day at Chepang. Bankfull there is already about 105 mm."
+        }
+      </p>
+    </article>
+  </div>
+  <p class="note">
+    {
+      ne
+        ? "विभागको शब्द: २४ घण्टामा १० मिमीमुनि हल्का, १०–५० मध्यम, ५०–१०० भारी, १००–२०० धेरै भारी, २०० माथि अत्यन्त भारी। यी बाढीको तह होइनन्।"
+        : "Department words, per 24 hours: under 10 mm light, 10–50 moderate, 50–100 heavy, 100–200 very heavy, over 200 extremely heavy. Those are not flood stages."
+    }
+  </p>
+
+  <h2>{ne ? "पहिला पुग्नुपर्ने ठाउँ" : "Where a rescue team has the least time"}</h2>
+  <p>
+    {
+      ne
+        ? "सतर्क तह पुगेका र यो खण्ड ३ घण्टाभित्र छोड्ने नदी। यो स्थानान्तरणको आदेश होइन। खोंचभित्रको बस्तीले निकास पर्खनु हुँदैन। उनीहरू खतराभित्रै छन्।"
+        : "Reaches at Watch whose rise leaves this section within 3 hours. Not an evacuation order. A town inside the gorge should not wait for the exit. The town is already in the danger."
+    }
+  </p>
+  {
+    rescue.length === 0 ? (
+      <p class="note">{ne ? "यो मोडेल चलाउँदा सतर्क सूची खाली छ।" : "No reach is on the watch list in this run."}</p>
+    ) : (
+      <ol>
+        {rescue.map((row) => (
+          <li>
+            <a href={`#reach-${row.reach.id}`}>
+              <strong>{ne ? row.reach.river_ne : row.reach.river_en}</strong>
+            </a>
+            {" — "}
+            {formatMinutes(row.a.exit_min, lang)}
+            {row.a.exit_source === "published"
+              ? ne
+                ? " (मापन)"
+                : " (measured)"
+              : ne
+                ? " (डेस्क छाल)"
+                : " (desk wave)"}
+            {". "}
+            {ne ? "शुक्र+शनि ECMWF" : "Fri+Sat ECMWF"} {row.a.two_day_ecmwf_mm} mm
+            {row.a.disagree ? (ne ? "। मोडेल बाझिन्छन्।" : ". Models disagree.") : "."}
+          </li>
+        ))}
+      </ol>
+    )
+  }
+
+  <h2>{ne ? "सात प्रदेश" : "Seven provinces"}</h2>
+  <p class="note">
+    {
+      ne
+        ? "सीमा geoBoundaries २०२० हो। फाइलमा प्रदेश १ र २ लेखिएको छ। यहाँ कोशी र मधेस। रङ त्यो प्रदेशका नदीको सबैभन्दा खराब तह हो। हरियो शान्त, पहेँलो सतर्क, रातो खतरा।"
+        : "Boundaries are geoBoundaries 2020. The file still says Province 1 and Province 2. Here they are Koshi and Madhesh. Colour is the worst reach touching that province. Green quiet, amber watch, red danger."
+    }
+  </p>
+  <div class="flood-controls">
+    <label>
+      <input id="gibs-toggle" type="checkbox" />
+      {ne ? " NASA VIIRS सत्य रङ (बादल छिचोल्दैन)" : " NASA VIIRS true color (does not see through cloud)"}
+    </label>
+    <label>
+      {ne ? "तस्बिर मिति" : "Image date"}
+      <input id="gibs-date" type="date" value="2026-10-28" min="2026-10-20" max="2026-10-29" />
+    </label>
+  </div>
+  <div id="flood-map" class="map" data-lang={lang} data-base={base}></div>
+  <p class="note">
+    <a href="https://worldview.earthdata.nasa.gov/?v=79.5,26,88.8,30.6&t=2026-10-28&l=Reference_Labels_15m,Coastlines_15m,VIIRS_NOAA20_CorrectedReflectance_TrueColor,IMERG_Precipitation_Rate">
+      {ne ? "NASA Worldview (वर्षा तहसहित)" : "NASA Worldview, including the rain layer"}
+    </a>
+    {" · "}
+    <a href="https://browser.dataspace.copernicus.eu/?zoom=6&lat=28.1&lng=84.2">
+      {ne ? "कोपर्निकस ब्राउजर (सेन्टिनेल)" : "Copernicus Browser (Sentinel)"}
+    </a>
+    {" · "}
+    <a href={langPath(lang, "satellites", base)}>{ne ? "यो साइटको करिडोर उपग्रह" : "This site’s corridor satellites"}</a>
+  </p>
+  <ul class="list-plain">
+    {
+      provinceLevels.map((p) => (
+        <li>
+          <span class:list={["badge", p.level]}>{levelLabel(p.level)}</span>{" "}
+          {ne ? p.name_ne : p.name_en}
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>{ne ? "निकासको समय" : "Time to leave the narrow section"}</h2>
+  <p class="note">
+    {
+      ne
+        ? "डेस्क छाल = लम्बाइ ÷ (५/३ × म्यानिङ गति)। गति चौडा खोंचको अनुमान हो, नापिएको क्रस-सेक्सन होइन। भिरालो दुई छेउको नजिकको होचो जमिन हो, भीरको टुप्पो होइन। मापन भएको ठाउँमा त्यही अंक प्रयोग गर्नुहोस्। सेतीको डेस्क ५ मिनेट छोटो र अति भिरालो टुक्राको हो। २०१२ को बाढी खरापानीसम्म करिब ३८ मिनेट थियो।"
+        : "Desk wave = length ÷ (5/3 × Manning speed). Speed is a wide-channel estimate, not a surveyed cross-section. Slope uses the low ground near each end, not a cliff top. Where an event was measured, use that time. The Seti desk figure of about 5 minutes is a short, very steep slice. The 2012 flood took about 38 minutes to reach Kharapani."
+    }
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "नदी" : "River"}</th>
+          <th>{ne ? "प्रयोग गर्ने समय" : "Time to use"}</th>
+          <th>{ne ? "डेस्क छाल" : "Desk wave"}</th>
+          <th>{ne ? "गति" : "Speed"}</th>
+          <th>{ne ? "लम्बाइ" : "Length"}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr id={`reach-${row.reach.id}`}>
+              <td>
+                <strong>{ne ? row.reach.river_ne : row.reach.river_en}</strong>
+                <div class="asof">{provName(row.reach.province)}</div>
+              </td>
+              <td>
+                {formatMinutes(row.a.exit_min, lang)}
+                <div class="asof">{row.a.exit_source === "published" ? (ne ? "मापन" : "measured") : ne ? "डेस्क" : "desk"}</div>
+              </td>
+              <td>{formatMinutes(row.h.wave_min, lang)}</td>
+              <td>
+                {row.reach.published?.speed_ms
+                  ? `${row.reach.published.speed_ms} m/s`
+                  : row.h.wave_speed_ms
+                    ? `${row.h.wave_speed_ms} m/s`
+                    : "—"}
+                <div class="asof">{row.h.speed_ms ? `${row.h.speed_ms} m/s ${ne ? "पानी" : "water"}` : ""}</div>
+              </td>
+              <td>
+                {row.h.length_km} km
+                <div class="asof">
+                  {row.h.elevation_up_m}→{row.h.elevation_down_m} m
+                </div>
+              </td>
+              <td>
+                <span class:list={["badge", row.a.level]}>{levelLabel(row.a.level)}</span>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>{ne ? "अर्को चार दिनको वर्षा" : "Rain over the next four days"}</h2>
+  <p class="note">
+    {
+      ne
+        ? `प्राथमिक मोडेल ECMWF IFS। दायाँ GFS र ICON। तानिएको ${watchFile.fetched_at.slice(0, 16)} UTC। अंक एक कोष्ठको दैनिक जोड हो, जलाधारको औसत होइन। ERA5 ले खोंचको झड्का कम देखाउँछ।`
+        : `Primary model ECMWF IFS. Beside it, GFS and ICON. Fetched ${watchFile.fetched_at.slice(0, 16)} UTC. Figures are one cell’s daily total, not a basin average. ERA5 underestimates gorge bursts.`
+    }
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "नदी" : "River"}</th>
+          <th>{ne ? "रेखा" : "Lines"}</th>
+          {dates.map((date) => (
+            <th>{date.slice(5)}</th>
+          ))}
+          <th>{ne ? "अक्टोबर अधिकतम" : "October max"}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr>
+              <td>
+                <a href={`#reach-${row.reach.id}`}>{ne ? row.reach.river_ne : row.reach.river_en}</a>
+                <div class="asof">
+                  <span class:list={["badge", row.a.level]}>{levelLabel(row.a.level)}</span>
+                  {row.a.disagree ? (ne ? " बाझियो" : " split") : ""}
+                </div>
+              </td>
+              <td class="asof">
+                {ne ? "सतर्क" : "Watch"} {row.reach.watch_mm}
+                <br />
+                {ne ? "खतरा" : "Danger"} {row.reach.danger_mm}
+              </td>
+              {
+                dates.map((date) => {
+                  const item = day(row, date);
+                  return (
+                    <td>
+                      {item ? item.ecmwf_mm : "—"}
+                      <div class="asof">{item ? `${item.gfs_mm} / ${item.icon_mm}` : ""}</div>
+                    </td>
+                  );
+                })
+              }
+              <td class="asof">
+                {row.h.era5 && "october_max_mm" in row.h.era5 && row.h.era5.october_max_mm != null
+                  ? `${row.h.era5.october_max_mm} (${row.h.era5.october_max_date})`
+                  : "—"}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="note">{ne ? "कोष्ठ: ECMWF। मुनि सानो: GFS / ICON। मिमी।" : "Cell: ECMWF. Small type: GFS / ICON. Millimetres."}</p>
+
+  <h2>{ne ? "पुरानो बस्ती र नयाँ बस्ती" : "Older settlements and newer ones"}</h2>
+  <p>
+    {
+      ne
+        ? "देशभरको घर-उमेरको दर्ता यहाँ छैन। “पुरानो” भनेको राजमार्गअघिको टार हो, जहाँ बाढीले चिनिएको थियो। “नयाँ” भनेको १९९० पछि सडक, बाँध र २०१५ पछिको घडेरीले बगर, फ्यान र बाँधभित्र भरेको भाग हो। राजापुर र दोधारा-चाँदनी पुराना हुन् र अझै बगरमै छन्। उमेर आफैँ सुरक्षा होइन।"
+        : "There is no national building-age register here. “Old” means the pre-highway terrace, where floods were known. “New” means post-1990 road, embankment and post-2015 plots that filled fans, beds and the ground inside embankments. Rajapur and Dodhara-Chandani are old and still in the braid. Age is not safety."
+    }
+  </p>
+  {
+    rows.map((row) => (
+      <article class="card" id={`settle-${row.reach.id}`}>
+        <h3>
+          <span class:list={["badge", row.a.level]}>{levelLabel(row.a.level)}</span>{" "}
+          {ne ? row.reach.river_ne : row.reach.river_en}
+        </h3>
+        <p>{ne ? row.reach.exit_ne : row.reach.exit_en}</p>
+        <p>{ne ? row.reach.threshold_ne : row.reach.threshold_en}</p>
+        <ul>
+          {row.reach.settlements.map((s) => (
+            <li>
+              <strong>{ne ? s.name_ne : s.name_en}</strong> — {kindLabel(s.kind)}. {ne ? s.note_ne : s.note_en}
+            </li>
+          ))}
+        </ul>
+        <p class="note">{ne ? row.reach.history_ne : row.reach.history_en}</p>
+        {row.reach.published?.note_en && <p class="note">{ne ? row.reach.published.note_ne : row.reach.published.note_en}</p>}
+        <p>
+          <strong>{ne ? "दूरसञ्चार" : "Telecom"}.</strong> {ne ? row.reach.telecom_ne : row.reach.telecom_en}
+        </p>
+        {
+          row.h.glofas && (
+            <p class="asof">
+              GloFAS ({row.reach.glofas_trust}): {row.a.glofas
+                ? `${row.a.glofas.baseline_date.slice(5)} ${row.a.glofas.baseline_m3s} → ${row.a.glofas.peak_date.slice(5)} ${row.a.glofas.peak_m3s} m³/s`
+                : "—"}
+              {row.reach.glofas_trust !== "main"
+                ? ne
+                  ? "। यो घनमिटर विभागको गेज होइन।"
+                  : ". These cubic metres are not a DHM gauge."
+                : ne
+                  ? "। मुख्य खण्डको मोडेल नदी, विभागको गेज होइन।"
+                  : ". Model river on the main stem, not a DHM gauge."}
+            </p>
+          )
+        }
+      </article>
+    ))
+  }
+
+  <h2>{ne ? "अहिले देखिएका दूरसञ्चार" : "Telecoms visible right now"}</h2>
+  <p>
+    {
+      ne
+        ? "RIPEstat ले नेपाल टेलिकम (AS23752) का अपस्ट्रिम देख्छ। यो फाइबर मर्मत भएको प्रमाण होइन। २९ अक्टोबरको ड्राफ्टले पनि त्यही भन्छ।"
+        : "RIPEstat shows Nepal Telecom (AS23752) upstreams. That is not proof the fiber is repaired. The 29 October draft says the same."
+    }
+  </p>
+  <ul>
+    {
+      upstreams.map((item) => (
+        <li>
+          <span class="badge up">{ne ? "देखियो" : "Seen"}</span>{" "}
+          <code>AS{item.asn}</code> {ne ? item.name_ne : item.name_en}
+        </li>
+      ))
+    }
+  </ul>
+  <p class="note">
+    {ne ? "RIPEstat latest_time" : "RIPEstat latest_time"} {bgp && "as_of" in bgp ? bgp.as_of : "—"}
+    {". "}
+    {ne ? "यस पृष्ठको तान" : "Page fetch"} {watchFile.fetched_at.slice(0, 16)} UTC.
+    {" "}
+    <a href={langPath(lang, "routing", base)}>{ne ? "जीवित BGP पृष्ठ" : "Live BGP page"}</a>
+  </p>
+  <p>
+    {
+      ne
+        ? `स्थलगत टावर अन्तिम पटक २६–२७ अगस्ट २०२६ मा उद्धृत छन्, आज होइन। फाइबर गल्छी→त्रिशूली चालु। त्रिशूली उत्तरको फाइबर डाउन। माइक्रोवेभ कमजोर। चरममा १५२ साइट, त्यस बेला ६० अझै बन्द (${snapshot.districts.map((d) => `${d.name_ne} ${d.remaining}`).join(", ")})। सेप्टेम्बरका शीर्षकले पुनर्स्थापना भने। ती यो सूचीमा प्रमाणित छैनन्।`
+        : `Field towers were last cited on 26–27 August 2026, not today. Fiber Galchhi→Trishuli was up. Fiber north of Trishuli was down. Microwave was degraded. Peak 152 sites, 60 still down then (${snapshot.districts.map((d) => `${d.name_en} ${d.remaining}`).join(", ")}). September headlines said service was restored. Those are not verified into this list.`
+    }
+  </p>
+
+  <h2>{ne ? "विधि" : "Method"}</h2>
+  <p>{watchFile.method}</p>
+  <p class="note">
+    {
+      ne
+        ? "सोमबार २६ अक्टोबरको बुलेटिनबारे रिपोर्टले नारायणी, कोशी, बागमती, कमला र तिनाउ शुक्र–शनिबार सतर्कता नजिक पुग्न सक्ने भनेको थियो। २९ अक्टोबरको कथामा त्यो नदी-सूची दोहोरिएको छैन। दुवै पढ्नुहोस्। आधिकारिक तह hydrology.gov.np र dhm.gov.np मा छ।"
+        : "Reports of Monday 26 October’s bulletin said the Narayani, Koshi, Bagmati, Kamala and Tinau could approach warning level on Friday and Saturday. The 29 October story does not repeat that river list. Read both. Official stages are on hydrology.gov.np and dhm.gov.np."
+    }
+  </p>
+</Base>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script
+  is:inline
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script>
+  import "../../scripts/flood-map.ts";
+</script>

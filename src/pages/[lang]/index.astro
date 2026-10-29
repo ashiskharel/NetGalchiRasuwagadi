@@ -29,6 +29,11 @@ const bulletins = (await getCollection("bulletins"))
   <p class="kicker">{messages.home.kicker}</p>
   <h1>{messages.home.title}</h1>
   <p class="lead">{messages.home.lead}</p>
+  <p class="callout">
+    <a href={langPath(lang, "flood", base)}>{messages.home.floodLink}</a>
+    {" — "}
+    {messages.home.floodCta}
+  </p>
   <p class="meta-line">
     {messages.home.humanUpdate}:{" "}
     <time datetime={snapshot.updated}>{formatNpt(snapshot.updated, lang)}</time>

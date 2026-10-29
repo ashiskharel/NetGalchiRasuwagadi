@@ -1,0 +1,2001 @@
+{
+  "fetched_at": "2026-10-29T10:58:42.660Z",
+  "primary_model": "ECMWF IFS",
+  "compare_models": [
+    "GFS",
+    "ICON"
+  ],
+  "timezone": "Asia/Kathmandu",
+  "window": [
+    "2026-10-29",
+    "2026-10-31"
+  ],
+  "method": "Desk speed uses Manning on a wide channel: V = (1/n) * depth^(2/3) * slope^0.5. Slope is the drop between channel lows (minimum of a 3×3 sample, ±0.015°, around each end of the polyline) divided by polyline length. Seti starts at the gorge bed near 2,770 m, not the Annapurna cliff. Galchhi ends on the Trishuli low near 27.78°N, 85.02°E, not the highway terrace. Flood-wave lead time uses Seddon celerity 5/3 V. Published event times replace this where a study measured them. ERA5 daily precipitation is 2006–2025 at the rain point (about 31 km) and underestimates gorge cloudbursts. GloFAS discharge is a rise/fall signal, not a DHM gauge.",
+  "bgp": {
+    "as_of": "2026-10-29T00:00:00",
+    "query_time": null,
+    "upstreams": [
+      {
+        "asn": 23764,
+        "name_en": "CTGNet (China Telecom Global)",
+        "name_ne": "CTGNet (चाइना टेलिकम ग्लोबल)",
+        "group": "north"
+      },
+      {
+        "asn": 4755,
+        "name_en": "Tata Communications (VSNL)",
+        "name_ne": "टाटा कम्युनिकेसन्स (VSNL)",
+        "group": "south"
+      },
+      {
+        "asn": 6453,
+        "name_en": "Tata Communications",
+        "name_ne": "टाटा कम्युनिकेसन्स",
+        "group": "south"
+      },
+      {
+        "asn": 9498,
+        "name_en": "Bharti Airtel",
+        "name_ne": "भारती एयरटेल",
+        "group": "south"
+      }
+    ],
+    "customers": [
+      131341,
+      136794,
+      139022,
+      142008,
+      14789,
+      45353,
+      58456
+    ],
+    "source": "ripe-ris"
+  },
+  "reaches": {
+    "melamchi": {
+      "elevation_up_m": 2288,
+      "elevation_down_m": 789,
+      "length_km": 24.9,
+      "slope": 0.06021,
+      "depth_m": 4,
+      "manning_n": 0.05,
+      "speed_ms": 12.37,
+      "wave_speed_ms": 20.61,
+      "parcel_min": 34,
+      "wave_min": 20,
+      "rain_lat": 27.94376,
+      "rain_lng": 85.535515,
+      "rain_elevation_m": 2273,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 9.4,
+          "gfs_mm": 2.1,
+          "icon_mm": 3.3,
+          "ecmwf_1h_mm": 2.6,
+          "ecmwf_3h_mm": 6.3
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 56.7,
+          "gfs_mm": 6,
+          "icon_mm": 20.5,
+          "ecmwf_1h_mm": 5.2,
+          "ecmwf_3h_mm": 13
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 39.8,
+          "gfs_mm": 14,
+          "icon_mm": 23.6,
+          "ecmwf_1h_mm": 5.4,
+          "ecmwf_3h_mm": 14.7
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0.2,
+          "gfs_mm": 0.7,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.2
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0.6,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 11.8,
+        "october_p99_mm": 34.1,
+        "october_max_mm": 74.5,
+        "october_max_date": "2013-10-14",
+        "october_days": 620,
+        "october_days_ge_50": 5,
+        "october_days_ge_100": 0,
+        "monsoon_p95_mm": 54.5,
+        "record_mm": 144.1,
+        "record_date": "2019-07-24",
+        "days_ge_100": 13,
+        "days_ge_200": 0
+      },
+      "glofas": null
+    },
+    "seti": {
+      "elevation_up_m": 2769,
+      "elevation_down_m": 1218,
+      "length_km": 10.3,
+      "slope": 0.15052,
+      "depth_m": 4,
+      "manning_n": 0.05,
+      "speed_ms": 19.55,
+      "wave_speed_ms": 32.59,
+      "parcel_min": 9,
+      "wave_min": 5,
+      "rain_lat": 28.435852,
+      "rain_lng": 84.068184,
+      "rain_elevation_m": 3660,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0.5,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 36.8,
+          "gfs_mm": 9.7,
+          "icon_mm": 5.1,
+          "ecmwf_1h_mm": 4.3,
+          "ecmwf_3h_mm": 9.9
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 14.6,
+          "gfs_mm": 15.1,
+          "icon_mm": 19.4,
+          "ecmwf_1h_mm": 3.6,
+          "ecmwf_3h_mm": 6.6
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0.2,
+          "gfs_mm": 0.7,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.2
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 1.2,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 9.5,
+        "october_p99_mm": 32.7,
+        "october_max_mm": 129,
+        "october_max_date": "2014-10-14",
+        "october_days": 620,
+        "october_days_ge_50": 6,
+        "october_days_ge_100": 1,
+        "monsoon_p95_mm": 44.3,
+        "record_mm": 129,
+        "record_date": "2014-10-14",
+        "days_ge_100": 8,
+        "days_ge_200": 0
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 28.175003,
+        "snapped_lng": 83.975006,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 54.1
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 51.5
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 48.9
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 46.5
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 45.2
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 44.7
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 43.4
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 41.3
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 39.3
+          }
+        ]
+      }
+    },
+    "kodari": {
+      "elevation_up_m": 1934,
+      "elevation_down_m": 849,
+      "length_km": 23,
+      "slope": 0.04708,
+      "depth_m": 3,
+      "manning_n": 0.055,
+      "speed_ms": 8.21,
+      "wave_speed_ms": 13.68,
+      "parcel_min": 47,
+      "wave_min": 28,
+      "rain_lat": 27.87346,
+      "rain_lng": 85.8446,
+      "rain_elevation_m": 2075,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 10.5,
+          "gfs_mm": 3.5,
+          "icon_mm": 3,
+          "ecmwf_1h_mm": 2.2,
+          "ecmwf_3h_mm": 5.5
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 47.8,
+          "gfs_mm": 15,
+          "icon_mm": 17.9,
+          "ecmwf_1h_mm": 4.4,
+          "ecmwf_3h_mm": 11.6
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 43.4,
+          "gfs_mm": 4.5,
+          "icon_mm": 30.2,
+          "ecmwf_1h_mm": 10.7,
+          "ecmwf_3h_mm": 24.9
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 1.1,
+          "icon_mm": 0.4,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0.4,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 17.9,
+        "october_p99_mm": 56.2,
+        "october_max_mm": 100.5,
+        "october_max_date": "2024-10-03",
+        "october_days": 620,
+        "october_days_ge_50": 7,
+        "october_days_ge_100": 1,
+        "monsoon_p95_mm": 65.7,
+        "record_mm": 147.8,
+        "record_date": "2017-08-12",
+        "days_ge_100": 17,
+        "days_ge_200": 0
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 27.625,
+        "snapped_lng": 85.67502,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 178.1
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 171.2
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 164.6
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 158.6
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 169.6
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 174.8
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 169.2
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 161.6
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 154.6
+          }
+        ]
+      }
+    },
+    "trishuli-rasuwa": {
+      "elevation_up_m": 1810,
+      "elevation_down_m": 506,
+      "length_km": 50.2,
+      "slope": 0.026,
+      "depth_m": 3,
+      "manning_n": 0.055,
+      "speed_ms": 6.1,
+      "wave_speed_ms": 10.16,
+      "parcel_min": 137,
+      "wave_min": 82,
+      "rain_lat": 28.084358,
+      "rain_lng": 85.22034,
+      "rain_elevation_m": 1630,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 4.7,
+          "gfs_mm": 0,
+          "icon_mm": 1.3,
+          "ecmwf_1h_mm": 2.1,
+          "ecmwf_3h_mm": 4.1
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 50.2,
+          "gfs_mm": 7.6,
+          "icon_mm": 12,
+          "ecmwf_1h_mm": 6,
+          "ecmwf_3h_mm": 15.2
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 37.2,
+          "gfs_mm": 13.7,
+          "icon_mm": 11.2,
+          "ecmwf_1h_mm": 6.1,
+          "ecmwf_3h_mm": 17.5
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0.5,
+          "gfs_mm": 0,
+          "icon_mm": 0.7,
+          "ecmwf_1h_mm": 0.2,
+          "ecmwf_3h_mm": 0.5
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 0.2,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 11.9,
+        "october_p99_mm": 35.1,
+        "october_max_mm": 74.4,
+        "october_max_date": "2013-10-14",
+        "october_days": 620,
+        "october_days_ge_50": 5,
+        "october_days_ge_100": 0,
+        "monsoon_p95_mm": 57.5,
+        "record_mm": 175.8,
+        "record_date": "2009-08-06",
+        "days_ge_100": 18,
+        "days_ge_200": 0
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 27.925003,
+        "snapped_lng": 85.125,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 120.3
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 114.9
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 109.7
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 105.4
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 135.5
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 140.9
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 131.4
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 122.6
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 115.4
+          }
+        ]
+      }
+    },
+    "galchhi": {
+      "elevation_up_m": 506,
+      "elevation_down_m": 480,
+      "length_km": 17.8,
+      "slope": 0.00146,
+      "depth_m": 3,
+      "manning_n": 0.04,
+      "speed_ms": 1.99,
+      "wave_speed_ms": 3.31,
+      "parcel_min": 149,
+      "wave_min": 90,
+      "rain_lat": 27.87346,
+      "rain_lng": 85.13513,
+      "rain_elevation_m": 715,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 2.7,
+          "gfs_mm": 0,
+          "icon_mm": 1.1,
+          "ecmwf_1h_mm": 1.2,
+          "ecmwf_3h_mm": 2.6
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 26.5,
+          "gfs_mm": 3.3,
+          "icon_mm": 8.2,
+          "ecmwf_1h_mm": 3.1,
+          "ecmwf_3h_mm": 8.2
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 34.7,
+          "gfs_mm": 15.4,
+          "icon_mm": 7.7,
+          "ecmwf_1h_mm": 7.6,
+          "ecmwf_3h_mm": 18
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 2.8,
+          "icon_mm": 1.2,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 12.7,
+        "october_p99_mm": 63.2,
+        "october_max_mm": 207.4,
+        "october_max_date": "2021-10-20",
+        "october_days": 620,
+        "october_days_ge_50": 8,
+        "october_days_ge_100": 3,
+        "monsoon_p95_mm": 58.3,
+        "record_mm": 258.5,
+        "record_date": "2017-08-12",
+        "days_ge_100": 47,
+        "days_ge_200": 7
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 27.925003,
+        "snapped_lng": 85.125,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 120.3
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 114.9
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 109.7
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 105.4
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 135.5
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 140.9
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 131.4
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 122.6
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 115.4
+          }
+        ]
+      }
+    },
+    "chobhar": {
+      "elevation_up_m": 1279,
+      "elevation_down_m": 1258,
+      "length_km": 5.9,
+      "slope": 0.00354,
+      "depth_m": 3,
+      "manning_n": 0.04,
+      "speed_ms": 3.09,
+      "wave_speed_ms": 5.15,
+      "parcel_min": 32,
+      "wave_min": 19,
+      "rain_lat": 27.732864,
+      "rain_lng": 85.34831,
+      "rain_elevation_m": 1289,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 6,
+          "gfs_mm": 0.3,
+          "icon_mm": 3.2,
+          "ecmwf_1h_mm": 1.7,
+          "ecmwf_3h_mm": 3.9
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 43.6,
+          "gfs_mm": 3.4,
+          "icon_mm": 13.7,
+          "ecmwf_1h_mm": 5.9,
+          "ecmwf_3h_mm": 14.8
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 24,
+          "gfs_mm": 9.7,
+          "icon_mm": 15.1,
+          "ecmwf_1h_mm": 4.6,
+          "ecmwf_3h_mm": 9.6
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0.8,
+          "gfs_mm": 1.8,
+          "icon_mm": 1.4,
+          "ecmwf_1h_mm": 0.3,
+          "ecmwf_3h_mm": 0.7
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 0.7,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 14.1,
+        "october_p99_mm": 64.5,
+        "october_max_mm": 142.4,
+        "october_max_date": "2021-10-20",
+        "october_days": 620,
+        "october_days_ge_50": 9,
+        "october_days_ge_100": 2,
+        "monsoon_p95_mm": 57.7,
+        "record_mm": 270.1,
+        "record_date": "2017-08-12",
+        "days_ge_100": 48,
+        "days_ge_200": 4
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 27.675003,
+        "snapped_lng": 85.32501,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 0.4
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 0.4
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 0.4
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 9.8
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 30.8
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 12.7
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 6
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 3.4
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 2.2
+          }
+        ]
+      }
+    },
+    "tinau": {
+      "elevation_up_m": 1045,
+      "elevation_down_m": 153,
+      "length_km": 13.4,
+      "slope": 0.06649,
+      "depth_m": 2.5,
+      "manning_n": 0.045,
+      "speed_ms": 10.56,
+      "wave_speed_ms": 17.59,
+      "parcel_min": 21,
+      "wave_min": 13,
+      "rain_lat": 27.803162,
+      "rain_lng": 83.41957,
+      "rain_elevation_m": 1441,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0.2,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.2,
+          "ecmwf_3h_mm": 0.2
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 9.1,
+          "gfs_mm": 3.7,
+          "icon_mm": 17.8,
+          "ecmwf_1h_mm": 3.7,
+          "ecmwf_3h_mm": 6.8
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 2.3,
+          "gfs_mm": 5.2,
+          "icon_mm": 17.7,
+          "ecmwf_1h_mm": 0.3,
+          "ecmwf_3h_mm": 0.8
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 1.6,
+          "gfs_mm": 1.2,
+          "icon_mm": 0.6,
+          "ecmwf_1h_mm": 0.5,
+          "ecmwf_3h_mm": 1.3
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 2.4,
+          "gfs_mm": 0.8,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.4,
+          "ecmwf_3h_mm": 1.2
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0.9,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.2,
+          "ecmwf_3h_mm": 0.6
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 9.7,
+        "october_p99_mm": 50.8,
+        "october_max_mm": 117.4,
+        "october_max_date": "2014-10-14",
+        "october_days": 620,
+        "october_days_ge_50": 7,
+        "october_days_ge_100": 1,
+        "monsoon_p95_mm": 51.6,
+        "record_mm": 282.4,
+        "record_date": "2021-06-15",
+        "days_ge_100": 39,
+        "days_ge_200": 3
+      },
+      "glofas": null
+    },
+    "ratu": {
+      "elevation_up_m": 358,
+      "elevation_down_m": 86,
+      "length_km": 28.9,
+      "slope": 0.0094,
+      "depth_m": 2,
+      "manning_n": 0.045,
+      "speed_ms": 3.42,
+      "wave_speed_ms": 5.7,
+      "parcel_min": 141,
+      "wave_min": 85,
+      "rain_lat": 27.029877,
+      "rain_lng": 85.9,
+      "rain_elevation_m": 277,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 1.8,
+          "gfs_mm": 3.7,
+          "icon_mm": 0.7,
+          "ecmwf_1h_mm": 0.3,
+          "ecmwf_3h_mm": 0.8
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 50.3,
+          "gfs_mm": 21.6,
+          "icon_mm": 19.5,
+          "ecmwf_1h_mm": 6.6,
+          "ecmwf_3h_mm": 18.2
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 60.2,
+          "gfs_mm": 1.4,
+          "icon_mm": 24.7,
+          "ecmwf_1h_mm": 14.6,
+          "ecmwf_3h_mm": 31.3
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 7.6,
+        "october_p99_mm": 44.7,
+        "october_max_mm": 130.4,
+        "october_max_date": "2013-10-14",
+        "october_days": 620,
+        "october_days_ge_50": 6,
+        "october_days_ge_100": 2,
+        "monsoon_p95_mm": 37.3,
+        "record_mm": 260.7,
+        "record_date": "2019-07-13",
+        "days_ge_100": 31,
+        "days_ge_200": 6
+      },
+      "glofas": null
+    },
+    "kamala": {
+      "elevation_up_m": 593,
+      "elevation_down_m": 105,
+      "length_km": 34.8,
+      "slope": 0.014,
+      "depth_m": 3,
+      "manning_n": 0.04,
+      "speed_ms": 6.15,
+      "wave_speed_ms": 10.26,
+      "parcel_min": 94,
+      "wave_min": 57,
+      "rain_lat": 27.100174,
+      "rain_lng": 85.995544,
+      "rain_elevation_m": 404,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 3,
+          "gfs_mm": 4.2,
+          "icon_mm": 0.8,
+          "ecmwf_1h_mm": 0.5,
+          "ecmwf_3h_mm": 1.3
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 47.8,
+          "gfs_mm": 21.7,
+          "icon_mm": 19.5,
+          "ecmwf_1h_mm": 5.8,
+          "ecmwf_3h_mm": 14.8
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 56.2,
+          "gfs_mm": 0.8,
+          "icon_mm": 26.1,
+          "ecmwf_1h_mm": 9.9,
+          "ecmwf_3h_mm": 23.9
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 9,
+        "october_p99_mm": 39.3,
+        "october_max_mm": 122.8,
+        "october_max_date": "2025-10-04",
+        "october_days": 620,
+        "october_days_ge_50": 5,
+        "october_days_ge_100": 1,
+        "monsoon_p95_mm": 45.2,
+        "record_mm": 271.4,
+        "record_date": "2020-07-20",
+        "days_ge_100": 35,
+        "days_ge_200": 5
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 26.825005,
+        "snapped_lng": 86.125,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 36.2
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 35.1
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 34
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 33
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 32.7
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 47
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 49.5
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 48.2
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 44.9
+          }
+        ]
+      }
+    },
+    "babai": {
+      "elevation_up_m": 908,
+      "elevation_down_m": 252,
+      "length_km": 67.9,
+      "slope": 0.00966,
+      "depth_m": 3,
+      "manning_n": 0.04,
+      "speed_ms": 5.11,
+      "wave_speed_ms": 8.52,
+      "parcel_min": 221,
+      "wave_min": 133,
+      "rain_lat": 28.224955,
+      "rain_lng": 82.04983,
+      "rain_elevation_m": 679,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 6,
+          "gfs_mm": 2.9,
+          "icon_mm": 8.9,
+          "ecmwf_1h_mm": 3.5,
+          "ecmwf_3h_mm": 4.3
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 9,
+          "gfs_mm": 3.8,
+          "icon_mm": 5,
+          "ecmwf_1h_mm": 3.2,
+          "ecmwf_3h_mm": 8
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 2.4,
+          "icon_mm": 0.2,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 8,
+        "october_p99_mm": 35.5,
+        "october_max_mm": 116.3,
+        "october_max_date": "2022-10-05",
+        "october_days": 620,
+        "october_days_ge_50": 3,
+        "october_days_ge_100": 2,
+        "monsoon_p95_mm": 36.1,
+        "record_mm": 150.9,
+        "record_date": "2011-06-30",
+        "days_ge_100": 21,
+        "days_ge_200": 0
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 28.325005,
+        "snapped_lng": 81.67502,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 21.8
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 19
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 16.6
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 14.5
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 12.7
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 12.6
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 12.8
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 11.7
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 10.6
+          }
+        ]
+      }
+    },
+    "rapti": {
+      "elevation_up_m": 719,
+      "elevation_down_m": 244,
+      "length_km": 41.2,
+      "slope": 0.01154,
+      "depth_m": 3,
+      "manning_n": 0.04,
+      "speed_ms": 5.59,
+      "wave_speed_ms": 9.31,
+      "parcel_min": 123,
+      "wave_min": 74,
+      "rain_lat": 28.01406,
+      "rain_lng": 82.78781,
+      "rain_elevation_m": 880,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 6.8,
+          "gfs_mm": 1.2,
+          "icon_mm": 4.5,
+          "ecmwf_1h_mm": 2.8,
+          "ecmwf_3h_mm": 5
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 3.8,
+          "gfs_mm": 9.2,
+          "icon_mm": 8.9,
+          "ecmwf_1h_mm": 1.5,
+          "ecmwf_3h_mm": 1.9
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0.9,
+          "gfs_mm": 3.5,
+          "icon_mm": 1.2,
+          "ecmwf_1h_mm": 0.3,
+          "ecmwf_3h_mm": 0.5
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 8.9,
+        "october_p99_mm": 42.8,
+        "october_max_mm": 133.1,
+        "october_max_date": "2022-10-05",
+        "october_days": 620,
+        "october_days_ge_50": 6,
+        "october_days_ge_100": 2,
+        "monsoon_p95_mm": 49.2,
+        "record_mm": 217.6,
+        "record_date": "2018-07-02",
+        "days_ge_100": 37,
+        "days_ge_200": 4
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 28.025002,
+        "snapped_lng": 81.875,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 99.5
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 92.3
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 85.5
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 79.2
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 76.1
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 79
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 75.2
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 68.8
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 63
+          }
+        ]
+      }
+    },
+    "narayani": {
+      "elevation_up_m": 260,
+      "elevation_down_m": 107,
+      "length_km": 69.1,
+      "slope": 0.00221,
+      "depth_m": 5,
+      "manning_n": 0.04,
+      "speed_ms": 3.44,
+      "wave_speed_ms": 5.73,
+      "parcel_min": 335,
+      "wave_min": 201,
+      "rain_lat": 28.224955,
+      "rain_lng": 83.98641,
+      "rain_elevation_m": 830,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 11.7,
+          "gfs_mm": 0.5,
+          "icon_mm": 2.5,
+          "ecmwf_1h_mm": 3.2,
+          "ecmwf_3h_mm": 6.2
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 3.5,
+          "gfs_mm": 5.2,
+          "icon_mm": 16,
+          "ecmwf_1h_mm": 2,
+          "ecmwf_3h_mm": 3.2
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 1.1,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 34.9,
+        "october_p99_mm": 58.4,
+        "october_max_mm": 117.5,
+        "october_max_date": "2014-10-14",
+        "october_days": 620,
+        "october_days_ge_50": 13,
+        "october_days_ge_100": 1,
+        "monsoon_p95_mm": 112.2,
+        "record_mm": 307.6,
+        "record_date": "2008-06-14",
+        "days_ge_100": 168,
+        "days_ge_200": 8
+      },
+      "glofas": {
+        "trust": "main",
+        "snapped_lat": 27.425003,
+        "snapped_lng": 83.875,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 1562.2
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 1488.4
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 1418.1
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 1351.1
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 1338.7
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 1401.8
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 1401.8
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 1335.6
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 1266.7
+          }
+        ]
+      }
+    },
+    "koshi-kushaha": {
+      "elevation_up_m": 173,
+      "elevation_down_m": 72,
+      "length_km": 44.2,
+      "slope": 0.00228,
+      "depth_m": 6,
+      "manning_n": 0.045,
+      "speed_ms": 3.51,
+      "wave_speed_ms": 5.84,
+      "parcel_min": 210,
+      "wave_min": 126,
+      "rain_lat": 27.170473,
+      "rain_lng": 87.19376,
+      "rain_elevation_m": 799,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 5,
+          "gfs_mm": 7,
+          "icon_mm": 3.5,
+          "ecmwf_1h_mm": 1.1,
+          "ecmwf_3h_mm": 2.2
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 16.2,
+          "gfs_mm": 32.6,
+          "icon_mm": 29.4,
+          "ecmwf_1h_mm": 2.8,
+          "ecmwf_3h_mm": 5.3
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 57.3,
+          "gfs_mm": 3.3,
+          "icon_mm": 26.1,
+          "ecmwf_1h_mm": 9.5,
+          "ecmwf_3h_mm": 25.2
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 1.6,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0.1,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 1.2,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 24.4,
+        "october_p99_mm": 62.7,
+        "october_max_mm": 248.2,
+        "october_max_date": "2021-10-19",
+        "october_days": 620,
+        "october_days_ge_50": 9,
+        "october_days_ge_100": 3,
+        "monsoon_p95_mm": 64.4,
+        "record_mm": 248.6,
+        "record_date": "2017-08-12",
+        "days_ge_100": 47,
+        "days_ge_200": 3
+      },
+      "glofas": {
+        "trust": "main",
+        "snapped_lat": 26.525002,
+        "snapped_lng": 86.92502,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 1389
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 1335.6
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 1287.3
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 1240.7
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 1229.3
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 1502.1
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 1617.1
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 1502.1
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 1398.6
+          }
+        ]
+      }
+    },
+    "bagmati-terai": {
+      "elevation_up_m": 210,
+      "elevation_down_m": 92,
+      "length_km": 34.6,
+      "slope": 0.00341,
+      "depth_m": 4,
+      "manning_n": 0.04,
+      "speed_ms": 3.68,
+      "wave_speed_ms": 6.13,
+      "parcel_min": 157,
+      "wave_min": 94,
+      "rain_lat": 27.240772,
+      "rain_lng": 85.38462,
+      "rain_elevation_m": 354,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 3.4,
+          "gfs_mm": 1.7,
+          "icon_mm": 0.4,
+          "ecmwf_1h_mm": 1.1,
+          "ecmwf_3h_mm": 1.8
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 70.5,
+          "gfs_mm": 15.6,
+          "icon_mm": 11,
+          "ecmwf_1h_mm": 10.3,
+          "ecmwf_3h_mm": 24.6
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 118,
+          "gfs_mm": 5.3,
+          "icon_mm": 52.9,
+          "ecmwf_1h_mm": 19,
+          "ecmwf_3h_mm": 45.7
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0.6,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 9.4,
+        "october_p99_mm": 40.1,
+        "october_max_mm": 127.4,
+        "october_max_date": "2025-10-04",
+        "october_days": 620,
+        "october_days_ge_50": 5,
+        "october_days_ge_100": 2,
+        "monsoon_p95_mm": 37.7,
+        "record_mm": 399.9,
+        "record_date": "2019-07-12",
+        "days_ge_100": 33,
+        "days_ge_200": 6
+      },
+      "glofas": {
+        "trust": "weak",
+        "snapped_lat": 27.225006,
+        "snapped_lng": 85.375,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 0
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 0
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 0
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 0
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 9.7
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 6.4
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 2.7
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 1.4
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 0.8
+          }
+        ]
+      }
+    },
+    "karnali-chisapani": {
+      "elevation_up_m": 549,
+      "elevation_down_m": 163,
+      "length_km": 45.2,
+      "slope": 0.00854,
+      "depth_m": 5,
+      "manning_n": 0.035,
+      "speed_ms": 7.72,
+      "wave_speed_ms": 12.87,
+      "parcel_min": 98,
+      "wave_min": 59,
+      "rain_lat": 29.13884,
+      "rain_lng": 81.82759,
+      "rain_elevation_m": 2855,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0.2,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.2
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 4.2,
+          "gfs_mm": 7.1,
+          "icon_mm": 4.9,
+          "ecmwf_1h_mm": 1.6,
+          "ecmwf_3h_mm": 3.2
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 13.6,
+          "gfs_mm": 10,
+          "icon_mm": 61.6,
+          "ecmwf_1h_mm": 4.6,
+          "ecmwf_3h_mm": 10.4
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 1.1,
+          "gfs_mm": 2.5,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.4,
+          "ecmwf_3h_mm": 1
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 2.7,
+          "gfs_mm": 2,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.4,
+          "ecmwf_3h_mm": 1.2
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0.3,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 7.7,
+        "october_p99_mm": 52,
+        "october_max_mm": 89.3,
+        "october_max_date": "2021-10-19",
+        "october_days": 620,
+        "october_days_ge_50": 7,
+        "october_days_ge_100": 0,
+        "monsoon_p95_mm": 31.4,
+        "record_mm": 169.8,
+        "record_date": "2020-07-29",
+        "days_ge_100": 5,
+        "days_ge_200": 0
+      },
+      "glofas": {
+        "trust": "main",
+        "snapped_lat": 28.525002,
+        "snapped_lng": 81.17502,
+        "daily": [
+          {
+            "date": "2026-10-27",
+            "m3s": 1209.6
+          },
+          {
+            "date": "2026-10-28",
+            "m3s": 1160.5
+          },
+          {
+            "date": "2026-10-29",
+            "m3s": 1110.7
+          },
+          {
+            "date": "2026-10-30",
+            "m3s": 1065.6
+          },
+          {
+            "date": "2026-10-31",
+            "m3s": 1029.4
+          },
+          {
+            "date": "2026-11-01",
+            "m3s": 1015.3
+          },
+          {
+            "date": "2026-11-02",
+            "m3s": 1003.6
+          },
+          {
+            "date": "2026-11-03",
+            "m3s": 974
+          },
+          {
+            "date": "2026-11-04",
+            "m3s": 936.6
+          }
+        ]
+      }
+    },
+    "mahakali": {
+      "elevation_up_m": 1045,
+      "elevation_down_m": 207,
+      "length_km": 50.4,
+      "slope": 0.01661,
+      "depth_m": 4,
+      "manning_n": 0.035,
+      "speed_ms": 9.28,
+      "wave_speed_ms": 15.47,
+      "parcel_min": 91,
+      "wave_min": 54,
+      "rain_lat": 29.420034,
+      "rain_lng": 80.542725,
+      "rain_elevation_m": 2071,
+      "daily": [
+        {
+          "date": "2026-10-28",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-29",
+          "ecmwf_mm": 0,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0,
+          "ecmwf_3h_mm": 0
+        },
+        {
+          "date": "2026-10-30",
+          "ecmwf_mm": 4.2,
+          "gfs_mm": 14,
+          "icon_mm": 4.3,
+          "ecmwf_1h_mm": 1.1,
+          "ecmwf_3h_mm": 2.1
+        },
+        {
+          "date": "2026-10-31",
+          "ecmwf_mm": 1.6,
+          "gfs_mm": 11,
+          "icon_mm": 0.7,
+          "ecmwf_1h_mm": 1,
+          "ecmwf_3h_mm": 1.5
+        },
+        {
+          "date": "2026-11-01",
+          "ecmwf_mm": 0.1,
+          "gfs_mm": 3.1,
+          "icon_mm": 1.2,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.1
+        },
+        {
+          "date": "2026-11-02",
+          "ecmwf_mm": 1.5,
+          "gfs_mm": 1.8,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.2,
+          "ecmwf_3h_mm": 0.6
+        },
+        {
+          "date": "2026-11-03",
+          "ecmwf_mm": 0.3,
+          "gfs_mm": 0,
+          "icon_mm": 0,
+          "ecmwf_1h_mm": 0.1,
+          "ecmwf_3h_mm": 0.3
+        }
+      ],
+      "era5": {
+        "years": "2006-2025",
+        "model": "ERA5 via Open-Meteo",
+        "october_p95_mm": 5.4,
+        "october_p99_mm": 61.9,
+        "october_max_mm": 155.6,
+        "october_max_date": "2009-10-06",
+        "october_days": 620,
+        "october_days_ge_50": 8,
+        "october_days_ge_100": 2,
+        "monsoon_p95_mm": 49.2,
+        "record_mm": 211.9,
+        "record_date": "2013-06-17",
+        "days_ge_100": 25,
+        "days_ge_200": 2
+      },
+      "glofas": null
+    }
+  },
+  "bed_survey": "2026-10-29 channel-low sample"
+}

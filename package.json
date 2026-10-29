@@ -8,7 +8,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "draft": "node scripts/fetch-draft.mjs"
+    "draft": "node scripts/fetch-draft.mjs",
+    "flood": "node scripts/fetch-flood.mjs"
   },
   "keywords": [
     "nepal",
