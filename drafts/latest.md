@@ -1,4 +1,4 @@
-# Restoration draft — 2026-10-28T12:36 NPT
+# Restoration draft — 2026-10-29T12:49 NPT
 
 Machine fetch only. **Do not copy into `snapshot.json` without a named public source.**
 
@@ -11,8 +11,8 @@ Machine fetch only. **Do not copy into `snapshot.json` without a named public so
 - Prefix: `202.70.64.0/19`
 - Upstreams (left): AS23764, AS4755, AS6453, AS9498
 - Customers (right): AS131341, AS136794, AS139022, AS142008, AS14789, AS45353, AS58456
-- Path observations: north 137 · south 224 · other 0
-- Latest path confirm: 2026-10-28T06:51:14.110000 UTC
+- Path observations: north 134 · south 226 · other 0
+- Latest path confirm: 2026-10-29T07:04:21.880000 UTC
 
 Distinct AS paths (prepending stripped, top 16):
 
@@ -45,12 +45,11 @@ No items.
 No items.
 
 ### kathmandu-post (en)
+- [Insurers have paid just 4 percent of Bhotekoshi flood claims](https://kathmandupost.com/money/2026/10/28/insurers-have-paid-just-4-percent-of-bhotekoshi-flood-claims) — 
 - [Users turn to Nepal Telecom as private ISPs raise internet prices](https://kathmandupost.com/money/2026/10/28/users-turn-to-nepal-telecom-as-private-isps-raise-internet-prices) — 
-- [Nuwakot flood victims form struggle committee to pressure federal government for help](https://kathmandupost.com/national/2026/10/27/nuwakot-flood-victims-form-struggle-committee-to-pressure-federal-government-for-help) — 
 
 ### ratopati (ne)
-- [बुढीगण्डकी बाढीले विस्थापित शान्ति बजारका परिवार टेन्टमा (तस्बिरहरू)](https://www.ratopati.com/story/601761/families-of-shanti-bazaar-displaced-by-budhigandaki-floods-in-tents-photos) — Wed, 28 Oct 2026 06:40:00 +0000
-- [भोटेकोशी बाढीमा बेपत्ता भएकाको मृत घोषणा प्रक्रिया बल्ल अघि बढ्यो](https://www.ratopati.com/story/601748/the-process-of-declaring-the-missing-in-the-bhotekoshi-flood-as-dead-has-finally-moved-forward) — Wed, 28 Oct 2026 05:02:14 +0000
+- [धान पाकेपछि पहेँलपुर कुँडुले, वर्षाको चर्चाले बढाउँदै छ चिन्ता (तस्बिरहरू)](https://www.ratopati.com/story/601966/pahelpur-floods-after-paddy-ripens-talk-of-rain-is-increasing-concern-photos) — Thu, 29 Oct 2026 06:10:36 +0000
 
 ### gnews-en (en)
 - [Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper](https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5) — Thu, 01 Oct 2026 12:01:12 GMT
@@ -62,7 +61,7 @@ No items.
 - [Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5) — Wed, 26 Aug 2026 06:16:07 GMT
 - [87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News](https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5) — Thu, 27 Aug 2026 07:00:00 GMT
 - [Nepal Telecom restores mobile services up to Nepal-China border - Khabarhub](https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nX1BCWFIzbDJsSXVaNzlqNlpHbTA1UWVUaUp1b1pIVHRFM3FxVWhIcl9FQzNwYW8ybHN2SzJ2R2FwdVBQMjRpcUFZeXZvVHFUeXd0MDRLblE?oc=5) — Sun, 30 Aug 2026 07:00:00 GMT
-- [Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5) — Wed, 09 Sep 2026 07:00:00 GMT
+- [Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5) — Wed, 02 Sep 2026 07:00:00 GMT
 - [NT works to restore services in flood-hit areas - The Rising Nepal](https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5) — Fri, 28 Aug 2026 01:22:39 GMT
 - [Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5) — Wed, 09 Sep 2026 07:00:00 GMT
 
