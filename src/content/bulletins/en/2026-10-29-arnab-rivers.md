@@ -10,6 +10,8 @@ sources:
     url: https://open-meteo.com/en/docs
   - name: Asian Development Bank
     url: https://www.adb.org/sites/default/files/publication/927371/mapping-hazards-nepal-melamchi-river.pdf
+  - name: GDACS
+    url: https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001345
 ---
 
 Public DHM wording for 29–31 October, as reported by OnlineKhabar: moderate rain at most places in Koshi, Madhesh, Bagmati, Gandaki and Lumbini, heavy at a few, and a smaller area of heavy rain in the western hills and mountains. Snow and avalanche risk up high. This board’s river page is a second opinion from open models. It is not a DHM warning.
@@ -21,5 +23,7 @@ GloFAS on the Koshi, Narayani and Karnali is falling through Saturday. The Koshi
 Clocks, for when a local burst does arrive: Melamchi’s measured wave left the gorge in 17 minutes. The 2012 Seti flood reached Kharapani in about 38 minutes. The desk wave for Kodari–Barhabise is about 28 minutes, for the Tinau mouth about 13 minutes, and for Rasuwagadhi down to Trishuli about 82 minutes. The Koshi embanked reach from Chatara to the barrage is about 2 hours along the channel. A breach at an outer bend is a sideways exit after that, on the order of 1–4 hours to the nearest village.
 
 No reach crosses its danger line in this run. Watch, because the exit is short and ECMWF is wetter than the other models: Melamchi, the Rasuwa Bhote Koshi, the Bagmati at Chobhar, the Terai Bagmati bends, and the Ratu fan. Field towers on the Rasuwa corridor were last cited 26–27 August, not today. BGP still shows CTGNet, Airtel and Tata as NTC upstreams. BGP is not a repaired fiber.
+
+The river page also plays the cloud field hour by hour. Summit height is compared with the 0.25° cloud deck. The GDACS/JTWC track for Arnab stops in India as a forecast depression. It is not drawn onward into Nepal.
 
 Full map, settlement notes and the method: [Rivers](/NetGalchiRasuwagadi/en/flood).

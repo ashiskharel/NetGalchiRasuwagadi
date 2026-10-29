@@ -103,6 +103,50 @@ const provinceLevels = provinces.map((p) => {
     </p>
   </div>
 
+  <h2>{ne ? "बादल, टुप्पोको उचाइ, र त्यो घण्टाको असर" : "Clouds, summit height, and the impact of that hour"}</h2>
+  <p class="lead">
+    {
+      ne
+        ? "ECMWF को बादल नेपालमाथि घण्टैपिच्छे सर्छ। गोला फोटो होइन, तह हो। टुप्पोको रङ उचाइ बादलभित्र पर्छ कि पर्दैन भन्ने हो। अर्नबको उद्धृत केन्द्र भारतमै रहन्छ। दायाँको सूची त्यो घण्टामा कुन छोटो नदीले आफ्नो वर्षा रेखा काट्छ भन्ने हो।"
+        : "ECMWF’s clouds move over Nepal hour by hour. A circle is a cloud band, not a photograph. A summit’s colour is whether its height sits inside the deck. Arnab’s cited center stays in India. The list is which short river crosses its own rain line in that hour."
+    }
+  </p>
+  <div id="storm-root" data-lang={lang} data-base={base}>
+    <div id="storm-track" class="storm-track-wrap"></div>
+    <p id="storm-track-note" class="note"></p>
+    <div class="storm-controls">
+      <button type="button" id="storm-play" class="btn secondary">{ne ? "चलाउनुहोस्" : "Play"}</button>
+      <input id="storm-range" type="range" min="0" max="0" value="0" aria-label={ne ? "घण्टा" : "Hour"} />
+      <span id="storm-when" class="meta-line"></span>
+      <span id="storm-live" class="badge unknown">{ne ? "सेभ गरिएको ECMWF रन" : "Saved ECMWF run"}</span>
+    </div>
+    <div class="storm-layout">
+      <div id="storm-map" class="map"></div>
+      <aside id="storm-impact" class="storm-side">
+        <p>{ne ? "घण्टा लोड हुँदै छ।" : "The hour is loading."}</p>
+      </aside>
+    </div>
+    <ul class="storm-legend">
+      <li><i class="swatch low"></i>{ne ? "तल्लो बादल, करिब ३ किमीसम्म" : "Low cloud, up to about 3 km"}</li>
+      <li><i class="swatch mid"></i>{ne ? "मध्यम बादल, करिब ३–८ किमी" : "Mid cloud, about 3–8 km"}</li>
+      <li><i class="swatch high"></i>{ne ? "उच्च बादल, करिब ८ किमी माथि" : "High cloud, from about 8 km"}</li>
+      <li><i class="swatch rain"></i>{ne ? "यो घण्टाको वर्षा" : "Rain this hour"}</li>
+      <li><i class="swatch in"></i>{ne ? "टुप्पो बादलभित्र" : "Summit inside the deck"}</li>
+      <li><i class="swatch above"></i>{ne ? "टुप्पो बादलभन्दा माथि" : "Summit above the deck"}</li>
+    </ul>
+  </div>
+  <p class="note">
+    {
+      ne
+        ? "सर्ने क्षेत्र ९ किमीको ECMWF IFS हो। टुप्पोको मिटर ०.२५° मोडेलको जिओपोटेन्सियल हो, ८५० देखि २५० hPa सम्म। ५०% भन्दा माथिको तहभित्र परे टुप्पो “भित्र” हो। त्यो आवरण आर्द्रताको अनुमान हो, राडारको टुप्पो होइन। ट्र्याक GDACS मा राखिएको JTWC बुलेटिन हो। पूर्वानुमान बिन्दु पूर्वानुमानै रहन्छ। पृष्ठ खुल्दा Open-Meteo फेरि सोधिन्छ। जवाफ नआए सेभ गरिएको रन चल्छ। चोभारको तालिकाको सतर्क कमजोर GloFAS उछाल हो, यो वर्षा क्षेत्र होइन। विभागको चेतावनी होइन, स्थानान्तरणको आदेश होइन।"
+        : "The moving field is the 9 km ECMWF IFS. Summit meters are geopotential from the 0.25° model, 850 to 250 hPa. A summit is “inside” when it sits in a deck of at least 50% cover. That cover is a humidity estimate, not a radar top. The track is the GDACS copy of JTWC advisories. Forecast points stay forecasts. The page asks Open-Meteo again when it opens, and plays the saved run if there is no answer. Chobhar’s watch on the table below is a weak GloFAS jump, not this rain field. Not a Department warning and not an evacuation order."
+    }
+    {" "}
+    <a href="https://open-meteo.com/en/docs/ecmwf-api">Open-Meteo ECMWF</a>
+    {" · "}
+    <a href="https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001345">GDACS ARNAB-26</a>
+  </p>
+
   <h2>{ne ? "तीन घडी" : "Three clocks"}</h2>
   <div class="grid chips">
     <article class="card down">
@@ -444,4 +488,5 @@ const provinceLevels = provinces.map((p) => {
   crossorigin=""></script>
 <script>
   import "../../scripts/flood-map.ts";
+  import "../../scripts/storm-view.ts";
 </script>

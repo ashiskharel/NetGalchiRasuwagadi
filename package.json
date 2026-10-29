@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "draft": "node scripts/fetch-draft.mjs",
-    "flood": "node scripts/fetch-flood.mjs"
+    "flood": "node scripts/fetch-flood.mjs",
+    "clouds": "node scripts/fetch-clouds.mjs"
   },
   "keywords": [
     "nepal",

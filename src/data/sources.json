@@ -147,8 +147,8 @@
     {
       "id": "open-meteo",
       "name": "Open-Meteo",
-      "title_en": "ECMWF IFS, GFS, ICON, ERA5 archive, and GloFAS flood API",
-      "title_ne": "ECMWF IFS, GFS, ICON, ERA5 अभिलेख, र GloFAS बाढी API",
+      "title_en": "ECMWF IFS, GFS, ICON, ERA5, GloFAS, and the cloud-band forecast",
+      "title_ne": "ECMWF IFS, GFS, ICON, ERA5, GloFAS, र बादल-तहको पूर्वानुमान",
       "url": "https://open-meteo.com/en/docs",
       "date": "2026-10-29"
     },
@@ -166,6 +166,14 @@
       "title_en": "VIIRS true-color WMS used on the river map",
       "title_ne": "नदी नक्सामा प्रयोग भएको VIIRS सत्य-रङ WMS",
       "url": "https://gibs.earthdata.nasa.gov/",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "gdacs-arnab",
+      "name": "GDACS",
+      "title_en": "JTWC track for cyclone ARNAB-26, event 1001345, via the GDACS timeline",
+      "title_ne": "चक्रवात ARNAB-26 को JTWC ट्र्याक, घटना 1001345, GDACS समयरेखा",
+      "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001345",
       "date": "2026-10-29"
     }
   ]

@@ -36,6 +36,8 @@ The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT 
 
 **Rivers** (`/en/flood`): Cyclone Arnab desk. How fast a rise leaves a narrow gorge or an embanked bend, 24-hour rain lines for those reaches, ECMWF IFS against GFS and ICON, a 2006–2025 ERA5 October comparison, and GloFAS only as a rise/fall signal. Not a DHM warning. Refresh with `npm run flood` (add `--era5` to refetch the 20-year archive). The committed `src/data/flood-watch.json` is the snapshot the site builds.
 
+The same page plays an hourly cloud field: low, mid and high bands from the 9 km IFS, summit height against the 0.25° pressure-level deck, and the GDACS/JTWC track for ARNAB-26. Forecast positions stay forecasts. The track is not extended into Nepal. Refresh that file with `npm run clouds`. The committed `public/data/clouds.json` is the fallback if Open-Meteo does not answer in the browser.
+
 Production URL uses the GitHub Pages base path `/NetGalchiRasuwagadi`. Enable **Pages → GitHub Actions** on the repo after the first push to `main`.
 
 ## Routing data
