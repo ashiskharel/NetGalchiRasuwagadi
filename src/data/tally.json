@@ -1,0 +1,112 @@
+{
+  "event": "arnab-2026",
+  "updated": "2026-10-29T12:29:00Z",
+  "rules_en": "A row stays pending while its window is open or no cited observation is logged. Holding means the claim still matches what has been seen, and the window is not closed. Hit, miss and partial are written only after that window, against a named observation: a DHM observed bulletin, a published gauge, or a later official track fix. One model is not scored against another model. A dash in the ground log is not a zero, so it cannot make a miss. The evening of 29 October is too early to call the night forecast wrong.",
+  "rules_ne": "अवधि खुला छ वा उद्धृत अवलोकन छैन भने पङ्क्ति बाँकी रहन्छ। अहिलेसम्म भनेको दाबी अहिलेसम्म देखिएकोसँग मिल्छ, र अवधि बन्द भएको छैन। मिल्यो, मिलेन र आंशिक अवधिपछि मात्र लेखिन्छ, नाम भएको अवलोकनसँग: विभागको मापन बुलेटिन, प्रकाशित वर्षामापक, वा पछिको आधिकारिक ट्र्याक। एउटा मोडेललाई अर्को मोडेलसँग जाँचिँदैन। जमिन लगको ड्यास शून्य होइन, त्यसले मिलेन बनाउँदैन। २९ अक्टोबरको साँझ रातिको पूर्वानुमान गलत भन्न सकिने बेला होइन।",
+  "rows": [
+    {
+      "id": "ndrrma-effects",
+      "who_en": "NDRRMA",
+      "who_ne": "राष्ट्रिय विपद् प्राधिकरण",
+      "claim_en": "Effects on Nepal begin the night of 29 October 2026. Nepal News, quoting NDRRMA, puts the high-alert window through 31 October: rain, wind, thunderstorms, heavy snow and avalanche risk.",
+      "claim_ne": "नेपालमा असर २९ अक्टोबर २०२६ को रातबाट सुरु। नेपाल न्यूजले प्राधिकरण उद्धृत गर्दै उच्च सतर्कता ३१ अक्टोबरसम्म लेख्छ: वर्षा, हावा, मेघगर्जन, भारी हिउँ र हिमपहिरोको जोखिम।",
+      "window_en": "Night of 29 Oct through 31 Oct",
+      "window_ne": "२९ अक्टोबरको रातदेखि ३१ अक्टोबर",
+      "verdict": "pending",
+      "why_en": "The window is still open. No gauge or damage report is logged against it.",
+      "why_ne": "अवधि अझै खुला छ। यसविरुद्ध वर्षामापक वा क्षतिको रिपोर्ट छैन।",
+      "source_ids": ["ndrrma-x-arnab", "nepalnews-ndrrma-arnab"]
+    },
+    {
+      "id": "dhm-provinces",
+      "who_en": "DHM, via Nepal News",
+      "who_ne": "विभाग, नेपाल न्यूजमार्फत",
+      "claim_en": "On 30 and 31 October, moderate rain in many places and heavy rain in some places of Koshi, Bagmati, Madhesh, Gandaki and Lumbini. Karnali and Sudurpashchim moderate, with heavy rain at isolated spots. Heavy snow and avalanche risk up high. Business 360 on 28 October quotes spokesperson Ram Bahadur KC saying the Department forecast impact from Friday, which is a later start than the night of the 29th.",
+      "claim_ne": "३० र ३१ अक्टोबरमा कोशी, बागमती, मधेस, गण्डकी र लुम्बिनीका धेरै ठाउँमा मध्यम, केही ठाउँमा भारी। कर्णाली र सुदूरपश्चिम मध्यम, एकाध ठाउँमा भारी। माथि भारी हिउँ र हिमपहिरोको जोखिम। २८ अक्टोबरको बिजनेस ३६० ले प्रवक्ता रामबहादुर केसीलाई उद्धृत गर्दै विभागको असर शुक्रबारबाट भन्छ। त्यो २९ को रातभन्दा पछिको सुरुवात हो।",
+      "window_en": "30–31 Oct, with the start-time disagreement left visible",
+      "window_ne": "३०–३१ अक्टोबर, सुरुवातको फरक लुकाइएको छैन",
+      "verdict": "pending",
+      "why_en": "30 and 31 October have not happened. The two start-times stay side by side until an observed bulletin can be compared.",
+      "why_ne": "३० र ३१ अक्टोबर भएका छैनन्। दुई सुरुवात मापन बुलेटिनसँग दाँज्नुअघिसम्म छेउछाउमै रहन्छन्।",
+      "source_ids": ["nepalnews-ndrrma-arnab", "b360-ndrrma-arnab"]
+    },
+    {
+      "id": "mfd-29",
+      "who_en": "MFD, via Business 360",
+      "who_ne": "महाशाखा, बिजनेस ३६० मार्फत",
+      "claim_en": "29 October is generally cloudy. During the day, moderate rain or snow at some Himalayan places in Koshi and Bagmati. Thursday night: moderate rain or snow, with thunder, at some places in Koshi, Madhesh, Bagmati, Gandaki and Lumbini, and at a few places in Karnali and Sudurpashchim. Heavy rain or snow at one or two Himalayan and hilly places in Koshi, Bagmati and Gandaki, and heavy rain at one or two places in Madhesh and in the hills and Tarai of Gandaki and Lumbini.",
+      "claim_ne": "२९ अक्टोबर सामान्यतया बदली। दिउँसो कोशी र बागमतीका केही हिमाली ठाउँमा मध्यम वर्षा वा हिउँ। बिहीबार राति कोशी, मधेस, बागमती, गण्डकी र लुम्बिनीका केही ठाउँमा मेघगर्जनसहित मध्यम वर्षा वा हिउँ, कर्णाली र सुदूरपश्चिमका थोरै ठाउँमा पनि। कोशी, बागमती र गण्डकीका पहाड तथा हिमालका एक-दुई ठाउँमा भारी वर्षा वा हिउँ। मधेस र गण्डकी तथा लुम्बिनीका पहाड र तराईका एक-दुई ठाउँमा भारी वर्षा।",
+      "window_en": "29 Oct, day and night",
+      "window_ne": "२९ अक्टोबर, दिन र रात",
+      "verdict": "pending",
+      "why_en": "Written on the evening of 29 October, before the night the forecast talks about. Cloud on the river page is the model field, not a ground measurement of this claim.",
+      "why_ne": "२९ अक्टोबरको साँझ लेखिएको, पूर्वानुमानले भनेको रातअघि। नदी पृष्ठको बादल मोडेलको क्षेत्र हो, यो दाबीको जमिन मापन होइन।",
+      "source_ids": ["b360-mfd-arnab"]
+    },
+    {
+      "id": "ecmwf-bagmati",
+      "who_en": "ECMWF IFS, via Open-Meteo",
+      "who_ne": "ECMWF IFS, Open-Meteo मार्फत",
+      "claim_en": "At the Bagmati Terai rain point, 27.24°N 85.38°E, fetched 29 October 2026 at 10:58 UTC: 3.4 mm on 29 Oct, 70.5 mm on 30 Oct, 118 mm on 31 Oct.",
+      "claim_ne": "तराईको बागमती वर्षा बिन्दु, २७.२४° उत्तर ८५.३८° पूर्व, २९ अक्टोबर २०२६, १०:५८ UTC मा तानिएको: २९ अक्टोबर ३.४ मिमी, ३० मा ७०.५ मिमी, ३१ मा ११८ मिमी।",
+      "window_en": "29–31 Oct at that point",
+      "window_ne": "त्यही बिन्दुमा २९–३१ अक्टोबर",
+      "verdict": "pending",
+      "why_en": "Score each day only against a published gauge or a DHM observed total for that area. Not against GFS or ICON. If the days disagree with each other, the row becomes partial.",
+      "why_ne": "प्रत्येक दिन त्यस क्षेत्रको प्रकाशित वर्षामापक वा विभागको मापन जोडसँग मात्र जाँचिन्छ। GFS वा ICON सँग होइन। दिनहरू आपसमा नमिल्ने भए पङ्क्ति आंशिक हुन्छ।",
+      "source_ids": ["open-meteo"]
+    },
+    {
+      "id": "icon-bagmati",
+      "who_en": "ICON, via Open-Meteo",
+      "who_ne": "ICON, Open-Meteo मार्फत",
+      "claim_en": "Same Bagmati Terai point, same fetch: 0.4 mm on 29 Oct, 11 mm on 30 Oct, 52.9 mm on 31 Oct.",
+      "claim_ne": "उही तराईको बागमती बिन्दु, उही तानि: २९ अक्टोबर ०.४ मिमी, ३० मा ११ मिमी, ३१ मा ५२.९ मिमी।",
+      "window_en": "29–31 Oct at that point",
+      "window_ne": "त्यही बिन्दुमा २९–३१ अक्टोबर",
+      "verdict": "pending",
+      "why_en": "Same rule as the ECMWF row. Saturday’s 52.9 mm is the number to test, not a winner picked tonight.",
+      "why_ne": "ECMWF पङ्क्तिको नियम उही। शनिबारको ५२.९ मिमी जाँच्ने अंक हो। आज राति विजेता छानिएको होइन।",
+      "source_ids": ["open-meteo"]
+    },
+    {
+      "id": "gfs-bagmati",
+      "who_en": "GFS, via Open-Meteo",
+      "who_ne": "GFS, Open-Meteo मार्फत",
+      "claim_en": "Same Bagmati Terai point, same fetch: 1.7 mm on 29 Oct, 15.6 mm on 30 Oct, 5.3 mm on 31 Oct. Saturday is the dry call. Friday is light, not zero.",
+      "claim_ne": "उही तराईको बागमती बिन्दु, उही तानि: २९ अक्टोबर १.७ मिमी, ३० मा १५.६ मिमी, ३१ मा ५.३ मिमी। सुक्खा दाबी शनिबारको हो। शुक्रबार हल्का हो, शून्य होइन।",
+      "window_en": "29–31 Oct at that point",
+      "window_ne": "त्यही बिन्दुमा २९–३१ अक्टोबर",
+      "verdict": "pending",
+      "why_en": "Same rule as the ECMWF row. A wetter model does not make this one wrong before a gauge is published.",
+      "why_ne": "ECMWF पङ्क्तिको नियम उही। अर्को मोडेल भिजेको भन्दैमा वर्षामापक आउनुअघि यो गलत हुँदैन।",
+      "source_ids": ["open-meteo"]
+    },
+    {
+      "id": "track-center",
+      "who_en": "GDACS / JTWC",
+      "who_ne": "GDACS / JTWC",
+      "claim_en": "ARNAB-26. Last observed fix 28 October 2026 at 06:00 UTC, 16.4°N 81.8°E, tropical storm. The same advisory’s forecast ends 29 October 2026 at 18:00 UTC, 21.9°N 81.6°E, tropical depression. No point in that feed is over Nepal. The river page does not extend the track.",
+      "claim_ne": "ARNAB-26। पछिल्लो अवलोकन २८ अक्टोबर २०२६, ०६:०० UTC, १६.४° उत्तर ८१.८° पूर्व, उष्ण कटिबन्धीय आँधी। त्यही एडभाइजरीको पूर्वानुमान २९ अक्टोबर २०२६, १८:०० UTC, २१.९° उत्तर ८१.६° पूर्व, उष्ण कटिबन्धीय न्यूनचापमा सकिन्छ। त्यो फिडको कुनै बिन्दु नेपालमाथि छैन। नदी पृष्ठले ट्र्याक बढाउँदैन।",
+      "window_en": "Through about 1 Nov, unless a later fix is published",
+      "window_ne": "करिब १ नोभेम्बरसम्म, पछिको फिक्स नआएसम्म",
+      "verdict": "holding",
+      "why_en": "Holding. The logged feed still ends in India. The effects window is open, so this is not a final miss. A later official fix could still place a center in Nepal.",
+      "why_ne": "अहिलेसम्म। लेखिएको फिड अझै भारतमा सकिन्छ। असरको अवधि खुला छ, त्यसैले यो अन्तिम मिलेन होइन। पछिको आधिकारिक फिक्सले केन्द्र नेपालमा राख्न सक्छ।",
+      "source_ids": ["gdacs-arnab"]
+    },
+    {
+      "id": "center-enters-nepal",
+      "who_en": "Reading recorded on this board",
+      "who_ne": "यो पाटीमा लेखिएको पढाइ",
+      "claim_en": "Not an official forecast. The cyclone center itself moves into Nepal over the next few days. NDRRMA and the Department have talked about effects reaching Nepal. On 29 October, Department spokesperson Bibhuti Pokharel said the cyclone would have weakened before it reached Nepal. None of the sources logged today publish a center over Nepal.",
+      "claim_ne": "आधिकारिक पूर्वानुमान होइन। चक्रवातको केन्द्र आफैँ अबका केही दिनमा नेपालभित्र सर्छ। प्राधिकरण र विभागले नेपालसम्म असर पुग्ने कुरा गरेका छन्। २९ अक्टोबरमा विभागका प्रवक्ता विभूति पोखरेलले चक्रवात नेपाल पुग्नुअघि कमजोर भइसक्ने भने। आज लेखिएका कुनै स्रोतले नेपालमाथि केन्द्र प्रकाशित गर्दैनन्।",
+      "window_en": "Through about 1 Nov",
+      "window_ne": "करिब १ नोभेम्बरसम्म",
+      "verdict": "holding",
+      "why_en": "Recorded so it can be scored later. Not marked a miss tonight. Full cloud and an official rain claim are effects, not a center over Nepal.",
+      "why_ne": "पछि जाँच्न लेखिएको। आज राति मिलेन भनिएको छैन। भरिएको बादल र आधिकारिक वर्षाको दाबी असर हुन्, नेपालमाथिको केन्द्र होइनन्।",
+      "source_ids": ["gdacs-arnab", "nepalnews-command-arnab", "ndrrma-x-arnab"]
+    }
+  ]
+}

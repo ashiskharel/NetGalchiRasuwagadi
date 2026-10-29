@@ -91,6 +91,14 @@ const provinceLevels = provinces.map((p) => {
         : "Public update of 29 October, OnlineKhabar quoting the Department: moderate rain at most places in Koshi, Madhesh, Bagmati, Gandaki and Lumbini, heavy at a few, through Saturday 31 October. Karnali and Sudurpashchim mostly moderate, heavy at one or two hill or mountain spots. Snow and avalanche risk up high."
     }
   </p>
+  <p class="note">
+    <a href={langPath(lang, "check", base)}>{ne ? "जमिन लग र पूर्वानुमान तालिका" : "Ground log and forecast tally"}</a>
+    {
+      ne
+        ? "। आज पूर्वतयारी मात्र। क्षतिको अंक छैन। अगस्टको रसुवा बाढी अर्कै घटना हो।"
+        : ". Today is preparedness only. No damage count. The August Rasuwa flood is a different incident."
+    }
+  </p>
 
   <div class="callout">
     <strong>{ne ? "यो मोडेलले अहिले के भन्छ" : "What this model run says"}</strong>

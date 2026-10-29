@@ -1,12 +1,13 @@
 {
   "meta": {
-    "siteName": "Net Galchi–Rasuwagadhi",
-    "tagline": "Public bulletin for Nepal’s northern internet and telephony routing",
-    "description": "Independent public board for the Galchhi–Rasuwagadhi corridor: NTC and China Telecom / CTGNet transit, microwave restoration, satellite backup notes, and live BGP paths.",
-    "notOfficial": "Not affiliated with NTC, Ncell, NTA, or China Telecom"
+    "siteName": "Ground check",
+    "tagline": "Official reports, rain, and which forecast held",
+    "description": "Public board that logs official ground reports beside rain and weather-model forecasts, and keeps a tally of which calls held. The August 2026 Galchhi–Rasuwagadhi fiber board stays on the same site.",
+    "notOfficial": "Not a warning from NDRRMA or the Department of Hydrology and Meteorology. Not affiliated with NDRRMA, DHM, NTC, Ncell, NTA, or China Telecom"
   },
   "nav": {
     "status": "Status",
+    "check": "Check",
     "corridor": "Corridor",
     "flood": "Rivers",
     "satellites": "Satellites",
@@ -27,11 +28,15 @@
     "unlicensed": "Not licensed"
   },
   "home": {
-    "kicker": "Northern routing bulletin",
-    "title": "Galchhi–Rasuwagadhi network status",
-    "lead": "A public, cited board for the fiber, microwave, and cross-border links that carry Nepal’s northern internet and telephony toward China — and for how those prefixes are being routed right now.",
+    "kicker": "Ground check",
+    "title": "What the ground shows, and which forecast held",
+    "lead": "Official reports, the rain the models called, and a tally filled only after the day has happened. A blank cell is not zero. The address of this site is unchanged.",
+    "checkTitle": "Cyclone Arnab, tonight",
+    "checkBody": "Preparedness only. No official damage, casualty, evacuation, or deployment count is logged. The forecast is cloudy, with rain and snow still ahead. The cyclone center is not drawn into Nepal.",
+    "checkLink": "Ground log and forecast tally",
     "humanUpdate": "Last human update",
-    "incident": "Current incident",
+    "incident": "August 2026 fiber incident",
+    "fiberNote": "The Rasuwa Bhote Koshi flood and the Galchhi–Rasuwagadhi fiber cut. A different incident from Cyclone Arnab. Both stay on this site.",
     "chipsTitle": "At a glance",
     "districtsTitle": "NTC sites in flood-affected districts",
     "districtsNote": "Roll-up from NTC public statements. “Remaining” means not yet back in service at that time.",
@@ -44,7 +49,7 @@
     "routingCtaNote": "Observed from RIPE RIS and linked to Hurricane Electric. China-side paths can be under-counted.",
     "mapCta": "Corridor map",
     "howToRead": "How to read this board",
-    "howToReadBody": "Green/amber/red chips are curated from public NTC and news reports, with an as-of time. The routing page is a separate, live observation of BGP — not a substitute for those field reports.",
+    "howToReadBody": "The check page is Cyclone Arnab. A blank cell there is not zero. Green/amber/red chips below are the August fiber incident, curated from public NTC and news reports, with an as-of time. The routing page is a separate, live observation of BGP — not a substitute for those field reports, and not a repaired fiber.",
     "starlinkNote": "Starlink is not a licensed public restoration path in Nepal. Notes below record policy status and rumoured use only.",
     "floodCta": "Cyclone Arnab: which rivers can leave their gorge in minutes, and where Friday–Saturday rain is actually showing up.",
     "floodLink": "River risk map"
@@ -164,13 +169,13 @@
   },
   "about": {
     "title": "About this board",
-    "lead": "Independent public information. Not a telecom operator, not a government site, and not a substitute for 1155 / NTC customer care.",
+    "lead": "Independent public information for ground reports, rain, and the northern fiber board. Not a warning from NDRRMA or the Department of Hydrology and Meteorology, and not a telecom operator.",
     "what": "What we publish",
-    "whatBody": "Corridor and site status from named public sources; live BGP as observed by RIPE RIS; links to Hurricane Electric and operator looking glasses; a river page for Cyclone Arnab with cited flood clocks and open weather models; and a space for unofficial field reports.",
+    "whatBody": "A ground log of official NDRRMA and Department lines, and a tally of which forecast held once a cited observation exists. Corridor and site status from named public sources. Live BGP as observed by RIPE RIS. A river page for Cyclone Arnab with cited flood clocks, open weather models, and an hourly cloud field. The public name is Ground check. The GitHub repository and the /NetGalchiRasuwagadi address stay as they are.",
     "whatNot": "What we do not claim",
-    "whatNotBody": "We do not speak for Nepal Telecom, Ncell, NTA, China Telecom, or Starlink. We do not publish how to run unlicensed satellite terminals. Starlink remains unlicensed in Nepal as of June 2026.",
+    "whatNotBody": "We do not speak for NDRRMA, the Department of Hydrology and Meteorology, Nepal Telecom, Ncell, NTA, China Telecom, or Starlink. We do not invent casualty or deployment counts. A blank cell is not zero. We do not mark the Galchhi–Rasuwagadhi fiber up from BGP. We do not publish how to run unlicensed satellite terminals. Starlink remains unlicensed in Nepal as of June 2026.",
     "method": "Method",
-    "methodBody": "Human-edited JSON and Markdown in git. Every status chip has an as-of time and a source. Routing is fetched in your browser from RIPEstat (sourceapp=netgalchi-rasuwagadhi). HE.net has no public JSON API, so we link to it rather than scrape it.",
+    "methodBody": "Human-edited JSON and Markdown in git. Every status chip has an as-of time and a source. The ground log is src/data/ground.json. The forecast tally is src/data/tally.json. A verdict waits for a cited observation after the claim’s window. One model is not scored against another. Routing is fetched in your browser from RIPEstat (sourceapp=netgalchi-rasuwagadhi). HE.net has no public JSON API, so we link to it rather than scrape it.",
     "update": "How to update the board",
     "updateBody": "Edit src/data/*.json or add a paired English/Nepali bulletin, then open a pull request. Verified field reports can be copied into sites.json by a maintainer — they are never merged automatically.",
     "asns": "ASN glossary",

@@ -6,6 +6,7 @@ import { t, langPath } from "../../lib/i18n";
 import { formatNpt, formatNptDate } from "../../lib/status";
 import { localized, localizedName, localizedNote, sourceById } from "../../lib/lookup";
 import snapshot from "../../data/snapshot.json";
+import tally from "../../data/tally.json";
 import { getCollection } from "astro:content";
 
 export function getStaticPaths() {
@@ -19,6 +20,11 @@ const messages = t(lang);
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const remaining = snapshot.districts.reduce((n, d) => n + d.remaining, 0);
+const tallyCounts = { pending: 0, holding: 0, hit: 0, miss: 0, partial: 0 };
+for (const row of tally.rows) {
+  const key = row.verdict as keyof typeof tallyCounts;
+  if (key in tallyCounts) tallyCounts[key] += 1;
+}
 const bulletins = (await getCollection("bulletins"))
   .filter((b) => b.data.lang === lang)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -29,6 +35,20 @@ const bulletins = (await getCollection("bulletins"))
   <p class="kicker">{messages.home.kicker}</p>
   <h1>{messages.home.title}</h1>
   <p class="lead">{messages.home.lead}</p>
+  <div class="callout">
+    <strong>{messages.home.checkTitle}</strong>
+    <p>{messages.home.checkBody}</p>
+    <p class="note">
+      {
+        lang === "ne"
+          ? `तालिका: बाँकी ${tallyCounts.pending}, अहिलेसम्म ${tallyCounts.holding}, मिल्यो ${tallyCounts.hit}, मिलेन ${tallyCounts.miss}, आंशिक ${tallyCounts.partial}।`
+          : `Tally: pending ${tallyCounts.pending}, holding ${tallyCounts.holding}, hit ${tallyCounts.hit}, miss ${tallyCounts.miss}, partial ${tallyCounts.partial}.`
+      }
+    </p>
+    <p>
+      <a class="btn" href={langPath(lang, "check", base)}>{messages.home.checkLink}</a>
+    </p>
+  </div>
   <p class="callout">
     <a href={langPath(lang, "flood", base)}>{messages.home.floodLink}</a>
     {" — "}
@@ -42,6 +62,7 @@ const bulletins = (await getCollection("bulletins"))
 
   <div class="callout" style="margin: 1.1rem 0;">
     <strong>{messages.home.incident}</strong>
+    <p class="note">{messages.home.fiberNote}</p>
     <p style="margin: 0.35rem 0 0;">
       {lang === "ne" ? snapshot.incident.title_ne : snapshot.incident.title_en}
     </p>

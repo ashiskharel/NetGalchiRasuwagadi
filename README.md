@@ -1,10 +1,12 @@
-# Net Galchi–Rasuwagadhi
+# Ground check
 
-Nepal network disaster recovery — public bilingual (English / Nepali) bulletin board for **Nepal’s northern internet and telephony routing**: the Galchhi → Rasuwagadhi fiber, China Telecom Global (CTGNet AS23764) at Rasuwagadhi–Kerung, microwave radio restoration, satellite notes, and live BGP paths.
+Public name **Ground check** (जमिन जाँच). Bilingual board for official ground reports, rain, weather-model calls, and a tally of which forecast held once a cited observation exists.
+
+The GitHub repository and the Pages path stay `NetGalchiRasuwagadi`. The August 2026 Galchhi–Rasuwagadhi fiber board stays on the same site. It is a different incident from Cyclone Arnab. That split can be revisited. Do not mark the fiber up from BGP.
 
 Live: **https://ashiskharel.github.io/NetGalchiRasuwagadi/**
 
-Not affiliated with Nepal Telecom, Ncell, NTA, or China Telecom.
+Not a warning from NDRRMA or the Department of Hydrology and Meteorology. Not affiliated with NDRRMA, DHM, Nepal Telecom, Ncell, NTA, or China Telecom.
 
 ## Update the board
 
@@ -17,6 +19,8 @@ Status chips, corridor segments, and tower lists are git files — not scraped.
 | `src/data/sites.json` | Named towers / repeaters |
 | `src/data/asns.json` | Tracked ASNs |
 | `src/data/sources.json` | Citations |
+| `src/data/ground.json` | Arnab ground log. A null is not zero. Do not invent casualties. |
+| `src/data/tally.json` | Forecast tally. Verdicts wait for a cited observation. |
 | `src/content/bulletins/{en,ne}/*.md` | Paired bulletins (`pair:` must match) |
 | `src/i18n/{en,ne}.json` | UI strings |
 
@@ -33,6 +37,8 @@ npm run draft    # RIPEstat + news RSS → drafts/ (does not change chips)
 The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT and upserts a paired **daily digest** under `src/content/bulletins/{en,ne}/YYYY-MM-DD-digest.md` (headlines on telecom/towers/fiber/internet plus RIPEstat). It does not edit `snapshot.json` chips. See `drafts/README.md`.
 
 **Satellites** (`/en/satellites`): NASA GIBS daily true-color of the valley from 25 Aug 2026, plus live ISS / Landsat / Terra / Aqua / NOAA positions. Not people or phones. Starlink overhead is not shown as a service.
+
+**Check** (`/en/check`): Cyclone Arnab ground log from 29 October through 7 November 2026, and the forecast tally. Today is preparedness. Later days stay empty until an official line is logged. One model is not scored against another.
 
 **Rivers** (`/en/flood`): Cyclone Arnab desk. How fast a rise leaves a narrow gorge or an embanked bend, 24-hour rain lines for those reaches, ECMWF IFS against GFS and ICON, a 2006–2025 ERA5 October comparison, and GloFAS only as a rise/fall signal. Not a DHM warning. Refresh with `npm run flood` (add `--era5` to refetch the 20-year archive). The committed `src/data/flood-watch.json` is the snapshot the site builds.
 

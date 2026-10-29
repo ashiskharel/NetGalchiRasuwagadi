@@ -252,6 +252,26 @@ h1 {
   color: var(--down);
   background: var(--down-bg);
 }
+.badge.pending {
+  color: var(--unknown);
+  background: var(--unknown-bg);
+}
+.badge.holding {
+  color: var(--degraded);
+  background: var(--degraded-bg);
+}
+.badge.hit {
+  color: var(--up);
+  background: var(--up-bg);
+}
+.badge.miss {
+  color: var(--down);
+  background: var(--down-bg);
+}
+.badge.partial {
+  color: var(--degraded);
+  background: var(--degraded-bg);
+}
 
 .flood-controls {
   display: flex;

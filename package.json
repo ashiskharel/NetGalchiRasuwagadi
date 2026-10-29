@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Public bilingual bulletin board for Nepal northern internet and telephony routing (Galchhi–Rasuwagadhi).",
+  "description": "Ground check: official disaster reports, rain, and which forecast held. The Galchhi–Rasuwagadhi fiber board stays on the same site.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

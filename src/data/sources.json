@@ -175,6 +175,62 @@
       "title_ne": "चक्रवात ARNAB-26 को JTWC ट्र्याक, घटना 1001345, GDACS समयरेखा",
       "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001345",
       "date": "2026-10-29"
+    },
+    {
+      "id": "ndrrma-x-arnab",
+      "name": "NDRRMA",
+      "title_en": "High alert: Cyclone Arnab effects on Nepal from the night of 29 October 2026",
+      "title_ne": "उच्च सतर्कता: चक्रवात अर्नबको असर नेपालमा २९ अक्टोबर २०२६ को रातबाट",
+      "url": "https://x.com/NDRRMA_Nepal/status/2114957760647581789",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "nepalnews-ndrrma-arnab",
+      "name": "Nepal News",
+      "title_en": "NDRRMA high alert 29–31 October, quoting a DHM special bulletin",
+      "title_ne": "प्राधिकरणको उच्च सतर्कता २९–३१ अक्टोबर, विभागको विशेष बुलेटिन उद्धृत",
+      "url": "https://english.nepalnews.com/s/nation/ndrrma-urges-high-alert-as-cyclone-arnab-threatens-heavy-rain-snowfall/",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "b360-ndrrma-arnab",
+      "name": "Business 360",
+      "title_en": "RSS: NDRRMA alert, spokesperson Ram Bahadur KC on impact from Friday",
+      "title_ne": "रासस: प्राधिकरणको सतर्कता, प्रवक्ता रामबहादुर केसी — असर शुक्रबारबाट",
+      "url": "https://www.b360nepal.com/detail/30524/cyclone-arnab-raises-risk-of-heavy-rain-and-snowfall-in-nepal",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "nepalnews-command-arnab",
+      "name": "Nepal News",
+      "title_en": "Disaster Response Command Post reviews preparations, 29 October",
+      "title_ne": "विपद् प्रतिक्रिया कमान्ड पोस्टको तयारी समीक्षा, २९ अक्टोबर",
+      "url": "https://english.nepalnews.com/s/nation/disaster-response-command-post-reviews-preparations-for-cyclone-arnabs-impact/",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "nepalnews-agencies-arnab",
+      "name": "Nepal News",
+      "title_en": "Government puts agencies on high alert for Cyclone Arnab",
+      "title_ne": "सरकारले निकायलाई चक्रवात अर्नबका लागि उच्च सतर्कतामा राख्यो",
+      "url": "https://english.nepalnews.com/s/weather/government-puts-agencies-on-high-alert-for-cyclone-arnabs-possible-effects/",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "b360-mfd-arnab",
+      "name": "Business 360",
+      "title_en": "MFD forecast for 29 October: cloudy, rain and snow likely, via Business 360 at 12:38 NPT",
+      "title_ne": "२९ अक्टोबरको महाशाखा पूर्वानुमान: बदली, वर्षा र हिउँ सम्भव, बिजनेस ३६०, १२:३८",
+      "url": "https://www.b360nepal.com/detail/30536/mfd-forecasts-widespread-rain-snowfall-amid-cyclone-arnab-impact",
+      "date": "2026-10-29"
+    },
+    {
+      "id": "midday-ndrrma-arnab",
+      "name": "Mid-day",
+      "title_en": "Quotes an NDRRMA notice signed by spokesperson Ram Bahadur K.C., including helplines",
+      "title_ne": "प्रवक्ता रामबहादुर के.सी.को हस्ताक्षर भएको प्राधिकरणको सूचना उद्धृत, हेल्पलाइनसहित",
+      "url": "https://www.mid-day.com/news/world-news/article/cyclone-arnab-nepal-warns-of-heavy-rain-flooding-and-avalanches-from-october-29-to-31-23657243",
+      "date": "2026-10-27"
     }
   ]
 }

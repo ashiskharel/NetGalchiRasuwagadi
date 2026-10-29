@@ -1,0 +1,250 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, isLang, type Lang } from "../../lib/config";
+import { langPath } from "../../lib/i18n";
+import { formatNpt, formatNptDate } from "../../lib/status";
+import { sourceById } from "../../lib/lookup";
+import ground from "../../data/ground.json";
+import tally from "../../data/tally.json";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const ne = lang === "ne";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const phases: Record<string, string> = ne
+  ? { preparedness: "पूर्वतयारी", open: "अवधि खुला", later: "पछिको हप्ता" }
+  : { preparedness: "Preparedness", open: "Window open", later: "Week after" };
+
+const verdicts: Record<string, string> = ne
+  ? { pending: "बाँकी", holding: "अहिलेसम्म", hit: "मिल्यो", miss: "मिलेन", partial: "आंशिक" }
+  : { pending: "Pending", holding: "Holding", hit: "Hit", miss: "Miss", partial: "Partial" };
+
+const counts = { pending: 0, holding: 0, hit: 0, miss: 0, partial: 0 };
+for (const row of tally.rows) {
+  const key = row.verdict as keyof typeof counts;
+  if (key in counts) counts[key] += 1;
+}
+
+const countLabels: { key: keyof typeof counts; en: string; np: string }[] = [
+  { key: "pending", en: "Pending", np: "बाँकी" },
+  { key: "holding", en: "Holding", np: "अहिलेसम्म" },
+  { key: "hit", en: "Hit", np: "मिल्यो" },
+  { key: "miss", en: "Miss", np: "मिलेन" },
+  { key: "partial", en: "Partial", np: "आंशिक" },
+];
+
+function sources(ids: string[]) {
+  return ids.map((id) => sourceById(id)).filter((src) => src !== undefined);
+}
+
+const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | "evacuated" | "teams"; en: string; np: string }[] = [
+  { key: "dead", en: "Dead", np: "मृत्यु" },
+  { key: "injured", en: "Injured", np: "घाइते" },
+  { key: "missing", en: "Missing", np: "बेपत्ता" },
+  { key: "displaced", en: "Displaced", np: "विस्थापित" },
+  { key: "houses", en: "Houses", np: "घर" },
+  { key: "evacuated", en: "Evacuated", np: "स्थानान्तरण" },
+  { key: "teams", en: "Teams named", np: "नाम भएका टोली" },
+];
+---
+
+<Base
+  lang={lang}
+  title={ne ? "जमिन लग र पूर्वानुमान तालिका" : "Ground log and forecast tally"}
+  path="check"
+  description={
+    ne
+      ? "चक्रवात अर्नब: आधिकारिक पूर्वतयारी, खाली क्षति तालिका, र कुन पूर्वानुमान अझै बाँकी छ।"
+      : "Cyclone Arnab: official preparedness, a blank damage table, and which forecasts are still unscored."
+  }
+>
+  <p class="kicker">{ne ? "चक्रवात अर्नब · २९ अक्टोबर–७ नोभेम्बर २०२६" : "Cyclone Arnab · 29 October–7 November 2026"}</p>
+  <h1>{ne ? "जमिन के देखाउँछ, र कुन पूर्वानुमान मिल्यो" : "What the ground shows, and which forecast held"}</h1>
+  <p class="lead">
+    {
+      ne
+        ? "आधिकारिक रिपोर्ट, मोडेलले भनेको पानी, र दिन बितेपछि मात्र भरिने तालिका। यो विभागको चेतावनी होइन। यो प्राधिकरणको आदेश होइन।"
+        : "Official reports, the rain the models called, and a tally filled only after the day has happened. This is not a Department warning. This is not an NDRRMA order."
+    }
+  </p>
+  <p class="meta-line">
+    {ne ? "यो लग लेखिएको" : "Log written"}:{" "}
+    <time datetime={ground.updated}>{formatNpt(ground.updated, lang)}</time>
+    {" "}· NPT
+  </p>
+  <div class="callout">
+    <p>{ne ? ground.separate_ne : ground.separate_en}</p>
+    <p class="note">
+      {
+        ne
+          ? "साइटको सार्वजनिक नाम जमिन जाँच हो। ठेगाना र GitHub रिपो उही छन्: /NetGalchiRasuwagadi।"
+          : "The public name is Ground check. The address and the GitHub repo stay /NetGalchiRasuwagadi."
+      }
+    </p>
+  </div>
+
+  <h2>{ne ? "आज, २९ अक्टोबर — पूर्वतयारी" : "Today, 29 October — preparedness"}</h2>
+  <p>{ne ? ground.days[0].note_ne : ground.days[0].note_en}</p>
+  <p>
+    <a href={langPath(lang, "flood", base)}>{ne ? "नदी र बादलको तस्बिर" : "River and cloud picture"}</a>
+    {
+      ne
+        ? "। बादलको क्षेत्र मोडेलको हो। ट्र्याक भारतको पूर्वानुमान न्यूनचापमा रोकिन्छ।"
+        : ". The cloud field is the model’s. The track stops at the forecast depression in India."
+    }
+  </p>
+  <p class="note">
+    {ne ? "स्रोत:" : "Sources:"}
+    {
+      sources(ground.days[0].source_ids).map((src, i) => (
+        <>
+          {i > 0 ? " · " : " "}
+          <a href={src.url}>{src.name}</a>
+        </>
+      ))
+    }
+  </p>
+
+  <h2>{ne ? "जमिन लग" : "Ground log"}</h2>
+  <p class="note">{ne ? ground.blank_ne : ground.blank_en}</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "मिति" : "Date"}</th>
+          <th>{ne ? "अवस्था" : "Phase"}</th>
+          {columns.map((col) => <th>{ne ? col.np : col.en}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          ground.days.map((day) => (
+            <tr>
+              <td><time datetime={day.date}>{formatNptDate(day.date, lang)}</time></td>
+              <td>{phases[day.phase] ?? day.phase}</td>
+              {columns.map((col) => <td>{day[col.key] === null ? "—" : day[col.key]}</td>)}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <caption class="note">{ne ? "प्रत्येक दिन के लेखिएको छ" : "What is logged for each day"}</caption>
+      <thead>
+        <tr>
+          <th>{ne ? "मिति" : "Date"}</th>
+          <th>{ne ? "लेख" : "Note"}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          ground.days.map((day) => (
+            <tr>
+              <td><time datetime={day.date}>{formatNptDate(day.date, lang)}</time></td>
+              <td>
+                {
+                  day.date === ground.days[0].date
+                    ? ne
+                      ? "पूरा लेख माथिको «आज» खण्डमा छ।"
+                      : "The full note is in Today, above."
+                    : ne
+                      ? day.note_ne
+                      : day.note_en
+                }
+                {
+                  day.source_ids.length > 0 && (
+                    <p class="asof">
+                      {sources(day.source_ids).map((src, i) => (
+                        <>
+                          {i > 0 ? " · " : ""}
+                          <a href={src.url}>{src.name}</a>
+                        </>
+                      ))}
+                    </p>
+                  )
+                }
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>{ne ? "पूर्वानुमान तालिका" : "Forecast tally"}</h2>
+  <p>{ne ? tally.rules_ne : tally.rules_en}</p>
+  <div class="table-wrap">
+    <table>
+      <caption class="note">{ne ? "अहिलेको गन्ती। अंक शून्य पनि गन्ती हो, ड्यास होइन।" : "Count right now. A zero here is a count of rows, not a dash in the log."}</caption>
+      <thead>
+        <tr>
+          {countLabels.map((item) => <th>{ne ? item.np : item.en}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {countLabels.map((item) => (
+            <td><strong>{counts[item.key]}</strong></td>
+          ))}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "को" : "Who"}</th>
+          <th>{ne ? "दाबी" : "Claim"}</th>
+          <th>{ne ? "अवधि" : "Window"}</th>
+          <th>{ne ? "नतिजा" : "Verdict"}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          tally.rows.map((row) => (
+            <tr>
+              <td>{ne ? row.who_ne : row.who_en}</td>
+              <td>
+                {ne ? row.claim_ne : row.claim_en}
+                <p class="asof">
+                  {sources(row.source_ids).map((src, i) => (
+                    <>
+                      {i > 0 ? " · " : ""}
+                      <a href={src.url}>{src.name}</a>
+                    </>
+                  ))}
+                </p>
+              </td>
+              <td>{ne ? row.window_ne : row.window_en}</td>
+              <td>
+                <span class:list={["badge", row.verdict]}>{verdicts[row.verdict] ?? row.verdict}</span>
+                <p class="note">{ne ? row.why_ne : row.why_en}</p>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="note">
+    {
+      ne
+        ? "नतिजा हातले src/data/tally.json मा लेखिन्छ, उद्धृत अवलोकन आएपछि। मोडेल आफैँले आफैँलाई मिल्यो भन्दैन।"
+        : "Verdicts are written by hand in src/data/tally.json after a cited observation arrives. A model does not score itself."
+    }
+  </p>
+  <p>
+    <a href={langPath(lang, "bulletin/2026-10-29-arnab-preparedness", base)}>
+      {ne ? "आजको बुलेटिन" : "Today’s bulletin"}
+    </a>
+  </p>
+</Base>
