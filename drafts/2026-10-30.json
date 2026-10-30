@@ -1,0 +1,317 @@
+{
+  "fetched_npt": "2026-10-30T12:50",
+  "fetched_utc": "2026-10-30T07:05:41.683Z",
+  "notice": "Draft only. Never auto-applied to status chips.",
+  "published_chips": [
+    {
+      "id": "northern-transit-ctgnet",
+      "status": "degraded",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "galchhi-trishuli-fiber",
+      "status": "up",
+      "as_of": "2026-08-26"
+    },
+    {
+      "id": "trishuli-rasuwagadhi-fiber",
+      "status": "down",
+      "as_of": "2026-08-26"
+    },
+    {
+      "id": "microwave-north-trishuli",
+      "status": "degraded",
+      "as_of": "2026-08-27"
+    },
+    {
+      "id": "tatopani-khasa",
+      "status": "unknown",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "southern-india-transits",
+      "status": "up",
+      "as_of": "2026-08-28"
+    },
+    {
+      "id": "starlink-backup",
+      "status": "unlicensed",
+      "as_of": "2026-06-03"
+    }
+  ],
+  "ris": {
+    "ok": true,
+    "error": null,
+    "neighbours": {
+      "left": [
+        23764,
+        4755,
+        6453,
+        9498
+      ],
+      "right": [
+        131341,
+        136794,
+        139022,
+        142008,
+        14789,
+        45353,
+        58456
+      ]
+    },
+    "paths": {
+      "north": 134,
+      "south": 224,
+      "other": 0,
+      "unique": [
+        {
+          "hops": [
+            23764,
+            23752
+          ],
+          "n": 8,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            8218,
+            23764,
+            23752
+          ],
+          "n": 7,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            6461,
+            9498,
+            23752
+          ],
+          "n": 5,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            24482,
+            9498,
+            23752
+          ],
+          "n": 5,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            9002,
+            6453,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            24482,
+            23764,
+            23752
+          ],
+          "n": 4,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            14840,
+            9498,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            199524,
+            9498,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            47147,
+            3320,
+            6453,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            2914,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            3491,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            12779,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            48185,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            3214,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            49544,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            35280,
+            6453,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        }
+      ]
+    },
+    "prefix": "202.70.64.0/19",
+    "latestPathTime": "2026-10-30T07:05:11.020000"
+  },
+  "news": [
+    {
+      "id": "onlinekhabar-en",
+      "lang": "en",
+      "url": "https://english.onlinekhabar.com/feed",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "Flash flood causes damage in Bhutan, glacial lake outburst suspected",
+          "link": "https://english.onlinekhabar.com/flash-flood-causes-damage-in-bhutan-glacial-lake-outburst-suspected.html",
+          "pubDate": "Fri, 30 Oct 2026 05:53:07 +0000"
+        },
+        {
+          "title": "Relief delivered by drone to Budhigandaki flood-affected areas",
+          "link": "https://english.onlinekhabar.com/relief-delivered-by-drone.html",
+          "pubDate": "Fri, 30 Oct 2026 03:39:08 +0000"
+        }
+      ]
+    },
+    {
+      "id": "onlinekhabar-ne",
+      "lang": "ne",
+      "url": "https://www.onlinekhabar.com/feed",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "बूढीगण्डकी बाढी प्रभावित क्षेत्रमा ड्रोनमार्फत् पुर्‍याइयो राहत",
+          "link": "https://www.onlinekhabar.com/2026/10/2047043/relief-delivered-via-drone-to-budhigandaki-flood-affected-areas",
+          "pubDate": "Fri, 30 Oct 2026 02:45:25 +0000"
+        },
+        {
+          "title": "भुटानमा आकस्मिक बाढीले पुर्‍यायो क्षति, हिमताल विस्फोटको आशंका",
+          "link": "https://www.onlinekhabar.com/2026/10/2047021/flash-floods-cause-damage-in-bhutan-fears-of-glacial-lake-eruption",
+          "pubDate": "Fri, 30 Oct 2026 01:53:09 +0000"
+        }
+      ]
+    },
+    {
+      "id": "rising-nepal",
+      "lang": "en",
+      "url": "https://risingnepaldaily.com/rss",
+      "filter": true,
+      "ok": true,
+      "items": []
+    },
+    {
+      "id": "kathmandu-post",
+      "lang": "en",
+      "url": "https://kathmandupost.com/rss",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "Bhutan glacial lake outburst triggers flood, no injuries reported",
+          "link": "https://kathmandupost.com/world/2026/10/30/bhutan-glacial-lake-outburst-triggers-flood-no-injuries-reported",
+          "pubDate": ""
+        },
+        {
+          "title": "Nepal plans temporary bridges to reopen flood-hit Rasuwagadhi border crossing",
+          "link": "https://kathmandupost.com/money/2026/10/30/nepal-plans-temporary-bridges-to-reopen-flood-hit-rasuwagadhi-border-crossing",
+          "pubDate": ""
+        },
+        {
+          "title": "Annapurna Circuit sees trekking arrivals rebound after floods",
+          "link": "https://kathmandupost.com/money/2026/10/29/annapurna-circuit-sees-trekking-arrivals-rebound-after-floods",
+          "pubDate": ""
+        }
+      ]
+    },
+    {
+      "id": "ratopati",
+      "lang": "ne",
+      "url": "https://www.ratopati.com/feed",
+      "filter": true,
+      "ok": true,
+      "items": [
+        {
+          "title": "चक्रवात ‘अर्नब’ को प्रभाव : कोशी र नारायणीसहित प्रमुख नदी जलाधारमा बाढीको जोखिम",
+          "link": "https://www.ratopati.com/story/602198/flood",
+          "pubDate": "Fri, 30 Oct 2026 05:35:20 +0000"
+        }
+      ]
+    },
+    {
+      "id": "gnews-en",
+      "lang": "en",
+      "optional": true,
+      "url": "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
+      "ok": false,
+      "error": "503 https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
+      "items": []
+    }
+  ],
+  "issues": [],
+  "suggestions": [
+    "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
+    "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
+    "Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`."
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-29T12:49",
-  "fetched_utc": "2026-10-29T07:04:28.335Z",
+  "fetched_npt": "2026-10-30T12:50",
+  "fetched_utc": "2026-10-30T07:05:41.683Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -61,7 +61,7 @@
     },
     "paths": {
       "north": 134,
-      "south": 226,
+      "south": 224,
       "other": 0,
       "unique": [
         {
@@ -93,15 +93,6 @@
         {
           "hops": [
             24482,
-            23764,
-            23752
-          ],
-          "n": 5,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            24482,
             9498,
             23752
           ],
@@ -116,6 +107,15 @@
           ],
           "n": 4,
           "klass": "south"
+        },
+        {
+          "hops": [
+            24482,
+            23764,
+            23752
+          ],
+          "n": 4,
+          "klass": "north"
         },
         {
           "hops": [
@@ -211,7 +211,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-29T07:04:21.880000"
+    "latestPathTime": "2026-10-30T07:05:11.020000"
   },
   "news": [
     {
@@ -220,7 +220,18 @@
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "Flash flood causes damage in Bhutan, glacial lake outburst suspected",
+          "link": "https://english.onlinekhabar.com/flash-flood-causes-damage-in-bhutan-glacial-lake-outburst-suspected.html",
+          "pubDate": "Fri, 30 Oct 2026 05:53:07 +0000"
+        },
+        {
+          "title": "Relief delivered by drone to Budhigandaki flood-affected areas",
+          "link": "https://english.onlinekhabar.com/relief-delivered-by-drone.html",
+          "pubDate": "Fri, 30 Oct 2026 03:39:08 +0000"
+        }
+      ]
     },
     {
       "id": "onlinekhabar-ne",
@@ -228,7 +239,18 @@
       "url": "https://www.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "बूढीगण्डकी बाढी प्रभावित क्षेत्रमा ड्रोनमार्फत् पुर्‍याइयो राहत",
+          "link": "https://www.onlinekhabar.com/2026/10/2047043/relief-delivered-via-drone-to-budhigandaki-flood-affected-areas",
+          "pubDate": "Fri, 30 Oct 2026 02:45:25 +0000"
+        },
+        {
+          "title": "भुटानमा आकस्मिक बाढीले पुर्‍यायो क्षति, हिमताल विस्फोटको आशंका",
+          "link": "https://www.onlinekhabar.com/2026/10/2047021/flash-floods-cause-damage-in-bhutan-fears-of-glacial-lake-eruption",
+          "pubDate": "Fri, 30 Oct 2026 01:53:09 +0000"
+        }
+      ]
     },
     {
       "id": "rising-nepal",
@@ -246,13 +268,18 @@
       "ok": true,
       "items": [
         {
-          "title": "Insurers have paid just 4 percent of Bhotekoshi flood claims",
-          "link": "https://kathmandupost.com/money/2026/10/28/insurers-have-paid-just-4-percent-of-bhotekoshi-flood-claims",
+          "title": "Bhutan glacial lake outburst triggers flood, no injuries reported",
+          "link": "https://kathmandupost.com/world/2026/10/30/bhutan-glacial-lake-outburst-triggers-flood-no-injuries-reported",
           "pubDate": ""
         },
         {
-          "title": "Users turn to Nepal Telecom as private ISPs raise internet prices",
-          "link": "https://kathmandupost.com/money/2026/10/28/users-turn-to-nepal-telecom-as-private-isps-raise-internet-prices",
+          "title": "Nepal plans temporary bridges to reopen flood-hit Rasuwagadhi border crossing",
+          "link": "https://kathmandupost.com/money/2026/10/30/nepal-plans-temporary-bridges-to-reopen-flood-hit-rasuwagadhi-border-crossing",
+          "pubDate": ""
+        },
+        {
+          "title": "Annapurna Circuit sees trekking arrivals rebound after floods",
+          "link": "https://kathmandupost.com/money/2026/10/29/annapurna-circuit-sees-trekking-arrivals-rebound-after-floods",
           "pubDate": ""
         }
       ]
@@ -265,9 +292,9 @@
       "ok": true,
       "items": [
         {
-          "title": "धान पाकेपछि पहेँलपुर कुँडुले, वर्षाको चर्चाले बढाउँदै छ चिन्ता (तस्बिरहरू)",
-          "link": "https://www.ratopati.com/story/601966/pahelpur-floods-after-paddy-ripens-talk-of-rain-is-increasing-concern-photos",
-          "pubDate": "Thu, 29 Oct 2026 06:10:36 +0000"
+          "title": "चक्रवात ‘अर्नब’ को प्रभाव : कोशी र नारायणीसहित प्रमुख नदी जलाधारमा बाढीको जोखिम",
+          "link": "https://www.ratopati.com/story/602198/flood",
+          "pubDate": "Fri, 30 Oct 2026 05:35:20 +0000"
         }
       ]
     },
@@ -276,69 +303,9 @@
       "lang": "en",
       "optional": true,
       "url": "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
-      "ok": true,
-      "items": [
-        {
-          "title": "Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQm1IaEpqdzRtVnJCTGRuU1hOT3RvQ2tLcG9qX2dkQnloYjc2LUtwQTFKc0NIQlNTZ0xERlVrbnQ1Tm1XNzdYNjUwSlNoOVpIeHlLd0ExbEJBQVlEQVR5UGtFbDh5SnoxTXhQSW0yZjZqU0RublhSTm9mTlhmV1VIS2Q3TkNLWDhqTkVpSVdaZTdMZW53R2p6eWRjdEE2Rm45SGtWbGYta0dpWUwwNDBmNVZubGxkSEQydDVzcC1YWWRWT0l1cklqMVlKeWw?oc=5",
-          "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
-        },
-        {
-          "title": "Nepal Telecom suffers over NPR 88 million in infrastructure damage in Bhotekoshi floods - ET Telecom",
-          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTUNIYUV2RGFPSEVnSWJSQVZZNmxyWHluaDhsSVZRZmY4SllfbWJ2Uy1WVlpKbjhFTXRuVlFYY1RjeldnMmFWc0NfQ0xTQ0k4THlZRjZ2b29iajlKTmNnVTVuN29ta2czWkNqSFpHUzVBN1JsVWtnR1RiWFBTN3RlbVcyaS1MY1EtRDUzNWt2RUxqNmt4RnpSeDlIeFdXYnhBSjEyWFZoSlBTWEt5VmFWMHFEbHA2T1NjU1BGcVlyV3A0QnREelg2aXkybWQ1eWdIOHNESE1neWxaa0xCYTlKZGhNYldNcHowY2NIeg?oc=5",
-          "pubDate": "Thu, 01 Oct 2026 07:56:43 GMT"
-        },
-        {
-          "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVJfOTVQZFp6Z195aW9WZmtZcGdDc3ZwcGh2cUFvVTZwTWIxVTlvRFJsSmJIbzJzdVVfMmhCc0gwazYxby1ocXlyaDhxeXo4UUdXQk1sTFB4RnNnUks1LXdSMFY1S3MtcXU3VDlKcmk3UEVWdDZxeXZwRXdJYWUwdTlHeVFmak9iWThkLVpVVHRtLWsyYVpGd05yeVpiX0Ricm1Bc0NOQmR6ZEJFTVFHR2NHVEg5dUFtak9kMFJTaDUtZw?oc=5",
-          "pubDate": "Wed, 30 Sep 2026 15:17:00 GMT"
-        },
-        {
-          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
-          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13ckNCOGRZdmJ4a0NVakxoQVhULUVvelN6S1lBZDd4MWpRSGhscHIxSDZ6RE51dnZpUC1DeThMSWx3X2tWajh4ZGlUWHB1cm5h?oc=5",
-          "pubDate": "Sat, 29 Aug 2026 00:40:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaS0zX3pVb25uRXFCTzZ0YTA3NTk3UkNzZHB6UnAyMVdob01hUElsMzVvc2llbzlsOG9OTzM5Z2VFTk42bzlFTzkyWTVhWHVDOW12bUJ2WTdLOGFKUjgwRWRNbm45eDJtMmFQY19aT3V6N2xYcmJFSERWTFZMbW15LTUzdDNGU0toYkNrb2hIVWdwRGhlR2tLZWxtMEs4aEozcVBNTG90MHBnS19Fd0gydjE3aHVfVG5HVXE5Y1FPNXQ?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
-        },
-        {
-          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom restores mobile services up to Nepal-China border - Khabarhub",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nX1BCWFIzbDJsSXVaNzlqNlpHbTA1UWVUaUp1b1pIVHRFM3FxVWhIcl9FQzNwYW8ybHN2SzJ2R2FwdVBQMjRpcUFZeXZvVHFUeXd0MDRLblE?oc=5",
-          "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
-          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NT works to restore services in flood-hit areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yRWswam81cUpzM0lPSVR6dGRoZHRsZmFRQ3dDRzVpOUxxVFROX1R6UElES1VsV3NDSF9kd2N3eHM0RnZzdWE1Z1VBNVdibDlz?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
-        },
-        {
-          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
-        }
-      ]
+      "ok": false,
+      "error": "503 https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
+      "items": []
     }
   ],
   "issues": [],
