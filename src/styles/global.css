@@ -649,6 +649,19 @@ a.sat-card:focus-visible {
   padding-left: 1.1rem;
 }
 
+.box-list {
+  list-style: none;
+  padding: 0;
+}
+
+.box-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0.45rem 0;
+}
+
 @media (max-width: 40rem) {
   .nav a {
     padding-inline: 0.5rem;

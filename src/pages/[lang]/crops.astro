@@ -1,0 +1,270 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, isLang, type Lang } from "../../lib/config";
+import { langPath } from "../../lib/i18n";
+import { formatNpt } from "../../lib/status";
+import { sourceById } from "../../lib/lookup";
+import agri from "../../data/agri.json";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const ne = lang === "ne";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const ui = {
+  locWait: ne ? "स्थान मागिँदै छ…" : "Asking for this device’s location…",
+  locOk: ne ? "नक्सा तपाईंको स्थानमा छ। बाकस थप्न सकिन्छ।" : "The map is on your location. You can add a box.",
+  locDeny: ne ? "स्थान दिइएन। नक्सा सार्न र बाकस थप्न मिल्छ।" : "Location was not shared. You can still pan the map and add a box.",
+  locMissing: ne ? "यो ब्राउजरले स्थान दिँदैन।" : "This browser does not share location.",
+  drawFirst: ne ? "बाकसको एउटा कुना थिच्नुहोस्।" : "Click one corner of the box.",
+  drawSecond: ne ? "अर्को कुना थिच्नुहोस्।" : "Click the opposite corner.",
+  drawDone: ne ? "बाकस थपियो। तलका बटनले त्यही ठाउँ खोल्छन्।" : "Box added. The buttons below open that place.",
+  noBox: ne ? "पहिले बाकस थप्नुहोस्। लिङ्क त्यसपछि खुल्छ।" : "Add a box first. The links open after that.",
+  copied: ne ? "निर्देशाङ्क कपी भयो।" : "Coordinates copied.",
+  copyFail: ne ? "कपी भएन। यी अंक प्रयोग गर्नुहोस्:" : "Could not copy. Use these figures:",
+  boxLabel: ne ? "बाकस" : "Box",
+  use: ne ? "यो बाकस" : "Use this box",
+  remove: ne ? "हटाउनुहोस्" : "Remove",
+  lakeBox: ne ? "यो बिन्दु वरिपरि बाकस" : "Box around this point",
+  lakeShore: ne
+    ? "यो बाकस तालको किनार होइन। प्रकाशित बिन्दु वरिपरि करिब ०.०२ डिग्रीको क्षेत्र हो।"
+    : "This box is not the lake shore. It is about 0.02° around the published point.",
+  copernicus: ne ? "कोपर्निकस ब्राउजर (निःशुल्क, १० मि)" : "Copernicus Browser (free, 10 m)",
+  worldview: ne ? "नासा वर्ल्डभ्यू (निःशुल्क)" : "NASA Worldview (free)",
+  eobrowser: ne ? "सेन्टिनेल हब ईओ ब्राउजर (निःशुल्क दृश्य)" : "Sentinel Hub EO Browser (free view)",
+  planet: ne ? "प्लानेट एक्सप्लोररमा किन्न" : "Buy on Planet Explorer",
+  skywatch: ne ? "स्काईवाच एक्सप्लोरमा किन्न" : "Buy on SkyWatch Explore",
+  up42: ne ? "यूपी४२ बजारमा किन्न" : "Buy on the UP42 marketplace",
+};
+
+function kindLabel(kind: string): string {
+  if (ne) {
+    if (kind === "advisory") return "सल्लाह";
+    return "रिपोर्ट";
+  }
+  if (kind === "advisory") return "Advisory";
+  return "Reported";
+}
+---
+
+<Base
+  lang={lang}
+  title={ne ? "बाली, ताल, र उपग्रह जाँच" : "Crops, lakes, and a satellite check"}
+  path="crops"
+  description={
+    ne
+      ? "हिमनदी तालको उद्धृत गणना, समाचारमा आएको बाली क्षति, र निःशुल्क उपग्रह दृश्यबाट व्यावसायिक खरिद पृष्ठसम्मको बाकस।"
+      : "Cited glacial-lake counts, crop losses named in news, and a box that opens a free satellite view or a commercial purchase page."
+  }
+>
+  <p class="kicker">{ne ? "कृषि उत्पादन · ३१ अक्टोबर २०२६" : "Farm produce · 31 October 2026"}</p>
+  <h1>{ne ? "बाली, ताल, र उपग्रह जाँच" : "Crops, lakes, and a satellite check"}</h1>
+  <p class="lead">
+    {
+      ne
+        ? "तीन अलग प्रमाण: भनिएको मौसम, समाचारमा लेखिएको क्षति, र तपाईंले कोरेको बाकसको उपग्रह दृश्य। वर्षाको मिलिमिटर क्षति होइन। खाली कोठा शून्य होइन। यो कृषि मन्त्रालय वा विभागको चेतावनी होइन।"
+        : "Three separate kinds of evidence: a weather call, a loss written in a news report, and the satellite view of a box you draw. Millimetres of rain are not a loss. A blank is not zero. This is not a warning from the agriculture ministry or the Department."
+    }
+  </p>
+  <p class="meta-line">
+    {ne ? "लेखिएको" : "Written"}:{" "}
+    <time datetime={agri.updated}>{formatNpt(agri.updated, lang)}</time>
+    {" "}· NPT
+  </p>
+  <p class="note">
+    {
+      ne
+        ? "यो पृष्ठले तस्बिर बेच्दैन। निःशुल्क बटनले त्यो ठाउँको सार्वजनिक दृश्य खोल्छ। किन्ने बटनले कम्पनीको आफ्नै पृष्ठ खोल्छ। बाकस हाम्रो सर्भरमा पठाइँदैन।"
+        : "This page does not sell imagery. A free button opens a public view of that place. A buy button opens the company’s own page. The box is not sent to our server."
+    }
+  </p>
+
+  <h2>{ne ? "खेतीका लागि लेखिएको जमिन" : "Land on the books for farming"}</h2>
+  <p>
+    {
+      ne
+        ? `विश्व बैंकको सूचक ${agri.land.indicator}, नेपाल, ${agri.land.year}: ${agri.land.km2.toLocaleString("en-US")} वर्ग किलोमिटर कृषि जमिन। यसमा खेतीयोग्य जमिन, स्थायी बाली र स्थायी चरण पर्छ। यो कित्ता नक्सा होइन, र सरकारले बाँडेको घरबारीको सीमा होइन।`
+        : `World Bank indicator ${agri.land.indicator}, Nepal, ${agri.land.year}: ${agri.land.km2.toLocaleString("en-US")} square kilometres of agricultural land. That includes arable land, permanent crops, and permanent pasture. It is not a plot map, and it is not the boundary of a government allotment.`
+    }
+    {" "}
+    <a href={sourceById(agri.land.source_id)?.url}>{sourceById(agri.land.source_id)?.name}</a>
+  </p>
+
+  <h2>{ne ? "हिमनदी ताल" : "Glacial lakes"}</h2>
+  <p>
+    {
+      ne
+        ? "खुला वार्षिक तथ्याङ्क (सेन्टिनेल, २०१७–२०२४) ले नेपाल र सीमापार जलाधार समेट्छ। २०२४ मा हिमनदीबाट पोषित ताल: नेपाल १,०४६ (६०.२१ वर्ग किमि), चीन ९५४ (९०.८४ वर्ग किमि), भारत ३४ (१.१३ वर्ग किमि)। चीनका ताल कम छन्, क्षेत्रफल ठूलो छ। औसत वार्षिक क्षेत्रफल, सबै ताल जोड्दा, १६९ वर्ग किमि थियो। यो हरेक तालको सूची होइन। पूर्ण तथ्याङ्क जेनेडोमा छ।"
+        : "An open annual dataset (Sentinel, 2017–2024) covers Nepal and the transboundary catchments. In 2024 the glacier-fed lakes were 1,046 in Nepal (60.21 km²), 954 in China (90.84 km²), and 34 in India (1.13 km²). China has fewer lakes and more area. Average annual area, all lakes together, was 169 km². This is not every lake. The full set is on Zenodo."
+    }
+    {" "}
+    <a href="https://doi.org/10.5194/essd-18-5143-2026">Earth System Science Data</a>
+    {" · "}
+    <a href="https://doi.org/10.5281/zenodo.17802333">Zenodo</a>
+  </p>
+  <p>
+    {
+      ne
+        ? "३१ अगस्ट २०२६ को नेपाल न्यूज व्याख्या, संयुक्त सूचीलाई उद्धृत गर्दै: कोशी, गण्डकी र कर्णालीमा ४७ सम्भावित खतरनाक ताल — २१ नेपालमा, २५ तिब्बतमा, १ भारतमा। त्यो २०२० को वर्ग हो, आजको विस्फोट सूचना होइन। झार्ने कामको छोटो सूचीमा तल्लो बरुण, थुलागी, लुम्दिङ, छो रोल्पा र इम्जा छन्। छो रोल्पा र थुलागीको निर्देशाङ्क यो स्क्यानमा खोलिएन, त्यसैले पिन छैन। चिरेनमाचो एउटा संयुक्त निगरानीको सीमापार ताल भनिएको छ। त्यसको पिन पनि छैन। अगस्ट २६ को रसुवा घटना त्यो व्याख्यामा हिमनदी ताल विस्फोट होइन, हिमनदी भत्किएको भनिएको छ। बालीको क्षतिसँग त्यो नजोडी।"
+        : "A Nepal News explainer of 31 August 2026, describing the joint list: 47 potentially dangerous lakes in the Koshi, Gandaki and Karnali basins — 21 in Nepal, 25 in Tibet, and 1 in India. That is a 2020 hazard class, not an outburst notice for today. The short lowering list names Lower Barun, Thulagi, Lumding, Tsho Rolpa and Imja. This scan did not open coordinates for Tsho Rolpa or Thulagi, so they are not pinned. Cirenmaco is described as the one jointly watched transboundary lake. It is not pinned either. The same explainer calls the 26 August Rasuwa event a glacier collapse, not a burst of these lakes. Do not attach a crop loss to it."
+    }
+    {" "}
+    <a href={sourceById("nepalnews-lakes-2026-08-31")?.url}>{sourceById("nepalnews-lakes-2026-08-31")?.name}</a>
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "ताल" : "Lake"}</th>
+          <th>{ne ? "कहाँ" : "Where"}</th>
+          <th>{ne ? "अक्षांश, देशान्तर" : "Latitude, longitude"}</th>
+          <th>{ne ? "के लेखिएको छ" : "What is written"}</th>
+          <th>{ne ? "आजको सूचना" : "Notice today"}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          agri.lakes.map((lake) => (
+            <tr>
+              <td>{ne ? lake.name_ne : lake.name_en}</td>
+              <td>{ne ? lake.where_ne : lake.where_en}</td>
+              <td>
+                {lake.lat}, {lake.lng}
+              </td>
+              <td>
+                {ne ? lake.note_ne : lake.note_en}
+                {" "}
+                {
+                  lake.source_ids.map((id, index) => {
+                    const src = sourceById(id);
+                    if (!src) return null;
+                    return (
+                      <>
+                        {index > 0 ? " · " : ""}
+                        <a href={src.url}>{src.name}</a>
+                      </>
+                    );
+                  })
+                }
+              </td>
+              <td>{ne ? lake.alert_ne : lake.alert_en}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="note">
+    {
+      ne
+        ? "तालको पिनमा बाकस थप्दा प्रकाशित बिन्दु वरिपरि करिब ०.०२ डिग्रीको आयत बन्छ। त्यो तालको किनार होइन।"
+        : "A box from a lake pin is a rectangle of about 0.02° around the published point. It is not the lake shore."
+    }
+  </p>
+
+  <h2>{ne ? "समाचारमा आएको बाली क्षति" : "Crop damage reported in the news"}</h2>
+  <p>
+    {
+      ne
+        ? "हामीले खोलेका लेखमध्ये मिति र पाठ मिल्ने मात्र। असिनाको एउटा पृष्ठमा मिति मिलेन, त्यो राखिएन। राष्ट्रिय जोड छैन। २८ अक्टोबरमा मन्त्रालयका सचिवले राष्ट्रिय सभाको समितिलाई बाली क्षतिको लेखाजोखा टुंगिएको छैन भने।"
+        : "Only articles whose publication date and body agreed. One hail page had dates that did not agree, so it is not here. There is no national total. On 28 October the ministry secretary told a National Assembly committee the crop-loss assessment was not finished."
+    }
+    {" "}
+    <a href={sourceById("republica-agri-assessment-2026-10-28")?.url}>
+      {sourceById("republica-agri-assessment-2026-10-28")?.name}
+    </a>
+    {
+      ne
+        ? " त्यो समाचारमा हेक्टर वा रुपैयाँको राष्ट्रिय जोड छैन। शनिबार दिउँसोको वर्षाले थप क्षति लेखिएको समाचार यो स्क्यानमा थिएन।"
+        : " That story has no national hectare or rupee sum. No story opened in this scan had already counted Saturday afternoon’s rain as a finished loss."
+    }
+    {" "}
+    <a href={langPath(lang, "check", base)}>{ne ? "नापिएको पानी" : "Measured water"}</a>
+    {
+      ne
+        ? " अर्कै पृष्ठ हो। त्यहाँको मिलिमिटर यहाँको क्षति होइन।"
+        : " is a different page. Its millimetres are not a loss on this one."
+    }
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "प्रकार" : "Kind"}</th>
+          <th>{ne ? "कहिले" : "When"}</th>
+          <th>{ne ? "कहाँ" : "Place"}</th>
+          <th>{ne ? "के भनियो" : "What was said"}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          agri.reports.map((row) => {
+            const src = sourceById(row.source_id);
+            return (
+              <tr>
+                <td>{kindLabel(row.kind)}</td>
+                <td>{ne ? row.when_ne : row.when_en}</td>
+                <td>{ne ? row.place_ne : row.place_en}</td>
+                <td>
+                  {ne ? row.said_ne : row.said_en}
+                  {src ? (
+                    <>
+                      {" "}
+                      <a href={src.url}>{src.name}</a>
+                    </>
+                  ) : null}
+                </td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>{ne ? "उपग्रहले जाँच्ने ठाउँ" : "A place to check by satellite"}</h2>
+  <p>
+    {
+      ne
+        ? "नक्साको पूर्वदृश्य नासा भीर्स हो, ३० अक्टोबर २०२६, सयौं मिटर प्रति पिक्सेल। बादलले जमिन छोप्छ। यसले धानको क्षति देखाउँदैन। १० मिटरको निःशुल्क दृश्य कोपर्निकसमा छ। कोपर्निकसभित्र NDVI तह आफैं छान्नुहोस्। यो पृष्ठले NDVI तहको पहिचान लेख्दैन। त्योभन्दा मसिनो तस्बिर कम्पनीको पृष्ठमा किनिन्छ। स्थान बटनले क्लिकपछि मात्र ब्राउजरको अनुमति माग्छ। बाकस दुई क्लिकले थपिन्छ। किन्ने बटनले तपाईंलाई त्यो कम्पनीमा लैजान्छ।"
+        : "The map preview is NASA VIIRS for 30 October 2026, hundreds of metres a pixel. Cloud hides the ground. It does not show paddy damage. The free 10 m view is Copernicus. Inside Copernicus Browser, switch the layer to NDVI yourself. This page does not name an NDVI layer id. A finer image is bought on the company’s page. The location button asks the browser’s permission only after you click it. A box is two clicks. A buy button takes you to that company."
+    }
+  </p>
+  <div class="sat-controls">
+    <button type="button" class="btn secondary" id="crop-loc">{ne ? "मेरो स्थान" : "Use my location"}</button>
+    <button type="button" class="btn secondary" id="crop-draw" aria-pressed="false">{ne ? "बाकस थप्नुहोस्" : "Add a box"}</button>
+    <button type="button" class="btn secondary" id="crop-copy">{ne ? "निर्देशाङ्क कपी" : "Copy coordinates"}</button>
+  </div>
+  <p id="crop-status" class="note" role="status"></p>
+  <div id="crop-map" class="map" data-lang={lang}></div>
+  <ul id="crop-boxes" class="box-list"></ul>
+  <p class="note">
+    {
+      ne
+        ? "रातो बटन किन्ने पृष्ठ हो। खाली बटन निःशुल्क दृश्य हो। प्लानेटले साइन इनपछि निर्देशाङ्क टाइप गर्न भन्छ। स्काईवाच र यूपी४२ ले यो बाकस आफैं थाहा पाउँदैनन्। कपी गरेको अंक टाँस्नुहोस्। म्याक्सारको सार्वजनिक पृष्ठले बाकस लिँदैन, त्यसैले लिङ्क छैन।"
+        : "A red button is a purchase page. An outline button is a free view. Planet’s help says to type the coordinate after you sign in. SkyWatch and UP42 do not receive this box on their own. Paste the copied figures. Maxar’s public page does not take a box, so it is not linked."
+    }
+  </p>
+  <div id="crop-links" class="cta-row"></div>
+  <script id="crop-ui" type="application/json" set:html={JSON.stringify(ui)} />
+</Base>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script
+  is:inline
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script>
+  import "../../scripts/crops-map.ts";
+</script>

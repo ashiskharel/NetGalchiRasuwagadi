@@ -247,6 +247,70 @@
       "title_ne": "ताल, मनाङ, ३१ अक्टोबर ०६:२४ मा १०४.४ मिमी, विभाग उद्धृत",
       "url": "https://english.onlinekhabar.com/heavy-rain-in-manang.html",
       "date": "2026-10-31"
+    },
+    {
+      "id": "essd-glo-2026",
+      "name": "Earth System Science Data",
+      "title_en": "Glacial Lake Observatory annual dataset, Nepal and transboundary catchments, 2017–2024",
+      "title_ne": "हिमनदी ताल वेधशालाको वार्षिक तथ्याङ्क, नेपाल र सीमापार जलाधार, २०१७–२०२४",
+      "url": "https://doi.org/10.5194/essd-18-5143-2026",
+      "date": "2026-07-21"
+    },
+    {
+      "id": "nepalnews-lakes-2026-08-31",
+      "name": "Nepal News",
+      "title_en": "Explainer on the 47-lake shortlist, Tibet headwaters, and which lakes have early-warning kit",
+      "title_ne": "४७ तालको छोटो सूची, तिब्बतका मुहान, र कुन तालमा पूर्वसूचना छ भन्ने व्याख्या",
+      "url": "https://english.nepalnews.com/s/explainers/around-200-lakes-across-the-himalaya-could-burst-why-nepal-faces-a-slow-motion-emergency/",
+      "date": "2026-08-31"
+    },
+    {
+      "id": "worldbank-agri-npl",
+      "name": "World Bank",
+      "title_en": "Agricultural land, Nepal, indicator AG.LND.AGRI.K2, 37,441 km² in 2024",
+      "title_ne": "कृषि जमिन, नेपाल, सूचक AG.LND.AGRI.K2, २०२४ मा ३७,४४१ वर्ग किमि",
+      "url": "https://api.worldbank.org/v2/country/NPL/indicator/AG.LND.AGRI.K2?format=json",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "kathmandupost-crops-2026-10-09",
+      "name": "Kathmandu Post",
+      "title_en": "Storms and heavy rain damage crops in Kailali, Bardiya, Salyan and Dang",
+      "title_ne": "कैलाली, बर्दिया, सल्यान र दाङमा आँधी र भारी वर्षाले बाली क्षति",
+      "url": "https://kathmandupost.com/money/2026/10/09/storms-and-heavy-rain-devastate-crops-across-western-nepal",
+      "date": "2026-10-09"
+    },
+    {
+      "id": "ekantipur-palpa-2026-10-30",
+      "name": "Kantipur",
+      "title_en": "Palpa Agriculture Knowledge Centre preliminary loss from Asoj 8–11 rain",
+      "title_ne": "असोज ८–११ को वर्षाको पाल्पा कृषि ज्ञान केन्द्रको प्रारम्भिक क्षति",
+      "url": "https://ekantipur.com/lumbini-pradesh/2026/10/30/the-floods-in-the-second-week-of-asoj-caused-damage-to-the-rice-crop-alone-at-rs-143-million-details-are-finally-available-after-a-month-23-53.html",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "kathmandupost-rasuwa-veg-2026-10-30",
+      "name": "Kathmandu Post",
+      "title_en": "Vegetables rot in Aamachhodingmo after the 26 August Bhotekoshi flood cut the road",
+      "title_ne": "२६ अगस्टको भोटेकोशी बाढीले बाटो काटेपछि आमाछोदिङ्मोमा तरकारी कुहियो",
+      "url": "https://kathmandupost.com/money/2026/10/30/no-bridge-no-market-vegetables-rot-in-fields-after-bhotekoshi-floods",
+      "date": "2026-10-30"
+    },
+    {
+      "id": "republica-mfd-harvest-2026-10-31",
+      "name": "Republica",
+      "title_en": "MFD advice to avoid rice harvesting on 31 October and 1 November",
+      "title_ne": "३१ अक्टोबर र १ नोभेम्बरमा धान नथन्क्याउन महाशाखाको सल्लाह",
+      "url": "https://myrepublica.nagariknetwork.com/news/heavy-rainfall-likely-in-three-provinces-weather-to-improve-slightly-from-t-32-59.html",
+      "date": "2026-10-31"
+    },
+    {
+      "id": "republica-agri-assessment-2026-10-28",
+      "name": "Republica",
+      "title_en": "Ministry secretary tells a National Assembly committee the crop-loss assessment is not finished",
+      "title_ne": "बाली क्षतिको लेखाजोखा टुंगिएको छैन भन्ने मन्त्रालयका सचिवको भनाइ, राष्ट्रिय सभाको समितिमा",
+      "url": "https://myrepublica.nagariknetwork.com/news/parliamentary-committee-seeks-detailed-damage-data-from-flood-hit-areas-96-95.html",
+      "date": "2026-10-28"
     }
   ]
 }

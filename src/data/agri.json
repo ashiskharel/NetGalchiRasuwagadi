@@ -1,0 +1,113 @@
+{
+  "updated": "2026-10-31T07:52:41Z",
+  "land": {
+    "km2": 37441,
+    "year": 2024,
+    "indicator": "AG.LND.AGRI.K2",
+    "source_id": "worldbank-agri-npl"
+  },
+  "lakes": [
+    {
+      "id": "lower-barun",
+      "name_en": "Lower Barun",
+      "name_ne": "तल्लो बरुण",
+      "where_en": "Nepal",
+      "where_ne": "नेपाल",
+      "lat": 27.79792,
+      "lng": 87.08864,
+      "note_en": "Paper point GLO_87.08864_27.79792. Fastest of the ten expanding lakes in that paper: 0.0820 ± 0.0132 km² a year. Named, with Imja and Lumding, from the 2020 potentially-dangerous list. Each of those three is over 1.0 km².",
+      "note_ne": "पत्रको बिन्दु GLO_87.08864_27.79792। त्यस पत्रका दस विस्तारित तालमध्ये सबैभन्दा छिटो: वर्षको ०.०८२० ± ०.०१३२ वर्ग किमि। इम्जा र लुम्दिङसँगै २०२० को सम्भावित खतरनाक सूचीबाट नाम छ। ती तीनै १.० वर्ग किमिभन्दा ठूला छन्।",
+      "alert_en": "No live outburst notice for this lake was opened on 31 October 2026. A 2020 hazard class is not a warning for today.",
+      "alert_ne": "३१ अक्टोबर २०२६ मा यो तालको जीवित विस्फोट सूचना खोलिएन। २०२० को जोखिम वर्ग आजको चेतावनी होइन।",
+      "source_ids": ["essd-glo-2026"]
+    },
+    {
+      "id": "imja",
+      "name_en": "Imja",
+      "name_ne": "इम्जा",
+      "where_en": "Nepal",
+      "where_ne": "नेपाल",
+      "lat": 27.89838,
+      "lng": 86.92845,
+      "note_en": "Paper point GLO_86.92845_27.89838. Area grew 0.0551 ± 0.0112 km² a year in that paper. A 31 August 2026 explainer says the lake was lowered by about 3.4 m in 2016 and that formal early-warning kit covers Imja and Tsho Rolpa. This page has not checked whether those sirens are live.",
+      "note_ne": "पत्रको बिन्दु GLO_86.92845_27.89838। त्यस पत्रमा क्षेत्रफल वर्षको ०.०५५१ ± ०.०११२ वर्ग किमि बढ्यो। ३१ अगस्ट २०२६ को व्याख्यामा ताल २०१६ मा करिब ३.४ मिटर झारिएको र औपचारिक पूर्वसूचना इम्जा र छो रोल्पालाई समेट्छ भनिएको छ। ती साइरन आज चालु छन् कि छैनन् भनेर यो पृष्ठले जाँचेको छैन।",
+      "alert_en": "No live outburst notice for this lake was opened on 31 October 2026.",
+      "alert_ne": "३१ अक्टोबर २०२६ मा यो तालको जीवित विस्फोट सूचना खोलिएन।",
+      "source_ids": ["essd-glo-2026", "nepalnews-lakes-2026-08-31"]
+    },
+    {
+      "id": "lumding",
+      "name_en": "Lumding",
+      "name_ne": "लुम्दिङ",
+      "where_en": "Nepal",
+      "where_ne": "नेपाल",
+      "lat": 27.77762,
+      "lng": 86.59886,
+      "note_en": "Paper point GLO_86.59886_27.77762. Named with Lower Barun and Imja from the 2020 potentially-dangerous list. The paper does not print a separate yearly growth rate for this lake in the paragraph used here.",
+      "note_ne": "पत्रको बिन्दु GLO_86.59886_27.77762। तल्लो बरुण र इम्जासँगै २०२० को सम्भावित खतरनाक सूचीबाट नाम छ। यहाँ प्रयोग गरिएको अनुच्छेदमा यो तालको छुट्टै वार्षिक वृद्धि दर छैन।",
+      "alert_en": "No live outburst notice for this lake was opened on 31 October 2026. A 2020 hazard class is not a warning for today.",
+      "alert_ne": "३१ अक्टोबर २०२६ मा यो तालको जीवित विस्फोट सूचना खोलिएन। २०२० को जोखिम वर्ग आजको चेतावनी होइन।",
+      "source_ids": ["essd-glo-2026"]
+    },
+    {
+      "id": "rongbuk",
+      "name_en": "Rongbuk",
+      "name_ne": "रोङबुक",
+      "where_en": "Koshi basin in the paper, 5,219 m. The point is 28.11°N, north of the Everest crest.",
+      "where_ne": "पत्रको कोशी बेसिन, ५,२१९ मि। बिन्दु २८.११° उत्तर, सगरमाथा शिखरभन्दा उत्तर।",
+      "lat": 28.11165,
+      "lng": 86.86315,
+      "note_en": "Paper point GLO_86.86315_28.11165. The paper reports a strong expansion (R² > 0.93) and does not put this lake in the three it names from the 2020 potentially-dangerous list.",
+      "note_ne": "पत्रको बिन्दु GLO_86.86315_28.11165। पत्रले बलियो विस्तार (R² > ०.९३) लेख्छ र २०२० को सम्भावित खतरनाक सूचीबाट नाम गरेका तीन तालमा यसलाई राख्दैन।",
+      "alert_en": "No live outburst notice for this lake was opened on 31 October 2026.",
+      "alert_ne": "३१ अक्टोबर २०२६ मा यो तालको जीवित विस्फोट सूचना खोलिएन।",
+      "source_ids": ["essd-glo-2026"]
+    }
+  ],
+  "reports": [
+    {
+      "id": "west-rain-2026-10-09",
+      "kind": "reported",
+      "when_en": "Published 9 October 2026. Rain and wind over the previous two weeks, and 25–27 September.",
+      "when_ne": "प्रकाशित ९ अक्टोबर २०२६। अघिल्ला दुई हप्ताको वर्षा र हावा, र २५–२७ सेप्टेम्बर।",
+      "place_en": "Kailali, Bardiya, Salyan, Dang",
+      "place_ne": "कैलाली, बर्दिया, सल्यान, दाङ",
+      "said_en": "Kathmandu Post, from local agriculture offices, not a national total. Kailali Agriculture Knowledge Centre: about 65,000 hectares under paddy, an initial 296,100 tonnes, and output could fall 5 to 7 percent. Badhaiyatal: about 500 hectares and around Rs 50 million. Gulariya: about 10 percent destroyed and about 150 hectares inundated. Bansgadhi: around 10 percent. Salyan local governments: crops worth more than Rs 50 million. Kalimati ward 7: about 250 hectares of harvested paddy and about 300 families. These figures are not added together here.",
+      "said_ne": "कान्तिपुर पोस्ट, स्थानीय कृषि कार्यालयबाट, राष्ट्रिय जोड होइन। कैलाली कृषि ज्ञान केन्द्र: धान करिब ६५,००० हेक्टर, सुरुको अनुमान २,९६,१०० टन, उत्पादन ५ देखि ७ प्रतिशत घट्न सक्ने। बढैयाताल: करिब ५०० हेक्टर र करिब ५ करोड रुपैयाँ। गुलरिया: करिब १० प्रतिशत नाश र करिब १५० हेक्टर डुबान। बासगढी: करिब १० प्रतिशत। सल्यानका स्थानीय तह: ५ करोडभन्दा बढीको बाली। कालीमाटी वडा ७: काटिएको धान करिब २५० हेक्टर र करिब ३०० परिवार। ती अंक यहाँ जोडिएका छैनन्।",
+      "source_id": "kathmandupost-crops-2026-10-09"
+    },
+    {
+      "id": "palpa-2026-10-30",
+      "kind": "reported",
+      "when_en": "Published 30 October 2026, for Asoj 8–11, 2083. That is the earlier rain, not Cyclone Arnab.",
+      "when_ne": "प्रकाशित ३० अक्टोबर २०२६, असोज ८–११, २०८३ का लागि। त्यो अघिल्लो वर्षा हो, चक्रवात अर्नब होइन।",
+      "place_en": "Palpa",
+      "place_ne": "पाल्पा",
+      "said_en": "Agriculture Knowledge Centre Palpa, preliminary: paddy on 90 hectares, Rs 14.3 million. Vegetables, orange, millet, tomato, buckwheat and maize together 97.45 hectares. District preliminary total Rs 17,101,000. Farmers had not received relief when the article was published.",
+      "said_ne": "कृषि ज्ञान केन्द्र पाल्पा, प्रारम्भिक: ९० हेक्टर धान, १ करोड ४३ लाख रुपैयाँ। तरकारी, सुन्तला, कोदो, टमाटर, फापर र मकै गरी ९७.४५ हेक्टर। जिल्लाको प्रारम्भिक जम्मा १ करोड ७१ लाख १ हजार रुपैयाँ। लेख छापिँदा किसानले राहत पाएका थिएनन्।",
+      "source_id": "ekantipur-palpa-2026-10-30"
+    },
+    {
+      "id": "rasuwa-veg-2026-10-30",
+      "kind": "reported",
+      "when_en": "Published 30 October 2026. The cause in the article is the 26 August Bhotekoshi flood, more than two months earlier. Not Cyclone Arnab.",
+      "when_ne": "प्रकाशित ३० अक्टोबर २०२६। लेखको कारण २६ अगस्टको भोटेकोशी बाढी हो, दुई महिनाभन्दा अघि। चक्रवात अर्नब होइन।",
+      "place_en": "Aamachhodingmo, Rasuwa",
+      "place_ne": "आमाछोदिङ्मो, रसुवा",
+      "said_en": "Kathmandu Post. The rural municipality vice-chair said about 25 percent of the vegetables had already rotted and the rest were at risk. Wards 2–5 exported vegetables worth about Rs 40 million last year; that is last year’s sales, not this year’s loss. A trader reported the same 25 percent and a freight cost of Rs 16 per kg to Kathmandu. World Food Programme said it flew 8,000 kg from Galtang to Bidur on 9 October as a pilot, and had not continued.",
+      "said_ne": "कान्तिपुर पोस्ट। गाउँपालिकाकी उपाध्यक्षले तरकारीको करिब २५ प्रतिशत कुहिसकेको र बाँकी जोखिममा रहेको भनिन्। वडा २–५ ले गत वर्ष करिब ४ करोडको तरकारी निर्यात गरेका थिए। त्यो गत वर्षको बिक्री हो, यस वर्षको क्षति होइन। एक व्यापारीले पनि २५ प्रतिशत र काठमाडौंसम्म ढुवानी किलोको १६ रुपैयाँ भने। विश्व खाद्य कार्यक्रमले ९ अक्टोबरमा गलताङबाट बिदुरसम्म ८,००० किलो उडाएको पाइलट भन्यो, र त्यसपछि निरन्तरता दिएन।",
+      "source_id": "kathmandupost-rasuwa-veg-2026-10-30"
+    },
+    {
+      "id": "mfd-harvest-2026-10-31",
+      "kind": "advisory",
+      "when_en": "31 October 2026. Advisory for today and tomorrow. Not a damage count.",
+      "when_ne": "३१ अक्टोबर २०२६। आज र भोलिका लागि सल्लाह। क्षतिको अंक होइन।",
+      "place_en": "Nepal, Cyclone Arnab’s remnants",
+      "place_ne": "नेपाल, चक्रवात अर्नबको अवशेष",
+      "said_en": "Republica, quoting the Meteorological Forecasting Division: avoid agricultural work, including rice harvesting, on 31 October and 1 November. Moderate rain was already falling in many places. The impact was expected to weaken from Saturday afternoon. No hectare or rupee figure is in that story.",
+      "said_ne": "रिपब्लिका, मौसम पूर्वानुमान महाशाखालाई उद्धृत: ३१ अक्टोबर र १ नोभेम्बरमा धान थन्क्याउने लगायत कृषि काम नगर्न। धेरै ठाउँमा मध्यम वर्षा भइरहेको थियो। प्रभाव शनिबार दिउँसोबाट कमजोर हुने अपेक्षा। त्यो समाचारमा हेक्टर वा रुपैयाँको अंक छैन।",
+      "source_id": "republica-mfd-harvest-2026-10-31"
+    }
+  ]
+}
