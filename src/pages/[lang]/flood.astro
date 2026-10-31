@@ -92,11 +92,11 @@ const provinceLevels = provinces.map((p) => {
     }
   </p>
   <p class="note">
-    <a href={langPath(lang, "check", base)}>{ne ? "जमिन लग र पूर्वानुमान तालिका" : "Ground log and forecast tally"}</a>
+    <a href={langPath(lang, "check", base)}>{ne ? "भनिएको पानी, नापिएको पानी" : "Rain called, water measured"}</a>
     {
       ne
-        ? "। आज पूर्वतयारी मात्र। क्षतिको अंक छैन। अगस्टको रसुवा बाढी अर्कै घटना हो।"
-        : ". Today is preparedness only. No damage count. The August Rasuwa flood is a different incident."
+        ? "। शनिबार दिउँसोसम्मको विभाग स्टेशन। मोडेलको क्यालेन्डर दिन अझै बाँकी छ।"
+        : ". Department stations through Saturday afternoon. The model calendar days are not closed."
     }
   </p>
 
@@ -105,8 +105,8 @@ const provinceLevels = provinces.map((p) => {
     <p>
       {
         ne
-          ? "ECMWF IFS ले शुक्रबार र शनिबार बागमतीको चुरे/मकवानपुर कोष्ठमा ७१ र ११८ मिमी देखाउँछ (दुई दिन जोड्दा करिब १८९ मिमी)। ICON शनिबार ५३ मिमी मात्र हो, GFS लगभग सुक्खा। त्यही असहमति मेलाम्ची (शुक्रबार ECMWF ५७ मिमी, अरू मोडेल निकै कम) र रसुवा खोंच (५० मिमी) मा पनि छ। कोशी, नारायणी र कर्णालीको GloFAS बहाव शनिबारसम्म झर्दै छ। कोशीमा आइतबार करिब १,५०० घनमिटर/सेकेन्डको सानो उकालो छ, मनसुनको बाढी होइन। खतरा तह कोहीले पनि काटेको छैन। सतर्कमा परेका खोंच छोटा छन्।"
-          : "ECMWF IFS puts 71 mm on Friday and 118 mm on Saturday on the Bagmati Chure / Makwanpur cell, about 189 mm over those two days. ICON has 53 mm on Saturday and GFS is almost dry, so the models do not agree. The same split shows at Melamchi (ECMWF 57 mm Friday, the other models much lower) and in the Rasuwa gorge (50 mm). GloFAS discharge on the Koshi, Narayani and Karnali is falling through Saturday. The Koshi bumps to about 1,500 m³/s on Sunday, which is not a monsoon flood. No reach crosses its danger line. The reaches that do reach Watch empty quickly."
+          ? "ECMWF IFS ले शुक्रबार र शनिबार बागमती तराईको कोष्ठ (२७.२४° उत्तर, ८५.३८° पूर्व) मा ७१ र ११८ मिमी देखाउँछ (दुई दिन जोड्दा करिब १८९ मिमी)। ICON शनिबार ५३ मिमी हो। GFS त्यही कोष्ठमा शुक्रबार १५.६ र शनिबार ५.३ मिमी देखाउँछ। त्यही असहमति मेलाम्ची (शुक्रबार ECMWF ५७ मिमी, अरू मोडेल निकै कम) र रसुवा खोंच (५० मिमी) मा पनि छ। कोशी, नारायणी र कर्णालीको GloFAS बहाव शनिबारसम्म झर्दै छ। कोशीमा आइतबार करिब १,५०० घनमिटर/सेकेन्डको सानो उकालो छ, मनसुनको बाढी होइन। खतरा तह कोहीले पनि काटेको छैन। सतर्कमा परेका खोंच छोटा छन्।"
+          : "ECMWF IFS puts 71 mm on Friday and 118 mm on Saturday on the Bagmati Terai cell at 27.24°N 85.38°E, about 189 mm over those two days. ICON has 53 mm on Saturday. GFS has 15.6 mm on Friday and 5.3 mm on Saturday at that same cell, so the models do not agree. The same split shows at Melamchi (ECMWF 57 mm Friday, the other models much lower) and in the Rasuwa gorge (50 mm). GloFAS discharge on the Koshi, Narayani and Karnali is falling through Saturday. The Koshi bumps to about 1,500 m³/s on Sunday, which is not a monsoon flood. No reach crosses its danger line. The reaches that do reach Watch empty quickly."
       }
     </p>
   </div>

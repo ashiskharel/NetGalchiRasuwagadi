@@ -14,6 +14,8 @@ sources:
     url: https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001345
 ---
 
+Update, 31 October: the casualty table has been taken off this board. The check page now compares forecasts with measured rain and river level.
+
 Tonight’s ground log is preparedness. NDRRMA, on 27 October, said effects on Nepal begin the night of Thursday 29 October 2026 and asked people to stay on high alert. On 29 October the Disaster Response Command Post met. Department spokesperson Bibhuti Pokharel said the cyclone would have weakened before it reached Nepal, and that rainfall, snowfall and moderate winds were still possible. Agencies were told to stay ready to move. No team count was published.
 
 No Nepal figure for deaths, injuries, missing people, displacement, houses, evacuations, or named rescue teams is in the reports logged today. A blank cell is not zero. Evacuation and rescue-team figures from Indian states are not listed here. This is a different incident from the August 2026 Rasuwa Bhote Koshi flood and the Galchhi–Rasuwagadhi fiber cut.

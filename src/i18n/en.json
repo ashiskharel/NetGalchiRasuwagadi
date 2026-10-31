@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "Ground check",
     "tagline": "Official reports, rain, and which forecast held",
-    "description": "Public board that logs official ground reports beside rain and weather-model forecasts, and keeps a tally of which calls held. The August 2026 Galchhi–Rasuwagadhi fiber board stays on the same site.",
+    "description": "Public board that sets weather forecasts beside measured rain and river level, and keeps a tally of which calls held. The August 2026 Galchhi–Rasuwagadhi fiber board stays on the same site.",
     "notOfficial": "Not a warning from NDRRMA or the Department of Hydrology and Meteorology. Not affiliated with NDRRMA, DHM, NTC, Ncell, NTA, or China Telecom"
   },
   "nav": {
@@ -30,10 +30,10 @@
   "home": {
     "kicker": "Ground check",
     "title": "What the ground shows, and which forecast held",
-    "lead": "Official reports, the rain the models called, and a tally filled only after the day has happened. A blank cell is not zero. The address of this site is unchanged.",
-    "checkTitle": "Cyclone Arnab, tonight",
-    "checkBody": "Preparedness only. No official damage, casualty, evacuation, or deployment count is logged. The forecast is cloudy, with rain and snow still ahead. The cyclone center is not drawn into Nepal.",
-    "checkLink": "Ground log and forecast tally",
+    "lead": "Weather forecasts beside the rain and river level the Department has measured. A trailing 24-hour gauge is not a model’s calendar day. The address of this site is unchanged.",
+    "checkTitle": "Cyclone Arnab, Saturday afternoon",
+    "checkBody": "Taal in Manang has 125.6 mm in the last 24 hours. Chandrapur in Rautahat, nearest to the Bagmati Terai model point, has 28.8 mm. Bagmati at Khokana is on its warning line. Saturday’s model totals are not scored yet.",
+    "checkLink": "Rain called, water measured",
     "humanUpdate": "Last human update",
     "incident": "August 2026 fiber incident",
     "fiberNote": "The Rasuwa Bhote Koshi flood and the Galchhi–Rasuwagadhi fiber cut. A different incident from Cyclone Arnab. Both stay on this site.",
@@ -49,7 +49,7 @@
     "routingCtaNote": "Observed from RIPE RIS and linked to Hurricane Electric. China-side paths can be under-counted.",
     "mapCta": "Corridor map",
     "howToRead": "How to read this board",
-    "howToReadBody": "The check page is Cyclone Arnab. A blank cell there is not zero. Green/amber/red chips below are the August fiber incident, curated from public NTC and news reports, with an as-of time. The routing page is a separate, live observation of BGP — not a substitute for those field reports, and not a repaired fiber.",
+    "howToReadBody": "The check page compares weather forecasts with measured rain and river level. It does not keep a casualty count. Green/amber/red chips below are the August fiber incident, curated from public NTC and news reports, with an as-of time. The routing page is a separate, live observation of BGP — not a substitute for those field reports, and not a repaired fiber.",
     "starlinkNote": "Starlink is not a licensed public restoration path in Nepal. Notes below record policy status and rumoured use only.",
     "floodCta": "Cyclone Arnab: which rivers can leave their gorge in minutes, and where Friday–Saturday rain is actually showing up.",
     "floodLink": "River risk map"
@@ -171,11 +171,11 @@
     "title": "About this board",
     "lead": "Independent public information for ground reports, rain, and the northern fiber board. Not a warning from NDRRMA or the Department of Hydrology and Meteorology, and not a telecom operator.",
     "what": "What we publish",
-    "whatBody": "A ground log of official NDRRMA and Department lines, and a tally of which forecast held once a cited observation exists. Corridor and site status from named public sources. Live BGP as observed by RIPE RIS. A river page for Cyclone Arnab with cited flood clocks, open weather models, and an hourly cloud field. The public name is Ground check. The GitHub repository and the /NetGalchiRasuwagadi address stay as they are.",
+    "whatBody": "A comparison of weather forecasts with Department rain gauges and river gauges. Corridor and site status from named public sources. Live BGP as observed by RIPE RIS. A river page for Cyclone Arnab with cited flood clocks, open weather models, and an hourly cloud field. The public name is Ground check. The GitHub repository and the /NetGalchiRasuwagadi address stay as they are.",
     "whatNot": "What we do not claim",
-    "whatNotBody": "We do not speak for NDRRMA, the Department of Hydrology and Meteorology, Nepal Telecom, Ncell, NTA, China Telecom, or Starlink. We do not invent casualty or deployment counts. A blank cell is not zero. We do not mark the Galchhi–Rasuwagadhi fiber up from BGP. We do not publish how to run unlicensed satellite terminals. Starlink remains unlicensed in Nepal as of June 2026.",
+    "whatNotBody": "We do not speak for NDRRMA, the Department of Hydrology and Meteorology, Nepal Telecom, Ncell, NTA, China Telecom, or Starlink. This check page does not publish casualty or deployment counts. We do not score one weather model against another, or a hill gauge against a Terai model cell. We do not mark the Galchhi–Rasuwagadhi fiber up from BGP. We do not publish how to run unlicensed satellite terminals. Starlink remains unlicensed in Nepal as of June 2026.",
     "method": "Method",
-    "methodBody": "Human-edited JSON and Markdown in git. Every status chip has an as-of time and a source. The ground log is src/data/ground.json. The forecast tally is src/data/tally.json. A verdict waits for a cited observation after the claim’s window. One model is not scored against another. Routing is fetched in your browser from RIPEstat (sourceapp=netgalchi-rasuwagadhi). HE.net has no public JSON API, so we link to it rather than scrape it.",
+    "methodBody": "Human-edited JSON and Markdown in git. Every status chip has an as-of time and a source. The forecast comparison is src/data/tally.json. A verdict waits until the place and the clock match a cited measurement. Routing is fetched in your browser from RIPEstat (sourceapp=netgalchi-rasuwagadhi). HE.net has no public JSON API, so we link to it rather than scrape it.",
     "update": "How to update the board",
     "updateBody": "Edit src/data/*.json or add a paired English/Nepali bulletin, then open a pull request. Verified field reports can be copied into sites.json by a maintainer — they are never merged automatically.",
     "asns": "ASN glossary",

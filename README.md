@@ -19,8 +19,7 @@ Status chips, corridor segments, and tower lists are git files — not scraped.
 | `src/data/sites.json` | Named towers / repeaters |
 | `src/data/asns.json` | Tracked ASNs |
 | `src/data/sources.json` | Citations |
-| `src/data/ground.json` | Arnab ground log. A null is not zero. Do not invent casualties. |
-| `src/data/tally.json` | Forecast tally. Verdicts wait for a cited observation. |
+| `src/data/tally.json` | Forecast against measured rain and river level. Do not invent a gauge. Do not score mismatched clocks. |
 | `src/content/bulletins/{en,ne}/*.md` | Paired bulletins (`pair:` must match) |
 | `src/i18n/{en,ne}.json` | UI strings |
 
@@ -38,7 +37,7 @@ The daily Action **Daily restoration draft** commits `drafts/` around 07:00 NPT 
 
 **Satellites** (`/en/satellites`): NASA GIBS daily true-color of the valley from 25 Aug 2026, plus live ISS / Landsat / Terra / Aqua / NOAA positions. Not people or phones. Starlink overhead is not shown as a service.
 
-**Check** (`/en/check`): Cyclone Arnab ground log from 29 October through 7 November 2026, and the forecast tally. Today is preparedness. Later days stay empty until an official line is logged. One model is not scored against another.
+**Check** (`/en/check`): Cyclone Arnab forecasts beside DHM rain gauges and river gauges. No casualty table. A trailing 24-hour total is not a model calendar day. One model is not scored against another.
 
 **Rivers** (`/en/flood`): Cyclone Arnab desk. How fast a rise leaves a narrow gorge or an embanked bend, 24-hour rain lines for those reaches, ECMWF IFS against GFS and ICON, a 2006–2025 ERA5 October comparison, and GloFAS only as a rise/fall signal. Not a DHM warning. Refresh with `npm run flood` (add `--era5` to refetch the 20-year archive). The committed `src/data/flood-watch.json` is the snapshot the site builds.
 

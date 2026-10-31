@@ -2,9 +2,8 @@
 import Base from "../../layouts/Base.astro";
 import { LANGS, isLang, type Lang } from "../../lib/config";
 import { langPath } from "../../lib/i18n";
-import { formatNpt, formatNptDate } from "../../lib/status";
+import { formatNpt } from "../../lib/status";
 import { sourceById } from "../../lib/lookup";
-import ground from "../../data/ground.json";
 import tally from "../../data/tally.json";
 
 export function getStaticPaths() {
@@ -16,10 +15,6 @@ if (!isLang(langParam)) throw new Error("bad lang");
 const lang: Lang = langParam;
 const ne = lang === "ne";
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-
-const phases: Record<string, string> = ne
-  ? { preparedness: "पूर्वतयारी", open: "अवधि खुला", later: "पछिको हप्ता" }
-  : { preparedness: "Preparedness", open: "Window open", later: "Week after" };
 
 const verdicts: Record<string, string> = ne
   ? { pending: "बाँकी", holding: "अहिलेसम्म", hit: "मिल्यो", miss: "मिलेन", partial: "आंशिक" }
@@ -43,135 +38,136 @@ function sources(ids: string[]) {
   return ids.map((id) => sourceById(id)).filter((src) => src !== undefined);
 }
 
-const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | "evacuated" | "teams"; en: string; np: string }[] = [
-  { key: "dead", en: "Dead", np: "मृत्यु" },
-  { key: "injured", en: "Injured", np: "घाइते" },
-  { key: "missing", en: "Missing", np: "बेपत्ता" },
-  { key: "displaced", en: "Displaced", np: "विस्थापित" },
-  { key: "houses", en: "Houses", np: "घर" },
-  { key: "evacuated", en: "Evacuated", np: "स्थानान्तरण" },
-  { key: "teams", en: "Teams named", np: "नाम भएका टोली" },
-];
+function rainBand(mm: number): string {
+  if (ne) {
+    if (mm < 10) return "हल्का";
+    if (mm < 50) return "मध्यम";
+    if (mm < 100) return "भारी";
+    if (mm < 200) return "अति भारी";
+    return "अत्यन्त भारी";
+  }
+  if (mm < 10) return "Light";
+  if (mm < 50) return "Moderate";
+  if (mm < 100) return "Heavy";
+  if (mm < 200) return "Very heavy";
+  return "Extremely heavy";
+}
+
+function metres(n: number | null): string {
+  if (n === null) return "—";
+  return String(n);
+}
 ---
 
 <Base
   lang={lang}
-  title={ne ? "जमिन लग र पूर्वानुमान तालिका" : "Ground log and forecast tally"}
+  title={ne ? "भनिएको पानी, नापिएको पानी" : "Rain called, water measured"}
   path="check"
   description={
     ne
-      ? "चक्रवात अर्नब: आधिकारिक पूर्वतयारी, खाली क्षति तालिका, र कुन पूर्वानुमान अझै बाँकी छ।"
-      : "Cyclone Arnab: official preparedness, a blank damage table, and which forecasts are still unscored."
+      ? "चक्रवात अर्नब: मौसम पूर्वानुमान र विभागले नापेको वर्षा तथा नदीको जलसतह।"
+      : "Cyclone Arnab: weather forecasts beside rain and river level measured by the Department."
   }
 >
-  <p class="kicker">{ne ? "चक्रवात अर्नब · २९ अक्टोबर–७ नोभेम्बर २०२६" : "Cyclone Arnab · 29 October–7 November 2026"}</p>
-  <h1>{ne ? "जमिन के देखाउँछ, र कुन पूर्वानुमान मिल्यो" : "What the ground shows, and which forecast held"}</h1>
+  <p class="kicker">{ne ? "चक्रवात अर्नब · ३१ अक्टोबर २०२६" : "Cyclone Arnab · 31 October 2026"}</p>
+  <h1>{ne ? "भनिएको पानी, नापिएको पानी" : "Rain called, water measured"}</h1>
   <p class="lead">
     {
       ne
-        ? "आधिकारिक रिपोर्ट, मोडेलले भनेको पानी, र दिन बितेपछि मात्र भरिने तालिका। यो विभागको चेतावनी होइन। यो प्राधिकरणको आदेश होइन।"
-        : "Official reports, the rain the models called, and a tally filled only after the day has happened. This is not a Department warning. This is not an NDRRMA order."
+        ? "पूर्वानुमान एकातिर, विभागको वर्षामापक र नदी गेज अर्कोतिर। शनिबारको दिउँसो अझै बाँकी छ। यो विभागको चेतावनी होइन।"
+        : "The forecast on one side, Department rain gauges and river gauges on the other. Saturday afternoon is still open. This is not a Department warning."
     }
   </p>
   <p class="meta-line">
-    {ne ? "यो लग लेखिएको" : "Log written"}:{" "}
-    <time datetime={ground.updated}>{formatNpt(ground.updated, lang)}</time>
+    {ne ? "लेखिएको" : "Written"}:{" "}
+    <time datetime={tally.updated}>{formatNpt(tally.updated, lang)}</time>
     {" "}· NPT
   </p>
-  <div class="callout">
-    <p>{ne ? ground.separate_ne : ground.separate_en}</p>
-    <p class="note">
-      {
-        ne
-          ? "साइटको सार्वजनिक नाम जमिन जाँच हो। ठेगाना र GitHub रिपो उही छन्: /NetGalchiRasuwagadi।"
-          : "The public name is Ground check. The address and the GitHub repo stay /NetGalchiRasuwagadi."
-      }
-    </p>
-  </div>
-
-  <h2>{ne ? "आज, २९ अक्टोबर — पूर्वतयारी" : "Today, 29 October — preparedness"}</h2>
-  <p>{ne ? ground.days[0].note_ne : ground.days[0].note_en}</p>
-  <p>
-    <a href={langPath(lang, "flood", base)}>{ne ? "नदी र बादलको तस्बिर" : "River and cloud picture"}</a>
+  <p class="note">
     {
       ne
-        ? "। बादलको क्षेत्र मोडेलको हो। ट्र्याक भारतको पूर्वानुमान न्यूनचापमा रोकिन्छ।"
-        : ". The cloud field is the model’s. The track stops at the forecast depression in India."
+        ? "मृत्यु, घाइते, स्थानान्तरण र परिचालनको तालिका यो पृष्ठबाट हटाइएको छ। अगस्ट २०२६ को रसुवा बाढी र गल्छी–रसुवागढी फाइबर कटाइ अर्कै घटना हुन्। ती अवस्था पृष्ठमा छन्।"
+        : "The casualty, evacuation, and deployment table has been taken off this page. The August 2026 Rasuwa flood and the Galchhi–Rasuwagadhi fiber cut are a different incident. They stay on the status page."
     }
   </p>
-  <p class="note">
-    {ne ? "स्रोत:" : "Sources:"}
+
+  <h2>{ne ? "पछिल्लो २४ घण्टाको वर्षा" : "Rain in the last 24 hours"}</h2>
+  <p>
     {
-      sources(ground.days[0].source_ids).map((src, i) => (
-        <>
-          {i > 0 ? " · " : " "}
-          <a href={src.url}>{src.name}</a>
-        </>
-      ))
+      ne
+        ? "विभागको वर्षा निगरानी। समय स्टेशनको हो, करिब १३:०० नेपाली समय। वर्ग विभागको २४ घण्टे शब्द हो: मध्यम १० देखि ५० भन्दा कम, भारी ५० देखि १०० भन्दा कम, अति भारी १०० देखि २०० भन्दा कम। यो सूची छानिएको हो, हरेक स्टेशन होइन। पछिल्लो २४ घण्टा मोडेलको क्यालेन्डर दिन होइन।"
+        : "Department rainfall watch. The time is the station’s, about 13:00 Nepal time. Bands are the Department’s 24-hour words: moderate from 10 up to 50, heavy from 50 up to 100, very heavy from 100 up to 200. This list is a selection, not every station. A trailing 24 hours is not a model calendar day."
     }
   </p>
-
-  <h2>{ne ? "जमिन लग" : "Ground log"}</h2>
-  <p class="note">{ne ? ground.blank_ne : ground.blank_en}</p>
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
-          <th>{ne ? "मिति" : "Date"}</th>
-          <th>{ne ? "अवस्था" : "Phase"}</th>
-          {columns.map((col) => <th>{ne ? col.np : col.en}</th>)}
+          <th>{ne ? "स्टेशन" : "Station"}</th>
+          <th>{ne ? "जिल्ला" : "District"}</th>
+          <th>{ne ? "२४ घण्टा, मिमी" : "24 h, mm"}</th>
+          <th>{ne ? "वर्ग" : "Band"}</th>
+          <th>{ne ? "समय" : "Time"}</th>
         </tr>
       </thead>
       <tbody>
         {
-          ground.days.map((day) => (
+          tally.gauges.map((gauge) => (
             <tr>
-              <td><time datetime={day.date}>{formatNptDate(day.date, lang)}</time></td>
-              <td>{phases[day.phase] ?? day.phase}</td>
-              {columns.map((col) => <td>{day[col.key] === null ? "—" : day[col.key]}</td>)}
+              <td>{ne ? gauge.name_ne : gauge.name_en}</td>
+              <td>{ne ? gauge.district_ne : gauge.district_en}</td>
+              <td>{gauge.mm_24h}</td>
+              <td>{rainBand(gauge.mm_24h)}</td>
+              <td><time datetime={gauge.as_of}>{formatNpt(gauge.as_of, lang)}</time></td>
             </tr>
           ))
         }
       </tbody>
     </table>
   </div>
+  <p class="note">
+    {
+      ne
+        ? "अनलाइनखबरले त्यही बिहान ०६:२४ मा ताल, मनाङ १०४.४ मिमी लेखेको छ। दिउँसोको फिडमा ताल १२५.६ मिमी छ।"
+        : "OnlineKhabar reported Tal, Manang at 104.4 mm at 06:24 the same morning. The afternoon feed has Taal at 125.6 mm."
+    }
+    {" "}
+    <a href="https://english.onlinekhabar.com/heavy-rain-in-manang.html">OnlineKhabar</a>
+    {" · "}
+    <a href="https://dhm.gov.np/hydrology/rainfall-watch-map">DHM</a>
+  </p>
+
+  <h2>{ne ? "नदीमा नापिएको पानी" : "Water measured in the rivers"}</h2>
+  <p>
+    {
+      ne
+        ? "उही विभाग फिड, करिब १३:००। अंक उनीहरूले छापेको हो। चेतावनी रेखा विभागको हो। कोशी चतरा र नारायणघाट पुलको नारायणीले यो तानिमा जलसतह पठाएनन्।"
+        : "The same Department feed, about 13:00. The figures are what they print. The warning line is theirs. Koshi at Chatara and Narayani at Narayanghat Bridge sent no level in this pull."
+    }
+  </p>
   <div class="table-wrap">
     <table>
-      <caption class="note">{ne ? "प्रत्येक दिन के लेखिएको छ" : "What is logged for each day"}</caption>
       <thead>
         <tr>
-          <th>{ne ? "मिति" : "Date"}</th>
-          <th>{ne ? "लेख" : "Note"}</th>
+          <th>{ne ? "गेज" : "Gauge"}</th>
+          <th>{ne ? "जलसतह, मि" : "Level, m"}</th>
+          <th>{ne ? "चेतावनी" : "Warning"}</th>
+          <th>{ne ? "खतरा" : "Danger"}</th>
+          <th>{ne ? "अवस्था" : "State"}</th>
         </tr>
       </thead>
       <tbody>
         {
-          ground.days.map((day) => (
+          tally.rivers.map((river) => (
             <tr>
-              <td><time datetime={day.date}>{formatNptDate(day.date, lang)}</time></td>
               <td>
-                {
-                  day.date === ground.days[0].date
-                    ? ne
-                      ? "पूरा लेख माथिको «आज» खण्डमा छ।"
-                      : "The full note is in Today, above."
-                    : ne
-                      ? day.note_ne
-                      : day.note_en
-                }
-                {
-                  day.source_ids.length > 0 && (
-                    <p class="asof">
-                      {sources(day.source_ids).map((src, i) => (
-                        <>
-                          {i > 0 ? " · " : ""}
-                          <a href={src.url}>{src.name}</a>
-                        </>
-                      ))}
-                    </p>
-                  )
-                }
+                {ne ? river.name_ne : river.name_en}
+                <span class="note"> · {ne ? river.district_ne : river.district_en}</span>
               </td>
+              <td>{metres(river.metres)}</td>
+              <td>{metres(river.warning_m)}</td>
+              <td>{metres(river.danger_m)}</td>
+              <td>{ne ? river.state_ne : river.state_en}</td>
             </tr>
           ))
         }
@@ -179,11 +175,10 @@ const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | 
     </table>
   </div>
 
-  <h2>{ne ? "पूर्वानुमान तालिका" : "Forecast tally"}</h2>
+  <h2>{ne ? "पूर्वानुमान र नाप" : "Forecast against the measurement"}</h2>
   <p>{ne ? tally.rules_ne : tally.rules_en}</p>
   <div class="table-wrap">
     <table>
-      <caption class="note">{ne ? "अहिलेको गन्ती। अंक शून्य पनि गन्ती हो, ड्यास होइन।" : "Count right now. A zero here is a count of rows, not a dash in the log."}</caption>
       <thead>
         <tr>
           {countLabels.map((item) => <th>{ne ? item.np : item.en}</th>)}
@@ -203,8 +198,8 @@ const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | 
       <thead>
         <tr>
           <th>{ne ? "को" : "Who"}</th>
-          <th>{ne ? "दाबी" : "Claim"}</th>
-          <th>{ne ? "अवधि" : "Window"}</th>
+          <th>{ne ? "भनिएको" : "Called"}</th>
+          <th>{ne ? "नापिएको" : "Measured"}</th>
           <th>{ne ? "नतिजा" : "Verdict"}</th>
         </tr>
       </thead>
@@ -214,7 +209,11 @@ const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | 
             <tr>
               <td>{ne ? row.who_ne : row.who_en}</td>
               <td>
-                {ne ? row.claim_ne : row.claim_en}
+                {ne ? row.predicted_ne : row.predicted_en}
+                <p class="asof">{ne ? row.window_ne : row.window_en}</p>
+              </td>
+              <td>
+                {ne ? row.measured_ne : row.measured_en}
                 <p class="asof">
                   {sources(row.source_ids).map((src, i) => (
                     <>
@@ -224,7 +223,6 @@ const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | 
                   ))}
                 </p>
               </td>
-              <td>{ne ? row.window_ne : row.window_en}</td>
               <td>
                 <span class:list={["badge", row.verdict]}>{verdicts[row.verdict] ?? row.verdict}</span>
                 <p class="note">{ne ? row.why_ne : row.why_en}</p>
@@ -238,12 +236,14 @@ const columns: { key: "dead" | "injured" | "missing" | "displaced" | "houses" | 
   <p class="note">
     {
       ne
-        ? "नतिजा हातले src/data/tally.json मा लेखिन्छ, उद्धृत अवलोकन आएपछि। मोडेल आफैँले आफैँलाई मिल्यो भन्दैन।"
-        : "Verdicts are written by hand in src/data/tally.json after a cited observation arrives. A model does not score itself."
+        ? "नतिजा हातले src/data/tally.json मा लेखिन्छ। मोडेल आफैँले आफैँलाई मिल्यो भन्दैन।"
+        : "Verdicts are written by hand in src/data/tally.json. A model does not score itself."
     }
   </p>
   <p>
-    <a href={langPath(lang, "bulletin/2026-10-29-arnab-preparedness", base)}>
+    <a href={langPath(lang, "flood", base)}>{ne ? "नदी र बादल" : "Rivers and clouds"}</a>
+    {" · "}
+    <a href={langPath(lang, "bulletin/2026-10-31-measured-water", base)}>
       {ne ? "आजको बुलेटिन" : "Today’s bulletin"}
     </a>
   </p>
