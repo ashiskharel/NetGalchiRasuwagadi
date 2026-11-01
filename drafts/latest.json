@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-10-31T12:44",
-  "fetched_utc": "2026-10-31T06:59:26.150Z",
+  "fetched_npt": "2026-11-01T13:16",
+  "fetched_utc": "2026-11-01T07:31:11.865Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,8 +60,8 @@
       ]
     },
     "paths": {
-      "north": 133,
-      "south": 230,
+      "north": 129,
+      "south": 226,
       "other": 0,
       "unique": [
         {
@@ -78,7 +78,7 @@
             23764,
             23752
           ],
-          "n": 7,
+          "n": 6,
           "klass": "north"
         },
         {
@@ -156,15 +156,6 @@
         },
         {
           "hops": [
-            3491,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
             48185,
             9498,
             23752
@@ -207,11 +198,20 @@
           ],
           "n": 3,
           "klass": "south"
+        },
+        {
+          "hops": [
+            13030,
+            23764,
+            23752
+          ],
+          "n": 2,
+          "klass": "north"
         }
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-10-31T06:59:21.600000"
+    "latestPathTime": "2026-11-01T07:31:08.510000"
   },
   "news": [
     {
@@ -220,13 +220,7 @@
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "Dog trapped in Budhigandaki flood rescued after 20 days",
-          "link": "https://english.onlinekhabar.com/dog-trapped-in-budhigandaki.html",
-          "pubDate": "Fri, 30 Oct 2026 09:43:23 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "onlinekhabar-ne",
@@ -236,9 +230,9 @@
       "ok": true,
       "items": [
         {
-          "title": "बूढीगण्डकी बाढी प्रभावित क्षेत्रमा ड्रोनमार्फत् पुर्‍याइयो राहत",
-          "link": "https://www.onlinekhabar.com/2026/10/2047043/relief-delivered-via-drone-to-budhigandaki-flood-affected-areas",
-          "pubDate": "Fri, 30 Oct 2026 15:56:25 +0000"
+          "title": "बाढीपीडितको घर सरसफाइमा खटियो अन्टुफको श्रमदान टोली",
+          "link": "https://www.onlinekhabar.com/2026/11/2048371/antufs-shramdan-team-mobilized-to-clean-flood-victims-homes",
+          "pubDate": "Sun, 01 Nov 2026 07:01:30 +0000"
         }
       ]
     },
@@ -258,23 +252,18 @@
       "ok": true,
       "items": [
         {
+          "title": "Sunkoshi Marin contract cancellation defers Madhesh irrigation dream",
+          "link": "https://kathmandupost.com/money/2026/11/01/sunkoshi-marin-contract-cancellation-defers-madhesh-irrigation-dream",
+          "pubDate": ""
+        },
+        {
+          "title": "Rising Kulekhani reservoir prompts flood alert along Bagmati river",
+          "link": "https://kathmandupost.com/national/2026/10/31/rising-kulekhani-reservoir-prompts-flood-alert-along-bagmati-river",
+          "pubDate": ""
+        },
+        {
           "title": "Five-day fire ritual next week for Bhotekoshi flood dead and missing",
           "link": "https://kathmandupost.com/national/2026/10/31/five-day-fire-ritual-next-week-for-bhotekoshi-flood-dead-and-missing",
-          "pubDate": ""
-        },
-        {
-          "title": "No bridge, no market: Vegetables rot in fields after Bhotekoshi floods",
-          "link": "https://kathmandupost.com/money/2026/10/30/no-bridge-no-market-vegetables-rot-in-fields-after-bhotekoshi-floods",
-          "pubDate": ""
-        },
-        {
-          "title": "Bhutan glacial lake outburst triggers flood, no injuries reported",
-          "link": "https://kathmandupost.com/world/2026/10/30/bhutan-glacial-lake-outburst-triggers-flood-no-injuries-reported",
-          "pubDate": ""
-        },
-        {
-          "title": "Nepal plans temporary bridges to reopen flood-hit Rasuwagadhi border crossing",
-          "link": "https://kathmandupost.com/money/2026/10/30/nepal-plans-temporary-bridges-to-reopen-flood-hit-rasuwagadhi-border-crossing",
           "pubDate": ""
         }
       ]
@@ -285,7 +274,13 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "बाढी पहिरोबाट मङ्गलाका १६६ परिवार प्रभावित",
+          "link": "https://www.ratopati.com/story/602586/166-families-in-mangala-affected-by-floods-and-landslides",
+          "pubDate": "Sun, 01 Nov 2026 05:25:28 +0000"
+        }
+      ]
     },
     {
       "id": "gnews-en",
@@ -310,14 +305,14 @@
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVJfOTVQZFp6Z195aW9WZmtZcGdDc3ZwcGh2cUFvVTZwTWIxVTlvRFJsSmJIbzJzdVVfMmhCc0gwazYxby1ocXlyaDhxeXo4UUdXQk1sTFB4RnNnUks1LXdSMFY1S3MtcXU3VDlKcmk3UEVWdDZxeXZwRXdJYWUwdTlHeVFmak9iWThkLVpVVHRtLWsyYVpGd05yeVpiX0Ricm1Bc0NOQmR6ZEJFTVFHR2NHVEg5dUFtak9kMFJTaDUtZw?oc=5",
           "pubDate": "Wed, 30 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
+          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Mobile services restored in flood-affected areas - The Rising Nepal",
@@ -340,9 +335,9 @@
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
-          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "NT works to restore services in flood-hit areas - The Rising Nepal",
@@ -350,9 +345,9 @@
           "pubDate": "Fri, 28 Aug 2026 01:22:39 GMT"
         },
         {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores mobile services up to Nepal-China border - Khabarhub",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nX1BCWFIzbDJsSXVaNzlqNlpHbTA1UWVUaUp1b1pIVHRFM3FxVWhIcl9FQzNwYW8ybHN2SzJ2R2FwdVBQMjRpcUFZeXZvVHFUeXd0MDRLblE?oc=5",
+          "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT"
         }
       ]
     }
