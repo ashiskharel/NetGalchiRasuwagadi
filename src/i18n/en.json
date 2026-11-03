@@ -19,7 +19,8 @@
     "skip": "Skip to content",
     "language": "Language",
     "en": "English",
-    "ne": "नेपाली"
+    "ne": "नेपाली",
+    "hydro": "Hydropower"
   },
   "status": {
     "up": "Up",
@@ -56,7 +57,10 @@
     "floodLink": "River risk map",
     "cropsTitle": "Crops, lakes, and a satellite check",
     "cropsBody": "Cited glacial-lake counts, crop losses named in news, and a box you draw. A rain gauge is not a loss. The free view opens first. A buy button leaves this site for the company’s page.",
-    "cropsLink": "Open the crop check"
+    "cropsLink": "Open the crop check",
+    "hydroTitle": "Hydropower projects and NEPSE",
+    "hydroBody": "Every DoED-listed hydropower project since Pharping (1911), mapped, with the NEPSE-listed hydro companies and their yearly close, change and dividends.",
+    "hydroLink": "Open the hydropower page"
   },
   "corridor": {
     "title": "Corridor and sites",

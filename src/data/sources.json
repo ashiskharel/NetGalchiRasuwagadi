@@ -311,6 +311,110 @@
       "title_ne": "बाली क्षतिको लेखाजोखा टुंगिएको छैन भन्ने मन्त्रालयका सचिवको भनाइ, राष्ट्रिय सभाको समितिमा",
       "url": "https://myrepublica.nagariknetwork.com/news/parliamentary-committee-seeks-detailed-damage-data-from-flood-hit-areas-96-95.html",
       "date": "2026-10-28"
+    },
+    {
+      "id": "doed-ops-gt1",
+      "name": "DoED",
+      "title_en": "Operating hydropower plants above 1 MW",
+      "title_ne": "१ मेगावाटभन्दा माथिका सञ्चालित जलविद्युत केन्द्र",
+      "url": "https://www.doed.gov.np/pages/powerplantsmorethan1",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-ops-lt1",
+      "name": "DoED",
+      "title_en": "Operating hydropower plants below 1 MW",
+      "title_ne": "१ मेगावाटभन्दा कमका सञ्चालित जलविद्युत केन्द्र",
+      "url": "https://www.doed.gov.np/pages/powerplantslessthan1",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-gen-licence",
+      "name": "DoED",
+      "title_en": "Hydropower generation licences",
+      "title_ne": "जलविद्युत उत्पादन अनुमतिपत्र",
+      "url": "https://www.doed.gov.np/pages/clhydromorethan1",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-survey-gt1",
+      "name": "DoED",
+      "title_en": "Hydropower survey licences above 1 MW",
+      "title_ne": "१ मेगावाटमाथि सर्वेक्षण अनुमतिपत्र",
+      "url": "https://www.doed.gov.np/pages/hydromorethan1",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-survey-lt1",
+      "name": "DoED",
+      "title_en": "Hydropower survey licences below 1 MW",
+      "title_ne": "१ मेगावाटमुनि सर्वेक्षण अनुमतिपत्र",
+      "url": "https://www.doed.gov.np/pages/hydrolessthan1",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-survey-cancelled",
+      "name": "DoED",
+      "title_en": "Cancelled survey licences",
+      "title_ne": "रद्द सर्वेक्षण अनुमतिपत्र",
+      "url": "https://www.doed.gov.np/pages/slc",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-gen-cancelled",
+      "name": "DoED",
+      "title_en": "Cancelled generation licences",
+      "title_ne": "रद्द उत्पादन अनुमतिपत्र",
+      "url": "https://www.doed.gov.np/pages/glc",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-gen-app-cancelled",
+      "name": "DoED",
+      "title_en": "Cancelled generation licence applications",
+      "title_ne": "रद्द उत्पादन अनुमतिपत्र निवेदन",
+      "url": "https://www.doed.gov.np/pages/generationcanceled",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "doed-gon-studied",
+      "name": "DoED",
+      "title_en": "Projects studied by the Government of Nepal",
+      "title_ne": "नेपाल सरकारले अध्ययन गरेका आयोजना",
+      "url": "https://www.doed.gov.np/pages/gonstudied",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "wiki-power-stations-nepal",
+      "name": "Wikipedia",
+      "title_en": "List of power stations in Nepal",
+      "title_ne": "नेपालका विद्युत केन्द्रहरूको सूची",
+      "url": "https://en.wikipedia.org/wiki/List_of_power_stations_in_Nepal",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "wiki-pharping",
+      "name": "Wikipedia",
+      "title_en": "Pharping Hydropower Station",
+      "title_ne": "फर्पिङ जलविद्युत केन्द्र",
+      "url": "https://en.wikipedia.org/wiki/Pharping_Hydropower_Station",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "merolagani-chart",
+      "name": "MeroLagani",
+      "title_en": "Daily NEPSE price history (TradingView chart feed) and dividend history per symbol",
+      "title_ne": "प्रति कम्पनी नेप्से दैनिक मूल्य र लाभांश इतिहास",
+      "url": "https://merolagani.com/CompanyDetail.aspx?symbol=CHCL",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "nepse-company-list",
+      "name": "NEPSE",
+      "title_en": "Listed companies and listing dates",
+      "title_ne": "सूचीकृत कम्पनी र सूचीकरण मिति",
+      "url": "https://www.nepalstock.com/company",
+      "date": "2026-11-03"
     }
   ]
 }

@@ -61,6 +61,13 @@ const bulletins = (await getCollection("bulletins"))
       <a class="btn" href={langPath(lang, "crops", base)}>{messages.home.cropsLink}</a>
     </p>
   </div>
+  <div class="callout">
+    <strong>{messages.home.hydroTitle}</strong>
+    <p>{messages.home.hydroBody}</p>
+    <p>
+      <a class="btn" href={langPath(lang, "hydro", base)}>{messages.home.hydroLink}</a>
+    </p>
+  </div>
   <p class="meta-line">
     {messages.home.humanUpdate}:{" "}
     <time datetime={snapshot.updated}>{formatNpt(snapshot.updated, lang)}</time>
