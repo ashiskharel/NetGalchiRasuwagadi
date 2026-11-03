@@ -1,0 +1,258 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LANGS, isLang, type Lang } from "../../lib/config";
+import { formatNpt } from "../../lib/status";
+import { sourceById } from "../../lib/lookup";
+import hydro from "../../data/hydro.json";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) throw new Error("bad lang");
+const lang: Lang = langParam;
+const ne = lang === "ne";
+
+type Perf = (typeof hydro.performance)[number];
+const perfBy = new Map<string, Perf[]>();
+for (const p of hydro.performance) {
+  const list = perfBy.get(p.symbol) ?? [];
+  list.push(p);
+  perfBy.set(p.symbol, list);
+}
+const operating = hydro.projects
+  .filter((p) => p.status.startsWith("operating") || p.status.startsWith("historic"))
+  .sort((a, b) => (a.cod_year_ad_approx ?? 9999) - (b.cod_year_ad_approx ?? 9999));
+const companies = [...hydro.companies].sort((a, b) =>
+  String(a.listing_date || "9999").localeCompare(String(b.listing_date || "9999")),
+);
+const statuses = [...new Set(hydro.projects.map((p) => p.status))];
+const s = hydro.summary;
+const T = ["verified", "partial", "risky"] as const;
+const tierLabel = (t: string) =>
+  ne
+    ? ({ verified: "प्रमाणित", partial: "आंशिक", risky: "जोखिमपूर्ण", unlinked: "नजोडिएको" } as Record<string, string>)[t] ?? t
+    : ({ verified: "Verified", partial: "Partial", risky: "Risky", unlinked: "Not linked" } as Record<string, string>)[t] ?? t;
+const tierN = (t: string) => hydro.companies.filter((c) => c.tier === t).length;
+const pct = (v: number | null) => (v == null ? "—" : `${v > 0 ? "+" : ""}${v.toFixed(1)}%`);
+const doedSrc = ["doed-ops-gt1", "doed-ops-lt1", "doed-gen-licence", "doed-survey-gt1", "doed-gon-studied", "wiki-pharping"]
+  .map((id) => sourceById(id))
+  .filter((x) => x);
+---
+
+<Base
+  lang={lang}
+  title={ne ? "नेपालका जलविद्युत आयोजना र नेप्से" : "Nepal hydropower projects and NEPSE"}
+  path="hydro"
+  description={
+    ne
+      ? "फर्पिङ (१९११) देखि आजसम्मका जलविद्युत आयोजना, नक्सा, र नेप्सेमा सूचीकृत जलविद्युत कम्पनीको वार्षिक कारोबार।"
+      : "Hydropower projects from Pharping (1911) to today, mapped, compared with hydropower companies listed on NEPSE and their yearly trading."
+  }
+>
+  <p class="kicker">{ne ? "जलविद्युत · ३ नोभेम्बर २०२६" : "Hydropower · 3 November 2026"}</p>
+  <h1>{ne ? "नेपालका जलविद्युत आयोजना र नेप्से" : "Nepal hydropower projects and NEPSE"}</h1>
+  <p class="lead">
+    {
+      ne
+        ? `विद्युत विकास विभागका तालिकामा ${s.projects_total} आयोजना: ${s.operating} सञ्चालनमा (${s.operating_mw} मेगावाट)। नेप्सेमा ${s.companies} जलविद्युत कम्पनी सूचीकृत छन्; ${s.operating_linked_to_nepse} सञ्चालित आयोजना (${s.operating_mw_linked} मेगावाट) सूचीकृत कम्पनीसँग नामबाट जोडिए।`
+        : `The Department of Electricity Development tables list ${s.projects_total} projects: ${s.operating} operating (${s.operating_mw} MW). NEPSE lists ${s.companies} hydropower companies; ${s.operating_linked_to_nepse} operating projects (${s.operating_mw_linked} MW) match a listed company by promoter name.`
+    }
+  </p>
+  <p class="meta-line">
+    {ne ? "लेखिएको" : "Written"}: <time datetime={hydro.updated}>{formatNpt(hydro.updated, lang)}</time> · NPT
+  </p>
+  <p class="note">
+    {
+      ne
+        ? "विभागको निर्देशाङ्क अनुमतिपत्र क्षेत्रको बीचबिन्दु हो, पावरहाउस होइन। सञ्चालन वर्ष विक्रम संवतबाट अनुमानित हो। सूचीकृत कम्पनीसँग जोडाइ नामको मिलानमा आधारित छ, त्यसैले गल्ती हुन सक्छ। खाली कोठा भनेको भेटिएन हो, शून्य होइन। यो लगानी सल्लाह होइन।"
+        : "DoED coordinates are the midpoint of the licence area, not the powerhouse. Commercial-operation years are approximate conversions from Bikram Sambat. Company links come from name matching and may be wrong. A blank means not found, not zero. This is not investment advice."
+    }
+  </p>
+  <p>
+    {doedSrc.map((src, i) => <>{i > 0 ? " · " : ""}<a href={src!.url}>{src!.name}: {ne ? src!.title_ne : src!.title_en}</a></>)}
+  </p>
+
+  <h2>{ne ? "विश्वसनीयता तह" : "Credibility tiers"}</h2>
+  <ul class="tier-legend">
+    <li><span class="tier-chip tier-verified">{tierLabel("verified")} ({tierN("verified")})</span> {ne
+      ? "स्वामित्व, ऋणदाता बैंक र प्राविधिक अध्ययन तीनै छन्; कम्तीमा एक प्राथमिक स्रोत (SEBON विवरणपत्र, विद्युत विकास विभाग, नेविप्रा, नेप्से, सरकारी साइट वा कम्पनीको वार्षिक प्रतिवेदन/विवरणपत्र PDF) र आधा वा बढी स्रोत प्राथमिक।"
+      : "Ownership, lenders and technical studies all present; at least one primary source (SEBON prospectus, DoED, NEA, NEPSE, other .gov.np, or a company annual-report/prospectus PDF), and at least half of all sources are primary."}</li>
+    <li><span class="tier-chip tier-partial">{tierLabel("partial")} ({tierN("partial")})</span> {ne
+      ? "तीनमध्ये कम्तीमा दुई क्षेत्र छन्, तर कुनै क्षेत्र छुट्यो वा स्रोत धेरैजसो समाचार जस्ता द्वितीयक छन्।"
+      : "At least two of the three fields present, but one is missing or sources are mostly secondary (news sites)."}</li>
+    <li><span class="tier-chip tier-risky">{tierLabel("risky")} ({tierN("risky")})</span> {ne
+      ? "तीनमध्ये एक वा शून्य क्षेत्र मात्र, स्रोत छैन, वा स्रोत ब्लग/लिंक्डइन/सर्च सारांश मात्र।"
+      : "Only one or none of the three fields, no sources, or only blog/LinkedIn/search-summary sources."}</li>
+    <li><span class="tier-chip tier-unlinked">{tierLabel("unlinked")}</span> {ne
+      ? "नक्सामा मात्र: कुनै सूचीकृत कम्पनीसँग नजोडिएको आयोजना (विभागको तालिका मात्र)। धेरै कम्पनीसँग जोडिएको आयोजनाले सबैभन्दा कमजोर तह लिन्छ।"
+      : "Map only: project not linked to a listed company (DoED table only). A project linked to several companies takes the weakest tier."}</li>
+  </ul>
+
+  <h2>{ne ? "नक्सा" : "Map"}</h2>
+  <div class="cta-row">
+    <label>
+      {ne ? "अवस्था" : "Status"}{" "}
+      <select id="hydro-filter">
+        <option value="operating">{ne ? "सञ्चालित (ऐतिहासिक सहित)" : "Operating (incl. historic)"}</option>
+        <option value="all">{ne ? "सबै" : "All"}</option>
+        {statuses.map((st) => <option value={st}>{st}</option>)}
+      </select>
+    </label>
+    <label><input type="checkbox" id="hydro-listed" /> {ne ? "नेप्से कम्पनी मात्र" : "NEPSE-linked only"}</label>
+    <label>
+      {ne ? "तह" : "Tier"}{" "}
+      <select id="hydro-tier">
+        <option value="all">{ne ? "सबै" : "All"}</option>
+        {[...T, "unlinked"].map((t) => <option value={t}>{tierLabel(t)}</option>)}
+      </select>
+    </label>
+    <label>
+      {ne ? "रङ" : "Colour by"}{" "}
+      <select id="hydro-colorby">
+        <option value="tier">{ne ? "तह" : "Tier"}</option>
+        <option value="status">{ne ? "अवस्था" : "Status"}</option>
+      </select>
+    </label>
+    <span class="note">{ne ? "बिन्दु" : "Points"}: <span id="hydro-count">0</span></span>
+  </div>
+  <div id="hydro-map" class="map"></div>
+
+  <h2>{ne ? "नेप्सेमा सूचीकृत जलविद्युत कम्पनी" : "Hydropower companies listed on NEPSE"}</h2>
+  <p class="note">
+    {
+      ne
+        ? "वार्षिक बन्द: आर्थिक वर्ष अन्त्य (करिब १५ जुलाई) अघिको अन्तिम कारोबार दिन। प्रतिशत परिवर्तन बोनस/हकप्रद समायोजित मूल्यमा। मूल्य २०१० देखि मात्र उपलब्ध; लाभांश पछिल्ला करिब १० वर्षको।"
+        : "Yearly close is the last trading day before the fiscal-year end (about 15 July). The % change uses the bonus/right-adjusted price. Prices are available from about 2010 only; dividends cover the last ~10 fiscal years."
+    }{" "}
+    <a href={sourceById("merolagani-chart")?.url}>MeroLagani</a> · <a href={sourceById("nepse-company-list")?.url}>NEPSE</a>
+  </p>
+  <div class="cta-row">
+    <label>
+      {ne ? "तह" : "Tier"}{" "}
+      <select id="company-tier">
+        <option value="all">{ne ? "सबै" : "All"}</option>
+        {T.map((t) => <option value={t}>{tierLabel(t)}</option>)}
+      </select>
+    </label>
+    <span class="note">{ne ? "कम्पनी" : "Companies"}: <span id="company-count">{companies.length}</span></span>
+  </div>
+  {
+    companies.map((c) => {
+      const rows = perfBy.get(c.symbol) ?? [];
+      return (
+        <details class={`callout tier-row tier-${c.tier}`} data-tier-row data-tier={c.tier}>
+          <summary>
+            <span class={`tier-chip tier-${c.tier}`}>{tierLabel(c.tier)}</span> <strong>{c.symbol}</strong> — {c.company} · {ne ? "सूचीकरण" : "listed"} {c.listing_date || "—"}
+            {c.ltp ? ` · LTP ${c.ltp}` : ""}
+          </summary>
+          <p><strong>{ne ? "आयोजना" : "Projects"}:</strong> {c.projects || (ne ? "भेटिएन" : "not found")}</p>
+          {c.former_names && <p><strong>{ne ? "पुराना नाम" : "Name changes"}:</strong> {c.former_names}</p>}
+          {c.ownership && <p><strong>{ne ? "स्वामित्व/साझेदारी" : "Ownership / partners"}:</strong> {c.ownership}</p>}
+          {c.financing && <p><strong>{ne ? "ऋण दिने बैंक" : "Financing"}:</strong> {c.financing}</p>}
+          {c.studies && <p><strong>{ne ? "प्राविधिक अध्ययन" : "Technical studies"}:</strong> {c.studies}</p>}
+          {c.contractors && <p><strong>{ne ? "ठेकेदार" : "Contractors"}:</strong> {c.contractors}</p>}
+          {c.prospectus && <p><a href={c.prospectus} target="_blank" rel="noopener">{ne ? "SEBON विवरणपत्र" : "SEBON prospectus (PDF)"}</a></p>}
+          {c.sources.length > 0 && (
+            <p class="note">{c.sources.map((u, i) => <>{i > 0 ? " · " : ""}<a href={u}>[{i + 1}]</a></>)}</p>
+          )}
+          {rows.length > 0 ? (
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>{ne ? "आ.व. (वि.सं.)" : "FY (BS)"}</th>
+                    <th>{ne ? "अन्तिम दिन" : "Last trade"}</th>
+                    <th>{ne ? "बन्द" : "Close"}</th>
+                    <th>{ne ? "परिवर्तन (समायोजित)" : "Change (adj.)"}</th>
+                    <th>{ne ? "उच्च / न्यून" : "High / low"}</th>
+                    <th>{ne ? "नगद / बोनस / हक" : "Cash / bonus / right"}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((r) => (
+                    <tr>
+                      <td>{r.fy_bs}</td>
+                      <td>{r.last_trade_date}</td>
+                      <td>{r.close}</td>
+                      <td>{pct(r.pct_change_adj)}</td>
+                      <td>{r.high ?? "—"} / {r.low ?? "—"}</td>
+                      <td>{[r.cash_div, r.bonus, r.right].map((x) => x || "—").join(" / ")}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <p class="note">{ne ? "मूल्य इतिहास भेटिएन।" : "Price history not found."}</p>
+          )}
+        </details>
+      );
+    })
+  }
+
+  <h2>{ne ? "सञ्चालित केन्द्र (सञ्चालन वर्षअनुसार)" : "Operating plants, by year of operation"}</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>{ne ? "तह · नाम" : "Tier · Name"}</th>
+          <th>MW</th>
+          <th>{ne ? "जिल्ला" : "District"}</th>
+          <th>{ne ? "प्रवर्द्धक" : "Promoter"}</th>
+          <th>{ne ? "सञ्चालन (ई.सं. अनुमानित)" : "COD (AD, approx.)"}</th>
+          <th>NEPSE</th>
+          <th>{ne ? "स्रोत" : "Source"}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          operating.map((p) => (
+            <tr class={`tier-row tier-${p.tier}`}>
+              <td><span class={`tier-chip tier-${p.tier}`}>{tierLabel(p.tier)}</span> {p.name}{p.former_names ? ` (${p.former_names})` : ""}</td>
+              <td>{p.capacity_mw ?? "—"}</td>
+              <td>{p.district ?? "—"}</td>
+              <td>{p.promoter ?? "—"}</td>
+              <td>{p.cod_year_ad_approx ?? "—"}</td>
+              <td>{p.nepse_symbol || "—"}</td>
+              <td><a href={sourceById(p.source_id)?.url}>{sourceById(p.source_id)?.name}</a></td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>
+
+<style is:global>
+  .tier-legend { list-style: none; padding: 0; }
+  .tier-legend li { margin: 0.4rem 0; }
+  .tier-chip { display: inline-block; padding: 0 0.45rem; border-radius: 0.25rem; font-size: 0.8em; font-weight: 600; white-space: nowrap; }
+  .tier-chip.tier-verified { color: var(--up); background: var(--up-bg); }
+  .tier-chip.tier-partial { color: var(--degraded); background: var(--degraded-bg); }
+  .tier-chip.tier-risky { color: var(--down); background: var(--down-bg); }
+  .tier-chip.tier-unlinked { color: var(--unknown); background: var(--unknown-bg); }
+  details.tier-row { border-left: 4px solid var(--line); }
+  details.tier-verified { border-left-color: var(--up); }
+  details.tier-partial { border-left-color: var(--degraded); }
+  details.tier-risky { border-left-color: var(--down); }
+  tr.tier-verified td:first-child { box-shadow: inset 4px 0 0 var(--up); }
+  tr.tier-partial td:first-child { box-shadow: inset 4px 0 0 var(--degraded); }
+  tr.tier-risky td:first-child { box-shadow: inset 4px 0 0 var(--down); }
+</style>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script
+  is:inline
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+<script>
+  import "../../scripts/hydro-map.ts";
+</script>
