@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-05T13:39",
-  "fetched_utc": "2026-11-05T07:54:16.181Z",
+  "fetched_npt": "2026-11-06T13:39",
+  "fetched_utc": "2026-11-06T07:54:55.734Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,8 +60,8 @@
       ]
     },
     "paths": {
-      "north": 129,
-      "south": 235,
+      "north": 130,
+      "south": 234,
       "other": 0,
       "unique": [
         {
@@ -212,7 +212,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-05T07:54:12.340000"
+    "latestPathTime": "2026-11-06T07:54:51.960000"
   },
   "news": [
     {
@@ -223,9 +223,14 @@
       "ok": true,
       "items": [
         {
-          "title": "Korala border point faces repeated disruptions from floods, snowfall",
-          "link": "https://english.onlinekhabar.com/korala-border-point-faces-repeated-disruptions-from-floods-snowfall.html",
-          "pubDate": "Thu, 05 Nov 2026 05:57:14 +0000"
+          "title": "Bailey bridges in flood-prone areas could be dangerous, says Department of Roads chief",
+          "link": "https://english.onlinekhabar.com/bailey-bridges-in-flood-prone-areas-could-be-dangerous-says-department-of-roads-chief.html",
+          "pubDate": "Fri, 06 Nov 2026 06:41:27 +0000"
+        },
+        {
+          "title": "Government begins process to raise to $5 billion for Bhotekoshi-Trishuli reconstruction",
+          "link": "https://english.onlinekhabar.com/government-process-raise-5-billion.html",
+          "pubDate": "Fri, 06 Nov 2026 06:17:53 +0000"
         }
       ]
     },
@@ -237,19 +242,14 @@
       "ok": true,
       "items": [
         {
-          "title": "थातथलो फर्किने छटपटीमा होल्डिङ सेन्टरका बाढीपीडित (तस्वीरहरू)",
-          "link": "https://www.onlinekhabar.com/2026/11/2051526/flood-victims-at-the-holding-center-in-a-hurry-to-return-to-their-homes-photos",
-          "pubDate": "Thu, 05 Nov 2026 07:47:37 +0000"
+          "title": "भोटेकोशी-त्रिशूली विपद् : पुनर्निर्माणका लागि ५ अर्ब डलर जुटाउने सरकारको तयारी",
+          "link": "https://www.onlinekhabar.com/2026/11/2052301/bhotekoshi-trishuli-disaster-government-preparing-to-raise-5-billion-for-reconstruction",
+          "pubDate": "Fri, 06 Nov 2026 06:05:15 +0000"
         },
         {
-          "title": "कोरला नाका : कहिले बाढीपहिरोले छेक्छ, कहिले हिउँले",
-          "link": "https://www.onlinekhabar.com/2026/11/2051323/korala-border-sometimes-blocked-by-floods-and-landslides-sometimes-by-snow",
-          "pubDate": "Thu, 05 Nov 2026 04:08:29 +0000"
-        },
-        {
-          "title": "बाढीले बगर बनाएको खेतमा बदामखेती",
-          "link": "https://www.onlinekhabar.com/2026/11/2051240/almond-farming-in-a-field-devastated-by-floods",
-          "pubDate": "Thu, 05 Nov 2026 00:43:35 +0000"
+          "title": "भोटेकोशी-त्रिशूली विपद्सम्बन्धी संसदीय विशेष समितिको बैठक बस्दै",
+          "link": "https://www.onlinekhabar.com/2026/11/2052214/meeting-of-parliamentary-special-committee-on-bhotekoshi-trishuli-disaster-underway-2",
+          "pubDate": "Fri, 06 Nov 2026 01:30:48 +0000"
         }
       ]
     },
@@ -267,18 +267,7 @@
       "url": "https://kathmandupost.com/rss",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "Vikram Misri says India ready to help rebuild Nepal’s flood-hit infrastructure",
-          "link": "https://kathmandupost.com/national/2026/11/04/vikram-misri-says-india-ready-to-help-rebuild-nepal-s-flood-hit-infrastructure",
-          "pubDate": ""
-        },
-        {
-          "title": "Floods push back Siddhababa tunnel opening to mid-January",
-          "link": "https://kathmandupost.com/national/2026/11/04/floods-push-back-siddhababa-tunnel-opening-to-mid-january",
-          "pubDate": ""
-        }
-      ]
+      "items": []
     },
     {
       "id": "ratopati",
@@ -286,13 +275,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "भोटेकोशी बाढीको उदाहरण दिँदै पर्यटनमन्त्री पौडेलले गराए जलवायुको असरबारे विश्वको ध्यानाकर्षण",
-          "link": "https://www.ratopati.com/story/603480/tourism-minister-poudel-draws-world-attention-to-climate-change-impacts-citing-bhotekoshi-flood-as-an-example",
-          "pubDate": "Thu, 05 Nov 2026 06:21:20 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
@@ -312,11 +295,6 @@
           "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
         },
         {
-          "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFMwdzJHQnFMVTd0Mi11YWJ6UmlpMV8wVWRxU0kzNkZvVFZWVGZMZmFaR1g3ejBPdlp2TlNsck5LWE5BZGVqX0Z3Wi1PUFBqdkluTnYzTmtVZ2dCTENPZVBJOWE5Zmx6am1uMEczUk9FMDdma2RDOUtrNy0wcHBabGpuUHVUV0g5V0kzZF90a29TNUZIcGcwalZWaUNSbnB6eEU4cWJxcFE1VlJIVk5CNDZoRzVPV1dnaEx1STlFWHA1TXFyZW1N?oc=5",
-          "pubDate": "Wed, 30 Sep 2026 15:17:00 GMT"
-        },
-        {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
@@ -327,9 +305,9 @@
           "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Khabarhub",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40MUU0OF8za1RtVXRLOUtvSjhfTVBkZExaeGxPcjlsSTY0N2YtZElSd1VwdVJ1cHo2UVFNUkxscjlTa2ZwTjlIMG4tWkxBSjJEY2lfNlZpS3Q?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFMwdzJHQnFMVTd0Mi11YWJ6UmlpMV8wVWRxU0kzNkZvVFZWVGZMZmFaR1g3ejBPdlp2TlNsck5LWE5BZGVqX0Z3Wi1PUFBqdkluTnYzTmtVZ2dCTENPZVBJOWE5Zmx6am1uMEczUk9FMDdma2RDOUtrNy0wcHBabGpuUHVUV0g5V0kzZF90a29TNUZIcGcwalZWaUNSbnB6eEU4cWJxcFE1VlJIVk5CNDZoRzVPV1dnaEx1STlFWHA1TXFyZW1N?oc=5",
+          "pubDate": "Wed, 30 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
@@ -337,14 +315,24 @@
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
         },
         {
+          "title": "NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE56LUplMEYyaVNVNWxIZnR3RVc2a282WGZDcEpQejRhS1o2V0h2S0x5d0FGVVp5REl0Mzd1cmVzNFNCekt2ektsdGktb0xrZ1B3?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
+        },
+        {
           "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom, Ncell restoring services in flood-hit areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1keTl2RkhJcERRcFNsbjBjRTBSeU54QnZPQVZEX3d1ZnRWMWFVcHBPb0sxSGVORjM0TF96bEpjRXhoTUxGVzdGaDc3ejhnX05s?oc=5",
-          "pubDate": "Thu, 10 Sep 2026 00:46:10 GMT"
+          "title": "Nepal Telecom restores services at Trishuli-3A site - Khabarhub",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ONG1tMnZkRjZEMmY0ZWRCR0ZOcllGU3Q5UHZyT3d6Qk1nNnZCckJOQ3JCcHJCN0hpd0REMXlXLWowM1U3VjlrZHNrRHMyYm1NX3NfVkdFem4?oc=5",
+          "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzlXVmlwUnF5VEh2TTl4OUdwREZMOEFUTk9pRmx6a2ZxZ3I5Q2N5Wkd2LXFNREZnUGZsUlE3dnNsckpKdGJVVFVFOTJMcmp3U1JtMFg3X2lySUlWbW9iRFplckdhUDZhbi1tWjFrV25rSEpGRVExWmdSZGR3a1hJWGJldVBBUEQxUGo0UXVOQjZJYzJzbnZQODAtbDYyampiUGRORktqSmItdzJ4NDJvNkdBUnd6V2YwbnFGeXhWTQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Employees Donate Over NPR 20 Million For Bhote Koshi Flood Victims - Hamro Patro",
@@ -352,14 +340,9 @@
           "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom Extends Free Communication Services in Flood-Affected Areas - Ratopati",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYl96d3l1THhGSDd2czZBNkFQSXlGYlJYV1paZVROM2pKdEotdlJqam16WWMwZXFfM3hlWVlMa0dLZ2xaYTFyYWdscVQxcGltVjRNdWhhNXd6VnN2RmRJRDN6cnVnN1hraV80dm9OYldZQlhULTYxYUhHZnh1RUw0YmxUZ0djOWdYOWNPdjZuSXROeVJXY3hqQlFEQ3lRTjNrTnVVZ0x0NTQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 09:08:09 GMT"
-        },
-        {
-          "title": "Nepal Telecom restores service at 7 flood-hit sites in Rasuwa, Nuwakot - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZDhMOGJJWnZ4U0laQnN3LWdMRHEwS0YtQnhfVWJWSGE2U0Q5QTA2WndXWlJ1eDRDTEt4cXVqMU82dFA5b2xtUFc1WDJxQ2ZkX2hwY3BfY2UyV0F5eTVxaU9SeDAtcGtaeV90Q09UaFlpSm5lbzd2NldlSklVRFprZWZINndtR2VrakJ5WGdicGdYZ2J1T2J5aF92X19FOU1FdGlOZU9UYU5uaTQ0aFFNTGZtWFlxWHotSVBqd21n?oc=5",
-          "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom, Ncell restoring services in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1keTl2RkhJcERRcFNsbjBjRTBSeU54QnZPQVZEX3d1ZnRWMWFVcHBPb0sxSGVORjM0TF96bEpjRXhoTUxGVzdGaDc3ejhnX05s?oc=5",
+          "pubDate": "Thu, 10 Sep 2026 00:46:10 GMT"
         }
       ]
     }
