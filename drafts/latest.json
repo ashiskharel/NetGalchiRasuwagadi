@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-07T12:54",
-  "fetched_utc": "2026-11-07T07:09:35.597Z",
+  "fetched_npt": "2026-11-08T13:03",
+  "fetched_utc": "2026-11-08T07:18:31.199Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -40,179 +40,20 @@
     }
   ],
   "ris": {
-    "ok": true,
-    "error": null,
+    "ok": false,
+    "error": "neighbours: 500 https://stat.ripe.net/data/asn-neighbours/data.json?resource=AS23752&sourceapp=netgalchi-rasuwagadhi",
     "neighbours": {
-      "left": [
-        23764,
-        4755,
-        6453,
-        9498
-      ],
-      "right": [
-        131341,
-        136794,
-        139022,
-        142008,
-        14789,
-        45353,
-        58456
-      ]
+      "left": [],
+      "right": []
     },
     "paths": {
-      "north": 129,
-      "south": 233,
+      "north": 0,
+      "south": 0,
       "other": 0,
-      "unique": [
-        {
-          "hops": [
-            23764,
-            23752
-          ],
-          "n": 8,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            8218,
-            23764,
-            23752
-          ],
-          "n": 7,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            24482,
-            9498,
-            23752
-          ],
-          "n": 6,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            6461,
-            9498,
-            23752
-          ],
-          "n": 5,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            9002,
-            6453,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            24482,
-            23764,
-            23752
-          ],
-          "n": 4,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            14840,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            199524,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            47147,
-            3320,
-            6453,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            2914,
-            23764,
-            23752
-          ],
-          "n": 3,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            3491,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            48185,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            3214,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            49544,
-            23764,
-            23752
-          ],
-          "n": 3,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            35280,
-            6453,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            34019,
-            3303,
-            6453,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        }
-      ]
+      "unique": []
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-07T07:09:31.560000"
+    "latestPathTime": null
   },
   "news": [
     {
@@ -223,9 +64,19 @@
       "ok": true,
       "items": [
         {
-          "title": "Nepali Congress to provide warm clothes and mental health counselling to flood-hit communities",
-          "link": "https://english.onlinekhabar.com/nepali-congress-to-provide-warm-clothes-and-mental-health-counselling-to-flood-hit-communities.html",
-          "pubDate": "Fri, 06 Nov 2026 11:35:12 +0000"
+          "title": "Uttargaya confirms 655 deaths linked to Rasuwa Flood",
+          "link": "https://english.onlinekhabar.com/uttargaya-confirms-655-deaths-linked-to-rasuwa-flood.html",
+          "pubDate": "Sun, 08 Nov 2026 07:14:18 +0000"
+        },
+        {
+          "title": "Disaster authority publishes verified details of 2,294 people missing in Bhotekoshi floods",
+          "link": "https://english.onlinekhabar.com/ndrrma-details-missing-bhotekoshi-floods.html",
+          "pubDate": "Sun, 08 Nov 2026 06:04:06 +0000"
+        },
+        {
+          "title": "Leo, deployed in Bhotekoshi flood rescue, named best police canine",
+          "link": "https://english.onlinekhabar.com/leo-named-best-police-canine.html",
+          "pubDate": "Sun, 08 Nov 2026 05:46:48 +0000"
         }
       ]
     },
@@ -237,14 +88,14 @@
       "ok": true,
       "items": [
         {
-          "title": "रसुवा बाढी : अर्थतन्त्रमा पौने ५ खर्ब क्षति, पुनरुत्थानमा ७ खर्ब आवश्यक",
-          "link": "https://www.onlinekhabar.com/2026/11/2053002/rasuwa-flood-500-million-rupees-damage-to-economy-700-million-rupees-needed-for-reconstruction",
-          "pubDate": "Fri, 06 Nov 2026 15:43:28 +0000"
+          "title": "रसुवाको उत्तरगयामा बाढीबाट हताहती हुनेको संख्या यकिन",
+          "link": "https://www.onlinekhabar.com/2026/11/2053848/number-of-casualties-from-floods-in-uttargaya-rasuwa-confirmed",
+          "pubDate": "Sun, 08 Nov 2026 07:02:57 +0000"
         },
         {
-          "title": "कस्तो छ विदुरको अस्थायी सेल्टरमा बसेका बाढीपीडितको अवस्था ? (फोटो फिचर)",
-          "link": "https://www.onlinekhabar.com/2026/11/2052676/what-is-the-condition-of-flood-victims-living-in-temporary-shelters-in-bidur-photo-feature",
-          "pubDate": "Fri, 06 Nov 2026 15:35:18 +0000"
+          "title": "भोटेकोशी बाढीको उद्धारमा खटिएको लियो बन्यो सर्वोत्कृष्ट केनाइन",
+          "link": "https://www.onlinekhabar.com/2026/11/2053752/leo-who-was-deployed-to-rescue-the-bhotekoshi-flood-became-the-best-canine",
+          "pubDate": "Sun, 08 Nov 2026 05:33:50 +0000"
         }
       ]
     },
@@ -262,7 +113,18 @@
       "url": "https://kathmandupost.com/rss",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "From flood-hit areas to crime scenes, Nepal’s police dogs sniff out vital clues",
+          "link": "https://kathmandupost.com/national/2026/11/08/from-flood-hit-areas-to-crime-scenes-nepal-s-police-dogs-sniff-out-vital-clues",
+          "pubDate": ""
+        },
+        {
+          "title": "A pontoon bridge unused for 13 years finds a new home in Dhading",
+          "link": "https://kathmandupost.com/national/2026/11/07/rusted-pontoon-bridge-left-unused-for-13-years-shifted-from-bardiya-to-be-installed-at-flood-hit-phurkekhola-dhading",
+          "pubDate": ""
+        }
+      ]
     },
     {
       "id": "ratopati",
@@ -270,7 +132,13 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "भोटेकोशी बाढीको विपद्, उद्धार र पुनर्निर्माणको कथा ‘द सनसाइन फ्लड’",
+          "link": "https://www.ratopati.com/story/604048/the-sunshine-flood-the-story-of-the-bhotekoshi-flood-disaster-rescue-and-reconstruction",
+          "pubDate": "Sun, 08 Nov 2026 06:17:45 +0000"
+        }
+      ]
     },
     {
       "id": "gnews-en",
@@ -290,14 +158,14 @@
           "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
         },
         {
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
@@ -325,9 +193,9 @@
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Employees Donate Over NPR 20 Million For Bhote Koshi Flood Victims - Hamro Patro",
@@ -344,8 +212,7 @@
   ],
   "issues": [],
   "suggestions": [
-    "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
-    "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
+    "RIS fetch failed. Leave routing chips as they are.",
     "Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`."
   ]
 }
