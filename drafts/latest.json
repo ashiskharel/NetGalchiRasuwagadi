@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-09T13:42",
-  "fetched_utc": "2026-11-09T07:57:52.083Z",
+  "fetched_npt": "2026-11-10T14:09",
+  "fetched_utc": "2026-11-10T08:24:55.624Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,25 +60,17 @@
       ]
     },
     "paths": {
-      "north": 130,
-      "south": 233,
+      "north": 126,
+      "south": 228,
       "other": 0,
       "unique": [
-        {
-          "hops": [
-            23764,
-            23752
-          ],
-          "n": 8,
-          "klass": "north"
-        },
         {
           "hops": [
             8218,
             23764,
             23752
           ],
-          "n": 7,
+          "n": 6,
           "klass": "north"
         },
         {
@@ -92,12 +84,29 @@
         },
         {
           "hops": [
+            23764,
+            23752
+          ],
+          "n": 6,
+          "klass": "north"
+        },
+        {
+          "hops": [
             6461,
             9498,
             23752
           ],
           "n": 5,
           "klass": "south"
+        },
+        {
+          "hops": [
+            24482,
+            23764,
+            23752
+          ],
+          "n": 5,
+          "klass": "north"
         },
         {
           "hops": [
@@ -110,25 +119,7 @@
         },
         {
           "hops": [
-            24482,
-            23764,
-            23752
-          ],
-          "n": 4,
-          "klass": "north"
-        },
-        {
-          "hops": [
             14840,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            199524,
             9498,
             23752
           ],
@@ -165,12 +156,12 @@
         },
         {
           "hops": [
-            48185,
-            9498,
+            12779,
+            23764,
             23752
           ],
           "n": 3,
-          "klass": "south"
+          "klass": "north"
         },
         {
           "hops": [
@@ -208,11 +199,19 @@
           ],
           "n": 3,
           "klass": "south"
+        },
+        {
+          "hops": [
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
         }
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-09T07:57:48.490000"
+    "latestPathTime": "2026-11-10T08:24:51.800000"
   },
   "news": [
     {
@@ -221,13 +220,7 @@
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "Delayed death verification leaves Bhotekoshi flood-hit families without relief",
-          "link": "https://english.onlinekhabar.com/bhotekoshi-relief-remains-stalled.html",
-          "pubDate": "Mon, 09 Nov 2026 06:21:38 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "onlinekhabar-ne",
@@ -243,7 +236,13 @@
       "url": "https://risingnepaldaily.com/rss",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "Nepal advances telecommunications agenda at global ITU conference",
+          "link": "https://risingnepaldaily.com/news/88535",
+          "pubDate": "Tue, 10 Nov 2026 10:44:22 +0545"
+        }
+      ]
     },
     {
       "id": "kathmandu-post",
@@ -255,16 +254,6 @@
         {
           "title": "How many Nepalis are one flood away from poverty?",
           "link": "https://kathmandupost.com/editorial/2026/11/09/one-disaster-away",
-          "pubDate": ""
-        },
-        {
-          "title": "From flood-hit areas to crime scenes, Nepal’s police dogs sniff out vital clues",
-          "link": "https://kathmandupost.com/national/2026/11/08/from-flood-hit-areas-to-crime-scenes-nepal-s-police-dogs-sniff-out-vital-clues",
-          "pubDate": ""
-        },
-        {
-          "title": "A pontoon bridge unused for 13 years finds a new home in Dhading",
-          "link": "https://kathmandupost.com/national/2026/11/07/rusted-pontoon-bridge-left-unused-for-13-years-shifted-from-bardiya-to-be-installed-at-flood-hit-phurkekhola-dhading",
           "pubDate": ""
         }
       ]
@@ -300,13 +289,13 @@
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
+          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFMwdzJHQnFMVTd0Mi11YWJ6UmlpMV8wVWRxU0kzNkZvVFZWVGZMZmFaR1g3ejBPdlp2TlNsck5LWE5BZGVqX0Z3Wi1PUFBqdkluTnYzTmtVZ2dCTENPZVBJOWE5Zmx6am1uMEczUk9FMDdma2RDOUtrNy0wcHBabGpuUHVUV0g5V0kzZF90a29TNUZIcGcwalZWaUNSbnB6eEU4cWJxcFE1VlJIVk5CNDZoRzVPV1dnaEx1STlFWHA1TXFyZW1N?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVJfOTVQZFp6Z195aW9WZmtZcGdDc3ZwcGh2cUFvVTZwTWIxVTlvRFJsSmJIbzJzdVVfMmhCc0gwazYxby1ocXlyaDhxeXo4UUdXQk1sTFB4RnNnUks1LXdSMFY1S3MtcXU3VDlKcmk3UEVWdDZxeXZwRXdJYWUwdTlHeVFmak9iWThkLVpVVHRtLWsyYVpGd05yeVpiX0Ricm1Bc0NOQmR6ZEJFTVFHR2NHVEg5dUFtak9kMFJTaDUtZw?oc=5",
           "pubDate": "Wed, 30 Sep 2026 07:00:00 GMT"
         },
         {
@@ -325,14 +314,14 @@
           "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
         },
         {
-          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
-          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
+          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Technical report details Bhotekoshi flood’s journey from Tibet to Devghat - OnlineKhabar English News",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1McldQQXlGN1dJRzhwRlVWd0pMSWNBNFRrblM5TWxFczRvTnJMdDdxcjlETVRsUk16U25HY3diSDQ5YzMyd2FpdDBoSFduXzZUTHZwRjVjbTJRWVRrMkdGVGxEN25tU1BlN3NlWjN4MXRldjl1cWc?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Employees Donate Over NPR 20 Million For Bhote Koshi Flood Victims - Hamro Patro",
