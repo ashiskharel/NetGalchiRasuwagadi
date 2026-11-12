@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-11T13:29",
-  "fetched_utc": "2026-11-11T07:44:32.178Z",
+  "fetched_npt": "2026-11-12T14:03",
+  "fetched_utc": "2026-11-12T08:18:59.906Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,8 +60,8 @@
       ]
     },
     "paths": {
-      "north": 129,
-      "south": 229,
+      "north": 137,
+      "south": 227,
       "other": 0,
       "unique": [
         {
@@ -69,7 +69,7 @@
             23764,
             23752
           ],
-          "n": 7,
+          "n": 8,
           "klass": "north"
         },
         {
@@ -128,15 +128,6 @@
         },
         {
           "hops": [
-            199524,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
             47147,
             3320,
             6453,
@@ -174,12 +165,30 @@
         },
         {
           "hops": [
+            48185,
+            9498,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
             3214,
             9498,
             23752
           ],
           "n": 3,
           "klass": "south"
+        },
+        {
+          "hops": [
+            199524,
+            23764,
+            23752
+          ],
+          "n": 3,
+          "klass": "north"
         },
         {
           "hops": [
@@ -198,21 +207,11 @@
           ],
           "n": 3,
           "klass": "south"
-        },
-        {
-          "hops": [
-            34019,
-            3303,
-            6453,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
         }
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-11T07:44:27.350000"
+    "latestPathTime": "2026-11-12T08:18:47.210000"
   },
   "news": [
     {
@@ -221,7 +220,13 @@
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "Tourist footfall gradually rises in Gosainkunda after floods",
+          "link": "https://english.onlinekhabar.com/tourist-footfall-gradually-rises-in-gosainkunda-after-floods.html",
+          "pubDate": "Thu, 12 Nov 2026 07:59:45 +0000"
+        }
+      ]
     },
     {
       "id": "onlinekhabar-ne",
@@ -231,14 +236,9 @@
       "ok": true,
       "items": [
         {
-          "title": "भोटेकोशी विपत्तिले खोस्यो चाडपर्वको खुसी, विस्थापितका लागि झिलिमिली तिहार पनि अँध्यारो",
-          "link": "https://www.onlinekhabar.com/2026/11/2055502/bhotekoshi-disaster-takes-away-the-joy-of-festivals-even-the-glittering-tihar-is-dark-for-the-displaced",
-          "pubDate": "Wed, 11 Nov 2026 05:45:23 +0000"
-        },
-        {
-          "title": "भोटेकोशी बाढीमा विदुर नगरपालिकाद्वारा ४१६ बेपत्ताको सूची सार्वजनिक (नामावलीसहित)",
-          "link": "https://www.onlinekhabar.com/2026/11/2055480/bidur-municipality-publishes-list-of-416-missing-persons-in-bhotekoshi-flood-with-names",
-          "pubDate": "Wed, 11 Nov 2026 02:47:10 +0000"
+          "title": "नेपालका बाढीपीडितका लागि अस्ट्रेलियाबाट ६० हजार डलर सहयोग",
+          "link": "https://www.onlinekhabar.com/2026/11/2055936/australia-provides-60000-in-aid-for-nepal-flood-victims",
+          "pubDate": "Thu, 12 Nov 2026 04:17:18 +0000"
         }
       ]
     },
@@ -258,8 +258,8 @@
       "ok": true,
       "items": [
         {
-          "title": "How many Nepalis are one flood away from poverty?",
-          "link": "https://kathmandupost.com/editorial/2026/11/09/one-disaster-away",
+          "title": "Nepal seeks mountain-specific early warning systems after devastating flood",
+          "link": "https://kathmandupost.com/national/2026/11/12/nepal-seeks-mountain-specific-early-warning-systems-after-devastating-flood",
           "pubDate": ""
         }
       ]
@@ -270,13 +270,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "रसुवाको ‘नागथली’ पर्यटकका लागि आर्कषक केन्द्र",
-          "link": "https://www.ratopati.com/story/604567/rasuwas-nagathali-is-an-attractive-center-for-tourists",
-          "pubDate": "Wed, 11 Nov 2026 06:27:34 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
@@ -296,19 +290,19 @@
           "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
         },
         {
-          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
-          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVJfOTVQZFp6Z195aW9WZmtZcGdDc3ZwcGh2cUFvVTZwTWIxVTlvRFJsSmJIbzJzdVVfMmhCc0gwazYxby1ocXlyaDhxeXo4UUdXQk1sTFB4RnNnUks1LXdSMFY1S3MtcXU3VDlKcmk3UEVWdDZxeXZwRXdJYWUwdTlHeVFmak9iWThkLVpVVHRtLWsyYVpGd05yeVpiX0Ricm1Bc0NOQmR6ZEJFTVFHR2NHVEg5dUFtak9kMFJTaDUtZw?oc=5",
           "pubDate": "Wed, 30 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
+          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Khabarhub",
@@ -331,9 +325,9 @@
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
         },
         {
-          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
-          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Employees Donate Over NPR 20 Million For Bhote Koshi Flood Victims - Hamro Patro",
