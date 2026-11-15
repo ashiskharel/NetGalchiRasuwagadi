@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-14T13:21",
-  "fetched_utc": "2026-11-14T07:36:05.385Z",
+  "fetched_npt": "2026-11-15T13:35",
+  "fetched_utc": "2026-11-15T07:51:01.856Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,8 +60,8 @@
       ]
     },
     "paths": {
-      "north": 139,
-      "south": 225,
+      "north": 130,
+      "south": 234,
       "other": 0,
       "unique": [
         {
@@ -128,6 +128,15 @@
         },
         {
           "hops": [
+            199524,
+            9498,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
             47147,
             3320,
             6453,
@@ -183,15 +192,6 @@
         },
         {
           "hops": [
-            199524,
-            23764,
-            23752
-          ],
-          "n": 3,
-          "klass": "north"
-        },
-        {
-          "hops": [
             49544,
             23764,
             23752
@@ -211,7 +211,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-14T07:36:01.580000"
+    "latestPathTime": "2026-11-15T07:50:57.710000"
   },
   "news": [
     {
@@ -228,7 +228,13 @@
       "url": "https://www.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "गाजामा बाढीले ७० हजार अस्थायी टेन्ट डुबे, राहतका लागि इजरायलसँग ईयूको आग्रह",
+          "link": "https://www.onlinekhabar.com/2026/11/2057792/floods-in-gaza-submerge-70000-makeshift-tents-eu-urges-israel-for-relief",
+          "pubDate": "Sun, 15 Nov 2026 02:45:47 +0000"
+        }
+      ]
     },
     {
       "id": "rising-nepal",
@@ -252,13 +258,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "बाढी प्रभावित बालबालिकाको संरक्षणमा सघाउन आह्वान",
-          "link": "https://www.ratopati.com/story/605123/call-for-help-in-protecting-flood-affected-children",
-          "pubDate": "Sat, 14 Nov 2026 07:21:32 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
@@ -267,11 +267,6 @@
       "url": "https://news.google.com/rss/search?q=Nepal+Telecom+Rasuwa+OR+Rasuwagadhi+OR+Galchhi+OR+Bhotekoshi&hl=en-US&gl=US&ceid=US:en",
       "ok": true,
       "items": [
-        {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - radionepalonline.com",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04aGJGMXJfZ0k2M0pVTVRlVzg2ZzBoUGxGcUVtbE5zS2p4RmdJbENCdEVnT1lEUm9KU3JQak5aQVUxdzJZckZkLVJGb0hsbmN0UWFYZEhrcGNvc25iaWE3NV9GWXI?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
-        },
         {
           "title": "Nepal Telecom suffers over NPR 88 million in infrastructure damage in Bhotekoshi floods - ET Telecom",
           "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTUNIYUV2RGFPSEVnSWJSQVZZNmxyWHluaDhsSVZRZmY4SllfbWJ2Uy1WVlpKbjhFTXRuVlFYY1RjeldnMmFWc0NfQ0xTQ0k4THlZRjZ2b29iajlKTmNnVTVuN29ta2czWkNqSFpHUzVBN1JsVWtnR1RiWFBTN3RlbVcyaS1MY1EtRDUzNWt2RUxqNmt4RnpSeDlIeFdXYnhBSjEyWFZoSlBTWEt5VmFWMHFEbHA2T1NjU1BGcVlyV3A0QnREelg2aXkybWQ1eWdIOHNESE1neWxaa0xCYTlKZGhNYldNcHowY2NIeg?oc=5",
@@ -288,9 +283,9 @@
           "pubDate": "Wed, 30 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
@@ -321,6 +316,11 @@
           "title": "Nepal Telecom Extends Free Service by Three Days in the Bhotekoshi Flood-Affected Area - Ekantipur",
           "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTWtuZkdrdFdwOHRmYk9TNWJjSzYxMHZveVBDakZyQmROSFd5azJaZlJjUHZ1RVFVWUxUMXN1QzFfaW9nenVWTm9zZ29qVUtSS3FTYmQ5a0U5dVhBVE52OWg2ak4wUEZkOVRQM0hyTWZyYVpjWGFrUzRxLXhLU1NkMVNkU1N1OWhCT1lMRXIyNFN6TWZoLTdLZkxaaUNVTnlubmNyZXBfM2VJS2REUk1Vc0QtenQ4dTZDMXdsYUxsd0xjWGxGMXlaRndDR0dTajZnYjZ6S0N4a08?oc=5",
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
