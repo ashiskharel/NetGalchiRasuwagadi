@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-15T13:35",
-  "fetched_utc": "2026-11-15T07:51:01.856Z",
+  "fetched_npt": "2026-11-16T13:43",
+  "fetched_utc": "2026-11-16T07:58:16.573Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,8 +60,8 @@
       ]
     },
     "paths": {
-      "north": 130,
-      "south": 234,
+      "north": 128,
+      "south": 232,
       "other": 0,
       "unique": [
         {
@@ -211,7 +211,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-15T07:50:57.710000"
+    "latestPathTime": "2026-11-16T07:58:12.260000"
   },
   "news": [
     {
@@ -220,7 +220,13 @@
       "url": "https://english.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": []
+      "items": [
+        {
+          "title": "More than 10,000 US flights cancelled or delayed on Sunday",
+          "link": "https://english.onlinekhabar.com/more-than-10000-us-flights-cancelled-or-delayed-on-sunday.html",
+          "pubDate": "Mon, 16 Nov 2026 07:18:44 +0000"
+        }
+      ]
     },
     {
       "id": "onlinekhabar-ne",
@@ -228,13 +234,7 @@
       "url": "https://www.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "गाजामा बाढीले ७० हजार अस्थायी टेन्ट डुबे, राहतका लागि इजरायलसँग ईयूको आग्रह",
-          "link": "https://www.onlinekhabar.com/2026/11/2057792/floods-in-gaza-submerge-70000-makeshift-tents-eu-urges-israel-for-relief",
-          "pubDate": "Sun, 15 Nov 2026 02:45:47 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "rising-nepal",
@@ -293,19 +293,14 @@
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom’s damaged fibre network restored in Rasuwagadhi, Betrawati - Khabarhub",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40MUU0OF8za1RtVXRLOUtvSjhfTVBkZExaeGxPcjlsSTY0N2YtZElSd1VwdVJ1cHo2UVFNUkxscjlTa2ZwTjlIMG4tWkxBSjJEY2lfNlZpS3Q?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
-        },
-        {
           "title": "NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE56LUplMEYyaVNVNWxIZnR3RVc2a282WGZDcEpQejRhS1o2V0h2S0x5d0FGVVp5REl0Mzd1cmVzNFNCekt2ektsdGktb0xrZ1B3?oc=5",
           "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
         },
         {
-          "title": "Nepal Telecom Offers Free Voice, Data Until Further Notice for Rasuwa Flood-Hit Areas - NepaliTelecom",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZzdCMnMyX1NRV1VHUjRZNG52T3JzVVE5aUVSQ2FMcVpTaVRRX2xNVmxRV0xodU9iejl1MzUzVjhZTlR3THhEYk5aZ0pmZjVERG10Zk5LTnRwVUhEYk5ENmhnbXlYeHEzWFJwVlFnaWxVeUJyRnZiOGUwblgxb1BVajNCcElMNU1DX3c5QnpjWjlqdzFwVnZYMHdINXZPZnFxTUlGRVVSZXdOYkktMm1kaWJ2X2FuT01sZWduVXlvT2g?oc=5",
-          "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT"
+          "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
+          "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
@@ -323,9 +318,14 @@
           "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
-          "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5",
+          "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom Offers Free Voice, Data Until Further Notice for Rasuwa Flood-Hit Areas - NepaliTelecom",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZzdCMnMyX1NRV1VHUjRZNG52T3JzVVE5aUVSQ2FMcVpTaVRRX2xNVmxRV0xodU9iejl1MzUzVjhZTlR3THhEYk5aZ0pmZjVERG10Zk5LTnRwVUhEYk5ENmhnbXlYeHEzWFJwVlFnaWxVeUJyRnZiOGUwblgxb1BVajNCcElMNU1DX3c5QnpjWjlqdzFwVnZYMHdINXZPZnFxTUlGRVVSZXdOYkktMm1kaWJ2X2FuT01sZWduVXlvT2g?oc=5",
+          "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT"
         }
       ]
     }
