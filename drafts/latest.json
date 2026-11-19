@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-18T14:17",
-  "fetched_utc": "2026-11-18T08:32:04.506Z",
+  "fetched_npt": "2026-11-19T14:32",
+  "fetched_utc": "2026-11-19T08:47:18.603Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -53,6 +53,7 @@
         131341,
         136794,
         139022,
+        139256,
         142008,
         14789,
         45353,
@@ -60,8 +61,8 @@
       ]
     },
     "paths": {
-      "north": 132,
-      "south": 229,
+      "north": 131,
+      "south": 230,
       "other": 0,
       "unique": [
         {
@@ -211,7 +212,7 @@
       ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-18T08:31:59.930000"
+    "latestPathTime": "2026-11-19T08:47:13.880000"
   },
   "news": [
     {
@@ -222,9 +223,9 @@
       "ok": true,
       "items": [
         {
-          "title": "Contracts of non-performing Fast Track builders will be cancelled immediately, says Minister Lamsal",
-          "link": "https://english.onlinekhabar.com/contracts-fast-track-cancelled.html",
-          "pubDate": "Wed, 18 Nov 2026 07:15:40 +0000"
+          "title": "WFN and HHRD jointly distribute winter relief to Bhotekoshi flood victims",
+          "link": "https://english.onlinekhabar.com/wfn-and-hhrd-winter-relief.html",
+          "pubDate": "Thu, 19 Nov 2026 06:52:03 +0000"
         }
       ]
     },
@@ -255,11 +256,6 @@
           "title": "Flood victims occupy Nepal Electricity Authority land, erect tents",
           "link": "https://kathmandupost.com/national/2026/11/18/flood-victims-occupy-nepal-electricity-authority-land-erect-tents",
           "pubDate": ""
-        },
-        {
-          "title": "Flood-hit Rani Mahal still awaits cleanup two months on",
-          "link": "https://kathmandupost.com/province-no-5/2026/11/17/flood-hit-rani-mahal-still-awaits-cleanup-two-months-on",
-          "pubDate": ""
         }
       ]
     },
@@ -269,13 +265,7 @@
       "url": "https://www.ratopati.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "द्रुतमार्गमा ढिलाइ गर्ने निर्माण कम्पनीको ठेक्का तत्काल रद्द गरिनेछ : मन्त्री लम्साल",
-          "link": "https://www.ratopati.com/story/606016/contract-of-construction-company-that-delays-expressway-will-be-cancelled-immediately-minister-lamsal",
-          "pubDate": "Wed, 18 Nov 2026 08:17:00 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "gnews-en",
@@ -285,14 +275,14 @@
       "ok": true,
       "items": [
         {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - radionepalonline.com",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04aGJGMXJfZ0k2M0pVTVRlVzg2ZzBoUGxGcUVtbE5zS2p4RmdJbENCdEVnT1lEUm9KU3JQak5aQVUxdzJZckZkLVJGb0hsbmN0UWFYZEhrcGNvc25iaWE3NV9GWXI?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom suffers over NPR 88 million in infrastructure damage in Bhotekoshi floods - ET Telecom",
           "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTUNIYUV2RGFPSEVnSWJSQVZZNmxyWHluaDhsSVZRZmY4SllfbWJ2Uy1WVlpKbjhFTXRuVlFYY1RjeldnMmFWc0NfQ0xTQ0k4THlZRjZ2b29iajlKTmNnVTVuN29ta2czWkNqSFpHUzVBN1JsVWtnR1RiWFBTN3RlbVcyaS1MY1EtRDUzNWt2RUxqNmt4RnpSeDlIeFdXYnhBSjEyWFZoSlBTWEt5VmFWMHFEbHA2T1NjU1BGcVlyV3A0QnREelg2aXkybWQ1eWdIOHNESE1neWxaa0xCYTlKZGhNYldNcHowY2NIeg?oc=5",
           "pubDate": "Thu, 01 Oct 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - radionepalonline.com",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04aGJGMXJfZ0k2M0pVTVRlVzg2ZzBoUGxGcUVtbE5zS2p4RmdJbENCdEVnT1lEUm9KU3JQak5aQVUxdzJZckZkLVJGb0hsbmN0UWFYZEhrcGNvc25iaWE3NV9GWXI?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom reports NPR 88 million in infrastructure damage following Bhotekoshi floods - Telecompaper",
@@ -300,34 +290,9 @@
           "pubDate": "Thu, 01 Oct 2026 12:01:12 GMT"
         },
         {
-          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
-          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom employees contribute over Rs 20 million to disaster relief fund - myRepublica",
           "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUlENk5sMXplQURGTkpXQWJJc3lZNkFNQWZJYTBIbUx2YThyVXFoMjA1bk9sZVI1MW85YzV2eTlEdVctTm5rSl9qc2F2YldMaEJINWFGdmVmVkhOQ0psWFVsem8tcjJuUUM0UGNjYnpiZ3lkSzE2Skp0Q1l4d0Z1Zl96Q3NjMERYNExWUklhZ3hUWGNrVE1CNEFxYnAyRmw2MFZqRlpZaWZ4RlhEQzd6NzdJOTJYWVdGdEI1dFZZTnJZZnljdGZVVlh3?oc=5",
           "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE56LUplMEYyaVNVNWxIZnR3RVc2a282WGZDcEpQejRhS1o2V0h2S0x5d0FGVVp5REl0Mzd1cmVzNFNCekt2ektsdGktb0xrZ1B3?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
-        },
-        {
-          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
-          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
-          "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
@@ -335,9 +300,34 @@
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
         },
         {
+          "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
+          "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
+          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE56LUplMEYyaVNVNWxIZnR3RVc2a282WGZDcEpQejRhS1o2V0h2S0x5d0FGVVp5REl0Mzd1cmVzNFNCekt2ektsdGktb0xrZ1B3?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
+        },
+        {
+          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
           "title": "Nepal Telecom Extends Free Service by Three Days in the Bhotekoshi Flood-Affected Area - Ekantipur",
           "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTWtuZkdrdFdwOHRmYk9TNWJjSzYxMHZveVBDakZyQmROSFd5azJaZlJjUHZ1RVFVWUxUMXN1QzFfaW9nenVWTm9zZ29qVUtSS3FTYmQ5a0U5dVhBVE52OWg2ak4wUEZkOVRQM0hyTWZyYVpjWGFrUzRxLXhLU1NkMVNkU1N1OWhCT1lMRXIyNFN6TWZoLTdLZkxaaUNVTnlubmNyZXBfM2VJS2REUk1Vc0QtenQ4dTZDMXdsYUxsd0xjWGxGMXlaRndDR0dTajZnYjZ6S0N4a08?oc=5",
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
@@ -347,9 +337,7 @@
       ]
     }
   ],
-  "issues": {
-    "error": "403 https://api.github.com/repos/ashiskharel/NetGalchiRasuwagadi/issues?labels=field-report&state=open&per_page=20"
-  },
+  "issues": [],
   "suggestions": [
     "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
     "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
