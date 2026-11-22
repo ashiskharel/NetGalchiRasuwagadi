@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-21T14:01",
-  "fetched_utc": "2026-11-21T08:16:11.007Z",
+  "fetched_npt": "2026-11-22T13:43",
+  "fetched_utc": "2026-11-22T07:58:51.595Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,158 +60,13 @@
       ]
     },
     "paths": {
-      "north": 132,
-      "south": 229,
+      "north": 0,
+      "south": 0,
       "other": 0,
-      "unique": [
-        {
-          "hops": [
-            23764,
-            23752
-          ],
-          "n": 8,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            8218,
-            23764,
-            23752
-          ],
-          "n": 6,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            24482,
-            9498,
-            23752
-          ],
-          "n": 6,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            6461,
-            9498,
-            23752
-          ],
-          "n": 5,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            24482,
-            23764,
-            23752
-          ],
-          "n": 5,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            9002,
-            6453,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            14840,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            199524,
-            9498,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            47147,
-            3320,
-            6453,
-            23752
-          ],
-          "n": 4,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            2914,
-            23764,
-            23752
-          ],
-          "n": 3,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            3491,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            12779,
-            23764,
-            23752
-          ],
-          "n": 3,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            48185,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            3214,
-            9498,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        },
-        {
-          "hops": [
-            49544,
-            23764,
-            23752
-          ],
-          "n": 3,
-          "klass": "north"
-        },
-        {
-          "hops": [
-            35280,
-            6453,
-            23752
-          ],
-          "n": 3,
-          "klass": "south"
-        }
-      ]
+      "unique": []
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": "2026-11-20T17:15:35.570000"
+    "latestPathTime": null
   },
   "news": [
     {
@@ -230,9 +85,9 @@
       "ok": true,
       "items": [
         {
-          "title": "नेपाल टेलिकमका अधिकारीसँग सञ्चारमन्त्रीले सोधे– टावर छ, नेटवर्क किन छैन ?",
-          "link": "https://www.onlinekhabar.com/2026/11/2062205/the-minister-of-communications-asked-a-nepal-telecom-official-there-is-a-tower-why-is-there-no-network",
-          "pubDate": "Fri, 20 Nov 2026 15:02:34 +0000"
+          "title": "गगन थापा भोटेकोसी र त्रिशूली करिडोरमा बाढी प्रभावितसँग अन्तरक्रिया गर्दै",
+          "link": "https://www.onlinekhabar.com/2026/11/2062855/gagan-thapa-interacting-with-flood-victims-in-the-bhotekoshi-and-trishuli-corridors",
+          "pubDate": "Sun, 22 Nov 2026 03:08:17 +0000"
         }
       ]
     },
@@ -252,13 +107,13 @@
       "ok": true,
       "items": [
         {
-          "title": "Months after Bhotekoshi floods, families still await bodies and closure",
-          "link": "https://kathmandupost.com/national/2026/11/20/months-after-bhotekoshi-floods-families-still-await-bodies-and-closure",
+          "title": "Government plans floodlit home grounds for all eight NPL clubs",
+          "link": "https://kathmandupost.com/national/2026/11/21/government-plans-floodlit-home-grounds-for-all-eight-npl-clubs",
           "pubDate": ""
         },
         {
-          "title": "Lack of verified data delays scholarships for flood-hit students",
-          "link": "https://kathmandupost.com/national/2026/11/20/lack-of-verified-data-delays-scholarships-for-flood-hit-students",
+          "title": "Nepal has failed disaster survivors before. Can Bhotekoshi be different?",
+          "link": "https://kathmandupost.com/national/2026/11/21/resettling-disaster-survivors-takes-more-than-finding-them-new-homes",
           "pubDate": ""
         }
       ]
@@ -299,14 +154,14 @@
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
         },
         {
-          "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
-          "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
-        },
-        {
           "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
           "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
+          "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal",
@@ -314,19 +169,14 @@
           "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
         },
         {
-          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom Extends Free Service by Three Days in the Bhotekoshi Flood-Affected Area - Ekantipur",
           "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTWtuZkdrdFdwOHRmYk9TNWJjSzYxMHZveVBDakZyQmROSFd5azJaZlJjUHZ1RVFVWUxUMXN1QzFfaW9nenVWTm9zZ29qVUtSS3FTYmQ5a0U5dVhBVE52OWg2ak4wUEZkOVRQM0hyTWZyYVpjWGFrUzRxLXhLU1NkMVNkU1N1OWhCT1lMRXIyNFN6TWZoLTdLZkxaaUNVTnlubmNyZXBfM2VJS2REUk1Vc0QtenQ4dTZDMXdsYUxsd0xjWGxGMXlaRndDR0dTajZnYjZ6S0N4a08?oc=5",
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom restores mobile, internet services across flood-hit areas - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcm1RZjVyN3FucklXaTg0MHRUS29kUmJ5d1VmTGZxaGNuRm93SVZhcmRNNVJwc0t0XzQ0N2dmeGFIT19GUXFsNkdRNllwTmw1enIwOFZ1TjdwZ2VBOVllaUtwZUZjWGFfNDNsME5MMldxdURmOTI4OTJPWFNVc3k3TzdmMUtFLVZMd0s0VWdfMVFXTjJ6dS1tWU5UR2g2amtIbWo2VF9XWm1SdURhb25ZbXR2OE9zd0c1X1pqbnBiQQ?oc=5",
-          "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT"
+          "title": "Nepal Telecom restores services at 80 of 120 flood-affected sites - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbVBaY1lnQUFYcThETFBudVh1Q3piVjBnQm84c2FiSzd6UGoxYWx3M0lob2ZmN2N3ZVFyaFF0SzBuQWM4R2ZqYTY1dUZjTWQtb241U1Rld29mdEM3YTdzZGJOMGJCN29UYWpETUh4Wk1BVG1DNTJ4cmw3MzloaVlPRnJYeU1OalI5Y0hDM1pXQndibVFjd2RNUU9fMGxKTnNpcW9iSWVvbjltRWlIRS1BTWgzYTVWNVZT?oc=5",
+          "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Offers Free Voice, Data Until Further Notice for Rasuwa Flood-Hit Areas - NepaliTelecom",
@@ -337,6 +187,11 @@
           "title": "Nepal Telecom Extends Free Communication Services in Flood-Affected Areas - Ratopati",
           "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYl96d3l1THhGSDd2czZBNkFQSXlGYlJYV1paZVROM2pKdEotdlJqam16WWMwZXFfM3hlWVlMa0dLZ2xaYTFyYWdscVQxcGltVjRNdWhhNXd6VnN2RmRJRDN6cnVnN1hraV80dm9OYldZQlhULTYxYUhHZnh1RUw0YmxUZ0djOWdYOWNPdjZuSXROeVJXY3hqQlFEQ3lRTjNrTnVVZ0x0NTQ?oc=5",
           "pubDate": "Thu, 27 Aug 2026 09:08:09 GMT"
+        },
+        {
+          "title": "Nepal Telecom, Ncell restoring services in flood-hit areas - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1keTl2RkhJcERRcFNsbjBjRTBSeU54QnZPQVZEX3d1ZnRWMWFVcHBPb0sxSGVORjM0TF96bEpjRXhoTUxGVzdGaDc3ejhnX05s?oc=5",
+          "pubDate": "Thu, 10 Sep 2026 00:46:10 GMT"
         }
       ]
     }
@@ -344,7 +199,6 @@
   "issues": [],
   "suggestions": [
     "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
-    "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
     "Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`."
   ]
 }
