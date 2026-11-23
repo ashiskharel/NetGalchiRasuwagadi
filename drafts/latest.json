@@ -1,6 +1,6 @@
 {
-  "fetched_npt": "2026-11-22T13:43",
-  "fetched_utc": "2026-11-22T07:58:51.595Z",
+  "fetched_npt": "2026-11-23T14:48",
+  "fetched_utc": "2026-11-23T09:03:16.268Z",
   "notice": "Draft only. Never auto-applied to status chips.",
   "published_chips": [
     {
@@ -60,13 +60,165 @@
       ]
     },
     "paths": {
-      "north": 0,
-      "south": 0,
+      "north": 36,
+      "south": 66,
       "other": 0,
-      "unique": []
+      "unique": [
+        {
+          "hops": [
+            199524,
+            9498,
+            23752
+          ],
+          "n": 4,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            23764,
+            23752
+          ],
+          "n": 4,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            35280,
+            6453,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            47147,
+            3320,
+            6453,
+            23752
+          ],
+          "n": 3,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            49544,
+            3356,
+            23764,
+            23752
+          ],
+          "n": 2,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            3491,
+            9498,
+            23752
+          ],
+          "n": 2,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            8218,
+            23764,
+            23752
+          ],
+          "n": 2,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            34019,
+            3303,
+            6453,
+            23752
+          ],
+          "n": 2,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            271253,
+            9498,
+            23752
+          ],
+          "n": 2,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            9002,
+            6453,
+            23752
+          ],
+          "n": 2,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            19151,
+            9498,
+            23752
+          ],
+          "n": 2,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            35266,
+            57463,
+            9498,
+            23752
+          ],
+          "n": 1,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            6424,
+            23764,
+            23752
+          ],
+          "n": 1,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            48185,
+            9498,
+            23752
+          ],
+          "n": 1,
+          "klass": "south"
+        },
+        {
+          "hops": [
+            46997,
+            38008,
+            23764,
+            23752
+          ],
+          "n": 1,
+          "klass": "north"
+        },
+        {
+          "hops": [
+            265721,
+            64126,
+            23520,
+            6830,
+            6453,
+            23752
+          ],
+          "n": 1,
+          "klass": "south"
+        }
+      ]
     },
     "prefix": "202.70.64.0/19",
-    "latestPathTime": null
+    "latestPathTime": "2026-11-23T09:03:11.840000"
   },
   "news": [
     {
@@ -83,13 +235,7 @@
       "url": "https://www.onlinekhabar.com/feed",
       "filter": true,
       "ok": true,
-      "items": [
-        {
-          "title": "गगन थापा भोटेकोसी र त्रिशूली करिडोरमा बाढी प्रभावितसँग अन्तरक्रिया गर्दै",
-          "link": "https://www.onlinekhabar.com/2026/11/2062855/gagan-thapa-interacting-with-flood-victims-in-the-bhotekoshi-and-trishuli-corridors",
-          "pubDate": "Sun, 22 Nov 2026 03:08:17 +0000"
-        }
-      ]
+      "items": []
     },
     {
       "id": "rising-nepal",
@@ -107,13 +253,8 @@
       "ok": true,
       "items": [
         {
-          "title": "Government plans floodlit home grounds for all eight NPL clubs",
-          "link": "https://kathmandupost.com/national/2026/11/21/government-plans-floodlit-home-grounds-for-all-eight-npl-clubs",
-          "pubDate": ""
-        },
-        {
-          "title": "Nepal has failed disaster survivors before. Can Bhotekoshi be different?",
-          "link": "https://kathmandupost.com/national/2026/11/21/resettling-disaster-survivors-takes-more-than-finding-them-new-homes",
+          "title": "Months after flood devastated families, survivors live in trauma",
+          "link": "https://kathmandupost.com/health/2026/11/23/months-after-flood-devastated-families-survivors-live-in-trauma",
           "pubDate": ""
         }
       ]
@@ -139,14 +280,14 @@
           "pubDate": "Thu, 01 Oct 2026 07:00:00 GMT"
         },
         {
-          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
-          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom suffers Rs 88.51 million in damages from August 26 flood - myRepublica",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVJfOTVQZFp6Z195aW9WZmtZcGdDc3ZwcGh2cUFvVTZwTWIxVTlvRFJsSmJIbzJzdVVfMmhCc0gwazYxby1ocXlyaDhxeXo4UUdXQk1sTFB4RnNnUks1LXdSMFY1S3MtcXU3VDlKcmk3UEVWdDZxeXZwRXdJYWUwdTlHeVFmak9iWThkLVpVVHRtLWsyYVpGd05yeVpiX0Ricm1Bc0NOQmR6ZEJFTVFHR2NHVEg5dUFtak9kMFJTaDUtZw?oc=5",
           "pubDate": "Wed, 30 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nepal Telecom contributes Rs 100 million to PM Natural Disaster Relief Fund - Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObnp0bzdfRURUa2toTEFXNENwb3ZWVHBjUlp4UHQySE0yOWM1ZW83Vl82Rm1yMS1IM2lMUVp3em43aHFNWm0tYmo5d2ZXUnVJWEFBN1B6TWF0NnU3amNqSXd6cXV5ZDk0ZGtHMFU0aDRiV1RQZU44MkFMdFFhTHFPbzJqY1pxT1Z6LVZiRzM5WEtxSktEeEd4ZF81d0NXQ1VDSXg4VDZJYnhWMFlzdDJTUGZpbEhvQQ?oc=5",
+          "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "Nepal Telecom Services Disrupted by Flood Damage in Rasuwa and Nuwakot - Ratopati",
@@ -154,14 +295,14 @@
           "pubDate": "Wed, 26 Aug 2026 06:16:07 GMT"
         },
         {
-          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
-          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
           "title": "Nepal Telecom’s relief and telecom services in Bhotekoshi flood-hit areas - NepaliTelecom",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRk0xdUU0QUItb2I3UnB3MHBTLXBiaThhOUZuOHlIU0JXVU8tV0xDZmpuT1FGT3M0MVJMOUFuekZkTTRVMk10VzlrTlQ3eGtvcDJvd2lfU2h0MUtKUDFvRVZDeGFDSklFWmVEekxSZkpBUFFKODJteDh6V3JBcUdGYlFFdFZKb25wOUZyNUNzZDAwVHV5UEtRT3U1V2FBTTFRUUVCY244Qm1VMXZIOVF3X3ZSWEZOZw?oc=5",
           "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bhotekoshi floods expose gaps in Nepal’s emergency communications - The Kathmandu Post",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT1h4Y2ppQ2x1Z1lUbmVOMUVJZC1xOTlLWGJQWUdma1dtMU9TYTJfYVB2UmgxcTg4MVYtaTAtRzRBazdSeUZNeDk1M1VZWWEtb3psQldDb2cyUXRKdEp2UVBCMFlxTkFPZ2Rha2ZsVVctaGdJaHBUZlFhaXg3NHR2WGFwWVdGRWZsTlFPb3k2UkVVTm1yRl94U2ZSMTlMU1FVN3pfUlRTN2RMMUdweTM4UQ?oc=5",
+          "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT"
         },
         {
           "title": "NTC provides free telephone, SMS and internet service in flood-hit areas - The Rising Nepal",
@@ -169,8 +310,8 @@
           "pubDate": "Wed, 26 Aug 2026 08:13:12 GMT"
         },
         {
-          "title": "Nepal Telecom Extends Free Service by Three Days in the Bhotekoshi Flood-Affected Area - Ekantipur",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTWtuZkdrdFdwOHRmYk9TNWJjSzYxMHZveVBDakZyQmROSFd5azJaZlJjUHZ1RVFVWUxUMXN1QzFfaW9nenVWTm9zZ29qVUtSS3FTYmQ5a0U5dVhBVE52OWg2ak4wUEZkOVRQM0hyTWZyYVpjWGFrUzRxLXhLU1NkMVNkU1N1OWhCT1lMRXIyNFN6TWZoLTdLZkxaaUNVTnlubmNyZXBfM2VJS2REUk1Vc0QtenQ4dTZDMXdsYUxsd0xjWGxGMXlaRndDR0dTajZnYjZ6S0N4a08?oc=5",
+          "title": "87 telecom towers disrupted in Rasuwa, Nuwakot and Dhading after flood - OnlineKhabar English News",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tUTIxNEpwTF9VRmctbjdyS1I0SzBCNjZnMmNiNFhlMHo3T3dUUFVVNUhLenhWTUZIcXNfdkd0NEVid2pHRlE5T1FITVdrWURDYVZ5UGhYdmNBWk01VERpSlJFNTktVHRhYUR4cmtsc01RVTJjTnZ3cQ?oc=5",
           "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT"
         },
         {
@@ -199,6 +340,7 @@
   "issues": [],
   "suggestions": [
     "Northern CTGNet (AS23764) is **visible in RIS**. Keep the northern-transit chip as degraded/unknown until a named NTC source says the Galchhi–Rasuwagadhi fiber is repaired. Do **not** mark fiber `up` from BGP.",
+    "Southern India transits (Airtel/Tata) still appear. National internet is likely still on those paths.",
     "Fiber, microwave, district site counts, Starlink: **no machine source**. Only update from a named NTC/news quote in `sources.json`."
   ]
 }
